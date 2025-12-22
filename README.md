@@ -6,6 +6,12 @@ This repository provides a data-driven investigation into the **Geopolitical Uti
 ## The Theory: "Reflexive Control"
 The core hypothesis is that the Epstein files function as a **geopolitical thermostat**. 
 
+*Updated*:
+
+## The Theory: "Reflexive Control" & "Unwitting Assets"
+* **The Geopolitical Thermostat:** Information leaks are timed to regulate the behavior of tech giants.
+* **The Unwitting Asset Model:** The network functioned as a "Crisis-Rescue" mechanism. Foreign actors (Russia, then Saudi Arabia) provided "Rescue Capital" to leveraged US elites, turning them into unwitting proxies for technology transfer and sanctions evasion.
+
 
 
 * **Lever (Friction):** Redacted files are released or leaked to create pressure on specific entities (e.g., tech CEOs or political rivals).
