@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this dataset or theory in your research, please cite it as follows."
+authors:
+- family-names: "Smith"
+  given-names: "Austin"
+  affiliation: "Independent Researcher (U.S. Army 19D Veteran)"
+title: "Epstein_Files_Uses_Theory: A Data-Driven Analysis of Geopolitical Utility and Reflexive Control"
+version: 2.0.0
+date-released: 2025-11-20
+url: "https://github.com/Leerrooy95/Epstein_Files_Uses_Theory"
+keywords:
+  - OSINT
+  - Reflexive Control
+  - Geopolitical Utility
+  - Information Warfare
+  - AI Sovereignty
