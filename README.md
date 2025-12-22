@@ -1,4 +1,4 @@
-# Epstein_Files_Uses_Theory (v2.1)
+# Epstein_Files_Uses_Theory (v2.2)
 
 ## Overview
 This repository provides a data-driven investigation into the **Geopolitical Utility** of the Jeffrey Epstein investigative files. We analyze how information disclosure (leaks/unsealings) functions as a mechanism of **Reflexive Control** to influence AI infrastructure, sovereign capital flows, and technology transfer.
@@ -39,6 +39,9 @@ Our research identified a massive divergence point in July 2019:
 * **US Focus:** 90% resource allocation toward the trafficking scandal and domestic legal proceedings.
 * **China Focus:** Launch of a $100B AI investment plan and a surge to 188k AI patents.
 * **The Theory:** The scandal functions as a "Geopolitical Smokescreen," allowing for unchecked technological acceleration by the primary beneficiary while Western institutions are locked in a state of internal friction.
+
+## New
+* '07_My_Previous_Epstein_Research contains pdf files from my research into the topic over the last few months.
 
 ## Repository Structure
 * `/01_Levers_and_Frictions`: Master Investigative Timelines (2004-2025).
