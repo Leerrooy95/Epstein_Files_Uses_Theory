@@ -46,6 +46,26 @@ Research into the Congressional Record identified **Page H4421 (Sept 18, 2025)**
 ## 4. The Global Handoff: The "Unwitting Asset" Model
 Our analysis of the `thermostat_control_data.csv` dataset indicates that the "Thermostat" has been held by different sovereign actors during distinct phases of US vulnerability. This validates the "Crisis-Rescue" influence model, where foreign capital acts as a "Rescue" for compromised US elites, creating unwitting assets.
 
+
+### Phase 0: The Infrastructure Anchor (1991–2003)
+
+**Objective:** The establishment of physical "Black Sites" and corporate "Labyrinths" to facilitate long-term operations and secure administrative immunity.
+
+#### **A. The New Mexico Anchor: Zorro Ranch (1993)**
+* **The Acquisition:** Jeffrey Epstein purchased the **Zorro Ranch** (10,000+ acres) in Stanley, NM, from former Governor Bruce King for $12M.
+* **Mechanism:** Securement of 1,200+ acres of public land leases through **Cypress, Inc.**, effectively creating a "State-within-a-State" shielded from local oversight.
+* **The First Witness:** In 1996, **Maria Farmer** provided the first documented report of abuse at the ranch to the FBI. The federal failure to act established the "Precedent of Impunity" that defines the Phase 0 network.
+
+
+#### **B. The Corporate Labyrinth: Nevada Shell Infrastructure (1995–2000)**
+* **The Shells:** Operations were anchored in Nevada through **Zorro Trust** and **Cypress, Inc.** to exploit secretive corporate laws and move capital between the NYC financial hub and Western physical assets.
+* **The Loop:** This structure protected the identity of early "Phase 0" clients and beneficiaries, creating a legal firewall that would remain intact for 30 years.
+
+#### **C. The 2025 Impact: Witness Liquidation**
+* **The Connection:** Survivors of the 1991–2003 era hold the keys to the initial client list. 
+* **The Strike:** This specific witness pool is the target of the **December 22, 2025, DOJ Funding Freeze**. By starving survivor advocates in **New Mexico** and **Nevada**, the system is neutralizing Phase 0 testimony just as the "Transparency" documents are released.
+* 
+
 ### Phase 1: The Debt Lever (Russia, 2008–2016)
 * **The Crisis:** The 2008 Financial Crash left Western elites and power brokers highly leveraged.
 * **The Rescue:** Russian oligarch capital (e.g., Deripaska) was funneled through the Epstein network to offer liquidity and debt relief.
