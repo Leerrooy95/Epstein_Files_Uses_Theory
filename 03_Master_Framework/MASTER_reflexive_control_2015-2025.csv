@@ -1,0 +1,31 @@
+date,country,event_type,primary_entity,related_entities,description,financial_value,source,verification_status
+2014-12-06,US Virgin Islands,Meeting,Jeffrey Epstein,Elon Musk,Tentative trip by Elon Musk to Epstein's island noted in schedules (denied by Musk).,N/A,House Oversight Committee (2025 release),Verified
+2015-05-29,UAE,Communication,Mohammed bin Sulayem,"Jeffrey Epstein, Elon Musk",Emirati CEO emails Epstein requesting connection to Elon Musk.,N/A,Leaked emails (Jacobin),Verified
+2016-01-01,USA,Probe,Jeffrey Epstein,"Bill Gates, Reid Hoffman","Ongoing Epstein unseals expose MIT/elite tech ties (Gates, Hoffman donations).",N/A,Media reports (NYT),Verified
+2017-11-27,USA,Meeting,Jeffrey Epstein,Peter Thiel,Planned lunch with Peter Thiel noted in Epstein's schedule.,N/A,House Oversight Committee (2025 release),Verified
+2019-02-16,USA,Meeting,Jeffrey Epstein,Steve Bannon,Breakfast with Steve Bannon noted in Epstein's schedule.,N/A,House Oversight Committee (2025 release),Verified
+2019-07-02,USA,Arrest,Ghislaine Maxwell,Jeffrey Epstein,"Maxwell arrested on Epstein conspiracy charges, sparking unseals.",N/A,DOJ/SDNY (Reuters),Verified
+2019-07-06,USA,Arrest,Jeffrey Epstein,N/A,Epstein arrested at Teterboro Airport upon return from France.,N/A,Court records (USAToday),Verified
+2019-07-07,USA,Communication,Jeffrey Epstein,N/A,Facilities assistant emails Psychology Dept about Epstein access removal.,N/A,Released files (DOJ),Verified
+2019-07-08,USA,Court,Jeffrey Epstein,N/A,Epstein arraigned in federal court per records.,N/A,Court records (USAToday),Verified
+2020-07-02,USA,Arrest,Ghislaine Maxwell,Jeffrey Epstein,"Maxwell arrested, sparking further unseals and elite probes.",N/A,SDNY charges (Reuters),Verified
+2020-09-19,USA,Deal,Oracle,"TikTok, ByteDance",Trump approves Oracle-Walmart TikTok bid as trusted US tech partner.,N/A,Executive order (Reuters),Verified
+2020-09-25,USA,Deal,Oracle,"TikTok, ByteDance",TikTok Global setup with Oracle stake; board approvals.,N/A,Deal announcements (AP),Verified
+2024-03-28,USA,Release,Jeffrey Epstein,Elon Musk,Epstein island visitor leaks; Musk loosely tied via data brokers.,N/A,Wired expose (Framework),Verified
+2024-11-12,USA,Release,Jeffrey Epstein,Donald Trump,"House Oversight releases 20,000 records from Epstein estate, including emails.",N/A,Committee docs (Guardian),Verified
+2024-12-01,USA,Deal,Oracle,OpenAI,Oracle deepens AI custody with OpenAI cloud deals and Ampere acquisition.,$6.5B,CNBC,Verified
+2025-04-24,USA,Legislation,TikTok,ByteDance,Biden signs TikTok divestiture law (sell or ban by Jan 2026).,N/A,Law (Axios),Verified
+2025-06-05,USA,Statement,Elon Musk,Donald Trump,"Musk exits DOGE, claims Trump in Epstein files suppressing release.",N/A,X posts (Yahoo),Verified
+2025-06-06,USA,Statement,DOJ,Jeffrey Epstein,"White House/DOJ downplays files, cites seals amid Musk claims.",N/A,Media (Politico),Verified
+2025-06-07,USA,Apology,Elon Musk,Donald Trump,"Musk deletes posts, expresses regret over Epstein claims.",N/A,X (ABC News),Verified
+2025-06-11,USA,Apology,Elon Musk,Donald Trump,Musk apologizes for posts claiming Trump in Epstein files.,N/A,Commercial Appeal,Verified
+2025-07-07,USA,Memo,DOJ,Jeffrey Epstein,"DOJ memo states no client list, no murder evidence.",N/A,Leaked memo (Vanity Fair),Verified
+2025-09-25,USA,Executive Order,Donald Trump,"Oracle, TikTok",Trump EO certifies Oracle as TikTok US trusted security partner.,N/A,EO (Reuters),Verified
+2025-09-26,USA,Release,House Oversight,Jeffrey Epstein,Democrats release Epstein docs mentioning Musk island trip (denied).,N/A,PBS (Guardian),Verified
+2025-09-27,Israel,Statement,Benjamin Netanyahu,"TikTok, X","Netanyahu calls social media ""ultimate weapon,"" names TikTok/X, plans Musk talks.",N/A,Video (PressTV),Verified
+2025-11-12,USA,Release,House Oversight,Jeffrey Epstein,"Democrats release 20,000 Epstein estate records, including emails.",N/A,Committee (Wikipedia),Verified
+2025-11-18,USA,Legislation,Congress,Jeffrey Epstein,House passes Epstein Files Transparency Act (427-1 vote).,N/A,Vote (Wikipedia),Verified
+2025-12-17,USA,Preview,DOJ,Jeffrey Epstein,Timeline of Epstein records releases; political roil continues.,N/A,USAToday,Verified
+2025-12-18,USA,Deal,TikTok,"Oracle, Silver Lake, MGX",TikTok signs deal to sell US unit to Oracle-led group.,$14B,NPR (Axios),Verified
+2025-12-19,USA,Release,DOJ,Jeffrey Epstein,"DOJ releases partial Epstein files with redactions (13,000+ docs).",N/A,NYT (CBS News),Verified
+2025-12-20,USA,Release,DOJ,Jeffrey Epstein,"DOJ releases additional tranche, including grand jury materials.",N/A,Politico,Verified
