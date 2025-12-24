@@ -76,9 +76,9 @@ Core Finding (December 22, 2025)
 The temporal lag confirms that friction spikes (document leaks, media cycles) predict institutional alignment (capital deals, policy shifts) approximately two weeks later — the signature of an active geopolitical thermostat.
 
 
-### 🔱 Project Triton: Temporal Correlation Analysis (Verified)
+### 🔱 Project Trident: Temporal Correlation Analysis (Verified)
 
-**Status:** Statistical analysis complete | **Directory:** `Project_Triton/`
+**Status:** Statistical analysis complete | **Directory:** `Project_Trident/`
 
 A systematic temporal correlation study examining the statistical relationship between ritual event timelines and policy/infrastructure announcements across 2015-2025. Analysis verifies whether policy actions cluster more closely with non-annual ritual events than with standard holiday calendars.
 
@@ -146,7 +146,7 @@ Notable December events include:
 - `ritual_events_parsed.csv` - Ritual event timeline
 
 **Statistical Summary:**
-Project Triton identifies statistically significant temporal clustering (p = 0.002) with ritual events showing 3.5x higher proximity to policy actions than holidays. While correlation is verified, causation remains unestablished. The December 2025 cluster demonstrates temporal precision warranting investigation into potential coordination mechanisms, though multiple non-causal explanations remain plausible.
+Project Trident identifies statistically significant temporal clustering (p = 0.002) with ritual events showing 3.5x higher proximity to policy actions than holidays. While correlation is verified, causation remains unestablished. The December 2025 cluster demonstrates temporal precision warranting investigation into potential coordination mechanisms, though multiple non-causal explanations remain plausible.
 
 ---
 
