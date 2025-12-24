@@ -1,4 +1,4 @@
-# PROJECT TRITON: Temporal Correlation Analysis of Policy Events and Cultural Calendars
+# PROJECT TRIDENT: Temporal Correlation Analysis of Policy Events and Cultural Calendars
 
 ## 1. Research Objective
 
@@ -171,15 +171,15 @@ The observed temporal clustering patterns warrant expanded investigation into:
 
 ## 8. Data Availability
 
-All analysis datasets are available in the `Project_Triton/` directory:
+All analysis datasets are available in the `Project_Trident/` directory:
 - `Lag_Correlation_Analysis_Verified_Holidays.csv` - Full correlation matrix
 - `Holidays_2015_2025_Verified.csv` - Holiday baseline dataset
 - `ritual_events_parsed.csv` - Ritual events timeline
-- `verify_triton_analysis.py` - Statistical verification script (reproducible)
+- `verify_trident_analysis.py` - Statistical verification script (reproducible)
 
 ## 9. Conclusion
 
-Project Triton identifies statistically significant temporal clustering between ritual events and policy/infrastructure announcements across the 2015-2025 period. Ritual events demonstrate 3.5x higher temporal proximity to policy actions compared to annual holidays (p = 0.002), with particularly dense clustering in December 2025 (100% of events within ±7 days, mean lag 0.4 days).
+Project Trident identifies statistically significant temporal clustering between ritual events and policy/infrastructure announcements across the 2015-2025 period. Ritual events demonstrate 3.5x higher temporal proximity to policy actions compared to annual holidays (p = 0.002), with particularly dense clustering in December 2025 (100% of events within ±7 days, mean lag 0.4 days).
 
 While these patterns are statistically robust, the analysis does not establish causation or eliminate alternative explanations including institutional calendar synchronization, strategic communications timing, or fiscal deadline clustering. The December 2025 cluster demonstrates temporal precision that warrants targeted investigation into potential coordination mechanisms, though multiple non-causal explanations remain plausible.
 
