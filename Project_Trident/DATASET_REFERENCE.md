@@ -18,3 +18,5 @@ The output of the correlation engine. Maps the `lag_days` between Ritual and Anc
 
 ### 5. `PROJECT_TRIDENT_CASE_STUDY.md`
 The formal narrative report synthesized from the above data points.
+
+**data_complete (True/False): Flags row integrity. True = fully parsed/complete (exact date, full snippet, verified fields). False = partial/incomplete (e.g., vague date like "2 months ago", missing elements, or needs manual review). Does NOT indicate event validity—all rows are sourced signals for correlation testing.**
