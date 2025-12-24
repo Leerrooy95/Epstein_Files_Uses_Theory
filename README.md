@@ -1,4 +1,4 @@
-# Epstein_Files_Uses_Theory (v3.3)
+# Epstein_Files_Uses_Theory (v4.5)
 
 ## Overview
 This repository provides a data-driven investigation into the **Geopolitical Utility** of the Jeffrey Epstein investigative files. We analyze how information disclosure (leaks/unsealings) functions as a mechanism of **Reflexive Control** to influence AI infrastructure, sovereign capital flows, and technology transfer.
