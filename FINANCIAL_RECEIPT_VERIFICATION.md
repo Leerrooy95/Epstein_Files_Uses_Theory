@@ -1,8 +1,6 @@
 # Financial Receipt Verification: December 2025 Fund Flow Analysis
 
-**Epstein_Files_Uses_Theory v6.0| December 25, 2025**
-
-**Project_Trident/Best_Data_For_Project_Trident**
+**Epstein_Files_Uses_Theory v6.0 | December 25, 2025**
 
 ---
 
