@@ -6,6 +6,8 @@
 
 ---
 
+**The Pearson correlation coefficient (r) measures the strength and direction of linear relationships between variables. Values range from -1 to +1, where r = 0 indicates no relationship. In this research, r = +0.6196 between friction events and compliance events (with 14-day lag) indicates a moderate-to-strong positive correlation—when friction spikes occur, compliance events reliably follow approximately two weeks later. This is the mathematical signature of a feedback mechanism.**
+
 ## Quick Summary
 
 This repository documents statistically significant correlations between:
