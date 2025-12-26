@@ -171,24 +171,11 @@ The three prongs do not require central coordination to produce systematic effec
 
 ## What This Document Does NOT Claim
 
-1. ~~Central coordination between the three prongs~~ - The pattern may be emergent from aligned incentives
-2. ~~Criminal intent by any specific actor~~ - Regulatory choices may reflect policy trade-offs, not conspiracy
-3. ~~Certainty about causal mechanisms~~ - Correlation ≠ causation; temporal clustering may be coincidental
-4. ~~That "Operation Trident Breach" (FBI) is related~~ - The name similarity is coincidental; that was a Zeus botnet prosecution
-5. ~~That "Trident Trust" (offshore fiduciary) is part of this architecture~~ - It's a real company but not documented as connected to these patterns
-
----
-
-## Verification Pathways
-
-| Claim | How to Verify |
-|-------|---------------|
-| CFIUS § 800.307 exemption text | 31 CFR § 800.307 (Cornell Law, eCFR) |
-| GlobalFoundries ownership | GFS 10-K SEC filings |
-| CHIPS Act funding | Commerce Department award announcements |
-| Sanabil/Founders Fund | April 2023 LP disclosure |
-| December 2025 timeline | Contemporaneous news coverage (sources linked in repository) |
-| Statistical correlations | Run `/Control_Proof/correlation_test.py` against provided datasets |
+1. ~ Central coordination between the three prongs~ - The pattern may be emergent from aligned incentives
+2. ~ Criminal intent by any specific actor~ - Regulatory choices may reflect policy trade-offs, not conspiracy
+3. ~ Certainty about causal mechanisms~~ - Correlation ≠ causation; temporal clustering may be coincidental
+4. ~ That "Operation Trident Breach" (FBI) is related~~ - The name similarity is coincidental; that was a Zeus botnet prosecution
+5. ~ That "Trident Trust" (offshore fiduciary) is part of this architecture~~ - It's a real company but not documented as connected to these patterns
 
 ---
 
