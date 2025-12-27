@@ -7,6 +7,30 @@ The contrast is stark: US foreign aid fell from **$63 billion in FY2024** [Bette
 
 ---
 
+## What China captures versus what it doesn't replace
+
+Understanding the limits of this correlation requires distinguishing between what Chinese engagement actually displaces and what it leaves untouched.
+
+**What China is systematically capturing:**
+- **Infrastructure and construction**: Ports, railways, highways, industrial parks - tangible assets with long-term strategic value
+- **Extractive industries**: Critical minerals (cobalt, lithium, copper, rare earths), oil and gas processing, mining rights
+- **Diplomatic recognition**: Taiwan's ally count continues eroding; 53/54 African nations endorsed reunification language in 2024
+- **Trade relationships**: Becoming the largest trading partner in regions where the US previously dominated
+- **Strategic geography**: Port access (Panama, Sri Lanka, Pakistan, East Africa), potential dual-use facilities (Solomon Islands, Cambodia)
+
+**What China is not replacing:**
+- **Humanitarian emergency response**: Refugee operations, disaster relief, famine response - Beijing provides minimal equivalent
+- **Health systems**: PEPFAR, malaria programs, maternal health - China's one HIV funding announcement in South Africa is the exception proving the rule
+- **Civil society and governance**: Democracy support, anti-corruption programs, judicial reform, press freedom - not part of Beijing's model
+- **Food security**: WFP contributions, emergency food aid, agricultural development programs
+- **Education and exchange**: Scholarship programs, institutional partnerships (though Confucius Institutes partially fill this)
+
+This distinction matters analytically: China is not becoming a replacement hegemon offering equivalent services. Beijing is selectively capturing **durable strategic assets** while allowing humanitarian vacuums to persist. The result is not a transfer of influence but a **restructuring of what influence means** - from soft power and institutional presence toward hard infrastructure and resource access.
+
+Countries losing US health and humanitarian support don't receive Chinese equivalents. They receive Chinese roads, ports, and mining contracts - which serve different populations and create different dependencies.
+
+---
+
 ## The collapse of American foreign assistance infrastructure
 
 The Trump administration executed the most extensive restructuring of US foreign aid in American history. [Better World Campaign](https://betterworldcampaign.org/impact-of-foreign-assistance-cuts) On January 20, 2025, Executive Order 14169 froze all foreign development assistance for 90 days. [ISS Africa](https://issafrica.org/iss-today/data-modelling-reveals-the-heavy-toll-of-usaid-cuts-on-africa) [Wikipedia](https://en.wikipedia.org/wiki/Executive_Order_14169) By March, Secretary Marco Rubio announced that **5,200 USAID contracts—83% of all programs**—would be permanently cancelled. [Arab Center DC](https://arabcenterdc.org/resource/what-trumps-aid-cuts-mean-for-the-middle-east-and-north-africa/) USAID officially ceased operations on July 1, 2025, with remaining functions absorbed into the State Department. [Foley Hoag](https://foleyhoag.com/news-and-insights/publications/alerts-and-updates/2025/december/us-policy-shift-on-foreign-aid-key-legal-issues-for-usaid-contractors-ngos-and-life-sciences/)
