@@ -20,6 +20,19 @@ This repository documents statistically significant correlations between:
 
 ---
 
+## Theory Origins: The September 26, 2025 Convergence
+
+This theory originated from observing a same-day pincer on **September 26, 2025**:
+
+| Event | Detail | Source |
+|-------|--------|--------|
+| **Epstein docs release** | House Oversight Democrats release 8,544 records including "Reminder: Elon Musk to island Dec. 6 (is this still happening?)" | CNBC, Axios, PBS, House Oversight |
+| **Netanyahu roundtable** | Same day, Israeli Consulate NYC: "We have to talk to Elon. He's not an enemy, he's a friend." Calls TikTok "most important purchase," social media "weapons" | Antiwar.com, PressTV, leaked video |
+
+**The pattern**: Reputational friction on Musk (Epstein reference) + immediate diplomatic "friend" signaling within hours. This same-day convergence became the template for identifying the "Geopolitical Thermostat" verified statistically (r = +0.6196, 14-day lag).
+
+---
+
 ## Key Statistics
 
 | Finding | Value | Status |
@@ -337,6 +350,7 @@ The claim is structural: performative noise enables detection of quieter correla
 ## Contact
 
 - **GitHub:** [@Leerrooy95](https://github.com/Leerrooy95)
+- **Submissions:** Senate Select Committee on Intelligence, DoD Inspector General
 
 ---
 
