@@ -1,4 +1,4 @@
-# Epstein Files Uses Theory v6.1
+# Epstein Files Uses Theory v6.2
 
 **A data-driven analysis of temporal correlations between friction events, policy shifts, ritual timing, and capital flows**
 
@@ -20,7 +20,7 @@ This repository documents statistically significant correlations between:
 
 **Core Finding:** Epstein file releases correlate with institutional compliance events at a **14-day lag** (r = +0.6196, p < 0.05). Ritual timing correlates with policy events at **3.5x baseline** (p = 0.002).
 
-**v6.1 Update:** New **Trident Mechanism** framework documents the three-prong architecture (Technical Opacity + Regulatory Exemptions + Administrative Timing) enabling these patterns. Policy brief added for external audiences.
+**v6.2 Update:** New **Repository Synthesis** framework integrates this repository with DOGE_Global_Effects and BRICS-NDB-LocalCurrency-DiD into a unified three-layer analytical model. New **Main Characters** analysis maps cabinet performativity against timeline patterns. New **Implications** module documents China BRI expansion ($124B H1 2025) correlating with US aid contraction.
 
 ---
 
@@ -35,13 +35,59 @@ This repository documents statistically significant correlations between:
 | December 2025 cluster | 100% within ±7 days, 0.4 day mean lag | ✅ Verified |
 | Bull & Bear sell signal | 8.5 on Dec 19 (Chanukah Day 6) | ✅ Documented |
 | Dark pool pre-positioning | Dec 10-21 (Defense/Space sectors) | ✅ Documented |
+| China BRI H1 2025 | $124B (near full-year 2024 total) | ✅ Verified |
+| Africa BRI surge | 400% increase H1 2024 → H1 2025 | ✅ Verified |
+
+---
+
+## What's New in v6.2
+
+### Repository Synthesis: The Three-Layer Model
+New `Repository_Synthesis.md` integrates three repositories into a unified analytical framework documenting different facets of the same structural shift:
+
+| Layer | Repository | Focus | Primary Metric |
+|-------|------------|-------|----------------|
+| **1. Attention Capture** | Epstein_Files_Uses_Theory | Document releases → compliance events | r = 0.6196, 14-day lag |
+| **2. Vacuum Creation** | DOGE_Global_Effects | USAID cuts → instability → backfill | r = 0.42-0.69, 3-12 month lags |
+| **3. Alternative Capture** | BRICS-NDB-LocalCurrency-DiD | BRICS expansion → local currency lending | +25.5 pp (p < 0.001) |
+
+**Unified Thesis:** US domestic institutional chaos creates foreign policy vacuums that adversaries systematically capture, while alternative financial architecture absorbs departing states.
+
+### Main Characters Framework
+New `Main_Characters.md` maps cabinet performers against timeline patterns, prompted by Axios's December 27, 2025 ["Trump's Cabinet of main characters"](https://www.axios.com/2025/12/27/trump-cabinet-main-characters-patel-hegseth-noem) article.
+
+| Individual | Position | Structural Function | Pattern Relevance |
+|------------|----------|---------------------|-------------------|
+| **Kash Patel** | FBI Director | Controls Epstein file release mechanics | Gates documents central to theory |
+| **Pete Hegseth** | Secretary of War | Generates high-volume controversy ($2B rebrand) | "Department of War" consumed 15-20 news cycles during China-Japan escalation |
+| **Kristi Noem** | DHS Secretary | $220M ad campaign attention drain | Dual-track controversy (policy + personal brand) |
+| **Dan Bongino** | Former FBI Deputy | Bridge MAGA media → institutional control | Resignation timed around Dec 19 deadline |
+
+**Key Finding:** Q4 2025 "main character" saturation consumed an estimated **38-49 cumulative news cycle days**, correlating with under-covered events including BRI expansion, USAID dissolution, and Epstein file implementation.
+
+### Implications: China BRI Expansion During US Retrenchment
+New `Implications.md` documents the geopolitical correlation between US foreign aid collapse and Chinese strategic expansion.
+
+| Metric | US Trajectory | China Trajectory |
+|--------|---------------|------------------|
+| **Aid/Investment H1 2025** | $63B → $31B proposed (51% cut) | $124B BRI engagement |
+| **Africa** | $12.7B portfolio cut 20-26% | $39B construction contracts (400% surge) |
+| **PEPFAR** | 65% of awards terminated | First-ever Chinese HIV funding (South Africa) |
+| **USAID** | Dissolved July 1, 2025 | $51B FOCAC pledge (Sept 2025) |
+
+**Distinction:** China is not replacing American humanitarian programs. Beijing is selectively capturing **durable strategic assets** (ports, railways, mining rights) while allowing humanitarian vacuums to persist. The result is a restructuring of what influence means—from soft power toward hard infrastructure.
+
+### New Files
+- `Repository_Synthesis.md` – Three-layer analytical framework synthesis
+- `Main_Characters.md` – Cabinet performativity analysis
+- `Implications.md` – China BRI expansion / US aid contraction correlation
 
 ---
 
 ## What's New in v6.1
 
 ### The Trident Mechanism Framework
-New unified three-prong model explaining HOW the documented patterns are structurally enabled:
+Unified three-prong model explaining HOW the documented patterns are structurally enabled:
 
 | Prong | Mechanism | Documentation |
 |-------|-----------|---------------|
@@ -52,15 +98,7 @@ New unified three-prong model explaining HOW the documented patterns are structu
 **Key Insight:** The three prongs do not require central coordination—aligned incentives produce emergent architecture.
 
 ### Policy Brief for External Audiences
-New `HOW_THIS_HAPPENED_Policy_Brief.md` provides:
-- Specific regulatory citations (31 CFR § 800.307, CHIPS Act Sec. 103(b)(5))
-- Questions for Congressional oversight
-- Investigative threads for journalists
-- Explicit methodology and limitations
-
-### New Files
-- `Project_Trident/The_Trident.md` – Three-prong mechanism framework
-- `HOW_THIS_HAPPENED_Policy_Brief.md` – External-facing policy document
+`HOW_THIS_HAPPENED_Policy_Brief.md` provides specific regulatory citations, Congressional oversight questions, and investigative threads for journalists.
 
 ---
 
@@ -97,7 +135,11 @@ Epstein_Files_Uses_Theory/
 ├── Report.md                              # Executive summary
 ├── CITATION.cff                           # Citation metadata
 │
-├── HOW_THIS_HAPPENED_Policy_Brief.md      # Policy document for external audiences (NEW v6.1)
+├── Repository_Synthesis.md                # Three-layer framework synthesis (NEW v6.2)
+├── Main_Characters.md                     # Cabinet performativity analysis (NEW v6.2)
+├── Implications.md                        # China BRI expansion analysis (NEW v6.2)
+│
+├── HOW_THIS_HAPPENED_Policy_Brief.md      # Policy document for external audiences (v6.1)
 ├── FINANCIAL_RECEIPT_VERIFICATION.md      # Fund flow evidence (v6.0)
 ├── China_State_Media_Null_and_Findings.md # China media analysis
 ├── CRUCIAL_Synthesis_Dec19.md             # December 19 convergence
@@ -116,14 +158,14 @@ Epstein_Files_Uses_Theory/
 │   ├── Regulatory_Map_Data_CLEANED.csv
 │   └── Coalition_Narrative_Map_2015-2025.csv
 │
-├── Control_Proof/                         # Statistical verification (SMOKING GUN)
+├── Control_Proof/                         # Statistical verification
 │   ├── correlation_results.txt
 │   ├── correlation_test.py
 │   └── MASTER_reflexive_control_v2.csv
 │
 └── Project_Trident/                       # Temporal correlation case study
     ├── PROJECT_TRIDENT_CASE_STUDY.md      # Main analysis
-    ├── The_Trident.md                     # Three-prong mechanism framework (NEW v6.1)
+    ├── The_Trident.md                     # Three-prong mechanism framework (v6.1)
     ├── DATASET_REFERENCE.md
     ├── Veriify_Trident_Analysis.py
     ├── ritual_events_parsed.csv
@@ -141,9 +183,28 @@ Epstein_Files_Uses_Theory/
 
 **Hypothesis:** Epstein file releases function as a "Geopolitical Thermostat"—friction events that predict institutional compliance events with measurable lag times.
 
+### The Three-Layer Model (v6.2)
+
+The thermostat operates within a larger three-layer structure:
+
+1. **Layer 1 – Attention Capture (This Repository):** High-visibility domestic events ("flashbangs") consume media bandwidth during windows when institutional friction events occur. The 14-day lagged correlation (r = 0.6196) is the mathematical signature.
+
+2. **Layer 2 – Vacuum Creation (DOGE_Global_Effects):** US foreign aid collapse (83% USAID cuts) creates governance vacuums that manifest as instability 3-6 months later.
+
+3. **Layer 3 – Alternative Capture (BRICS-NDB):** Alternative financial architecture absorbs departing states, with +25.5 pp increase in local-currency lending post-2024 Kazan summit.
+
+**The feedback loop:**
+```
+US domestic chaos → Attention consumed (Layer 1)
+                 → Foreign aid collapses (Layer 2)
+                 → Countries join alternative systems (Layer 3)
+                 → Alternative systems grow
+                 → Cycle accelerates
+```
+
 ### The Trident Mechanism (v6.1)
 
-The thermostat operates through three convergent prongs:
+Within Layer 1, the thermostat operates through three convergent prongs:
 
 1. **Technical Opacity:** Banking infrastructure defaults (NULL fields, wire stripping, cover payment bifurcation) create data blind spots
 2. **Regulatory Exemptions:** Codified pathways (CFIUS § 800.307, CHIPS Act exclusions, FARA non-enforcement) bypass review mechanisms
@@ -177,12 +238,30 @@ These prongs do not require coordination—aligned incentives produce emergent e
 
 ## Key Modules
 
+### Repository Synthesis (NEW v6.2)
+Integrates three repositories tracking different facets of the same phenomenon.
+- **Finding:** Geographic overlap—countries appearing in DOGE cuts also receive BRI investment and join BRICS
+- **Method:** Cross-repo lag pattern analysis
+- **Prediction:** Q1 2026 uprisings in DOGE-predicted countries; continued de-dollarization acceleration
+
+### Main Characters (NEW v6.2)
+Maps cabinet performativity against institutional timing windows.
+- **Finding:** 38-49 cumulative news cycle days consumed by four individuals in Q4 2025
+- **Finding:** Bongino resignation timed around Dec 19 Transparency Act deadline
+- **Method:** Verified sourcing across government documents, wire services, and cross-spectrum outlets
+
+### Implications (NEW v6.2)
+Documents China BRI expansion correlating with US aid collapse.
+- **Finding:** $124B BRI engagement H1 2025 vs. $63B→$31B US aid cut
+- **Finding:** Africa construction contracts +400% YoY
+- **Key distinction:** China captures durable assets; does not replace humanitarian programs
+
 ### Project Trident (Temporal Correlation)
 Tests whether ritual/religious events cluster with policy events beyond chance.
 - **Finding:** 50.7% proximity vs. 19.9% baseline = **3.5x ratio**
 - **Significance:** p = 0.002 (Mann-Whitney U test)
 - **December 2025:** 100% within ±7 days, 0.4 day mean lag
-- **NEW v6.1:** `The_Trident.md` documents the three-prong mechanism enabling these patterns
+- **v6.1:** `The_Trident.md` documents the three-prong mechanism enabling these patterns
 
 ### Control_Proof (Statistical Verification)
 14-day lagged correlation between friction and compliance events.
@@ -199,19 +278,38 @@ Fund flow data documenting institutional behavior during December 2025.
 - **Finding:** Dark pool accumulation in Defense/Space 7-14 days before distraction
 - **Finding:** Bull & Bear sell signal triggered on same day as Epstein release
 
-### Policy Brief (NEW v6.1)
+### Policy Brief (v6.1)
 External-facing document for policymakers and journalists.
 - **Contents:** Regulatory citations, oversight questions, investigative threads
 - **Purpose:** Translate documented patterns into actionable policy questions
 
 ---
 
+## Connected Repositories
+
+This repository is part of a three-layer analytical framework:
+
+| Repository | Focus | Link |
+|------------|-------|------|
+| **Epstein_Files_Uses_Theory** | Attention capture mechanism | [This repo](https://github.com/Leerrooy95/Epstein_Files_Uses_Theory) |
+| **DOGE_Global_Effects** | USAID cuts → instability → backfill | [Link](https://github.com/Leerrooy95/DOGE_Global_Effects) |
+| **BRICS-NDB-LocalCurrency-DiD** | Alternative financial architecture | [Link](https://github.com/Leerrooy95/BRICS-NDB-LocalCurrency-DiD) |
+
+See `Repository_Synthesis.md` for the full three-layer integration.
+
+---
+
 ## For External Readers
 
 **Start Here:**
-1. `HOW_THIS_HAPPENED_Policy_Brief.md` – Accessible overview with regulatory citations
-2. `Project_Trident/The_Trident.md` – Three-prong mechanism explanation
+1. `Repository_Synthesis.md` – Three-layer framework overview (v6.2)
+2. `HOW_THIS_HAPPENED_Policy_Brief.md` – Accessible overview with regulatory citations
 3. `Report.md` – Executive summary of findings
+
+**For Context:**
+1. `Main_Characters.md` – How cabinet performers connect to timeline patterns
+2. `Implications.md` – China BRI expansion during US retrenchment
+3. `Project_Trident/The_Trident.md` – Three-prong mechanism explanation
 
 **For Verification:**
 1. `Control_Proof/correlation_test.py` – Run the correlation analysis yourself
@@ -226,7 +324,8 @@ External-facing document for policymakers and journalists.
 2. **Statistical Testing:** Pearson correlation, Mann-Whitney U, permutation testing
 3. **Temporal Analysis:** Lag correlation analysis with 14-day window
 4. **Source Triangulation:** Government filings, financial data, news archives
-5. **Explicit Limitations:** Documented in each module and policy brief
+5. **Cross-Repo Validation:** Patterns verified across three independent datasets
+6. **Explicit Limitations:** Documented in each module and policy brief
 
 ---
 
@@ -239,21 +338,26 @@ Based on documented patterns:
 | Market correction 2-10% | Jan-Feb 2026 | S&P 500 tracking |
 | Tu BiShvat policy action | Feb 12, 2026 | Policy/funding shifts |
 | Q4 2025 Gulf SWF positioning | Feb 2026 13F filings | Mubadala/PIF disclosures |
+| DOGE-predicted uprisings | Q1 2026 | Mali, Syria, Sudan instability |
+| BRICS local currency share increase | 2026 | NDB lending data |
+| "Main character" saturation at file deadlines | Ongoing | Media cycle tracking |
 
 ---
 
 ## How to Use This Repository
 
 **For Researchers:**
-1. Start with `Report.md` for executive summary
+1. Start with `Repository_Synthesis.md` for the three-layer framework
 2. Review `Control_Proof/` for statistical verification
 3. Explore `Project_Trident/` for temporal correlation methodology
 4. Check `FINANCIAL_RECEIPT_VERIFICATION.md` for December 2025 fund flow evidence
+5. Cross-reference with DOGE_Global_Effects and BRICS-NDB repos for full picture
 
 **For Policymakers/Journalists:**
 1. Start with `HOW_THIS_HAPPENED_Policy_Brief.md`
-2. Review `Project_Trident/The_Trident.md` for mechanism explanation
-3. Cross-reference `09_Silicon_Sovereignty/` for infrastructure context
+2. Review `Main_Characters.md` for cabinet timing analysis
+3. Review `Implications.md` for BRI/aid correlation
+4. Cross-reference `09_Silicon_Sovereignty/` for infrastructure context
 
 ---
 
@@ -275,13 +379,19 @@ Based on documented patterns:
 
 This repository documents correlations, not causation. All findings are derived from publicly available data using standard statistical methods. The author makes no claims about intent or coordination—only that the documented patterns exist and are statistically significant. Each module includes explicit limitations and alternative explanations.
 
+**The "Main Characters" framework specifically disclaims:**
+- No claim that individuals are consciously coordinating
+- No claim that performativity is the *cause* of institutional events
+- No claim about individual motivations or intent
+
+The claim is structural: performative noise patterns enable detection of quieter correlations.
+
 ---
 
 ## Contact
 
 - **GitHub:** [@Leerrooy95](https://github.com/Leerrooy95)
-- **Submissions:** Senate Select Committee on Intelligence, DoD Inspector General
 
 ---
 
-*Last updated: December 26, 2025 | Version 6.1*
+*Last updated: December 27, 2025 | Version 6.2*
