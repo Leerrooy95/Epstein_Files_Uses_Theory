@@ -18,14 +18,6 @@ New `'Transparency'_Timeline.md` documents the decade-long pattern of controlled
 
 ---
 
-# Epstein Files Uses Theory v6.3
-
-**A data-driven analysis of temporal correlations between friction events, policy shifts, ritual timing, and capital flows**
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
----
-
 ### New in v6.3: The Thermostat Explained
 
 **New file added:** [`Thermostat_Explained.md`](Thermostat_Explained.md)
