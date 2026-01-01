@@ -52,7 +52,7 @@ TLDR;
 
 Governments "have to" hide what they're doing because the gap between what's politically necessary (public demands) and what's economically possible (system constraints) is unbridgeable through honest democratic process.
 
-[Claude's Analysis: Origins of the Thermostat](Claude's_Analysis.md)
+[Claude's Analysis](Claude's_Analysis.md)
 
 ---
 
