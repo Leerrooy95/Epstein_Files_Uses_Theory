@@ -38,6 +38,12 @@ Key findings:
 
 This addition clarifies the "why" behind the documented patterns while remaining fully grounded in the repository's data and statistical validations.
 
+**Repos to Consider:**
+
+https://github.com/Leerrooy95/Project-Chrysanthemum_Japan-China-AI
+
+https://github.com/Leerrooy95/Sovereign-Capital-Audit
+
 ---
 
 ## Quick Summary
