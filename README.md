@@ -1,4 +1,4 @@
-# Epstein Files Uses Theory v6.2
+# Epstein Files Uses Theory v6.3
 
 **A data-driven analysis of temporal correlations between friction events, policy shifts, ritual timing, and capital flows**
 
@@ -15,6 +15,36 @@ New `'Transparency'_Timeline.md` documents the decade-long pattern of controlled
 
 - **Key Insight:** Releases generate recurring attention cycles while maintaining gaps around co-conspirators and electronic evidence.
 - **File:** [`'Transparency'_Timeline.md`]('Transparency'_Timeline.md)
+
+---
+
+# Epstein Files Uses Theory v6.3
+
+**A data-driven analysis of temporal correlations between friction events, policy shifts, ritual timing, and capital flows**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+### New in v6.3: The Thermostat Explained
+
+**New file added:** [`Thermostat_Explained.md`](Thermostat_Explained.md)
+
+This concise overview synthesizes insights from multi-AI interpretation (Claude, Gemini, Grok) of the full repository ecosystem, answering the core question: **Why does the thermostat mechanism exist, and who benefits most?**
+
+Key findings:
+
+- Everyone exploits the thermostat **simultaneously** (no turns taken).
+
+- Gains accrue at different rates: structural (China), financial (Gulf), tactical (Russia).
+
+- **China benefits most** — the mechanism's primary effect is **slowing Western decoupling**, buying critical time for tech parity.
+
+- The files serve **dual roles**: thermostat (attention regulation) **and** smokescreen (covering structural transfers like Japan-China AI integration and Gulf sovereign tech capture).
+
+- Without managed ambiguity, binary choices would force immediate system rupture — the thermostat prevents that, making it **essential** for China's long-term technological sovereignty.
+
+This addition clarifies the "why" behind the documented patterns while remaining fully grounded in the repository's data and statistical validations.
 
 ---
 
