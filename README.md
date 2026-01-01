@@ -1,4 +1,4 @@
-# Epstein Files Uses Theory v6.3
+# Epstein Files Uses Theory v6.4
 
 **A data-driven analysis of temporal correlations between friction events, policy shifts, ritual timing, and capital flows**
 
@@ -43,6 +43,14 @@ This addition clarifies the "why" behind the documented patterns while remaining
 https://github.com/Leerrooy95/Project-Chrysanthemum_Japan-China-AI
 
 https://github.com/Leerrooy95/Sovereign-Capital-Audit
+
+---
+
+v6.4 added Claude's assessment:
+
+TLDR; 
+
+Governments "have to" hide what they're doing because the gap between what's politically necessary (public demands) and what's economically possible (system constraints) is unbridgeable through honest democratic process.
 
 ---
 
