@@ -1,4 +1,4 @@
-**This repo is Claude's response to me asking, "How would it have gotten to a point that governments have to hide what they're doing behind distractions to stay afloat though? Like, to the point it's essential?"**
+**This repo is Claude's response to my question, "How would it have gotten to a point that governments have to hide what they're doing behind distractions to stay afloat though? Like, to the point it's essential?"**
 
 # Claude's Response
 
