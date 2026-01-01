@@ -52,7 +52,8 @@ TLDR;
 
 Governments "have to" hide what they're doing because the gap between what's politically necessary (public demands) and what's economically possible (system constraints) is unbridgeable through honest democratic process.
 
-Claude's_Analysis.md
+https://github.com/Leerrooy95/Epstein_Files_Uses_Theory/blob/8ee606fc1a192ca142a747df51fbe458abd9851f/Claude's_Analysis.md
+
 ---
 
 ## Quick Summary
