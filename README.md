@@ -457,4 +457,4 @@ The claim is structural: performative noise patterns enable detection of quieter
 
 ---
 
-*Last updated: December 27, 2025 | Version 6.2*
+*Last updated: January 1, 2026| Version 6.4*
