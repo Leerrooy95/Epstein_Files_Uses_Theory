@@ -196,6 +196,7 @@ Raw event count analysis replaces subjective 1-10 scoring:
 - **Biopharma.csv** — FDA/DOGE conflicts, Neuralink, Roivant
 - **Infrastructure_Forensics.csv** — Adobe license cuts → redaction failures chain
 - **High_Growth_Companies_2015_2026.csv** — Low-publicity biotech growth
+- Note: This dataset was 2025's companies with the highsst growth and least publicity. For that reason, the scraping keywords had to be specific. Future dates in datasets were scraped projections from sources.
 
 ### Key New Findings
 
