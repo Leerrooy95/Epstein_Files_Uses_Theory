@@ -1,7 +1,7 @@
 # New Data 2026: Correlation Analysis Report
 
 **Analysis Date:** January 10, 2026  
-**Datasets:** 6 new CSVs (2,087 total records)  
+**Datasets:** 7 CSVs (2,121 total records)  
 **Methodology:** Raw event count correlation (replacing subjective 1-10 scoring)
 
 ---
@@ -105,12 +105,13 @@ The Dec 14-26, 2025 window provides the clearest demonstration of convergent clu
 
 ### December 22-23 Convergence
 
-On these two days, **FOUR independent signal types** converged:
+On these two days, **FIVE independent signal types** converged:
 
 1. **Friction:** Epstein redaction failures exposed (NYT: "easily recovered")
 2. **Geopolitics:** China EU dairy tariffs (42.7%) take effect
 3. **Financial:** BlackRock names Bitcoin ETF "top 2025 theme"
 4. **Policy:** Travel ban expansion coverage, DOGE year-end analysis
+5. **Cyber/Intelligence:** CRINK nation-state threat analysis for 2026 published (ITpro)
 
 This is the "pincer" pattern in action—not sequential causation, but simultaneous exploitation of the same calendar anchor (winter solstice window, fiscal year-end, holiday attention gaps).
 
@@ -193,6 +194,43 @@ The tariff actions cluster precisely within the December pincer window, demonstr
 
 ---
 
+## CRINK Intelligence Dataset Integration
+
+A new dataset (CRINK_Intelligence_Dataset_Final_Verified.csv) tracking the emergence of "CRINK" (China-Russia-Iran-North Korea) as an analytical framework reveals additional alignment points.
+
+### Key Alignments
+
+| Date | Framework Event | CRINK Event |
+|------|-----------------|-------------|
+| Sep 26, 2025 | Theory origin (Epstein + Netanyahu) | CSIS publishes "CRINK Diplomatic Ties" analysis |
+| Dec 22, 2025 | Peak convergence day | ITpro publishes CRINK cyber threat analysis |
+
+### September 26, 2025 — Triple Convergence
+
+The theory origin date now shows three-way alignment:
+1. **Morning:** Epstein estate documents (8,544 records) released
+2. **Same day:** Netanyahu holds private influencer roundtable in NYC
+3. **Same day:** CSIS publishes CRINK diplomatic coordination analysis
+
+The formalization of CRINK as an analytical concept converged with the friction event that originated this theory.
+
+### Discourse Emergence Pattern
+
+```
+2025-09: ███████ (7) ← UNGA window / Theory origin
+2025-10: ██████ (6)  ← Think tank acceleration  
+2025-11: ████████ (8) ← Peak coverage
+2025-12: ███ (3)     ← Pincer window
+```
+
+CSIS published 10 of 34 total CRINK analyses, establishing themselves as the primary institutional voice during the exact period when thermostat patterns intensified.
+
+### Fifth Signal Type Confirmed
+
+The Dec 22 cyber analysis adds intelligence/security assessment to the convergence, making it a five-signal event rather than four.
+
+---
+
 ## Revised Theoretical Framework
 
 ### From Sequence to Convergence
@@ -236,6 +274,8 @@ The raw data supports a **Convergence Model**:
 | 14-day lag pattern | Primary mechanism | Secondary (r = 0.18) | ⚠️ Revised |
 | Simultaneous clustering | Not emphasized | Primary mechanism | 🆕 New finding |
 | December 2025 pincer | Documented | Verified with daily data | ✅ Confirmed |
+| Signal types in convergence | 4 types | 5 types (added Cyber/Intel) | 🆕 Expanded |
+| Sep 26 alignment | Epstein + Netanyahu | + CSIS CRINK analysis | 🆕 Triple convergence |
 
 ---
 
@@ -253,12 +293,20 @@ The raw data supports a **Convergence Model**:
 
 | File | Description |
 |------|-------------|
+| 2026_Analysis.md | This analysis report |
 | Additional_Anchors_Jan2026_Final.csv | Policy, geopolitics, ritual events Dec-Jan |
 | Biopharma.csv | FDA/DOGE conflict and corporate events |
 | BlackRock_Timeline_Full_Decade.csv | Crypto pivot, government ties, strategic shifts |
 | High_Growth_Companies_2015_2026.csv | Low-publicity biotech growth tracking |
 | Infrastructure_Forensics.csv | DOGE cuts, Epstein legislation, ritual events |
 | Timeline_Update_Jan2026_Corrected.csv | December 2025-January 2026 events |
+
+### Related Files (Project Root)
+
+| File | Description |
+|------|-------------|
+| CRINK_Intelligence_Dataset_Final_Verified.csv | CRINK axis discourse tracking (34 records) |
+| CRINK_Analysis.md | CRINK integration analysis |
 
 ---
 
