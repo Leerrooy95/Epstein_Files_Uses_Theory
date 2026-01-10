@@ -1,4 +1,4 @@
-# Epstein Files Uses Theory
+# Epstein Files Uses Theory v7.0
 
 A data-driven analysis of temporal correlations between friction events, policy shifts, and capital flows (2015-2026).
 
