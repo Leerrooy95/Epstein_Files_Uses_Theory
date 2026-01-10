@@ -127,7 +127,17 @@ Epstein_Files_Uses_Theory/
 │   └── Project_Trident/                  # Temporal correlation study
 │       ├── PROJECT_TRIDENT_CASE_STUDY.md
 │       ├── The_Trident.md                # Three-prong mechanism
+│       ├── DATASET_REFERENCE.md
+│       ├── Verify_Trident_Analysis.py
 │       └── Best_Data_For_Project_Trident/
+│           ├── Expanded_Policy_Anchors.csv
+│           ├── Fund_Flow_Ritual_Coordination_20251225.csv
+│           ├── Holidays_2015_2025_Verified.csv
+│           ├── Lag_Correlation_Analysis_Verified_Holidays.csv
+│           ├── aid_timeline_clean.csv
+│           ├── policy_cleaned.csv
+│           ├── ritual_events_parsed.csv
+│           └── tech_filled_dates.csv
 │
 └── New_Data_2026/                        # January 2026 analysis
     ├── 2026_Analysis.md                  # Updated correlation findings
