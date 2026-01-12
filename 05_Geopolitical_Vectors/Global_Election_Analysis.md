@@ -123,4 +123,3 @@ This survey underscores China's adept navigation of global shifts, with allied p
 - [The UK Carves Its Own Path on China](https://thediplomat.com/2024/11/the-uk-carves-its-own-path-on-china/) 
 - [Britain's audit on China relations to be released in June, sources say](https://www.reuters.com/world/uk/britains-audit-china-relations-be-released-june-sources-say-2025-05-16/) 
 - [Starmer's China policy in the British national interest](https://www.chinadailyhk.com/hk/article/624959) 
-- [Starmer says China policy cannot continue blowing 'hot and cold'](https://www.bbc.com/news/article
