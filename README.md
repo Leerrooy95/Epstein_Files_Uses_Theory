@@ -1,4 +1,4 @@
-# Epstein Files Uses Theory v7.5
+# Epstein Files Uses Theory v7.6
 
 A data-driven analysis of temporal correlations between friction events, policy shifts, and capital flows (2015-2026).
 
@@ -293,6 +293,24 @@ The "Main Characters" and "Implications" modules specifically disclaim any asser
 
 ---
 
+## Statistical Validation
+
+Core findings independently verified January 2026:
+- Original correlation (r = 0.6196, 2-week lag): ✅ Exact reproduction
+- Updated correlation (r = 0.6685, 0-lag): ✅ Reproduced as r = 0.6192  
+- Project Trident (p = 0.002): ✅ Exact reproduction
+- Ritual proximity (50.7% vs 19.9%): ✅ Exact reproduction
+- December 2025 anomaly: ✅ Confirmed (z = 2.35, p < 0.01)
+
+Extended analysis identified Granger causality (F = 32.49, p < 0.0001), 
+indicating friction events predict compliance 1-4 weeks later. This extends 
+the convergence model to include both simultaneous clustering and sequential 
+prediction components.
+
+See `VERIFICATION_REPORT_Jan2026.md` for complete independent analysis.
+
+---
+
 ## Citation
 
 ```bibtex
@@ -313,4 +331,4 @@ GitHub: [@Leerrooy95](https://github.com/Leerrooy95)
 
 ---
 
-*Last updated: January 10, 2026*
+*Last updated: January 11, 2026*
