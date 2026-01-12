@@ -1,0 +1,19 @@
+Date,Event_Type,Source,Content,Escalation_Level,Days_From_Raid,Context
+2025-10-26,Pre-Escalation,Axios/Fox News,"Graham announces Trump will brief Congress on 'potential future military operations against Venezuela and Colombia' after Asia trip. Says Trump has decided 'it's time for' Maduro 'to go'",3,-54,Initial public military threat positioning
+2025-10-27,Military_Threat,CBS Face the Nation,"Graham states land strikes in Venezuela are a 'real possibility.' USS Gerald R. Ford deployed. Says: 'Without a credible threat of the use of military force nothing changes in Venezuela'",4,-53,Explicit military escalation rhetoric
+2025-11-XX,Sustained_Pressure,X/Twitter Post,"Graham tweets: 'Without a credible threat of the use of military force nothing changes in Venezuela. When it comes to Maduro the time for talking is closing. The time for action to end this reign of terror in Venezuela is upon us'",5,-30 (est),Peak pre-raid rhetoric - timing unclear
+2025-12-16,Geopolitical_Linkage,Iran International/Fox News,"After classified briefing with Rubio/Hegseth Graham warns: 'If after all this Maduro is still in power. That's the worst possible signal you could send to Russia China Iran.' Links Maduro to Hezbollah",6,-3,CRITICAL: 3 days before Epstein Library release - connects Venezuela to Iran/China/Russia axis
+2025-12-19,FRICTION_EVENT,DOJ Release,Epstein Library released by DOJ - 900+ pages of surveillance documents and evidence,10,0,THE PINCER WINDOW ANCHOR: Attention capture event
+2025-12-22,Convergence_Peak,Multiple Sources,Five signal types converge: China EU tariffs (42.7%) + BlackRock Bitcoin + CRINK threat analysis + Bull & Bear sell signal,9,+3,Peak convergence window - geopolitical/financial simultaneity
+2025-12-23,Infrastructure_Exposure,New York Times,Redaction failures exposed in Epstein documents due to inadequate tools (Adobe license cuts traced to DOGE March 2025 decision),8,+4,Infrastructure vulnerability revealed during attention capture
+2026-01-03,Military_Action,Multiple Sources,US military operation in Venezuela captures Nicolás Maduro,10,+15,Execution phase - major geopolitical shift
+2026-01-03,Victory_Declaration,X/Twitter,"Graham tweets: 'An evil narcoterrorist dictator has fallen creating a path for freedom for the wonderful highly intelligent hard working people of Venezuela.' Praises Trump and military",10,+15,Celebratory rhetoric - mission accomplished framing
+2026-01-04,Pattern_Continuation,CNN/Multiple,"Graham and MAGA allies rally behind Venezuela strike. Graham calls it an 'amazing achievement'",9,+16,Sustained victory narrative
+2026-01-11,Expansion_Threat,X/Twitter,"Graham tweets threat to Cuba: 'My advice to the commies running Cuba and oppressing its people: Call Maduro and ask him what to do…If I were you I'd be looking for a new place to live'",8,+23,Escalation to next target - pattern expansion
+2026-01-11,Iran_Threat_Expansion,Multiple Sources,"Graham addresses Iranian people: 'Your long nightmare will soon end help is on the way.' Calls for overthrow of Ayatollah Khamenei",9,+23,Multi-front escalation rhetoric - Iran + Cuba simultaneous
+2026-01-XX,Congressional_Resistance,ABC News 4,"Graham slams 'unconstitutional' Senate vote on Venezuela war powers resolution calling it a 'gift to our enemies'",7,+25 (est),Institutional resistance to oversight during geopolitical expansion
+
+Notes:
+Escalation_Level: 1-10 scale (1=discussion 5=explicit threats 10=military action/major events)
+Days_From_Raid: Negative = before Dec 19 Positive = after Dec 19
+Pattern: Pre-raid escalation (Oct-Nov) → Peak convergence (Dec 16-23) → Execution (Jan 3) → Expansion (Jan 11)
