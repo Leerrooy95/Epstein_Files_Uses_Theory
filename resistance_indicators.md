@@ -824,3 +824,13 @@ The correct pattern is:
 
 ---
 
+## Limitations & Context
+
+This analysis documents patterns in resistance and compliance during December 2025 - January 2026. It shows correlation between high-friction events and reduced resistance to subsequent compliance events.
+
+**What this analysis shows**: Mechanism operation during a specific timeframe
+**What this analysis does NOT show**: Whether this pattern is sustainable, optimal intervention points, or necessary conditions for systemic change
+
+The data documents how attention management operates at scale. How this information is used - whether for institutional accountability, policy reform, public awareness, or other purposes - depends on the goals and contexts of those applying it.
+
+This research provides terrain mapping. Strategic decisions based on that terrain are beyond the scope of pattern documentation.
