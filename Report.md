@@ -2,7 +2,7 @@
 
 **Author:** Austin  
 **Last Updated:** January 15, 2026  
-**Repository:** [github.com/Leerrooy95/Epstein_Files_Uses_Theory](https://github.com/Leerrooy95/Epstein_Files_Uses_Theory)
+**Repository:** [https://github.com/Leerrooy95/The_Regulated_Friction_Project/tree/main](https://github.com/Leerrooy95/Epstein_Files_Uses_Theory)
 
 ---
 
