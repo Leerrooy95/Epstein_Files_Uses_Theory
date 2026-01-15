@@ -1,7 +1,7 @@
-# Epstein Files Uses Theory: Report
+# The Regulated Friction Project: Report
 
 **Author:** Austin  
-**Last Updated:** January 10, 2026  
+**Last Updated:** January 15, 2026  
 **Repository:** [github.com/Leerrooy95/Epstein_Files_Uses_Theory](https://github.com/Leerrooy95/Epstein_Files_Uses_Theory)
 
 ---
