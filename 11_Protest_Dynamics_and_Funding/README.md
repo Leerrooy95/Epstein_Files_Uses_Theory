@@ -8,6 +8,8 @@ This module documents the transition from Informational Friction (digital leaks 
 
 FaaS represents the "physical hardware" that runs the "software" of the Geopolitical Thermostat. By industrializing dissent, actors can schedule friction to regulate public attention, providing cover for major structural shifts in policy and capital.
 
+**Files made by human-in-the-loop multi-AI verification**
+
 ---
 
 🛠 The FaaS Framework (Friction-as-a-Service)
