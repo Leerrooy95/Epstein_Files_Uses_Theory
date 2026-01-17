@@ -4,8 +4,6 @@
 
 https://github.com/Leerrooy95/Sovereign-Capital-Audit
 
-**Last updated; January 17, 2026**
-
 ---
 
 ## Executive Summary: The "Heat Sink" Hypothesis
@@ -68,28 +66,15 @@ Despite "anti-establishment" branding, Malik maintains high-level access to inst
 
  ---
 
-## How to Interpret This Model
+# Sovereign-Cultural Influence Network Structure
 
-**This diagram illustrates the "Media Firewall" architecture, creating a structural buffer between Sovereign Capital and public influence.**
-
- * The Hidden Layer (L1 & L2): Represents the ultimate underwriters of the "Vendor-State," primarily Gulf and East Asian Sovereign Wealth Funds (e.g., PIF, Sanabil, SoftBank). These entities provide the "Patient Capital" required for the process.
-
- * The Visible Layer (L3 & L4): Represents the domestic interface.
-
-  * Level 3 (Intermediary): The "Prime Brokerage" class or Venture Capitalists (e.g., 1789 Capital, Wilks Brothers) who manage the capital deployment. This layer enforces the "structural prohibition" against auditing the financial system.
-  * Level 4 (Platform): The consumer-facing media brands (e.g., Tucker Carlson Network, The Daily Wire, PublicSq).
-
- * The Individual: The high-visibility influencer (for example; Tucker, Candace, Kanye) who functions as a "Heat Sink".
-
-## Critical Insight:
-
-**The "Validation Flow" (Upstream) explains the transaction: The Individual directs populist energy outward (at NATO, for example) to generate "Soft Power" for the Sovereign, while the "Capital Flow" (Downstream) ensures the Individual remains silent on the "Financial Architecture" (L3) that funds them.**
+This document outlines the structural pattern identified in the deployment of sovereign capital into cultural markets. The model traces the flow of liquidity from state-level wealth funds down to consumer interfaces, and the reciprocal flow of "soft power" validation from cultural icons back up to the sovereign source.
 
 ---
 
 ## The "Layered Distance" Model
 
-**The network relies on a four-tier architecture to separate the capital source from the cultural output, utilizing a "Fund of Funds" mechanism to obscure direct links and maintain "Binary Immunity."**
+The network relies on a four-tier architecture to separate the capital source from the cultural output, utilizing a "Fund of Funds" mechanism to obscure direct links and maintain "Binary Immunity."
 
 ```mermaid
 graph TD
@@ -122,4 +107,26 @@ graph TD
     %% The Personnel Bridge
     L4 -.->|Incubated Talent| Talent
     Talent -.->|Hired by| Individual
+```
+---
 
+## How to Interpret This Model
+
+**This diagram illustrates the "Media Firewall" architecture, creating a structural buffer between Sovereign Capital and public influence.**
+
+ * The Hidden Layer (L1 & L2): Represents the ultimate underwriters of the "Vendor-State," primarily Gulf and East Asian Sovereign Wealth Funds (e.g., PIF, Sanabil, SoftBank). These entities provide the "Patient Capital" required for the process.
+
+ * The Visible Layer (L3 & L4): Represents the domestic interface.
+
+  * Level 3 (Intermediary): The "Prime Brokerage" class or Venture Capitalists (e.g., 1789 Capital, Wilks Brothers) who manage the capital deployment. This layer enforces the "structural prohibition" against auditing the financial system.
+  * Level 4 (Platform): The consumer-facing media brands (e.g., Tucker Carlson Network, The Daily Wire, PublicSq).
+
+ * The Individual: The high-visibility influencer (for example; Tucker, Candace, Kanye) who functions as a "Heat Sink".
+
+## Critical Insight:
+
+**The "Validation Flow" (Upstream) explains the transaction: The Individual directs populist energy outward (at NATO, for example) to generate "Soft Power" for the Sovereign, while the "Capital Flow" (Downstream) ensures the Individual remains silent on the "Financial Architecture" (L3) that funds them.**
+
+---
+
+Last updated: January 17, 2026
