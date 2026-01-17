@@ -1,4 +1,4 @@
-# The Regulated Friction Project v7.8
+# The Regulated Friction Project v7.9
 
 A data-driven analysis of temporal correlations between friction events, policy shifts, and capital flows (2015-2026).
 
@@ -237,7 +237,14 @@ All files include complete source documentation and reproducible methodology.
 
 **Previously added David Barnes analysis.**
 
-**Previously added folder to share my SuperGrok daily tasks and monthly analysis updates.**
+**Added 10_Real-Time_Updates_and_Tasks to share my SuperGrok daily tasks and monthly analysis updates.**
+
+---
+
+## What's new v7.8
+
+**Added 11_Protest_Dynamics_and_Funding**
+**Added 12_The_Media_Firewall**
 
 ---
 
@@ -363,4 +370,4 @@ GitHub: [@Leerrooy95](https://github.com/Leerrooy95)
 
 ---
 
-*Last updated: January 15, 2026*
+*Last updated: January 17, 2026*
