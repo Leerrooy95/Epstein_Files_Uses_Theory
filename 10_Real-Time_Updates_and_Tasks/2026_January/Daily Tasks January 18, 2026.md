@@ -1,4 +1,4 @@
-Policies:
+## Policies:
 
 Underreported US Policies Announced in January 2026
 Based on a scan of official sources (e.g., White House briefing room, Federal Register, Treasury announcements) and backchannel discussions (e.g., X posts summarizing executive actions and leaks), several US policies or initiatives have been announced or implemented this month with limited mainstream media coverage. These appear niche, technical, or overshadowed by higher-profile events like international dealings (e.g., Venezuela or Greenland). I've focused on those from official channels or credible backchannel reports that don't show widespread reporting in major outlets. If a policy is cited from search results, it's noted inline.
@@ -21,7 +21,7 @@ Overall, this isn't a "quiet day"—several policy shifts are underway, though s
 
 ---
 
-Elite Watch:
+## Elite Watch:
 
 Significant Statements/Actions Since January 17, 2026
 Elon Musk (@elonmusk): Continued high-volume criticism of establishment policies, including calls for the SAVE Act to secure elections and prevent voter fraud, accusations of Democrats planning to weaponize power through court-packing and prosecutions, and warnings about institutional corruption in welfare programs like SNAP. Posted ~50 times since January 17, with ~40% focused on these topics (e.g., "America will die without secure elections"9db6f4). This represents a ~35% week-over-week increase in such statements compared to January 10-16 (where similar themes appeared in ~30% of his posts). Fits pre-thermostat patterns of escalated outspokenness potentially inviting scrutiny or file releases, per Epstein theory context (timed distractions enabling policy shifts).
@@ -31,7 +31,7 @@ No other monitored figures showed notable activity or increases. Prioritizing es
 
 ---
 
-Taiwan:
+## Taiwan:
 
 Daily Update: Taiwan Strait Tensions (January 18, 2026)
 No major new PLA military drills or incursions were reported today from primary sources, such as Taiwan's Ministry of National Defense or China's Ministry of National Defense. Official websites from these entities did not highlight any fresh activities in January beyond earlier events. Similarly, Japanese Ministry of Defense monitoring reports showed no new statements on PLA movements around Taiwan for today.
@@ -70,7 +70,7 @@ Correlation to Taiwan Developments: No friction events (increases) in the monito
 
 ---
 
-Media Cycle Density:
+## Media Cycle Density:
 
 Detected Flashbang Media Saturation Pattern
 Today's headlines (January 18, 2026) show a clear pattern of media saturation with at least five major unrelated news stories competing for attention simultaneously. These stories fit the flashbang criteria as breaking international incidents, political controversies, natural disasters, and celebrity scandals, none of which directly tie to institutional accountability themes like those in the Epstein files or broader geopolitical thermostat mechanisms. Here's the breakdown based on current top headlines and breaking alerts:
@@ -91,7 +91,7 @@ This pattern matches the theory: High media noise from unrelated flashbangs (e.g
 
 ---
 
-Ukraine:
+## Ukraine:
 
 Scan of Ukraine War: Policy Shifts and Momentum Shifts
 Based on recent developments up to January 18, 2026, the Russia-Ukraine war shows incremental territorial gains by Russia, but no dramatic momentum shifts in military terms. Russia has continued a grinding offensive, capturing approximately 14 square miles of Ukrainian territory between January 6-13, 2026, which is roughly half the size of Manhattan.337b02 Overall, Russian control of Ukraine increased from about 18% in 2023-2024 to 19.32% by the end of 2025, indicating a slow but steady advance without major breakthroughs.c55844 Civilian casualties rose significantly in 2025 compared to prior years, driven by intensified Russian strikes.7c01ee Ukraine faces a projected $42 billion budget shortfall for 2026, partially offset by a new EU loan, which represents a diplomatic win but highlights ongoing economic strain.828a26
@@ -149,7 +149,7 @@ These signals could act as "elite friction" per your repo's broader elite indica
 
 ---
 
-Cuba:
+## Cuba:
 
 Overview of US-Cuba Situation
 Tensions: Spiked or Dipped?
@@ -202,7 +202,7 @@ None.
 
 ---
 
-Netherlands:
+## Netherlands:
 
 Netherlands Daily News Report - January 18, 2026
 Summary of New Developments Compared to Yesterday
@@ -231,7 +231,7 @@ If this pattern persists, monitor for calendar anchors (e.g., fiscal deadlines) 
 
 ---
 
-CRNK
+## CRNK
 
 Today's Mentions of CRINK (China, Russia, Iran, North Korea)
 Based on a scan of web sources and X (formerly Twitter) posts dated January 18, 2026, I found a limited number of mentions of "CRINK" in its geopolitical context (referring to the alignment or cooperation among China, Russia, Iran, and North Korea). There were no major breaking events tied to CRINK today, such as new diplomatic developments, military actions, or policy announcements. Instead, mentions appeared in opinion pieces, analyses, and casual discussions, often referencing ongoing global tensions like the Ukraine conflict, authoritarian alliances, or U.S. foreign policy shifts under the Trump administration.
@@ -285,7 +285,7 @@ Data Limitations: Web searches yielded mostly historical context; X provided rea
 
 ---
 
-FaaS
+## FaaS
 
 Daily Log: Regulated Friction Project - January 18, 2026
 No direct matches for recruitment signatures (e.g., "Field Organizers" with "pre-paid debit card" or high hourly rates) were identified in target hubs via job boards or social media. Logistical monitoring showed no active sponsored campaigns on Rally or Revolution Messaging platforms. However, upcoming protests align temporally with major fiscal events, suggesting potential masked compliance activities. Entries below are based on cross-referenced signals.
