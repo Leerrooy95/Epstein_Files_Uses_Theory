@@ -52,18 +52,6 @@ Despite "anti-establishment" branding, Malik maintains high-level access to inst
 * **Billions (Showtime):** Cameo appearance as himself (2018), cementing the "Wall Street Insider" persona in pop culture.
 * **The Podcast Circuit:** Strategic appearances on the *Megyn Kelly Show* and *Matt Bilinsky*, focusing on the "Parallel Economy" thesis to funnel dissident audiences into financial vehicles like PublicSq.
 
----
-
-## Data Anomaly: The Musk Variance
-
-**In validating the "Vendor-State" theory, a forensic search of Elon Musk’s X (formerly Twitter) posts from 2024 to present revealed a notable statistical anomaly:**
-
- * The Metric: 0 confirmed posts mentioning Omeed Malik or Saudi/Gulf Sovereign Influence in the context of this financial architecture.
-
- * The Context: Despite frequent commentary on "censorship," "NGO corruption," and "global elites," there is a verified silence regarding the specific financial architects (Malik) and sovereign partners (Gulf SWFs) underwriting the "New Right" ecosystem.
-
- * Observation: This silence aligns with the report's finding that key "anti-establishment" figures are structurally integrated into the Vendor-State capital flows they ostensibly critique.
-
  ---
 
 # Sovereign-Cultural Influence Network Structure
