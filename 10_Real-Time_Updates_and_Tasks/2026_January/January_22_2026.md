@@ -1,6 +1,6 @@
 # Important Information for January 22, 2026
 
-**The 'Board of Peace' is now ofcicial, and has notable members.**
+**The 'Board of Peace' is now official, and has notable members.**
 
 ---
 
