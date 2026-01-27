@@ -365,12 +365,12 @@ See `VERIFICATION_REPORT_Jan2026.md` for complete independent analysis.
 ## Citation
 
 ```bibtex
-@misc{epstein_files_uses_theory,
+@misc{The_Regulated_Friction_Project,
   author = {Austin},
-  title = {Epstein Files Uses Theory: Temporal Correlation Analysis},
+  title = {The Regulated Friction Project: Temporal Correlation Analysis},
   year = {2025-2026},
   publisher = {GitHub},
-  url = {https://github.com/Leerrooy95/Epstein_Files_Uses_Theory}
+  url = {https://github.com/Leerrooy95/The_Regulated_Friction_Project}
 }
 ```
 
