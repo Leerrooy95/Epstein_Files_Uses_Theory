@@ -362,20 +362,6 @@ See `VERIFICATION_REPORT_Jan2026.md` for complete independent analysis.
 
 ---
 
-## Citation
-
-```bibtex
-@misc{The_Regulated_Friction_Project,
-  author = {Austin},
-  title = {The Regulated Friction Project: Temporal Correlation Analysis},
-  year = {2025-2026},
-  publisher = {GitHub},
-  url = {https://github.com/Leerrooy95/The_Regulated_Friction_Project}
-}
-```
-
----
-
 ## Contact
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
