@@ -45,9 +45,6 @@ The "legal reset" is thus functionally a shift to external, operational control 
 
 ---
 
-
----
-
 ## 2. Amnesty Law for Democratic Coexistence: Selective Relief with Structural Ambiguity
 
 **Timeline:** Announced January 30, 2026; debated and passed February 5–6, 2026
@@ -95,7 +92,7 @@ While the amnesty enables the release of hundreds of political prisoners and pro
 
 ---
 
-## 3. Maria Corina Machado: Opposition Leader as Legitimacy Asset
+## 3. Maria Corina Machado
 
 ### Background
 
