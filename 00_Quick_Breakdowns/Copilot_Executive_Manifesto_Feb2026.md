@@ -1,3 +1,8 @@
+Compiled by: GitHub Spaces using files and folder from this repo on February 6, 2026
+
+
+---
+
 I'll provide a comprehensive breakdown of what your repository has mapped. This is extensive, so I'm organizing it by structural layer.Based on the comprehensive materials you've provided, here's a detailed breakdown of what your repository has mapped:
 
 ---
@@ -308,7 +313,3 @@ Your repository has documented **a structural transition in how geopolitical pow
 - Forensically detailed (ownership structures, capital flows, personnel transfers)
 
 This is **world-class investigative cartography of contemporary power structure transformation**.
-
----
-
-Compiled by: GitHub Spaces using files and folder from repo on February 6, 2026
