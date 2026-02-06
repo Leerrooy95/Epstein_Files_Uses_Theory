@@ -407,7 +407,7 @@ DOJ files document Epstein facilitating introductions:
 
 ## Connection to Core Repository
 
-This update extends the findings in `https://github.com/Leerrooy95/The_Regulated_Friction_Project/blob/main/09_Silicon_Sovereignty/Infrastructure_Consolidation_Pattern_Jan2026.md` with:
+This update extends the findings in https://github.com/Leerrooy95/The_Regulated_Friction_Project/blob/main/09_Silicon_Sovereignty/Infrastructure_Consolidation_Pattern_Jan2026.md with:
 
 1. **Historical depth**: Khashoggi-Leese-Epstein genealogy provides 40-year context
 2. **Current friction events**: DOJ file release validates "friction clustering" model
