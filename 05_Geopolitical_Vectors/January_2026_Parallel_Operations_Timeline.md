@@ -21,8 +21,6 @@ This document presents the factual timeline of both operations without claiming 
 
 ---
 
-This document presents the factual timeline of both operations without claiming coordination, while noting the observable pattern of major geopolitical shifts occurring during high-attention news events.
-
 ```mermaid
 gantt
     title Split Screen: January 2–9, 2026 — Parallel Operations Timeline
