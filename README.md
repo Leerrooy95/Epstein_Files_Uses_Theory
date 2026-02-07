@@ -1,4 +1,4 @@
-# The Regulated Friction Project v8.1
+# The Regulated Friction Project v8.2
 
 A data-driven analysis of temporal correlations between friction events, policy shifts, and capital flows (2015-2026).
 
@@ -13,6 +13,7 @@ New to this project? See [Glossary.md](https://github.com/Leerrooy95/The_Regulat
 - [The Convergence Model](#the-convergence-model)
 - [The Three-Layer Model](#the-three-layer-model)
 - [Repository Structure](#repository-structure)
+- [What's New (v8.2)](#whats-new-v82---february-2026)
 - [What's New (v8.1)](#whats-new-v81---february-7-2026)
 - [What's New (v8.0)](#whats-new-v80---january-27-2026)
 - [Quick Navigation by Type](#quick-navigation-by-type)
@@ -51,7 +52,7 @@ This research uses Pearson correlation (r) to measure relationships between even
 
 **Why this matters**:
 - A correlation this strong (p < 0.0001) has less than 0.01% probability of occurring by chance
-- It's reproducible—run `correlation_test.py` yourself
+- It's reproducible—run the scripts in `Run_Correlations_Yourself/` yourself
 - It suggests a structural pattern, not random coincidence
 
 **Important caveat**: Correlation ≠ causation. We document that these events cluster together, not that one causes the other. The claim is structural: the pattern exists and is statistically significant.
@@ -129,66 +130,198 @@ This repository is part of a three-layer analytical framework:
 The_Regulated_Friction_Project/
 │
 ├── README.md                    # This file
-├── Report.md                    # Executive summary
+├── Report.md                    # Executive summary and findings report
 ├── CITATION.cff                 # Citation metadata
+├── Glossary.md                  # Key terminology definitions
+├── SOURCES.md                   # 138 unique sources catalogued across all datasets
 │
 ├── Core Analysis
-│   ├── Repository_Synthesis.md          # Three-layer framework
-│   ├── Thermostat_Explained.md          # Why the mechanism exists
-│   ├── Claude's_Analysis.md             # AI-assisted interpretation
-│   ├── Grok_Analysis.md                 # Cross-verification
-│   └── CRINK_Analysis.md                # CRINK axis integration
+│   ├── Repository_Synthesis.md                 # Three-layer framework overview
+│   ├── Thermostat_Explained.md                 # Why the mechanism exists
+│   ├── Claude's_Analysis.md                    # AI-assisted interpretation
+│   ├── Grok_Analysis.md                        # Cross-verification with Grok
+│   ├── China_State_Media_Null_and_Meanings.md  # Null finding: China state media shows no anticipatory signaling
+│   └── Case_Study_David_Barnes_Detention.md    # Hostage diplomacy as human leverage dimension
 │
 ├── December 2025 Focus
-│   ├── CRUCIAL_Synthesis_Dec19_Convergence.md
-│   ├── FINANCIAL_RECEIPT_VERIFICATION.md
-│   └── Main_Characters.md               # Cabinet timing analysis
+│   ├── CRUCIAL_Synthesis_Dec19_Convergence.md  # Dec 19-23 pincer window analysis
+│   ├── FINANCIAL_RECEIPT_VERIFICATION.md       # Financial event verification
+│   └── Main_Characters.md                      # Cabinet timing analysis
 │
 ├── Policy & Implications
-│   ├── How_This_Happened-A_Policy_Brief.md
-│   ├── Implications.md                  # China BRI expansion
-│   ├── 'Transparency'_Timeline.md       # Document release history
-│   └── Alternate_Mechanisms.md
+│   ├── How_This_Happened-A_Policy_Breif.md     # Regulatory citations, oversight questions
+│   ├── Implications.md                         # China BRI expansion implications
+│   ├── 'Transparency'_Timeline.md              # Document release history
+│   └── Alternate_Mechanisms.md                 # Alternative explanations considered
 │
-├── Data Modules
-│   ├── 01_Levers_and_Frictions/         # Friction events timeline
-│   ├── 02_Anchors_and_Financials/       # Capital flows
-│   ├── 03_Master_Framework/             # Primary datasets
-│   ├── 04_Testing_and_Counters/         # Validation
-│   ├── 05_Geopolitical_Vectors/         # Nation-state analysis
-│   │   ├── CRINK_Analysis.md
-│   │   ├── Global_Election_Analysis.md
-│   │   ├── January_2026_Parallel_Operations_Timeline.md  # NEW v8.1
-│   │   └── Venezuela_Privatization_Amnesty_Stack_Feb2026.md  # NEW v8.1
-│   ├── 06_Visualizations/               # Charts
-│   ├── 07_My_Previous_Epstein_Research/ # Archive
-│   ├── 08_How_It's_Possible/            # Mechanism documentation
-│   ├── 09_Silicon_Sovereignty/          # Semiconductor, AI & Infrastructure
-│   │   ├── Infrastructure_Consolidation_Pattern_Jan2026.md
-│   │   └── February_2026_Update.md      # NEW v8.1
-│   ├── 10_Real-Time_Updates_and_Tasks/  # SuperGrok tasks
-│   ├── 11_Protest_Dynamics_and_Funding/ # Protest analysis
-│   ├── 12_The_Media_Firewall/           # Media coverage patterns
-│   └── 13_State_and_County_Analysis/    # NEW v8.1 - State-level forensics
-│       └── arkansas_infrastructure_forensic_audit.md
+├── Methodology & Transparency
+│   ├── TRANSPARENCY_NOTE_FOR_2026_ANALYSIS.md  # Dataset inclusion/exclusion criteria for r = 0.6685
+│   └── VERIFICATION_REPORT_Jan2026.md          # Complete independent statistical verification
+│
+├── 00_Quick_Breakdowns/                        # Executive-level summaries
+│   └── Copilot_Executive_Synthesis_Feb2026.md  # Comprehensive repository synthesis (Feb 2026)
+│
+├── 01_Levers_and_Frictions/                    # Friction events timeline
+│   ├── Epstein_Files_timeline.csv
+│   └── Epstein_Files_timeline_updated.csv
+│
+├── 02_Anchors_and_Financials/                  # Capital flow data
+│   ├── pep_banking_combined.csv
+│   └── pep_banking_sentiment.csv
+│
+├── 03_Master_Framework/                        # Primary datasets
+│   ├── MASTER_reflexive_control_2015-2025.csv
+│   ├── MASTER_timeline_2015-2025_UPDATED.csv
+│   └── updated_master_theory.csv
+│
+├── 04_Testing_and_Counters/                    # Validation datasets
+│   ├── expanded_historical_backtest.csv
+│   └── merged_backtest_counters.csv
+│
+├── 05_Geopolitical_Vectors/                    # Nation-state analysis
+│   ├── CRINK_Analysis.md                              # CRINK axis integration
+│   ├── Global_Election_Analysis.md                    # Allied election patterns
+│   ├── Graham_Venezuela_Analysis.md                   # Graham's 54-day Venezuela escalation
+│   ├── Graham_Venezuela_Posts_Timeline.csv            # Supporting timeline data
+│   ├── January_2026_Parallel_Operations_Timeline.md   # Venezuela-Yemen parallel operations
+│   ├── Venezuela_Privatization_Amnesty_Stack_Feb2026.md  # Venezuela compliance stack
+│   └── thermostat_control_data.csv                    # Nation-state linkage data
+│
+├── 06_Visualizations/                          # Charts and images
+│
+├── 07_My_Previous_Epstein_Research/            # Pre-project archive (4 PDFs)
+│
+├── 08_How_It's_Possible/                       # Mechanism documentation
+│   ├── 08_How_Its_Possible.md                         # Core mechanism analysis
+│   ├── DOJ_Probe_Results.csv
+│   ├── Phase_0_Maxwell_Pivot.csv
+│   └── pincer_data.csv
+│
+├── 09_Silicon_Sovereignty/                     # Semiconductor, AI & infrastructure
+│   ├── SILICON_SOVEREIGNTY_REPORT.md                  # Core report: compute-as-currency thesis
+│   ├── Infrastructure_Consolidation_Pattern_Jan2026.md  # Oracle/MGX/PIF consortium analysis
+│   ├── CRUCIAL-Cross_Verification_Check.md            # Cross-verification with llama2
+│   ├── Coalition_Narrative_Map_2015-2025.csv          # Media coverage patterns (456 records)
+│   ├── REFINED_supercomputer_geopolitics (1).csv      # Supercomputer geopolitics (906 records)
+│   ├── Regulatory_Map_Data_CLEANED.csv                # Policy/compliance events (76 records)
+│   └── VOCA_funding_timeline_clean.csv                # Victim services funding (667 records)
+│
+├── 10_Real-Time_Updates_and_Tasks/             # Ongoing analysis and daily tasks
+│   ├── README.md
+│   ├── 2026_January/                                  # January 2026 daily updates
+│   ├── 2026_February/                                 # February 2026 daily updates
+│   └── Tasks/                                         # Standing monitoring tasks (14 trackers)
+│
+├── 11_Protest_Dynamics_and_Funding/            # Protest analysis
+│   ├── Protest_Funding_Audit.pdf
+│   └── README.md
+│
+├── 12_The_Media_Firewall/                      # Media coverage patterns
+│   ├── 1789_Symbolism_Analysis.md                     # 1789 Capital / Gulf SWF funding network
+│   ├── Analyzing Geopolitical and Media Control.pdf
+│   └── README.md
+│
+├── 13_State_and_County_Analysis/               # State-level forensics
+│   └── arkansas_infrastructure_forensic_audit.md      # Arkansas Act 373/548, PSC analysis
 │
 ├── Statistical Verification
-│   ├── Control_Proof/
-│   │   ├── correlation_test.py          # Run it yourself
-│   │   ├── correlation_results.txt
-│   │   └── master_reflexive_correlation_data.csv
+│   ├── Control_Proof/                                 # Core correlation data
+│   │   ├── master_reflexive_correlation_data.csv      # Weekly friction/compliance indices
+│   │   ├── MASTER_reflexive_control_v2.csv
+│   │   ├── reflexive_control_scraped_data.csv
+│   │   ├── thermostat_control_data.csv
+│   │   └── correlation_results.txt
 │   │
-│   └── Project_Trident/                 # Temporal correlation study
+│   ├── Run_Correlations_Yourself/                     # Independent verification suite
+│   │   ├── original_correlation_test.py               # Reproduce r = 0.6196 finding
+│   │   ├── reproduce_original_correlation.py          # Reproduce r = 0.6685 finding
+│   │   ├── independent_statistical_verification.py    # Full independent verification
+│   │   └── DISCREPANCY_ANALYSIS.md                    # Methodology comparison (0.6685 vs 0.5268)
+│   │
+│   └── Project_Trident/                               # Temporal correlation study
 │       ├── PROJECT_TRIDENT_CASE_STUDY.md
-│       ├── The_Trident.md               # Three-prong mechanism
+│       ├── The_Trident.md                             # Three-prong mechanism
 │       ├── DATASET_REFERENCE.md
-│       ├── Verify_Trident_Analysis.py
-│       └── Best_Data_For_Project_Trident/
+│       ├── Veriify_Trident_Analysis.py                # Verify ritual timing analysis
+│       ├── Best_Data_For_Project_Trident/             # Ritual timing, fund flow datasets (8 files)
+│       └── Claude_Code_Analysis/                      # Q1 2026 Privatized Integration research
+│           ├── Privatized_Integration_Networks_Q1_2026_Synthesis.md  # Master document
+│           ├── Phoenix_Settlement_Portfolio_and_New_Gaza.md          # Reference appendix
+│           ├── LEAD_ANALYST_REVIEW.md                               # Independent verification
+│           └── README.md
 │
-└── New_Data_2026/                       # January 2026 analysis
-    ├── 2026_Analysis.md
-    └── [datasets]
+└── New_Data_2026/                              # January-February 2026 datasets
+    ├── 2026_Analysis.md                               # Correlation methodology and findings
+    ├── Additional_Anchors_Jan2026_Final.csv
+    ├── Biopharma.csv
+    ├── BlackRock_Timeline_Full_Decade.csv
+    ├── CRINK_Intelligence_Dataset_Final_Verified.csv
+    ├── High_Growth_Companies_2015_2026.csv
+    ├── Infrastructure_Forensics.csv
+    └── Timeline_Update_Jan2026_Corrected (1).csv
 ```
+
+---
+
+## What's New (v8.2 - February 2026)
+
+### Repository Synchronization & Final Polish
+
+v8.2 is a synchronization release ensuring all research files are documented and the README/Report accurately reflect the full depth of the repository.
+
+### 1. "Privatized Integration" — Q1 2026 Applied Findings
+
+**New Subfolder**: `Project_Trident/Claude_Code_Analysis/`
+
+The Q1 2026 research extends the existing friction-compliance framework into a specific domain: the observation that while formal diplomatic normalization remains stalled, functional integration is proceeding through private channels.
+
+**What the files document:**
+
+| Domain | Traditional Mechanism | Observed Private Mechanism | Status |
+|--------|----------------------|---------------------------|--------|
+| **Diplomacy** | UN Security Council | Board of Peace (pay-to-play membership, lifetime chairman authority) | Charter signed Jan 22, 2026 |
+| **Finance** | Bilateral investment treaties | Affinity Partners → Phoenix Financial → Israeli settlement-linked companies | Operational (9.9% stake) |
+| **Defense** | Formal military alliances | MEAD-CDOC at Al Udeid under CENTCOM | Activated Jan 12, 2026 |
+| **Territory** | Sovereign reconstruction | "New Gaza" master plan (privatized real estate model) | Presented Jan 22, 2026 |
+
+Key files:
+- `Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Master document covering all five domains with sourced verification
+- `Phoenix_Settlement_Portfolio_and_New_Gaza.md` — Company-by-company Phoenix portfolio (18+ companies with UN OHCHR database cross-reference)
+- `LEAD_ANALYST_REVIEW.md` — Independent verification of all major claims, blind spot identification
+
+### 2. Independent Verification Suite
+
+**New Folder**: `Run_Correlations_Yourself/`
+
+Three Python scripts and a methodology document enabling anyone to reproduce the core findings:
+- `original_correlation_test.py` — Reproduce r = 0.6196 (30-week, 1-10 scale)
+- `reproduce_original_correlation.py` — Reproduce r = 0.6685 (229-week, raw event counts)
+- `independent_statistical_verification.py` — Full independent verification
+- `DISCREPANCY_ANALYSIS.md` — Transparent explanation of why different dataset scopes yield r = 0.6685 vs r = 0.5268 (both significant at p < 0.0001)
+
+### 3. Executive Synthesis & Newly Documented Files
+
+**New Folder**: `00_Quick_Breakdowns/`
+- `Copilot_Executive_Synthesis_Feb2026.md` — Comprehensive AI-generated synthesis of the entire repository's findings
+
+**Newly documented root-level files:**
+- `SOURCES.md` — 138 unique sources catalogued across all datasets
+- `TRANSPARENCY_NOTE_FOR_2026_ANALYSIS.md` — Methodological transparency for dataset scope decisions
+- `China_State_Media_Null_and_Meanings.md` — Null finding: Chinese state media shows zero anticipatory signaling
+- `Case_Study_David_Barnes_Detention.md` — Hostage diplomacy as human leverage dimension
+
+**Newly documented section files:**
+- `05_Geopolitical_Vectors/Graham_Venezuela_Analysis.md` — Graham's 54-day Venezuela escalation pattern
+- `09_Silicon_Sovereignty/SILICON_SOVEREIGNTY_REPORT.md` — Core report on the compute-as-currency thesis
+- `12_The_Media_Firewall/1789_Symbolism_Analysis.md` — 1789 Capital / Gulf SWF intermediary funding network
+
+### 4. Accuracy Corrections
+
+- Removed phantom file references (`February_2026_Update.md`, `Control_Proof/correlation_test.py`) that were listed in v8.1 but did not exist
+- Fixed `CRINK_Analysis.md` path (lives in `05_Geopolitical_Vectors/`, not root)
+- Corrected `Veriify_Trident_Analysis.py` filename
+- Complete `Control_Proof/` listing (5 data files, no scripts — scripts are in `Run_Correlations_Yourself/`)
+- Full file listings for `09_Silicon_Sovereignty/`, `08_How_It's_Possible/`, and `New_Data_2026/`
 
 ---
 
@@ -198,7 +331,7 @@ The_Regulated_Friction_Project/
 
 1. **State-Level Infrastructure Analysis** — New folder `13_State_and_County_Analysis/` documenting how Arkansas legislation creates a closed regulatory loop
 2. **Geopolitical Parallel Operations** — Venezuela compliance stack and Saudi-UAE rupture during media saturation (in `05_Geopolitical_Vectors/`)
-3. **Network Documentation** — DOJ Epstein files, Musk emails verified, Palantir-Thiel-Mandelson triangle, Trump-UAE $500M deal (in `09_Silicon_Sovereignty/`)
+3. **Network Documentation** — DOJ Epstein files, Musk emails verified, Palantir-Thiel-Mandelson triangle, Trump-UAE $500M deal (now documented in `Project_Trident/Claude_Code_Analysis/`)
 
 ---
 
@@ -251,7 +384,7 @@ Forensic verification of how state-level regulatory and legislative architecture
 
 ### February 2026 Update: DOJ Files and Network Documentation
 
-**New File**: `09_Silicon_Sovereignty/February_2026_Update.md`
+**Now documented in**: `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md`
 
 **DOJ Epstein Files Release** (Jan 30-31, 2026):
 - 3M+ pages released
@@ -302,19 +435,21 @@ Documentation of overlapping ownership consortium (Oracle, Silver Lake, Saudi PI
 
 ### Datasets
 - `Control_Proof/master_reflexive_correlation_data.csv` — Core friction/compliance data
-- `New_Data_2026/` — January-February 2026 updates
+- `New_Data_2026/` — January-February 2026 updates (8 datasets)
 - `05_Geopolitical_Vectors/thermostat_control_data.csv` — Nation-state linkages
 - `Project_Trident/Best_Data_For_Project_Trident/` — Ritual timing, fund flows
 
 ### Statistical Verification
-- `Control_Proof/correlation_test.py` — Reproduce core findings
-- `Project_Trident/Verify_Trident_Analysis.py` — Verify ritual timing analysis
+- `Run_Correlations_Yourself/` — Three Python scripts to reproduce all core findings
+- `Run_Correlations_Yourself/DISCREPANCY_ANALYSIS.md` — Methodology transparency
+- `Project_Trident/Veriify_Trident_Analysis.py` — Verify ritual timing analysis
 
 ### Deep Dives by Topic
-- **Tech Infrastructure**: `09_Silicon_Sovereignty/`
-- **Government Accountability**: `09_Silicon_Sovereignty/February_2026_Update.md` (Mandelson, Palantir, DOJ files)
+- **Tech Infrastructure**: `09_Silicon_Sovereignty/SILICON_SOVEREIGNTY_REPORT.md`
+- **Privatized Integration**: `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md`
 - **State Regulatory Capture**: `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md`
 - **Geopolitical Shifts**: `05_Geopolitical_Vectors/` (Venezuela, Yemen, CRINK, allied elections)
+- **Media Funding Networks**: `12_The_Media_Firewall/1789_Symbolism_Analysis.md`
 
 ---
 
@@ -323,28 +458,30 @@ Documentation of overlapping ownership consortium (Oracle, Silver Lake, Saudi PI
 ### Start Here
 1. `Repository_Synthesis.md` — Three-layer framework overview
 2. `New_Data_2026/2026_Analysis.md` — Latest correlation findings
-3. `09_Silicon_Sovereignty/February_2026_Update.md` — Current developments
+3. `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Q1 2026 applied findings
 4. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level pattern
 
 ### Verify the Statistics
 ```bash
-cd Control_Proof/
-python correlation_test.py
+cd Run_Correlations_Yourself/
+python original_correlation_test.py          # Reproduces r = 0.6196
+python reproduce_original_correlation.py     # Reproduces r = 0.6685
+python independent_statistical_verification.py  # Full independent verification
 ```
 
 ### Key Datasets
-- `master_reflexive_correlation_data.csv` — Weekly friction/compliance indices
-- `ritual_events_parsed.csv` — Project Trident ritual timing
-- `Fund_Flow_Ritual_Coordination_20251225.csv` — December 2025 dark pool data
-- `CRINK_Intelligence_Dataset_Final_Verified.csv` — CRINK axis discourse tracking
+- `Control_Proof/master_reflexive_correlation_data.csv` — Weekly friction/compliance indices
+- `Project_Trident/Best_Data_For_Project_Trident/ritual_events_parsed.csv` — Project Trident ritual timing
+- `New_Data_2026/CRINK_Intelligence_Dataset_Final_Verified.csv` — CRINK axis discourse tracking
+- `09_Silicon_Sovereignty/VOCA_funding_timeline_clean.csv` — Victim services funding
 
 ---
 
 ## For Policymakers & Journalists
 
 ### Start Here
-1. `How_This_Happened-A_Policy_Brief.md` — Regulatory citations, oversight questions
-2. `09_Silicon_Sovereignty/February_2026_Update.md` — DOJ files, network documentation
+1. `How_This_Happened-A_Policy_Breif.md` — Regulatory citations, oversight questions
+2. `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Board of Peace, Affinity/Phoenix, MEAD-CDOC
 3. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level regulatory capture
 4. `05_Geopolitical_Vectors/Venezuela_Privatization_Amnesty_Stack_Feb2026.md` — Compliance reset pattern
 
@@ -426,7 +563,7 @@ See `VERIFICATION_REPORT_Jan2026.md` for complete independent analysis.
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
-**Last updated**: February 7, 2026
+**Last updated**: February 8, 2026
 
 ---
 

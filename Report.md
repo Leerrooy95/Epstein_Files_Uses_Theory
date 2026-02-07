@@ -1,8 +1,9 @@
 # The Regulated Friction Project: Report
 
-**Author:** Austin  
-**Last Updated:** January 15, 2026  
-**Repository:** [https://github.com/Leerrooy95/The_Regulated_Friction_Project/tree/main](https://github.com/Leerrooy95/Epstein_Files_Uses_Theory)
+**Author:** Austin
+**Last Updated:** February 8, 2026
+**Version:** v8.2
+**Repository:** [https://github.com/Leerrooy95/The_Regulated_Friction_Project](https://github.com/Leerrooy95/The_Regulated_Friction_Project)
 
 ---
 
@@ -14,7 +15,9 @@ This report documents a statistically significant pattern: high-visibility "fric
 
 **What this means in plain language:** When friction events spike, compliance events spike *at the same time*—not after a delay, but simultaneously. This clustering is 67% stronger than random chance and has less than a 0.01% probability of occurring by coincidence.
 
-**What this does NOT claim:** Central coordination, conspiracy, or intentional orchestration. The pattern is emergent—multiple actors exploiting the same environmental signals (holidays, fiscal deadlines, media saturation) without requiring communication between them.
+**Q1 2026 extension:** Research conducted in January-February 2026 reveals that the friction-compliance clustering pattern connects to a broader structural shift. While public attention concentrates on high-visibility events, functional integration between state and private actors proceeds through capital flows, private governance bodies, and technical military frameworks — a pattern this project terms "Privatized Integration." The same entities (Oracle, Silver Lake, Saudi PIF, UAE MGX) and individuals (Kushner, Gabay, Witkoff, Rowan) appear across multiple domains simultaneously: tech acquisitions, diplomatic governance, defense coordination, and territorial reconstruction.
+
+**What this does NOT claim:** Central coordination, conspiracy, or intentional orchestration. The pattern is emergent—multiple actors exploiting the same environmental signals (holidays, fiscal deadlines, media saturation) without requiring communication between them. The Q1 2026 findings document actor overlap and temporal clustering as observable facts; interpretation is left to the reader.
 
 ---
 
@@ -137,6 +140,57 @@ This repository is one piece of a larger analytical structure:
 
 ---
 
+## Q1 2026: From Clustering to Capture
+
+### The Shift
+
+The original research (September 2025 – January 2026) documented *when* friction and compliance events cluster. The Q1 2026 research documents *what happens during those windows* — specifically, how private capital and governance structures advance while public attention is elsewhere.
+
+This represents an analytical progression:
+- **Phase 1 (2025):** Friction events and compliance events cluster simultaneously on calendar anchors
+- **Phase 2 (Q1 2026):** During those same windows, formal diplomatic mechanisms are being supplemented — and in some cases bypassed — by private channels
+
+### The Privatized Integration Pattern
+
+Q1 2026 research identified the same network of actors operating across multiple domains at once:
+
+| Domain | Traditional Mechanism | Observed Private Mechanism | Key Date |
+|--------|----------------------|---------------------------|----------|
+| **Diplomacy** | UN Security Council | Board of Peace — $1B buys permanent membership; lifetime chairman authority; charter does not mention Gaza | Jan 22, 2026 |
+| **Finance** | Bilateral investment treaties | Affinity Partners (Gulf SWF-backed) → Phoenix Financial (9.9% stake) → Israeli settlement-linked companies listed on UN OHCHR database | Jan 20, 2026 |
+| **Defense** | Formal military alliances | MEAD-CDOC at Al Udeid Air Base — 17-nation air defense coordination under CENTCOM, enabling cooperation without bilateral treaties | Jan 12, 2026 |
+| **Territory** | Sovereign reconstruction | "New Gaza" master plan — 100,000 housing units proposed vs. 600,000+ needed; coastline rezoned for 180 luxury towers | Jan 22, 2026 |
+
+**Observation:** Three major structural events occurred on January 22, 2026: the Board of Peace charter was signed at Davos, the TikTok US joint venture closed (Oracle/Silver Lake/MGX), and the "New Gaza" master plan was presented. This temporal clustering is documented fact; whether it represents coordination or coincidence is an interpretive question.
+
+**Constitutional resistance:** Italy, France, Germany, UK, and others formally declined the Board of Peace, citing specific constitutional incompatibilities. Italy's Foreign Minister explicitly cited Article 11 of the Italian Constitution (equality in international organizations) as conflicting with Article 9 of the charter.
+
+### The Arkansas Regulatory Loop
+
+At the state level, Q1 2026 research documented a parallel pattern in Arkansas:
+
+- **Act 373 (2025):** Creates an iterative resubmission process where PSC denial is procedurally temporary while approval is functionally inevitable
+- **Act 548 (2025):** "Two or more nonadjacent" clause enables aggregation of separate sites into a single tax-exempt entity
+- **Jefferson Power Station:** PSC approved a $1.5B project on January 28, 2026 while explicitly finding the cost "not reasonable"
+- **AVAIO Digital:** $6-21B data center campus backed by a deliberately undisclosed "$25 billion investment manager" (5 years of sustained anonymity)
+
+This demonstrates the friction-compliance pattern operating at the state level: legislative authorization creates constrained regulation, which enables targeted incentives for undisclosed capital, while citizen recourse is restricted.
+
+### Actor Overlap
+
+The same entities appear across multiple concurrent deals:
+
+| Entity | Board of Peace | Phoenix/Affinity | TikTok | EA | Stargate |
+|--------|---------------|-----------------|--------|-----|----------|
+| Saudi PIF | Signatory | LP ($2B) | — | 93.4% owner | — |
+| UAE/MGX | Signatory | LP | 15% owner | — | Equity partner |
+| Oracle | — | — | 15% owner | — | Equity partner |
+| Silver Lake | — | — | 15% owner | 5.5% owner | — |
+
+This overlap is documented from public filings, press reporting, and official announcements. No claim is made about whether the overlap represents coordination or independent positioning.
+
+---
+
 ## CRINK Integration
 
 CRINK (China-Russia-Iran-North Korea) actors appear as primary beneficiaries across all three layers:
@@ -181,78 +235,92 @@ All data and code are public:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Leerrooy95/Epstein_Files_Uses_Theory.git
+git clone https://github.com/Leerrooy95/The_Regulated_Friction_Project.git
 
-# Run the original correlation test (r = 0.6196, 30 weeks, 1-10 scale)
-cd Control_Proof/
-python correlation_test.py
+# Reproduce the core findings
+cd Run_Correlations_Yourself/
+python original_correlation_test.py          # Reproduces r = 0.6196 (30-week)
+python reproduce_original_correlation.py     # Reproduces r = 0.6685 (229-week)
+python independent_statistical_verification.py  # Full independent verification
 ```
 
-**Note:** The `correlation_test.py` script verifies the original r = 0.6196 finding. The updated r = 0.6685 analysis uses raw event counts from the New_Data_2026/ datasets (methodology documented in 2026_Analysis.md).
+**Methodology transparency:** The correlation depends on dataset scope. Strategic institutional events (policy shifts, government ties, financial positioning) yield r = 0.6685. Including operational biotech events (clinical milestones, earnings) yields r = 0.5268. Both are statistically significant (p < 0.0001). The difference is explained in `Run_Correlations_Yourself/DISCREPANCY_ANALYSIS.md`.
 
 Key datasets:
-- `master_reflexive_correlation_data.csv` — Original weekly friction/compliance indices
-- `CRINK_Intelligence_Dataset_Final_Verified.csv` — CRINK discourse tracking
-- `ritual_events_parsed.csv` — Project Trident ritual timing
-- `New_Data_2026/` — Updated datasets for raw event count analysis
+- `Control_Proof/master_reflexive_correlation_data.csv` — Original weekly friction/compliance indices
+- `New_Data_2026/CRINK_Intelligence_Dataset_Final_Verified.csv` — CRINK discourse tracking
+- `Project_Trident/Best_Data_For_Project_Trident/ritual_events_parsed.csv` — Project Trident ritual timing
+- `New_Data_2026/` — Updated datasets for raw event count analysis (8 datasets)
 
 ---
 
 ## Testable Predictions
 
-| Prediction | Timeframe | How to Verify |
-|-----------|-----------|---------------|
-| Event clustering at next file deadline | Ongoing | Media cycle tracking |
-| Tu BiShvat policy action | Feb 12, 2026 | Policy/funding shifts |
-| Market correction 2-10% | Jan-Feb 2026 | S&P 500 tracking |
-| DOGE-predicted instability | Q1 2026 | Mali, Syria, Sudan situations |
-| Gulf SWF Q4 positioning revealed | Feb 2026 | 13F filings |
+| Prediction | Timeframe | Status | How to Verify |
+|-----------|-----------|--------|---------------|
+| Event clustering at next file deadline | Ongoing | Confirmed (Jan 30-Feb 1) | Media cycle tracking |
+| Tu BiShvat policy action | Feb 12, 2026 | Pending | Policy/funding shifts |
+| Gulf SWF Q4 positioning revealed | Feb 2026 | Pending (13F filings) | SEC EDGAR |
+| DOGE-predicted instability | Q1 2026 | Tracking (Mali, Syria, Sudan) | Situation monitoring |
+| California TikTok investigation findings | Q1 2026 | Pending | AG office |
+| Khanna Congressional investigation findings | March 2026 | Document deadline March 1 | Congressional record |
+| UK Mandelson disclosure | Feb-March 2026 | Parliamentary vote passed | UK Hansard |
+| Board of Peace first summit | Feb 19, 2026 | Confirmed (Axios) | White House, Institute of Peace |
+| Arkansas PSC order text release | Q1 2026 | FOIA pending | State records |
 
-These predictions derive from the model's logic: if calendar anchors drive clustering, future anchors should show similar patterns.
+These predictions derive from the model's logic: if calendar anchors drive clustering, future anchors should show similar patterns. The Q1 2026 predictions extend to include institutional outcomes from the Privatized Integration pattern.
 
 ---
 
 ## For Different Audiences
 
 ### Researchers
-- Start with `2026_Analysis.md` for methodology
-- Run `correlation_test.py` to verify statistics
+- Start with `New_Data_2026/2026_Analysis.md` for methodology
+- Run scripts in `Run_Correlations_Yourself/` to verify statistics
 - Review `Repository_Synthesis.md` for the three-layer framework
+- See `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` for Q1 2026 applied findings
 
 ### Journalists/Policymakers
-- Start with `How_This_Happened-A_Policy_Brief.md`
-- Key question: Why did DOGE cut 11,020 Adobe licenses months before the Epstein file deadline?
-- Key question: Why did 108 events cluster in a 12-day December window?
+- Start with `How_This_Happened-A_Policy_Breif.md` for regulatory questions
+- See `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` for Board of Peace, capital flows, and defense integration documentation
+- See `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` for state-level regulatory capture
+- Key question: Why did the PSC approve a $1.5B project it explicitly found "not reasonable"?
+- Key question: Why do the same entities appear in EA, TikTok, Stargate, Board of Peace, and World Liberty Financial?
 
 ### Skeptics
 - The claim is narrow: clustering exists and is statistically significant
 - Alternative explanations are documented in `Alternate_Mechanisms.md`
-- Fork the repo and run your own analysis
+- Methodology transparency documented in `TRANSPARENCY_NOTE_FOR_2026_ANALYSIS.md`
+- Fork the repo and run your own analysis — all scripts are in `Run_Correlations_Yourself/`
 
 ---
 
 ## Summary
 
-This research documents a pattern: friction and compliance events cluster simultaneously on shared calendar anchors. The correlation (r = +0.6685) is strong and statistically significant (p < 0.0001). The phenomenon doesn't require conspiracy—it's emergent behavior from multiple actors responding to the same environmental signals.
+This research documents two connected patterns:
 
-December 2025 demonstrated this in real-time: five independent signal types converged on the same window, not because they coordinated, but because they all exploited the same low-attention period.
+**The statistical foundation:** Friction and compliance events cluster simultaneously on shared calendar anchors. The correlation (r = +0.6685) is strong, statistically significant (p < 0.0001), and independently reproduced. December 2025 demonstrated this in real-time: five independent signal types converged on the same window.
 
-The data is public. The code is public. The claim is reproducible.
+**The structural extension (Q1 2026):** During these same clustering windows, formal institutional mechanisms are being supplemented by private channels — Gulf sovereign capital flowing through US private equity into settlement-linked companies, a pay-to-play governance body bypassing UN frameworks, technical military integration proceeding without bilateral treaties, and territorial reconstruction treated as a privatized real estate venture. At the state level, legislative architecture in Arkansas creates a regulatory environment where denial is procedurally temporary and approval functionally inevitable.
+
+The phenomenon doesn't require conspiracy — it is observable through public filings, official press releases, charter texts, and congressional records. The same entities appear across multiple domains simultaneously. Whether this overlap represents coordination or independent positioning is an interpretive question this research does not answer.
+
+The data is public. The code is public. The claims are reproducible and sourced.
 
 ---
 
 ## Citation
 
 ```bibtex
-@misc{epstein_files_uses_theory,
+@misc{regulated_friction_project,
   author = {Austin},
-  title = {Epstein Files Uses Theory: Temporal Correlation Analysis},
+  title = {The Regulated Friction Project: Temporal Correlation and Structural Analysis},
   year = {2025-2026},
   publisher = {GitHub},
-  url = {https://github.com/Leerrooy95/Epstein_Files_Uses_Theory}
+  url = {https://github.com/Leerrooy95/The_Regulated_Friction_Project}
 }
 ```
 
 ---
 
-*This report was last updated January 10, 2026. For the latest findings, see the repository README.*
+*This report was last updated February 8, 2026 (v8.2). For the latest findings, see the repository README.*
