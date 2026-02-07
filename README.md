@@ -1,6 +1,27 @@
-# The Regulated Friction Project v8.0
+# The Regulated Friction Project v8.1
 
 A data-driven analysis of temporal correlations between friction events, policy shifts, and capital flows (2015-2026).
+
+New to this project? See [Glossary.md](https://github.com/Leerrooy95/The_Regulated_Friction_Project/blob/main/Glossary.md)
+
+---
+
+## Table of Contents
+- [Quick Summary](#quick-summary)
+- [Understanding the Statistics](#understanding-the-statistics)
+- [Key Statistics](#key-statistics)
+- [The Convergence Model](#the-convergence-model)
+- [The Three-Layer Model](#the-three-layer-model)
+- [Repository Structure](#repository-structure)
+- [What's New (v8.1)](#whats-new-v81---february-7-2026)
+- [What's New (v8.0)](#whats-new-v80---january-27-2026)
+- [Quick Navigation by Type](#quick-navigation-by-type)
+- [For Researchers](#for-researchers)
+- [For Policymakers & Journalists](#for-policymakers--journalists)
+- [Methodology](#methodology)
+- [Limitations & Disclaimer](#limitations--disclaimer)
+- [Connected Repositories](#connected-repositories)
+- [Statistical Validation](#statistical-validation)
 
 ---
 
@@ -105,7 +126,7 @@ This repository is part of a three-layer analytical framework:
 ## Repository Structure
 
 ```
-Epstein_Files_Uses_Theory/
+The_Regulated_Friction_Project/
 │
 ├── README.md                    # This file
 ├── Report.md                    # Executive summary
@@ -135,11 +156,21 @@ Epstein_Files_Uses_Theory/
 │   ├── 03_Master_Framework/             # Primary datasets
 │   ├── 04_Testing_and_Counters/         # Validation
 │   ├── 05_Geopolitical_Vectors/         # Nation-state analysis
+│   │   ├── CRINK_Analysis.md
+│   │   ├── Global_Election_Analysis.md
+│   │   ├── January_2026_Parallel_Operations_Timeline.md  # NEW v8.1
+│   │   └── Venezuela_Privatization_Amnesty_Stack_Feb2026.md  # NEW v8.1
 │   ├── 06_Visualizations/               # Charts
 │   ├── 07_My_Previous_Epstein_Research/ # Archive
 │   ├── 08_How_It's_Possible/            # Mechanism documentation
-│   └── 09_Silicon_Sovereignty/          # Semiconductor, AI & Infrastructure
-│       └── Infrastructure_Consolidation_Pattern_Jan2026.md  # NEW v8.0
+│   ├── 09_Silicon_Sovereignty/          # Semiconductor, AI & Infrastructure
+│   │   ├── Infrastructure_Consolidation_Pattern_Jan2026.md
+│   │   └── February_2026_Update.md      # NEW v8.1
+│   ├── 10_Real-Time_Updates_and_Tasks/  # SuperGrok tasks
+│   ├── 11_Protest_Dynamics_and_Funding/ # Protest analysis
+│   ├── 12_The_Media_Firewall/           # Media coverage patterns
+│   └── 13_State_and_County_Analysis/    # NEW v8.1 - State-level forensics
+│       └── arkansas_infrastructure_forensic_audit.md
 │
 ├── Statistical Verification
 │   ├── Control_Proof/
@@ -153,24 +184,97 @@ Epstein_Files_Uses_Theory/
 │       ├── DATASET_REFERENCE.md
 │       ├── Verify_Trident_Analysis.py
 │       └── Best_Data_For_Project_Trident/
-│           ├── Expanded_Policy_Anchors.csv
-│           ├── Fund_Flow_Ritual_Coordination_20251225.csv
-│           ├── Holidays_2015_2025_Verified.csv
-│           ├── Lag_Correlation_Analysis_Verified_Holidays.csv
-│           ├── aid_timeline_clean.csv
-│           ├── policy_cleaned.csv
-│           ├── ritual_events_parsed.csv
-│           └── tech_filled_dates.csv
 │
 └── New_Data_2026/                       # January 2026 analysis
-    ├── 2026_Analysis.md                 # Updated correlation findings
-    ├── Additional_Anchors_Jan2026_Final.csv
-    ├── Biopharma.csv
-    ├── BlackRock_Timeline_Full_Decade.csv
-    ├── High_Growth_Companies_2015_2026.csv
-    ├── Infrastructure_Forensics.csv
-    └── Timeline_Update_Jan2026_Corrected.csv
+    ├── 2026_Analysis.md
+    └── [datasets]
 ```
+
+---
+
+## What's New (v8.1 - February 7, 2026)
+
+### Three Major Additions
+
+1. **State-Level Infrastructure Analysis** — New folder `13_State_and_County_Analysis/` documenting how Arkansas legislation creates a closed regulatory loop
+2. **Geopolitical Parallel Operations** — Venezuela compliance stack and Saudi-UAE rupture during media saturation (in `05_Geopolitical_Vectors/`)
+3. **Network Documentation** — DOJ Epstein files, Musk emails verified, Palantir-Thiel-Mandelson triangle, Trump-UAE $500M deal (in `09_Silicon_Sovereignty/`)
+
+---
+
+### State-Level Analysis: Arkansas Infrastructure Consolidation
+
+**New Folder**: `13_State_and_County_Analysis/`  
+**New File**: `arkansas_infrastructure_forensic_audit.md`
+
+Forensic verification of how state-level regulatory and legislative architecture enables infrastructure consolidation:
+
+- **Act 373 (2025)**: Creates iterative resubmission process where PSC denial is procedurally temporary while approval is functionally inevitable
+- **Act 548 (2025)**: "Two or more nonadjacent" clause enables aggregation of separate sites into single tax-exempt entity
+- **Jefferson Power Station**: PSC approved $1.5B project on January 28, 2026 **while explicitly finding the cost "not reasonable"**
+- **AVAIO Digital**: $6-21B data center campus backed by deliberately undisclosed "$25 billion investment manager" (5 years of sustained anonymity)
+- **League of Women Voters v. Jester**: 8th Circuit appeal creates legal uncertainty through July 3, 2026 signature deadline
+
+**Key Finding**: The Arkansas case demonstrates the "closed regulatory loop" at the state level—legislative authorization → constrained regulation → targeted incentives → undisclosed capital → restricted citizen recourse.
+
+---
+
+### Venezuela Compliance Stack Documentation
+
+**New Files in 05_Geopolitical_Vectors**:
+- `Venezuela_Privatization_Amnesty_Stack_Feb2026.md`
+- `January_2026_Parallel_Operations_Timeline.md`
+
+**Venezuela Privatization-Amnesty Stack** (January 29 - February 6, 2026):
+
+| Date | Event | Function |
+|------|-------|----------|
+| Jan 3 | Maduro captured (Operation Absolute Resolve) | Friction: Global attention captured |
+| Jan 29 | Hydrocarbons Law enacted | Foreign capital enabled; U.S. Treasury controls revenues via General License 46 |
+| Jan 30 | Amnesty announced; El Helicoide closure signed | Legal/political reset begins |
+| Feb 5-6 | Amnesty law formally passed | Legal framework locked in |
+
+**Key Insight**: U.S. General License 46 (not Venezuelan statutory guarantees) provides the actual investor protection—oil revenues custodied under Treasury control.
+
+**January 2026 Parallel Operations** (January 2-9, 2026):
+
+| Theater | High Attention | Lower Attention |
+|---------|----------------|-----------------|
+| Venezuela | Maduro capture dominated news cycles | — |
+| Yemen | — | Saudi counter-offensive ended UAE military presence; STC dissolved |
+
+**Finding**: While global media covered Venezuela, Saudi Arabia executed fundamental restructuring of Gulf relations—including public accusation of UAE "undermining Saudi national security."
+
+**Significance**: The Saudi-UAE rupture complicates the "Consortium" model—same sovereign wealth funds cooperating on US tech acquisitions are now backing opposing forces in Yemen and Sudan.
+
+---
+
+### February 2026 Update: DOJ Files and Network Documentation
+
+**New File**: `09_Silicon_Sovereignty/February_2026_Update.md`
+
+**DOJ Epstein Files Release** (Jan 30-31, 2026):
+- 3M+ pages released
+- Musk-Epstein correspondence verified (16+ emails, 2012-2013)
+- UAE connection documented: Epstein facilitated Sultan Ahmed bin Sulayem (DP World CEO) ↔ Musk introductions
+- Musk's daughter Vivian confirmed email authenticity
+
+**Palantir-Thiel-Epstein Triangle**:
+- 2014: Peter Thiel urged Epstein to meet Valar Ventures principals
+- 2015: Epstein invested $15M in Valar Ventures
+- 2018: Palantir hired Mandelson's Global Counsel while Epstein still active Valar partner
+- Current: Palantir holds £670M+ UK contracts (nuclear, NHS, MoD, police)
+
+**Mandelson Consequences** (February 2026):
+- Sacked as US Ambassador designate
+- Resigned from Labour Party and House of Lords
+- Metropolitan Police criminal investigation (misconduct in public office)
+- UK Parliament voted unanimously to disclose vetting documents
+
+**Trump-UAE $500M Deal** (WSJ, Feb 1):
+- Sheikh Tahnoon acquired 49% of World Liberty Financial ($500M)
+- Same Tahnoon chairs MGX (15% TikTok owner) and G42 (receives 20% of approved AI chips/year)
+- Congressional investigation launched (Rep. Khanna, Sen. Warren)
 
 ---
 
@@ -178,86 +282,39 @@ Epstein_Files_Uses_Theory/
 
 ### Silicon Sovereignty: Infrastructure Consolidation Analysis
 
-**New File**: `09_Silicon_Sovereignty/Infrastructure_Consolidation_Pattern_Jan2026.md`
+**File**: `09_Silicon_Sovereignty/Infrastructure_Consolidation_Pattern_Jan2026.md`
 
-Comprehensive documentation of overlapping ownership consortium (Oracle, Silver Lake, Saudi PIF, UAE MGX) acquiring control of:
-- **Gaming/Behavioral Data**: Electronic Arts ($55B), Niantic Gaming ($3.5B), 100M+ users
-- **Social Media/Algorithm**: TikTok U.S. operations ($14B), 200M+ users, Oracle-controlled algorithm
+Documentation of overlapping ownership consortium (Oracle, Silver Lake, Saudi PIF, UAE MGX) acquiring control of:
+- **Gaming/Behavioral Data**: Electronic Arts ($55B), Niantic, 100M+ users
+- **Social Media/Algorithm**: TikTok U.S. operations ($14B), 200M+ users
 - **AI Infrastructure**: Stargate Project ($500B), Grok federal/Pentagon deployment
-- **Geospatial Mapping**: Niantic Spatial access via $50M Scopely investment
+- **Geospatial Mapping**: Niantic Spatial access
 
-**Key Findings Documented**:
-1. **TikTok Censorship Pattern** (Jan 25-27, 2026): "Epstein" keyword blocked 72 hours after Oracle/UAE consortium takeover; California investigation launched
-2. **Switch Acquisition Failure** (Jan 26, 2026): SoftBank failed to acquire military-grade (Tier 5) data centers, exposing Stargate infrastructure bottleneck
-3. **Security/Speed Tradeoff**: AI infrastructure forced to use rapid-deployment facilities (Colossus) instead of fortress-grade security
-4. **Niantic Surveillance Loop**: Technical explanation of how game ownership enables directed intelligence gathering through player incentives
-5. **Temporal Synchronization**: Board of Peace signing (Jan 22) + TikTok finalization (Jan 22) + Stargate updates = coordinated infrastructure convergence
-
-**Technical Context Added**:
-- Tier 5 vs. commercial data center security specifications
-- Game-to-mapping control architecture in geospatial surveillance
-- Algorithm retraining implications under infrastructure provider ownership
-- Physical infrastructure constraints in AI deployment
-
-**Significance**: Documents concentration of data collection (games, social media), compute infrastructure (AI systems), and government integration (Pentagon, federal agencies) under single recurring consortium.
+**Key Findings**:
+1. TikTok censorship reports emerged 72 hours after Oracle/UAE takeover (Jan 25-27)
+2. Same consortium appears in EA, TikTok, Stargate, and Grok deals
+3. Switch acquisition failure (Jan 26) exposed AI infrastructure bottleneck
+4. Board of Peace + TikTok finalization both January 22, 2026
 
 ---
 
-## What's New (v7.9 - January 2026)
+## Quick Navigation by Type
 
-### Correlation Methodology Update
+### Datasets
+- `Control_Proof/master_reflexive_correlation_data.csv` — Core friction/compliance data
+- `New_Data_2026/` — January-February 2026 updates
+- `05_Geopolitical_Vectors/thermostat_control_data.csv` — Nation-state linkages
+- `Project_Trident/Best_Data_For_Project_Trident/` — Ritual timing, fund flows
 
-Raw event count analysis replaces subjective 1-10 scoring:
+### Statistical Verification
+- `Control_Proof/correlation_test.py` — Reproduce core findings
+- `Project_Trident/Verify_Trident_Analysis.py` — Verify ritual timing analysis
 
-| Metric | Previous | Updated |
-|--------|----------|---------|
-| Strongest correlation | r = 0.6196 at 14-day lag | r = 0.6685 at 0-lag |
-| Sample size | 30 weeks | 229 weeks |
-| Methodology | Subjective indices | Raw event counts |
-| Interpretation | Sequential causation | Simultaneous convergence |
-
-### New Datasets (2,087 records)
-
-- **BlackRock_Timeline_Full_Decade.csv** — Crypto pivot, government ties, strategic shifts
-- **Biopharma.csv** — FDA/DOGE conflicts, Neuralink, Roivant
-- **Infrastructure_Forensics.csv** — Adobe license cuts → redaction failures chain
-- **High_Growth_Companies_2015_2026.csv** — Low-publicity biotech growth
-  - *Note: This dataset was 2025's companies with the highest growth and least publicity. For that reason, the scraping keywords had to be specific. Future dates in datasets were scraped projections from sources.*
-
-### Key New Findings
-
-1. **Convergence > Sequence**: Events cluster simultaneously, not sequentially
-2. **DOGE → Redaction Chain**: Adobe cuts (Mar 2025) → inadequate tools (Dec 2025)
-3. **December 22-23 Peak**: Highest event density of any dates in dataset
-4. **BlackRock Fed Positioning**: Larry Fink-Trump talks during pincer window
-5. **CRINK Fifth Signal**: Cyber threat analysis published Dec 22 adds intelligence dimension
-6. **Sep 26 Triple Alignment**: Theory origin day = Epstein docs + Netanyahu + CSIS CRINK analysis
-
----
-
-## What's New (v7.8)
-
-### Files Added via Claude Code
-
-- **VERIFICATION_REPORT_Jan2026.md** - Independent statistical validation of all core findings
-- **DISCREPANCY_ANALYSIS.md** - Methodology transparency and correlation value reconciliation
-- **independent_statistical_verification.py** - Complete verification script (6 statistical tests)
-- **reproduce_original_correlation.py** - Targeted replication of original methodology
-- **TRANSPARENCY_NOTE_FOR_2026_ANALYSIS.md** - Ready-to-integrate methodology documentation
-- **Graham_Venezuela_Posts_Timeline.csv** - Timeline of Lindsey Graham's Venezuela advocacy (14 events, Oct 2025-Jan 2026)
-- **Graham_Venezuela_Analysis.md** - Comprehensive case study validating convergence model with operator positioning
-- **05_Geopolitical_Vectors/Global_Election_Analysis.md** - Systematic analysis of Australia (2022), UK (2024), Canada (2025) pivots toward China
-- **success_rate_by_month.csv** - Monthly compliance success rates and resistance indicator counts
-- **resistance_indicators.md** - 25-page analysis of compliance outcomes and resistance patterns (Dec 2025-Jan 2026)
-
-All files include complete source documentation and reproducible methodology.
-
-### Repository Updates
-- Updated repository name and description
-- Previously added David Barnes analysis
-- Added `10_Real-Time_Updates_and_Tasks` to share SuperGrok daily tasks and monthly analysis updates
-- Added `11_Protest_Dynamics_and_Funding`
-- Added `12_The_Media_Firewall`
+### Deep Dives by Topic
+- **Tech Infrastructure**: `09_Silicon_Sovereignty/`
+- **Government Accountability**: `09_Silicon_Sovereignty/February_2026_Update.md` (Mandelson, Palantir, DOJ files)
+- **State Regulatory Capture**: `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md`
+- **Geopolitical Shifts**: `05_Geopolitical_Vectors/` (Venezuela, Yemen, CRINK, allied elections)
 
 ---
 
@@ -266,8 +323,8 @@ All files include complete source documentation and reproducible methodology.
 ### Start Here
 1. `Repository_Synthesis.md` — Three-layer framework overview
 2. `New_Data_2026/2026_Analysis.md` — Latest correlation findings
-3. `Report.md` — Executive summary
-4. `09_Silicon_Sovereignty/Infrastructure_Consolidation_Pattern_Jan2026.md` — Tech infrastructure ownership analysis
+3. `09_Silicon_Sovereignty/February_2026_Update.md` — Current developments
+4. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level pattern
 
 ### Verify the Statistics
 ```bash
@@ -279,7 +336,7 @@ python correlation_test.py
 - `master_reflexive_correlation_data.csv` — Weekly friction/compliance indices
 - `ritual_events_parsed.csv` — Project Trident ritual timing
 - `Fund_Flow_Ritual_Coordination_20251225.csv` — December 2025 dark pool data
-- `CRINK_Intelligence_Dataset_Final_Verified.csv` — CRINK axis discourse tracking (34 records)
+- `CRINK_Intelligence_Dataset_Final_Verified.csv` — CRINK axis discourse tracking
 
 ---
 
@@ -287,26 +344,29 @@ python correlation_test.py
 
 ### Start Here
 1. `How_This_Happened-A_Policy_Brief.md` — Regulatory citations, oversight questions
-2. `Main_Characters.md` — Cabinet timing analysis
-3. `Implications.md` — China BRI / US aid correlation
-4. `09_Silicon_Sovereignty/Infrastructure_Consolidation_Pattern_Jan2026.md` — Infrastructure control consolidation
+2. `09_Silicon_Sovereignty/February_2026_Update.md` — DOJ files, network documentation
+3. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level regulatory capture
+4. `05_Geopolitical_Vectors/Venezuela_Privatization_Amnesty_Stack_Feb2026.md` — Compliance reset pattern
 
 ### Key Questions Raised
-- Why did DOGE cut 11,020 Adobe licenses months before the Epstein file deadline?
-- Why did 108 events cluster in a 12-day December window?
-- Why does China BRI expansion (+$124B) correlate with US aid cuts (-51%)?
+- Why did the PSC approve a $1.5B project it explicitly found "not reasonable"?
 - Why did TikTok censorship reports emerge 72 hours after Oracle/UAE consortium takeover?
-- Why did the same entities (Oracle, Silver Lake, MGX) appear in EA, TikTok, Stargate, and Grok deals?
+- Why did major Saudi-UAE rupture occur during Venezuela media saturation?
+- Why do the same entities appear in EA, TikTok, Stargate, Grok, and World Liberty Financial deals?
+- Why has AVAIO's $750M anchor investor remained undisclosed for 5 years?
 
 ### Testable Predictions
-| Prediction | Timeframe | Verification |
-|-----------|-----------|--------------|
-| Market correction 2-10% | Jan-Feb 2026 | S&P 500 tracking |
-| Tu BiShvat policy action | Feb 12, 2026 | Policy/funding shifts |
-| Gulf SWF Q4 positioning revealed | Feb 2026 | 13F filings |
-| DOGE-predicted instability | Q1 2026 | Mali, Syria, Sudan |
-| Event clustering at next file deadline | Ongoing | Media cycle tracking |
-| California TikTok investigation findings | Q1 2026 | Newsom review results |
+
+| Prediction | Timeframe | Status |
+|-----------|-----------|--------|
+| Event clustering at next file deadline | Ongoing | ✅ Confirmed (Jan 30-Feb 1) |
+| Tu BiShvat policy action | Feb 12, 2026 | Pending |
+| Gulf SWF Q4 positioning revealed | Feb 2026 | Pending (13F filings) |
+| DOGE-predicted instability | Q1 2026 | Tracking (Mali, Syria, Sudan) |
+| California TikTok investigation findings | Q1 2026 | Pending |
+| Khanna investigation findings | March 2026 | Document deadline March 1 |
+| UK Mandelson disclosure | Feb-March 2026 | Parliamentary vote passed |
+| Arkansas PSC order text release | Q1 2026 | FOIA pending |
 
 ---
 
@@ -332,7 +392,7 @@ This repository documents **correlations, not causation**. All findings derive f
 
 **The claim is structural**: Statistically significant clustering patterns exist and are reproducible.
 
-The "Main Characters" and "Implications" modules specifically disclaim any assertion of conscious coordination. Performative patterns enable detection of quieter correlations—this is an analytical observation, not an accusation.
+The "Main Characters," "Implications," and state-level analysis modules specifically disclaim any assertion of conscious coordination. Performative patterns enable detection of quieter correlations—this is an analytical observation, not an accusation.
 
 ---
 
@@ -356,7 +416,7 @@ Core findings independently verified January 2026:
 - **Ritual proximity** (50.7% vs 19.9%): ✅ Exact reproduction
 - **December 2025 anomaly**: ✅ Confirmed (z = 2.35, p < 0.01)
 
-Extended analysis identified Granger causality (F = 32.49, p < 0.0001), indicating friction events predict compliance 1-4 weeks later. This extends the convergence model to include both simultaneous clustering and sequential prediction components.
+Extended analysis identified Granger causality (F = 32.49, p < 0.0001), indicating friction events predict compliance 1-4 weeks later.
 
 See `VERIFICATION_REPORT_Jan2026.md` for complete independent analysis.
 
@@ -366,7 +426,7 @@ See `VERIFICATION_REPORT_Jan2026.md` for complete independent analysis.
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
-**Last updated**: January 27, 2026
+**Last updated**: February 7, 2026
 
 ---
 
