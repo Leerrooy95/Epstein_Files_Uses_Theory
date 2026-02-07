@@ -1,6 +1,14 @@
 # Claude Code Analysis
 
+v1.0
+
+---
+
 This subfolder contains raw research on the "Privatized Integration" pattern (Gulf capital → US private equity → Israeli settlement infrastructure, Board of Peace governance, MEAD-CDOC defense integration) and Claude Code's independent verification and analysis.
+
+Claude Code is the lead researcher of this file, information is checked and verified independently for best results. So far Claude Code is doing great though. 
+
+---
 
 ## Files
 
