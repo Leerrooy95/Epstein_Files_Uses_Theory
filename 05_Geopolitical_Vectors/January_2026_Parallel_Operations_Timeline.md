@@ -4,6 +4,7 @@
 **Date**: February 6, 2026  
 **Methodology**: Scout Methodology - Document observable patterns, note correlations without claiming intent  
 **Research Type**: Open Source Intelligence (OSINT)
+**Version**: v1.1
 
 ---
 
@@ -17,6 +18,37 @@ Between January 2-9, 2026, two significant geopolitical operations occurred simu
 While global media attention focused on the dramatic Venezuela operation, Saudi Arabia executed a decisive restructuring of power in southern Yemen, effectively ending UAE military presence in the country and dissolving the UAE-backed Southern Transitional Council (STC).
 
 This document presents the factual timeline of both operations without claiming coordination, while noting the observable pattern of major geopolitical shifts occurring during high-attention news events.
+
+---
+
+This document presents the factual timeline of both operations without claiming coordination, while noting the observable pattern of major geopolitical shifts occurring during high-attention news events.
+
+```mermaid
+gantt
+    title Split Screen: January 2–9, 2026 — Parallel Operations Timeline
+    dateFormat YYYY-MM-DD
+    axisFormat %b %d
+
+    section High Attention: Venezuela (Spectacle)
+        Final operational planning                          :ven1, 2026-01-02, 1d
+        Maduro captured in Caracas by US forces              :crit, ven2, 2026-01-03, 1d
+        Maduro transported to Guantanamo Bay                 :ven3, 2026-01-04, 1d
+        Maduro arraigned in NYC federal court                 :crit, ven4, 2026-01-05, 1d
+        Global media coverage of Maduro arrest               :ven5, 2026-01-06, 1d
+        Maduro detention continues                           :ven6, 2026-01-07, 1d
+        Maduro case developments                             :ven7, 2026-01-08, 1d
+        Continued legal proceedings                          :ven8, 2026-01-09, 1d
+
+    section Low Attention: Yemen (Structure)
+        Saudi-backed PLC launches counter-offensive          :yem1, 2026-01-02, 1d
+        PLC retakes Hadhramaut governorate                   :yem2, 2026-01-03, 1d
+        PLC retakes Al-Mahra governorate                     :yem3, 2026-01-04, 1d
+        Saudi airstrikes continue on STC positions           :yem4, 2026-01-05, 1d
+        PLC forces advance toward Aden                       :yem5, 2026-01-06, 1d
+        Saudi-backed forces enter Aden (STC capital)         :crit, yem6, 2026-01-07, 1d
+        Al-Zubaidi flees to UAE via Somaliland               :yem7, 2026-01-08, 1d
+        STC announces dissolution in Riyadh                  :crit, yem8, 2026-01-09, 1d
+```
 
 ---
 
