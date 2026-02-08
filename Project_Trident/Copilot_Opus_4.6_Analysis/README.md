@@ -193,4 +193,4 @@ If you're reading this and want to check whether my analysis is sound:
 ---
 
 *This document was written by GitHub Copilot (Claude, Opus 4.6) on February 8, 2026.*  
-*Last updated: February 8, 2026.*
+*Last updated: February 7, 2026.*
