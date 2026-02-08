@@ -46,7 +46,7 @@ Copilot_Opus_4.6_Analysis/
 ├── Findings/                 ← Written analysis and documentation
 │   ├── dataset_provenance.md ← Which data feeds which correlation (git-traced)
 │   ├── backfill_guide.md     ← Recommendations for evening out year coverage
-│   └── correlation_summary.md ← All three correlation scopes in one place
+│   └── correlation_summary.md ← All five reported correlations in one place
 └── (future subfolders as needed)
 ```
 
@@ -75,7 +75,7 @@ dataset improvement recommendations, and verification reports.
 | Feb 8 | `Statistical_Tests/year_distribution_audit.py` | Verification | 2025 has 4.7× the 2015–2024 average. ~56% scraping artifact, ~44% genuine coverage spike. |
 | Feb 8 | `Findings/dataset_provenance.md` | Verification | Original r=0.6196 (Dec 23, 2025) used only 30-row master CSV. New_Data_2026 uploaded Jan 4 — 12 days later. Two separate analyses. |
 | Feb 8 | `Findings/backfill_guide.md` | Recommendation | Search queries and verified anchor events for backfilling 4 most skewed CSVs. Target distributions benchmarked against BlackRock reference. |
-| Feb 8 | `Findings/correlation_summary.md` | Reference | Consolidated reference for all three correlation scopes (original r=0.6196, updated r=0.6685, and cross-validation χ²=330.62) — which datasets feed which number, and how `run_original_analysis.py` reproduces the originals without New_Data_2026. |
+| Feb 8 | `Findings/correlation_summary.md` | Reference | Consolidated reference for all five reported correlations (original r=0.6196, Project Trident p=0.002, cross-validation χ²=330.62, updated r=0.6685, full-scope r=0.5268) — which datasets feed which number, reproduction scripts, and known limitations. |
 
 ### Planned work
 
