@@ -136,9 +136,11 @@ def run_normalized(label, file_map):
         idx = np.where(mask)[0]
         fv = f_raw[idx]
         cv = c_raw[idx]
-        # z-score (handle constant series)
-        f_std = fv.std() if fv.std() > 0 else 1.0
-        c_std = cv.std() if cv.std() > 0 else 1.0
+        # z-score (handle constant series by defaulting std to 1.0)
+        f_std = fv.std()
+        c_std = cv.std()
+        f_std = f_std if f_std > 0 else 1.0
+        c_std = c_std if c_std > 0 else 1.0
         f_norm[idx] = (fv - fv.mean()) / f_std
         c_norm[idx] = (cv - cv.mean()) / c_std
 

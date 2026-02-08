@@ -185,7 +185,12 @@ def run_event_study(label, file_map):
     date_range_start = np.nanmin(np.concatenate([f_dates_ns, c_dates_ns]))
     date_range_end = np.nanmax(np.concatenate([f_dates_ns, c_dates_ns]))
     td = date_range_end - date_range_start
-    range_days = max(1, int(td / np.timedelta64(1, 'D')))
+    range_days = int(td / np.timedelta64(1, 'D'))
+
+    if range_days <= 0:
+        print("  ⚠ Date range is zero or negative — skipping random baseline")
+        return
+    
 
     N_RANDOM = 1000
     random_counts = {w: [] for w in windows}

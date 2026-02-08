@@ -121,6 +121,8 @@ def run_crossval(label, file_map):
     print(f"  Spearman ρ = {rho_full:.4f} (p={p_rho_full:.6f})")
 
     # ── Exclusion tests ──────────────────────────────────────────────────────
+    # Each filter_fn receives a pandas Period object (weekly frequency).
+    # w.start_time returns the Timestamp of the period's start.
     exclusions = {
         'Dec 2025 excluded': lambda w: not (w.start_time.year == 2025 and w.start_time.month == 12),
         'Nov-Dec 2025 excluded': lambda w: not (w.start_time.year == 2025 and w.start_time.month in [11, 12]),

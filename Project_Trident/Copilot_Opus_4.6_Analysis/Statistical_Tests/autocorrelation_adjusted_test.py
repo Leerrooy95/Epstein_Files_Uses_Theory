@@ -167,6 +167,12 @@ def run_analysis(label, file_map):
     #
     # Optimal block size (Politis & Romano, 1994): roughly 1 / (1 - ρ)
     # but capped at n/4 and floored at 2.
+    # Optimal block size heuristic based on Politis & Romano (1994):
+    # block_size ≈ 1 / (1 - max_autocorrelation).
+    # Capped at n/4 to ensure enough blocks for meaningful resampling,
+    # and floored at 2 to maintain temporal structure.
+    # The 0.95 threshold prevents division-by-near-zero when autocorrelation
+    # is extreme, defaulting to n/4 (max 20) in that case.
     max_ac = max(abs(f_ac1), abs(c_ac1))
     if max_ac >= 0.95:
         block_size = min(n // 4, 20)

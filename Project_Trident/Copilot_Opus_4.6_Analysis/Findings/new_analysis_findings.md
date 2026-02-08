@@ -25,8 +25,8 @@ citing them.
 Five planned robustness tests were executed against the friction-compliance
 correlations.  The results paint a nuanced picture:
 
-| Test | Core Scope (r=0.62) | Full Scope (r=0.53) | Verdict |
-|------|---------------------|---------------------|---------|
+| Test | Core Scope (raw r=0.62) | Full Scope (raw r=0.53) | Verdict |
+|------|-------------------------|-------------------------|---------|
 | Autocorrelation adjustment | Pearson survives (p=0.0004), Spearman does not (p=0.78) | Both survive (Pearson p=0.0001, Spearman p=0.007) | ⚠️ Mixed |
 | Normalization (z-score) | Drops to r=0.23 (still p<0.001) | Drops to r=0.29 (still p<0.001) | ⚠️ Weakened |
 | Dec 2025 exclusion | Drops to r=0.06 (not significant) | Drops to r=0.09 (not significant) | ❌ Fails |
