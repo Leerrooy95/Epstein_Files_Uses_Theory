@@ -12,32 +12,76 @@ as *analysis to be verified*, not as established fact.
 # Copilot Opus 4.6 — Lead Researcher Analysis
 
 **Analyst:** GitHub Copilot (Claude, Opus 4.6)  
-**Role:** Lead Researcher, Project Trident statistical audit  
+**Role:** Lead Researcher — verification, methodology review, and recommendations  
 **Created:** February 8, 2026  
 **Repository owner:** Austin Smith ([@Leerrooy95](https://github.com/Leerrooy95))
 
 ---
 
-## What This Folder Contains
+## How This Folder Works
 
-This is the working directory for statistical and methodological analysis
-conducted by an AI assistant on the Regulated Friction Project datasets.
-The focus is on testing claims, not advocating for them.
+The repository owner builds datasets and runs correlations.  My job is to:
 
-### Work completed so far
+1. **Verify** — independently check whether reported correlations hold up
+   under scrutiny (permutation tests, robustness checks, alternative methods)
+2. **Recommend** — suggest improvements to datasets (coverage gaps, category
+   standardization, normalization) and flag issues that could weaken findings
+3. **Expand** — propose new correlation techniques and analytical approaches
+   the owner may not have encountered yet (Spearman, Granger causality,
+   rolling windows, event-study designs, etc.)
 
-| File | Location | What it does |
-|------|----------|-------------|
-| `permutation_test.py` | `Run_Correlations_Yourself/` | 10,000-shuffle significance test on both the 30-row master CSV and the multi-dataset event counts. Reports Pearson r and Spearman ρ. |
-| `year_distribution_audit.py` | `Run_Correlations_Yourself/` | Counts events by year across every CSV in the repo. Diagnoses the 2025 over-representation as ~56% scraping artifact, ~44% genuine coverage spike. |
-| `dataset_provenance.md` | `Run_Correlations_Yourself/` | Git-commit-level trace showing the original r=0.6196 (Dec 23, 2025) used only the 30-row master CSV; the New_Data_2026 files were uploaded 12 days later. |
-| `backfill_guide.md` | `Run_Correlations_Yourself/` | Search queries and verified anchor events for evening out the 2025-skewed datasets. No fabricated data — user must verify sources. |
+I do **not** build datasets or run the initial correlations — that's the
+owner's work.  I receive the data and results, then analyze them here.
+
+---
+
+## Folder Structure
+
+```
+Copilot_Opus_4.6_Analysis/
+├── README.md                 ← You are here
+├── Statistical_Tests/        ← Runnable Python scripts
+│   ├── permutation_test.py   ← Shuffle-based significance testing
+│   └── year_distribution_audit.py  ← Year-skew diagnosis across all CSVs
+├── Findings/                 ← Written analysis and documentation
+│   ├── dataset_provenance.md ← Which data feeds which correlation (git-traced)
+│   └── backfill_guide.md     ← Recommendations for evening out year coverage
+└── (future subfolders as needed)
+```
+
+### `Statistical_Tests/`
+
+Runnable Python scripts that test claims in the data.  Anyone can execute these:
+
+```bash
+pip install pandas numpy scipy
+python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/permutation_test.py
+python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/year_distribution_audit.py
+```
+
+### `Findings/`
+
+Written analysis documents — provenance traces, methodology reviews,
+dataset improvement recommendations, and verification reports.
+
+---
+
+## Work Completed
+
+| Date | File | Type | Summary |
+|------|------|------|---------|
+| Feb 8 | `Statistical_Tests/permutation_test.py` | Verification | 1K-shuffle test on 30-row master CSV + 10K-shuffle multi-dataset test. CORE Pearson r=0.62 significant (p<0.0001) but Spearman ρ=0.02 not significant — correlation driven by magnitude outliers. |
+| Feb 8 | `Statistical_Tests/year_distribution_audit.py` | Verification | 2025 has 4.7× the 2015–2024 average. ~56% scraping artifact, ~44% genuine coverage spike. |
+| Feb 8 | `Findings/dataset_provenance.md` | Verification | Original r=0.6196 (Dec 23, 2025) used only 30-row master CSV. New_Data_2026 uploaded Jan 4 — 12 days later. Two separate analyses. |
+| Feb 8 | `Findings/backfill_guide.md` | Recommendation | Search queries and verified anchor events for backfilling 4 most skewed CSVs. Target distributions benchmarked against BlackRock reference. |
 
 ### Planned work
 
 - [ ] Autocorrelation-adjusted significance test (Durbin-Watson / block bootstrap)
 - [ ] Normalized event-count correlation (events per year equalized)
 - [ ] Cross-validation: does the pattern hold when Dec 2025 is excluded?
+- [ ] Rolling-window correlation analysis (does r change across different time periods?)
+- [ ] Event-study framework (measure compliance response in a defined window around each friction event)
 
 ---
 
@@ -61,7 +105,25 @@ prove any particular theory.
 - Use loaded language ("proves," "confirms," "exposes") for statistical results
 - Treat correlation as causation
 
-### 2. Factual accuracy
+### 2. Recommendations and new techniques
+
+When reviewing datasets and correlations, I will actively suggest:
+
+- **Dataset improvements** — missing year coverage, inconsistent categories,
+  date format issues, duplicate records, normalization needs
+- **Alternative statistical methods** — when a standard Pearson r may not be
+  the right tool (e.g., Spearman for non-linear relationships, Granger for
+  temporal causality, rolling correlations for regime changes, partial
+  correlations to control for confounders)
+- **Robustness checks** — ways to stress-test a finding (leave-one-out,
+  bootstrap confidence intervals, sensitivity to outlier removal)
+- **Visualization approaches** — plots that reveal patterns or problems
+  the raw numbers might hide
+
+I will explain *why* I'm suggesting each technique in plain language so the
+owner can learn the methodology, not just receive a number.
+
+### 3. Factual accuracy
 
 - Every historical event I reference must be verifiable via the cited source
 - If I use web search results, I will include the URL
@@ -69,7 +131,7 @@ prove any particular theory.
 - I will not backfill datasets with AI-generated events — the user must
   verify every entry against a real source
 
-### 3. Transparency about limitations
+### 4. Transparency about limitations
 
 **What I am:**
 - An AI language model (Claude, Opus 4.6) running as GitHub Copilot
@@ -91,7 +153,7 @@ prove any particular theory.
 | 2025 skew diagnosis | Based on date parsing which may miss events with non-standard date formats |
 | Dataset provenance | Git history only shows when files were *pushed to GitHub*, not when analysis was *first run locally* |
 
-### 4. Political neutrality
+### 5. Political neutrality
 
 The datasets in this repository touch on US domestic politics, Middle East
 geopolitics, intelligence operations, and financial regulation.  These are
@@ -105,12 +167,13 @@ My approach:
 - I will not speculate about motivations, conspiracies, or cover-ups
   beyond what the statistical evidence supports
 
-### 5. Folder hygiene
+### 6. Folder hygiene
 
 - Each document in this folder will state its purpose, date, and data sources
   in the header
 - Superseded documents will be marked as such, not silently deleted
-- The README (this file) will be kept current as new analyses are added
+- This README will be kept current as new analyses are added
+- Subfolders will be added as needed to keep the structure navigable
 
 ---
 
@@ -118,8 +181,8 @@ My approach:
 
 If you're reading this and want to check whether my analysis is sound:
 
-1. **Run the scripts yourself** — everything in `Run_Correlations_Yourself/`
-   is executable Python.  `pip install pandas numpy scipy` and run them.
+1. **Run the scripts yourself** — everything in `Statistical_Tests/` is
+   executable Python.  `pip install pandas numpy scipy` and run them.
 2. **Check the data** — all CSVs are in the repo.  Verify event dates and
    categories against the cited source URLs.
 3. **Challenge the methodology** — if you think a statistical test is wrong
@@ -129,5 +192,5 @@ If you're reading this and want to check whether my analysis is sound:
 
 ---
 
-*This document was written by GitHub Copilot (Claude, Opus 4.6) on February 8, 2026.*
-*It will be updated as new analyses are added to this folder.*
+*This document was written by GitHub Copilot (Claude, Opus 4.6) on February 8, 2026.*  
+*Last updated: February 8, 2026.*

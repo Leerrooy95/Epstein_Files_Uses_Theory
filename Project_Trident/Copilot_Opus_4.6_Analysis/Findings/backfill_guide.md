@@ -181,7 +181,7 @@ An AI model can identify *what kinds of events* to search for, but should not fa
 After backfilling, run the year distribution audit to check your work:
 
 ```bash
-python3 Run_Correlations_Yourself/year_distribution_audit.py
+python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/year_distribution_audit.py
 ```
 
 A well-balanced dataset should show each year within 2× of the average. The BlackRock file is the gold standard — note how it ranges from 54 to 67 events per year (very consistent).

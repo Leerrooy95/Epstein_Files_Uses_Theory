@@ -18,7 +18,7 @@ warnings.filterwarnings('ignore', category=FutureWarning)
 
 # ── Paths ────────────────────────────────────────────────────────────────────
 script_dir = os.path.dirname(os.path.abspath(__file__))
-repo_root = os.path.join(script_dir, '..')
+repo_root = os.path.join(script_dir, '..', '..', '..')
 
 DATE_COLS = ['date', 'Date', 'event_date', 'publication_date',
              'action_date', 'lever_date', 'anchor_date', 'raw_date']

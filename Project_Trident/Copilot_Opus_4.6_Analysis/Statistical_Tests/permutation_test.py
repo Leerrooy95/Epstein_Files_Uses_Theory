@@ -21,7 +21,7 @@ warnings.filterwarnings('ignore', category=FutureWarning)
 SEED = 42
 rng = np.random.default_rng(SEED)
 script_dir = os.path.dirname(os.path.abspath(__file__))
-repo_root = os.path.join(script_dir, '..')
+repo_root = os.path.join(script_dir, '..', '..', '..')
 
 
 # ─────────────────────────────────────────────────────────────────────────────
