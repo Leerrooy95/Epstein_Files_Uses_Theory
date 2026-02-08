@@ -42,11 +42,25 @@ Copilot_Opus_4.6_Analysis/
 ├── README.md                 ← You are here
 ├── Statistical_Tests/        ← Runnable Python scripts
 │   ├── permutation_test.py   ← Shuffle-based significance testing
-│   └── year_distribution_audit.py  ← Year-skew diagnosis across all CSVs
+│   ├── year_distribution_audit.py  ← Year-skew diagnosis across all CSVs
+│   ├── autocorrelation_adjusted_test.py  ← Durbin-Watson + block bootstrap
+│   ├── normalized_correlation.py  ← Per-year equalized event-count correlation
+│   ├── cross_validation_dec2025.py  ← Does the pattern hold without Dec 2025?
+│   ├── rolling_window_correlation.py  ← Sliding-window correlation over time
+│   └── event_study_framework.py  ← Compliance response after friction events
 ├── Findings/                 ← Written analysis and documentation
 │   ├── dataset_provenance.md ← Which data feeds which correlation (git-traced)
 │   ├── backfill_guide.md     ← Recommendations for evening out year coverage
-│   └── correlation_summary.md ← All five reported correlations in one place
+│   ├── correlation_summary.md ← All five reported correlations in one place
+│   └── new_analysis_findings.md ← Results of all five robustness tests
+├── Datasets/                 ← Local copies of CSVs used in analysis
+│   ├── BlackRock_Timeline_Full_Decade.csv
+│   ├── Infrastructure_Forensics.csv
+│   ├── Timeline_Update_Jan2026_Corrected (1).csv
+│   ├── Additional_Anchors_Jan2026_Final.csv
+│   ├── Biopharma.csv
+│   ├── High_Growth_Companies_2015_2026.csv
+│   └── master_reflexive_correlation_data.csv
 └── (future subfolders as needed)
 ```
 
@@ -55,10 +69,22 @@ Copilot_Opus_4.6_Analysis/
 Runnable Python scripts that test claims in the data.  Anyone can execute these:
 
 ```bash
-pip install pandas numpy scipy
+pip install pandas numpy scipy statsmodels
 python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/permutation_test.py
 python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/year_distribution_audit.py
+python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/autocorrelation_adjusted_test.py
+python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/normalized_correlation.py
+python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/cross_validation_dec2025.py
+python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/rolling_window_correlation.py
+python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/event_study_framework.py
 ```
+
+### `Datasets/`
+
+Local copies of the CSV files used by the new statistical tests.  Originals
+remain untouched in `New_Data_2026/` and `Control_Proof/`.  These copies
+exist so that the analysis subfolder is self-contained per the repository
+owner's request.
 
 ### `Findings/`
 
@@ -76,14 +102,20 @@ dataset improvement recommendations, and verification reports.
 | Feb 8 | `Findings/dataset_provenance.md` | Verification | Original r=0.6196 (Dec 23, 2025) used only 30-row master CSV. New_Data_2026 uploaded Jan 4 — 12 days later. Two separate analyses. |
 | Feb 8 | `Findings/backfill_guide.md` | Recommendation | Search queries and verified anchor events for backfilling 4 most skewed CSVs. Target distributions benchmarked against BlackRock reference. |
 | Feb 8 | `Findings/correlation_summary.md` | Reference | Consolidated reference for all five reported correlations (original r=0.6196, Project Trident p=0.002, cross-validation χ²=330.62, updated r=0.6685, full-scope r=0.5268) — which datasets feed which number, reproduction scripts, and known limitations. |
+| Feb 8 | `Statistical_Tests/autocorrelation_adjusted_test.py` | Verification | Durbin-Watson (DW=1.29 core, 1.82 full) + block bootstrap (4-week blocks, 10K iterations). Pearson survives adjustment (p=0.0004 core, 0.0001 full). Core Spearman fails (p=0.78); full Spearman survives (p=0.007). |
+| Feb 8 | `Statistical_Tests/normalized_correlation.py` | Verification | Three normalization methods: z-score reduces r from 0.62→0.23 (core) and 0.53→0.29 (full); proportional scaling → near zero; binary → negative. The raw r is inflated by 2025 magnitude. |
+| Feb 8 | `Statistical_Tests/cross_validation_dec2025.py` | Verification | Removing Dec 2025: core r drops 90% (0.62→0.06, not significant). Full r drops 82% (0.53→0.09, not significant). The entire correlation is driven by one month. |
+| Feb 8 | `Statistical_Tests/rolling_window_correlation.py` | Verification | 26-week rolling mean r=0.20 (core), 0.19 (full). Only 11–28% of windows exceed r>0.3. Strong windows concentrated in late 2025. Weak but consistently positive signal across earlier periods. |
+| Feb 8 | `Statistical_Tests/event_study_framework.py` | Verification | Post-friction windows have FEWER compliance events than pre-friction (ratio 0.56x at 14d). However, friction dates attract 3.5x more compliance than random dates — colocation, not causation. |
+| Feb 8 | `Findings/new_analysis_findings.md` | Reference | Comprehensive synthesis of all five robustness tests with executive summary, interpretation, and recommendations. |
 
 ### Planned work
 
-- [ ] Autocorrelation-adjusted significance test (Durbin-Watson / block bootstrap)
-- [ ] Normalized event-count correlation (events per year equalized)
-- [ ] Cross-validation: does the pattern hold when Dec 2025 is excluded?
-- [ ] Rolling-window correlation analysis (does r change across different time periods?)
-- [ ] Event-study framework (measure compliance response in a defined window around each friction event)
+- [x] Autocorrelation-adjusted significance test (Durbin-Watson / block bootstrap)
+- [x] Normalized event-count correlation (events per year equalized)
+- [x] Cross-validation: does the pattern hold when Dec 2025 is excluded?
+- [x] Rolling-window correlation analysis (does r change across different time periods?)
+- [x] Event-study framework (measure compliance response in a defined window around each friction event)
 
 ---
 
@@ -154,6 +186,11 @@ owner can learn the methodology, not just receive a number.
 | Spearman ρ near zero for core scope | Suggests Pearson r is driven by magnitude outliers, not rank consistency |
 | 2025 skew diagnosis | Based on date parsing which may miss events with non-standard date formats |
 | Dataset provenance | Git history only shows when files were *pushed to GitHub*, not when analysis was *first run locally* |
+| Autocorrelation adjustment survives | Block bootstrap preserves temporal structure but block size is heuristic (4 weeks based on lag-1 autocorrelation) |
+| Dec 2025 exclusion destroys correlation | Confirms single-month dominance but does not prove Dec 2025 is uninteresting — only that it's not representative |
+| Event-study shows colocation not causation | Friction dates attract compliance events, but there are MORE compliance events before friction than after — inconsistent with sequential mechanism |
+| Normalized r ≈ 0.23 (core) | Still significant (p < 0.001) but much weaker than headline r ≈ 0.62 — represents genuine but modest within-year co-movement |
+| Rolling-window analysis | Many windows have constant series (all zeros) due to sparse friction events pre-2025, limiting the number of valid comparisons |
 
 ### 5. Political neutrality
 
@@ -195,4 +232,4 @@ If you're reading this and want to check whether my analysis is sound:
 ---
 
 *This document was written by GitHub Copilot (Claude, Opus 4.6) on February 8, 2026.*  
-*Last updated: February 8, 2026.*
+*Last updated: February 8, 2026 — all five planned robustness tests completed.*
