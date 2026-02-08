@@ -177,5 +177,21 @@ index, not a count of scraped events.
 
 ---
 
+## Reproduce-It-Yourself Script
+
+A single script that reproduces the **original-scope** correlations using only
+the pre-2026 datasets is available at:
+
+```
+Run_Correlations_Yourself/run_original_analysis.py
+```
+
+It loads only the 7 files from `Control_Proof/`, `Project_Trident/`, and
+`09_Silicon_Sovereignty/` — the New_Data_2026 folder is explicitly excluded.
+Run it to verify Parts 1–3 (reflexive control r = 0.6196, Project Trident
+p = 0.002, and the multi-dataset cross-validation) from a clean checkout.
+
+---
+
 *Compiled from GitHub API commit history, February 2026*
 *Commit SHAs verified against github.com/Leerrooy95/The_Regulated_Friction_Project*
