@@ -564,9 +564,3 @@ See `VERIFICATION_REPORT_Jan2026.md` for complete independent analysis.
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
 **Last updated**: February 8, 2026
-
----
-
-## License
-
-MIT
