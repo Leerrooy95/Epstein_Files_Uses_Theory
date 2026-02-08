@@ -47,12 +47,16 @@ Copilot_Opus_4.6_Analysis/
 │   ├── normalized_correlation.py  ← Per-year equalized event-count correlation
 │   ├── cross_validation_dec2025.py  ← Does the pattern hold without Dec 2025?
 │   ├── rolling_window_correlation.py  ← Sliding-window correlation over time
-│   └── event_study_framework.py  ← Compliance response after friction events
+│   ├── event_study_framework.py  ← Compliance response after friction events
+│   └── granger_causality_test.py  ← Predictive direction test (friction→compliance vs reverse)
 ├── Findings/                 ← Written analysis and documentation
 │   ├── dataset_provenance.md ← Which data feeds which correlation (git-traced)
 │   ├── backfill_guide.md     ← Recommendations for evening out year coverage
 │   ├── correlation_summary.md ← All five reported correlations in one place
-│   └── new_analysis_findings.md ← Results of all five robustness tests
+│   ├── new_analysis_findings.md ← Results of all five robustness tests
+│   └── granger_causality_results.md ← Granger causality test findings
+├── Verification_Reports/     ← Scrutiny and verification audits
+│   └── scrutiny_report_feb8_2026.md ← Full scrutiny of all prior work
 ├── Datasets/                 ← Local copies of CSVs used in analysis
 │   ├── BlackRock_Timeline_Full_Decade.csv
 │   ├── Infrastructure_Forensics.csv
@@ -77,6 +81,7 @@ python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/normalized_c
 python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/cross_validation_dec2025.py
 python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/rolling_window_correlation.py
 python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/event_study_framework.py
+python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/granger_causality_test.py
 ```
 
 ### `Datasets/`
@@ -89,7 +94,14 @@ owner's request.
 ### `Findings/`
 
 Written analysis documents — provenance traces, methodology reviews,
-dataset improvement recommendations, and verification reports.
+dataset improvement recommendations, verification reports, and Granger
+causality results.
+
+### `Verification_Reports/`
+
+Scrutiny audits verifying the legitimacy and reproducibility of all prior
+work in this folder.  Includes script re-execution results, factual claim
+checks against authoritative sources, and methodology review.
 
 ---
 
@@ -108,6 +120,9 @@ dataset improvement recommendations, and verification reports.
 | Feb 8 | `Statistical_Tests/rolling_window_correlation.py` | Verification | 26-week rolling mean r=0.20 (core), 0.19 (full). Only 11–28% of windows exceed r>0.3. Strong windows concentrated in late 2025. Weak but consistently positive signal across earlier periods. |
 | Feb 8 | `Statistical_Tests/event_study_framework.py` | Verification | Post-friction windows have FEWER compliance events than pre-friction (ratio 0.56x at 14d). However, friction dates attract 3.5x more compliance than random dates — colocation, not causation. |
 | Feb 8 | `Findings/new_analysis_findings.md` | Reference | Comprehensive synthesis of all five robustness tests with executive summary, interpretation, and recommendations. |
+| Feb 8 | `Statistical_Tests/granger_causality_test.py` | Verification | Granger causality at lags 1-8. Original 30-row: friction→compliance at lags 1-2 ✓. Core scope: compliance→friction only (REVERSE). Full scope: bidirectional — suggests common driver. |
+| Feb 8 | `Findings/granger_causality_results.md` | Reference | Full write-up of Granger findings with interpretation, limitations, and connection to event-study results. |
+| Feb 8 | `Verification_Reports/scrutiny_report_feb8_2026.md` | Verification | Complete scrutiny of all prior work: all 7 scripts re-executed and reproduced, all factual claims verified against authoritative sources, methodology reviewed for correctness. |
 
 ### Planned work
 
@@ -116,6 +131,16 @@ dataset improvement recommendations, and verification reports.
 - [x] Cross-validation: does the pattern hold when Dec 2025 is excluded?
 - [x] Rolling-window correlation analysis (does r change across different time periods?)
 - [x] Event-study framework (measure compliance response in a defined window around each friction event)
+- [x] Granger causality test (does past friction predict future compliance, or vice versa?)
+- [x] Scrutiny audit of all prior work (re-execute scripts, verify factual claims, review methodology)
+
+### Future recommendations
+
+- [ ] Re-run Granger causality excluding December 2025 to test robustness
+- [ ] Test with first-differenced series (Δfriction, Δcompliance) to address stationarity
+- [ ] Investigate the hand-scored vs event-count discrepancy in Granger direction
+- [ ] Partial correlation controlling for a "political activity" index (e.g., congressional session calendar)
+- [ ] Backfill earlier years per backfill_guide.md to enable fairer cross-year comparisons
 
 ---
 
@@ -191,6 +216,9 @@ owner can learn the methodology, not just receive a number.
 | Event-study shows colocation not causation | Friction dates attract compliance events, but there are MORE compliance events before friction than after — inconsistent with sequential mechanism |
 | Normalized r ≈ 0.23 (core) | Still significant (p < 0.001) but much weaker than headline r ≈ 0.62 — represents genuine but modest within-year co-movement |
 | Rolling-window analysis | Many windows have constant series (all zeros) due to sparse friction events pre-2025, limiting the number of valid comparisons |
+| Granger causality (core): compliance→friction ONLY | Counter to the friction→compliance hypothesis; suggests compliance events predict friction (possible: policy deals trigger media backlash) |
+| Granger causality (full): bidirectional | Both predict each other at all lags — consistent with shared underlying driver rather than sequential mechanism |
+| Granger causality (original 30-row): friction→compliance lags 1-2 | Supports thesis in hand-scored data but may not generalize to automated event counts |
 
 ### 5. Political neutrality
 
@@ -232,4 +260,4 @@ If you're reading this and want to check whether my analysis is sound:
 ---
 
 *This document was written by GitHub Copilot (Claude, Opus 4.6) on February 8, 2026.*  
-*Last updated: February 8, 2026 — all five planned robustness tests completed.*
+*Last updated: February 8, 2026 — scrutiny audit completed, Granger causality test added, all prior work verified.*
