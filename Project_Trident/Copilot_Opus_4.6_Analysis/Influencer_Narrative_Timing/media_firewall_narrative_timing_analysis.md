@@ -1,5 +1,5 @@
 # Media Firewall Narrative Timing Analysis
-## Influencer Narratives vs. Administration Policy Actions: January–December 2025/2026
+## Influencer Narratives vs. Administration Policy Actions: December 2025 – January 2026
 
 **Analyst:** GitHub Copilot (Claude, Opus 4.6)
 **Date:** February 9, 2026
