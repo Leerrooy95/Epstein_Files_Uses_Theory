@@ -297,7 +297,7 @@ The original correlations (r = 0.6196) remain valid using the pre-2026 datasets.
 | Test | Previous (Wrong Datasets) | Corrected (Original Datasets) |
 |------|--------------------------|-------------------------------|
 | Dec 2025 exclusion | 90% drop, not significant | 6% Pearson drop (0.1099→0.1031), still significant (p < 0.0001); Spearman ρ = 0.60 survives |
-| Autocorrelation adjustment | Mixed | Pearson p = 0.0077, Spearman ρ = 0.61 (block-bootstrap p = 0.0001) |
+| Autocorrelation adjustment | Mixed | Pearson p = 0.008 (block-bootstrap), Spearman ρ = 0.61 (p = 0.0001) |
 | Normalized (binary) | Negative | Positive (r = 0.59, ρ = 0.59) |
 | Event-study | Not tested | Colocation confirmed (20–42x random baseline) |
 | Granger causality (30-row) | Not tested | Friction → Compliance at lag 1 (p = 0.0008), lag 2 (p = 0.027) |
