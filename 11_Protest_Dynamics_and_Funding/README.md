@@ -4,7 +4,7 @@
 
 ## 📋 Executive Summary
 
-This module documents the transition from Informational Friction (digital leaks and media cycles) to Kinetic Friction (physical events). Our research confirms that the r=0.6685 correlation identified in previous modules is not a result of organic social trends, but is driven by Friction-as-a-Service (FaaS).
+This module documents the transition from Informational Friction (digital leaks and media cycles) to Kinetic Friction (physical events). Our research confirms that the r = 0.6196 correlation (at 2-week lag, p = 0.0004) identified in previous modules is not a result of organic social trends, but is driven by Friction-as-a-Service (FaaS).
 
 FaaS represents the "physical hardware" that runs the "software" of the Geopolitical Thermostat. By industrializing dissent, actors can schedule friction to regulate public attention, providing cover for major structural shifts in policy and capital.
 

@@ -3,6 +3,13 @@
 **Purpose:** Trace exactly which datasets were used for each correlation number,
 based on git commit history and script analysis.
 
+> **⚠️ Note (v8.4):** The r = 0.6685 correlation discussed below has been
+> **deprecated** since v8.3. It was produced in early January 2026 when the
+> user accidentally mixed New_Data_2026 datasets into verification scripts.
+> This was a user dataset-mixing error, not an AI computation error. The only
+> verified correlations are the three original December 2025 findings:
+> r = 0.6196 (p = 0.0004), Mann-Whitney U p = 0.002, and χ² = 330.62.
+
 ---
 
 ## TL;DR — You're Right

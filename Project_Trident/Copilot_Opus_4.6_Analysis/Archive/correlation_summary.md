@@ -93,9 +93,11 @@ window alone contains 56 events.
 
 ---
 
-## Correlation 4 — Updated Event-Count (Core Scope)
+## Correlation 4 — Updated Event-Count (Core Scope) — ⚠️ DEPRECATED
 
 **Result:** Pearson r = 0.6685 at 0-lag (p < 0.0001)
+
+**⚠️ DEPRECATED (v8.3):** This correlation was produced in early January 2026 when the user accidentally mixed New_Data_2026 datasets into verification scripts intended for the original December 2025 data. This was a user dataset-mixing error, not an AI computation error.
 
 **Computed:** January 10, 2026 (documented in `New_Data_2026/2026_Analysis.md`)
 
@@ -120,9 +122,11 @@ The Pearson result is dominated by high-magnitude December 2025 weeks.
 
 ---
 
-## Correlation 5 — Updated Event-Count (Full Scope)
+## Correlation 5 — Updated Event-Count (Full Scope) — ⚠️ DEPRECATED
 
 **Result:** Pearson r = 0.5268 at 0-lag (p < 0.0001)
+
+**⚠️ DEPRECATED (v8.3):** Same issue as Correlation 4 — user dataset-mixing error, not an AI computation error.
 
 **Computed:** January 12, 2026 (independent verification)
 

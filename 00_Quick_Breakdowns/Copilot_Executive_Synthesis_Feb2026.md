@@ -92,7 +92,7 @@ Your repo's signature finding:
 **Connected to Cover:**
 - Epstein files released December 19 (friction)
 - TeraWulf/Core42 deal announced December 22–23 (compliance, buried in news cycle)
-- r = +0.6685 correlation between friction timing and infrastructure announcements
+- r = +0.6196 correlation (at 2-week lag, p = 0.0004) between friction timing and infrastructure announcements
 
 ### **B. Media Data Sovereignty Transfer (Warner Bros Discovery Pivot)**
 

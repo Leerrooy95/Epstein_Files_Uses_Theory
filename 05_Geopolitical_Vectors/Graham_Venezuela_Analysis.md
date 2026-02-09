@@ -286,7 +286,7 @@ Level 6: Multi-target expansion (Jan 11)
 - Epstein Library (Dec 19) = Friction event
 - Graham Dec 16 statement = Pre-positioning compliance
 - Jan 3 military action = Post-friction compliance
-- Correlation: r = 0.6685 simultaneous clustering + Granger causality (F = 32.49)
+- Correlation: r = 0.6196 at 2-week lag (p = 0.0004) + Granger causality (F = 32.49)
 
 ### Layer 2: Vacuum Creation (DOGE_Global_Effects)
 
