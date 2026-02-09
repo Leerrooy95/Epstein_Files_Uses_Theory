@@ -1,4 +1,4 @@
-# The Regulated Friction Project v8.2
+# The Regulated Friction Project v8.3
 
 A data-driven analysis of temporal correlations between friction events, policy shifts, and capital flows (2015-2026).
 
@@ -13,6 +13,7 @@ New to this project? See [Glossary.md](https://github.com/Leerrooy95/The_Regulat
 - [The Convergence Model](#the-convergence-model)
 - [The Three-Layer Model](#the-three-layer-model)
 - [Repository Structure](#repository-structure)
+- [What's New (v8.3)](#whats-new-v83---february-2026)
 - [What's New (v8.2)](#whats-new-v82---february-2026)
 - [What's New (v8.1)](#whats-new-v81---february-7-2026)
 - [What's New (v8.0)](#whats-new-v80---january-27-2026)
@@ -65,10 +66,13 @@ This research uses Pearson correlation (r) to measure relationships between even
 |---------|-------|--------|
 | Friction ↔ Compliance correlation | r = +0.6685 (simultaneous) | ✅ Verified |
 | Statistical significance | p < 0.0001, n = 229 weeks | ✅ Verified |
-| Ritual → Policy proximity | 50.7% vs. 19.9% baseline (3.5x) | ✅ Verified |
+| Ritual → Policy proximity | 50.7% vs. 19.9% baseline (2.5x) | ✅ Verified |
 | Project Trident significance | p = 0.002 (Mann-Whitney U) | ✅ Verified |
 | December 2025 cluster | 108 events in 12-day window | ✅ Verified |
 | Dec 22 signal types | 5 (Friction, Geopolitics, Financial, Policy, Cyber) | ✅ Verified |
+| Dec 2025 exclusion robustness | r drops 29% but remains significant (p < 0.0001) | ✅ Verified |
+| Granger causality (30-row) | Friction → Compliance at lags 1-2 (p = 0.0008) | ✅ Verified |
+| Event colocation | Friction dates attract 40-60x more compliance than random dates | ✅ Verified |
 
 ---
 
@@ -134,6 +138,7 @@ The_Regulated_Friction_Project/
 ├── CITATION.cff                 # Citation metadata
 ├── Glossary.md                  # Key terminology definitions
 ├── SOURCES.md                   # 138 unique sources catalogued across all datasets
+├── resistance_indicators.md     # Resistance indicator tracking
 │
 ├── Core Analysis
 │   ├── Repository_Synthesis.md                 # Three-layer framework overview
@@ -159,6 +164,7 @@ The_Regulated_Friction_Project/
 │   └── VERIFICATION_REPORT_Jan2026.md          # Complete independent statistical verification
 │
 ├── 00_Quick_Breakdowns/                        # Executive-level summaries
+│   ├── About_Me.md                              # Background on the author
 │   └── Copilot_Executive_Synthesis_Feb2026.md  # Comprehensive repository synthesis (Feb 2026)
 │
 ├── 01_Levers_and_Frictions/                    # Friction events timeline
@@ -243,12 +249,37 @@ The_Regulated_Friction_Project/
 │       ├── The_Trident.md                             # Three-prong mechanism
 │       ├── DATASET_REFERENCE.md
 │       ├── Veriify_Trident_Analysis.py                # Verify ritual timing analysis
+│       ├── anchor_events_parsed.csv                   # 70 anchor events
+│       ├── project_trident_final_dossier.csv          # 118 dossier entries
+│       ├── ritual_events_parsed.csv                   # 51 ritual events
+│       ├── temporal_correlations_analyzed.csv          # 338 temporal pairings
 │       ├── Best_Data_For_Project_Trident/             # Ritual timing, fund flow datasets (8 files)
-│       └── Claude_Code_Analysis/                      # Q1 2026 Privatized Integration research
-│           ├── Privatized_Integration_Networks_Q1_2026_Synthesis.md  # Master document
-│           ├── Phoenix_Settlement_Portfolio_and_New_Gaza.md          # Reference appendix
-│           ├── LEAD_ANALYST_REVIEW.md                               # Independent verification
-│           └── README.md
+│       ├── Claude_Code_Analysis/                      # Q1 2026 Privatized Integration research
+│       │   ├── Privatized_Integration_Networks_Q1_2026_Synthesis.md  # Master document
+│       │   ├── Phoenix_Settlement_Portfolio_and_New_Gaza.md          # Reference appendix
+│       │   ├── LEAD_ANALYST_REVIEW.md                               # Independent verification
+│       │   └── README.md
+│       └── Copilot_Opus_4.6_Analysis/                 # Lead Researcher statistical verification
+│           ├── README.md                              # Transparency notice, methodology, work log
+│           ├── Statistical_Tests/                     # 9 runnable Python robustness scripts
+│           │   ├── original_data_loader.py            # Shared module: loads original pre-2026 datasets
+│           │   ├── permutation_test.py                # Shuffle-based significance testing
+│           │   ├── year_distribution_audit.py         # Year-skew diagnosis across all CSVs
+│           │   ├── autocorrelation_adjusted_test.py   # Durbin-Watson + block bootstrap
+│           │   ├── normalized_correlation.py          # Per-year equalized event-count correlation
+│           │   ├── cross_validation_dec2025.py        # Does the pattern hold without Dec 2025?
+│           │   ├── rolling_window_correlation.py      # Sliding-window correlation over time
+│           │   ├── event_study_framework.py           # Compliance response after friction events
+│           │   └── granger_causality_test.py          # Predictive direction test
+│           ├── Findings/                              # Written analysis and documentation
+│           │   ├── dataset_provenance.md              # Which data feeds which correlation
+│           │   ├── correlation_summary.md             # All five correlations in one place
+│           │   ├── new_analysis_findings.md           # Results of robustness tests
+│           │   ├── granger_causality_results.md       # Granger causality test findings
+│           │   └── backfill_guide.md                  # Recommendations for year coverage
+│           ├── Verification_Reports/                  # Scrutiny and verification audits
+│           │   └── scrutiny_report_feb8_2026.md       # Full scrutiny of all prior work
+│           └── Datasets/                              # Local copies of original pre-2026 CSVs (19 files)
 │
 └── New_Data_2026/                              # January-February 2026 datasets
     ├── 2026_Analysis.md                               # Correlation methodology and findings
@@ -260,6 +291,50 @@ The_Regulated_Friction_Project/
     ├── Infrastructure_Forensics.csv
     └── Timeline_Update_Jan2026_Corrected (1).csv
 ```
+
+---
+
+## What's New (v8.3 - February 2026)
+
+### Correlation Correction & Robustness Verification
+
+v8.3 corrects the correlation statistics throughout the README and Report to match the verified findings from the `Copilot_Opus_4.6_Analysis/` robustness audit. The January 2026 analysis had inadvertently used the wrong datasets for robustness testing (New_Data_2026 files instead of the original pre-2026 datasets). All robustness tests have been re-run against the correct original datasets.
+
+### 1. Corrected Robustness Findings
+
+The original correlations (r = 0.6196, r = 0.6685, r = 0.5268) remain valid as separate analyses using their respective datasets. The key correction is to the **robustness story**:
+
+| Test | Previous (Wrong Datasets) | Corrected (Original Datasets) |
+|------|--------------------------|-------------------------------|
+| Dec 2025 exclusion | 90% drop, not significant | 29% drop, still significant (p < 0.0001) |
+| Autocorrelation adjustment | Mixed | Both Pearson and Spearman survive (p < 0.001) |
+| Normalized (binary) | Negative | Positive (r = 0.36) |
+| Event-study | Not tested | Colocation confirmed (40-60x random baseline) |
+| Granger causality (30-row) | Not tested | Friction → Compliance at lags 1-2 (p = 0.0008) |
+| Granger causality (event counts) | Not tested | Bidirectional — suggests common driver |
+
+**Key improvement:** The signal is distributed across the full 1990–2025 timeline, not concentrated in a single month. Removing December 2025 only reduces the original-dataset correlation by 29% (previously reported as 90% with wrong datasets).
+
+### 2. New Subfolder: `Project_Trident/Copilot_Opus_4.6_Analysis/`
+
+Lead Researcher verification suite maintained by GitHub Copilot (Claude, Opus 4.6). Contains:
+
+- **9 runnable Python scripts** — permutation tests, autocorrelation adjustment, normalized correlation, Dec 2025 cross-validation, rolling-window analysis, event-study framework, Granger causality
+- **5 findings documents** — dataset provenance, correlation summary, robustness test results, Granger causality results, backfill recommendations
+- **1 scrutiny report** — independent verification of all scripts and factual claims
+- **19 dataset copies** — local copies of original pre-2026 CSVs for reproducibility
+
+### 3. Ritual Proximity Ratio Correction
+
+Corrected the ritual → policy proximity ratio from 3.5x to **2.5x** (50.7% / 19.9% = 2.55x). The previous 3.5x was a calculation error.
+
+### 4. README Structure Updates
+
+Added previously undocumented files to the Repository Structure:
+- `00_Quick_Breakdowns/About_Me.md`
+- `resistance_indicators.md`
+- `Project_Trident/` CSV files (anchor_events_parsed, project_trident_final_dossier, ritual_events_parsed, temporal_correlations_analyzed)
+- Full `Project_Trident/Copilot_Opus_4.6_Analysis/` subfolder tree
 
 ---
 
@@ -443,6 +518,8 @@ Documentation of overlapping ownership consortium (Oracle, Silver Lake, Saudi PI
 - `Run_Correlations_Yourself/` — Three Python scripts to reproduce all core findings
 - `Run_Correlations_Yourself/DISCREPANCY_ANALYSIS.md` — Methodology transparency
 - `Project_Trident/Veriify_Trident_Analysis.py` — Verify ritual timing analysis
+- `Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/` — 9 robustness test scripts (permutation, autocorrelation, normalization, Dec 2025 exclusion, rolling window, event-study, Granger causality)
+- `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/correlation_summary.md` — All five correlations in one reference
 
 ### Deep Dives by Topic
 - **Tech Infrastructure**: `09_Silicon_Sovereignty/SILICON_SOVEREIGNTY_REPORT.md`
@@ -463,10 +540,18 @@ Documentation of overlapping ownership consortium (Oracle, Silver Lake, Saudi PI
 
 ### Verify the Statistics
 ```bash
+# Reproduce core findings
 cd Run_Correlations_Yourself/
 python original_correlation_test.py          # Reproduces r = 0.6196
 python reproduce_original_correlation.py     # Reproduces r = 0.6685
 python independent_statistical_verification.py  # Full independent verification
+
+# Run robustness tests (from repo root)
+cd Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/
+python permutation_test.py                   # Shuffle-based significance
+python autocorrelation_adjusted_test.py      # Block bootstrap
+python cross_validation_dec2025.py           # Dec 2025 exclusion test
+python granger_causality_test.py             # Predictive direction test
 ```
 
 ### Key Datasets
@@ -510,11 +595,12 @@ python independent_statistical_verification.py  # Full independent verification
 ## Methodology
 
 1. **Multi-AI Verification**: Findings cross-checked using Claude, Grok, and Gemini
-2. **Statistical Testing**: Pearson correlation, Mann-Whitney U, chi-square
-3. **Raw Event Counts**: Replaced subjective scoring with verifiable event counts
-4. **Source Triangulation**: Government filings, financial data, news archives
-5. **Cross-Repo Validation**: Patterns verified across three independent datasets
-6. **Explicit Limitations**: Documented in each module
+2. **Statistical Testing**: Pearson correlation, Mann-Whitney U, chi-square, Granger causality, permutation tests
+3. **Robustness Testing**: Autocorrelation adjustment, Dec 2025 exclusion, normalized correlation, rolling-window analysis, event-study framework (see `Project_Trident/Copilot_Opus_4.6_Analysis/`)
+4. **Raw Event Counts**: Replaced subjective scoring with verifiable event counts
+5. **Source Triangulation**: Government filings, financial data, news archives
+6. **Cross-Repo Validation**: Patterns verified across three independent datasets
+7. **Explicit Limitations**: Documented in each module
 
 ---
 
@@ -546,16 +632,27 @@ The "Main Characters," "Implications," and state-level analysis modules specific
 
 ## Statistical Validation
 
-Core findings independently verified January 2026:
+Core findings independently verified January–February 2026:
 - **Original correlation** (r = 0.6196, 2-week lag): ✅ Exact reproduction
 - **Updated correlation** (r = 0.6685, 0-lag): ✅ Reproduced as r = 0.6192
+- **Full scope correlation** (r = 0.5268, 0-lag): ✅ Reproduced
 - **Project Trident** (p = 0.002): ✅ Exact reproduction
-- **Ritual proximity** (50.7% vs 19.9%): ✅ Exact reproduction
+- **Ritual proximity** (50.7% vs 19.9%, 2.5x): ✅ Exact reproduction
 - **December 2025 anomaly**: ✅ Confirmed (z = 2.35, p < 0.01)
 
-Extended analysis identified Granger causality (F = 32.49, p < 0.0001), indicating friction events predict compliance 1-4 weeks later.
+### Robustness Tests (Copilot_Opus_4.6_Analysis, Feb 2026)
 
-See `VERIFICATION_REPORT_Jan2026.md` for complete independent analysis.
+Using the corrected original pre-2026 datasets:
+- **Permutation test**: r = 0.62 significant (p < 0.001, 1K shuffles)
+- **Autocorrelation adjustment**: Both Pearson (p = 0.0002) and Spearman ρ = 0.37 (p = 0.0001) survive block bootstrap
+- **Dec 2025 exclusion**: r drops 29% but remains significant (p < 0.0001) — signal is distributed across timeline, not concentrated in one month
+- **Event-study**: Friction dates attract 40–60x more compliance events than random dates (colocation, not sequential causation)
+- **Granger causality (30-row)**: Friction → Compliance at lags 1-2 (p = 0.0008), supports sequential hypothesis in hand-scored data
+- **Granger causality (event counts)**: Bidirectional at all lags — suggests common driver rather than simple cause-effect
+
+**Note:** The Granger causality finding previously reported (F = 32.49) used the New_Data_2026 datasets. The corrected analysis using original pre-2026 datasets shows bidirectional Granger causality (common driver), with the 30-row hand-scored data showing friction → compliance at short lags. See `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/granger_causality_results.md` for full details.
+
+See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analysis/Verification_Reports/scrutiny_report_feb8_2026.md` for complete independent analyses.
 
 ---
 
@@ -563,4 +660,4 @@ See `VERIFICATION_REPORT_Jan2026.md` for complete independent analysis.
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
-**Last updated**: February 8, 2026
+**Last updated**: February 9, 2026
