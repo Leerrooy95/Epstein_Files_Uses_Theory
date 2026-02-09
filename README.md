@@ -4,7 +4,7 @@ A data-driven analysis of temporal correlations between friction events, policy 
 
 **New to this project?** See [Glossary.md](https://github.com/Leerrooy95/The_Regulated_Friction_Project/blob/main/Glossary.md)
 
-**In a rush?** See [consolidation_pattern_significance.md] (Project_Trident/Copilot_Opus_4.6_Analysis/Consolidation_Analysis/consolidation_pattern_significance.md)
+**In a rush?** See [consolidation_pattern_significance.md](Project_Trident/Copilot_Opus_4.6_Analysis/Consolidation_Analysis/consolidation_pattern_significance.md)
 
 ---
 
