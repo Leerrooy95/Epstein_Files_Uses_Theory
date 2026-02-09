@@ -41,32 +41,51 @@ owner's work.  I receive the data and results, then analyze them here.
 Copilot_Opus_4.6_Analysis/
 ├── README.md                 ← You are here
 ├── Statistical_Tests/        ← Runnable Python scripts
+│   ├── original_data_loader.py   ← Shared module: loads original pre-2026 datasets
 │   ├── permutation_test.py   ← Shuffle-based significance testing
 │   ├── year_distribution_audit.py  ← Year-skew diagnosis across all CSVs
 │   ├── autocorrelation_adjusted_test.py  ← Durbin-Watson + block bootstrap
 │   ├── normalized_correlation.py  ← Per-year equalized event-count correlation
 │   ├── cross_validation_dec2025.py  ← Does the pattern hold without Dec 2025?
 │   ├── rolling_window_correlation.py  ← Sliding-window correlation over time
-│   └── event_study_framework.py  ← Compliance response after friction events
+│   ├── event_study_framework.py  ← Compliance response after friction events
+│   └── granger_causality_test.py  ← Predictive direction test (friction→compliance vs reverse)
 ├── Findings/                 ← Written analysis and documentation
 │   ├── dataset_provenance.md ← Which data feeds which correlation (git-traced)
 │   ├── backfill_guide.md     ← Recommendations for evening out year coverage
 │   ├── correlation_summary.md ← All five reported correlations in one place
-│   └── new_analysis_findings.md ← Results of all five robustness tests
-├── Datasets/                 ← Local copies of CSVs used in analysis
-│   ├── BlackRock_Timeline_Full_Decade.csv
-│   ├── Infrastructure_Forensics.csv
-│   ├── Timeline_Update_Jan2026_Corrected (1).csv
-│   ├── Additional_Anchors_Jan2026_Final.csv
-│   ├── Biopharma.csv
-│   ├── High_Growth_Companies_2015_2026.csv
-│   └── master_reflexive_correlation_data.csv
+│   ├── new_analysis_findings.md ← Results of all five robustness tests
+│   └── granger_causality_results.md ← Granger causality test findings
+├── Verification_Reports/     ← Scrutiny and verification audits
+│   └── scrutiny_report_feb8_2026.md ← Full scrutiny of all prior work
+├── Datasets/                 ← Local copies of ORIGINAL pre-2026 CSVs
+│   ├── master_reflexive_correlation_data.csv  (Control_Proof — 30 weeks)
+│   ├── reflexive_control_scraped_data.csv     (Control_Proof — OSINT triggers)
+│   ├── MASTER_reflexive_control_v2.csv        (Control_Proof — 149 events)
+│   ├── thermostat_control_data.csv            (Control_Proof — 150 events)
+│   ├── project_trident_final_dossier.csv      (Project_Trident — 118 entries)
+│   ├── anchor_events_parsed.csv               (Project_Trident — 70 anchors)
+│   ├── ritual_events_parsed.csv               (Project_Trident — 51 rituals)
+│   ├── temporal_correlations_analyzed.csv      (Project_Trident — 338 pairings)
+│   ├── Lag_Correlation_Analysis_Verified_Holidays.csv  (Best_Data — 533 records)
+│   ├── Expanded_Policy_Anchors.csv            (Best_Data — 11 anchors)
+│   ├── Holidays_2015_2025_Verified.csv        (Best_Data — 59 holidays)
+│   ├── aid_timeline_clean.csv                 (Best_Data — 190 aid events)
+│   ├── policy_cleaned.csv                     (Best_Data — 60 policies)
+│   ├── tech_filled_dates.csv                  (Best_Data — 357 tech events)
+│   ├── Fund_Flow_Ritual_Coordination_2025.csv (Best_Data — 97 fund flows)
+│   ├── Coalition_Narrative_Map_2015-2025.csv  (Silicon_Sovereignty — 456 events)
+│   ├── VOCA_funding_timeline_clean.csv        (Silicon_Sovereignty — 667 events)
+│   ├── Regulatory_Map_Data_CLEANED.csv        (Silicon_Sovereignty — 76 events)
+│   └── REFINED_supercomputer_geopolitics (1).csv  (Silicon_Sovereignty — 906 events)
 └── (future subfolders as needed)
 ```
 
 ### `Statistical_Tests/`
 
-Runnable Python scripts that test claims in the data.  Anyone can execute these:
+Runnable Python scripts that test claims in the data.  All multi-dataset
+scripts import from `original_data_loader.py` which provides standardized
+access to the original pre-2026 datasets.  Anyone can execute these:
 
 ```bash
 pip install pandas numpy scipy statsmodels
@@ -77,19 +96,33 @@ python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/normalized_c
 python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/cross_validation_dec2025.py
 python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/rolling_window_correlation.py
 python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/event_study_framework.py
+python3 Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/granger_causality_test.py
 ```
 
 ### `Datasets/`
 
-Local copies of the CSV files used by the new statistical tests.  Originals
-remain untouched in `New_Data_2026/` and `Control_Proof/`.  These copies
-exist so that the analysis subfolder is self-contained per the repository
-owner's request.
+Local copies of the **original pre-2026 CSV files** used by the statistical
+tests.  These are the exact datasets Austin used for his original correlations
+(v3.1–v5.5, December 22–25, 2025).  Originals remain untouched in their
+original locations (`Control_Proof/`, `Project_Trident/`,
+`Project_Trident/Best_Data_For_Project_Trident/`, and `09_Silicon_Sovereignty/`).
+
+**Important:** New_Data_2026/ files (BlackRock, Biopharma, Infrastructure, etc.)
+are explicitly EXCLUDED — they were uploaded January 3, 2026 and were not part
+of the original correlations.  All files verified identical to their original
+git commits via `diff` comparison.
 
 ### `Findings/`
 
 Written analysis documents — provenance traces, methodology reviews,
-dataset improvement recommendations, and verification reports.
+dataset improvement recommendations, verification reports, and Granger
+causality results.
+
+### `Verification_Reports/`
+
+Scrutiny audits verifying the legitimacy and reproducibility of all prior
+work in this folder.  Includes script re-execution results, factual claim
+checks against authoritative sources, and methodology review.
 
 ---
 
@@ -108,6 +141,10 @@ dataset improvement recommendations, and verification reports.
 | Feb 8 | `Statistical_Tests/rolling_window_correlation.py` | Verification | 26-week rolling mean r=0.20 (core), 0.19 (full). Only 11–28% of windows exceed r>0.3. Strong windows concentrated in late 2025. Weak but consistently positive signal across earlier periods. |
 | Feb 8 | `Statistical_Tests/event_study_framework.py` | Verification | Post-friction windows have FEWER compliance events than pre-friction (ratio 0.56x at 14d). However, friction dates attract 3.5x more compliance than random dates — colocation, not causation. |
 | Feb 8 | `Findings/new_analysis_findings.md` | Reference | Comprehensive synthesis of all five robustness tests with executive summary, interpretation, and recommendations. |
+| Feb 8 | `Statistical_Tests/granger_causality_test.py` | Verification | Granger causality at lags 1-8. Original 30-row: friction→compliance at lags 1-2 ✓. Core scope: compliance→friction only (REVERSE). Full scope: bidirectional — suggests common driver. |
+| Feb 8 | `Findings/granger_causality_results.md` | Reference | Full write-up of Granger findings with interpretation, limitations, and connection to event-study results. |
+| Feb 8 | `Verification_Reports/scrutiny_report_feb8_2026.md` | Verification | Complete scrutiny of all prior work: all 7 scripts re-executed and reproduced, all factual claims verified against authoritative sources, methodology reviewed for correctness. |
+| Feb 8 | `Datasets/*` + all `Statistical_Tests/*.py` | **CRITICAL FIX** | **Replaced all New_Data_2026 files with original pre-2026 datasets.** Previous analysis incorrectly used BlackRock, Biopharma, Infrastructure, etc. (uploaded Jan 3, 2026) instead of Austin's original datasets from Control_Proof, Project_Trident, and 09_Silicon_Sovereignty (Dec 22-25, 2025). Created `original_data_loader.py` shared module. All 8 scripts updated and verified. |
 
 ### Planned work
 
@@ -116,6 +153,17 @@ dataset improvement recommendations, and verification reports.
 - [x] Cross-validation: does the pattern hold when Dec 2025 is excluded?
 - [x] Rolling-window correlation analysis (does r change across different time periods?)
 - [x] Event-study framework (measure compliance response in a defined window around each friction event)
+- [x] Granger causality test (does past friction predict future compliance, or vice versa?)
+- [x] Scrutiny audit of all prior work (re-execute scripts, verify factual claims, review methodology)
+- [x] **Dataset correction: replace New_Data_2026 files with original pre-2026 datasets**
+
+### Future recommendations
+
+- [ ] Re-run Granger causality excluding December 2025 to test robustness
+- [ ] Test with first-differenced series (Δfriction, Δcompliance) to address stationarity
+- [ ] Investigate the hand-scored vs event-count discrepancy in Granger direction
+- [ ] Partial correlation controlling for a "political activity" index (e.g., congressional session calendar)
+- [ ] Backfill earlier years per backfill_guide.md to enable fairer cross-year comparisons
 
 ---
 
@@ -182,15 +230,18 @@ owner can learn the methodology, not just receive a number.
 
 | Finding | Limitation |
 |---------|-----------|
-| Permutation test passes (p < 0.001) | Tests only whether correlation ≠ 0, not whether the mechanism claim is correct |
-| Spearman ρ near zero for core scope | Suggests Pearson r is driven by magnitude outliers, not rank consistency |
+| Permutation test passes (p < 0.001) for 30-row master | Tests only whether correlation ≠ 0, not whether the mechanism claim is correct |
+| Multi-dataset Pearson r ≈ 0.30 (original datasets) | Lower than the 30-row hand-scored r = 0.62, reflecting the difference between curated indices and raw event counts |
+| Spearman ρ ≈ 0.37 (original datasets) | Stronger than Pearson — rank correlation is robust to outlier magnitudes |
 | 2025 skew diagnosis | Based on date parsing which may miss events with non-standard date formats |
 | Dataset provenance | Git history only shows when files were *pushed to GitHub*, not when analysis was *first run locally* |
-| Autocorrelation adjustment survives | Block bootstrap preserves temporal structure but block size is heuristic (4 weeks based on lag-1 autocorrelation) |
-| Dec 2025 exclusion destroys correlation | Confirms single-month dominance but does not prove Dec 2025 is uninteresting — only that it's not representative |
-| Event-study shows colocation not causation | Friction dates attract compliance events, but there are MORE compliance events before friction than after — inconsistent with sequential mechanism |
-| Normalized r ≈ 0.23 (core) | Still significant (p < 0.001) but much weaker than headline r ≈ 0.62 — represents genuine but modest within-year co-movement |
-| Rolling-window analysis | Many windows have constant series (all zeros) due to sparse friction events pre-2025, limiting the number of valid comparisons |
+| Autocorrelation adjustment survives (p=0.0002) | Durbin-Watson DW ≈ 1.70 indicates mild autocorrelation; block bootstrap still shows significance |
+| Dec 2025 exclusion: correlation SURVIVES (was: destroyed) | With original datasets, removing Dec 2025 only reduces r by ~29% (0.30 → 0.22), not 90% — the signal is distributed across the timeline |
+| Event-study: colocation not causation | Friction dates attract ~50x more compliance than random dates, but post-friction ≈ pre-friction |
+| Normalized r: z-score drops to ~0.04 (marginal) | Per-year normalization removes most of the signal; binary presence/absence r ≈ 0.36 is strong |
+| Rolling-window mean r ≈ 0.05 (13-week) | Many windows have constant series due to sparse events, limiting valid comparisons |
+| Granger causality: bidirectional | Both directions significant at all lags — suggests common driver, not sequential mechanism |
+| Granger (30-row master): friction → compliance lags 1-2 | Supports thesis in hand-scored data |
 
 ### 5. Political neutrality
 
@@ -232,4 +283,4 @@ If you're reading this and want to check whether my analysis is sound:
 ---
 
 *This document was written by GitHub Copilot (Claude, Opus 4.6) on February 8, 2026.*  
-*Last updated: February 8, 2026 — all five planned robustness tests completed.*
+*Last updated: February 8, 2026 — CRITICAL FIX: Replaced New_Data_2026 datasets with original pre-2026 datasets used in Austin's first correlations. All scripts updated and verified.*
