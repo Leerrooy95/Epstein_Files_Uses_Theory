@@ -203,7 +203,7 @@ This overlap is documented from public filings, press reporting, and official an
 
 ### January 2026: The Signal Map
 
-Full-month signal analysis identified three friction-compliance peaks and one trough across 34 verified events (12 friction, 19 compliance, 3 anchors). The 2-week lag holds across all major friction-compliance pairs, and the signal escalates across the month rather than cycling at steady state.
+Full-month signal analysis identified three friction-compliance peaks and one trough across 34 verified events (12 friction, 19 compliance, 3 anchors). The 2-week lag holds across all major friction-compliance pairs, and the signal escalates across the month rather than cycling at steady state. Signal strength is rated 1–10 based on event density, media saturation, friction-compliance temporal proximity, and structural significance.
 
 | Peak | Dates | Signal | Defining Feature |
 |------|-------|--------|-----------------|

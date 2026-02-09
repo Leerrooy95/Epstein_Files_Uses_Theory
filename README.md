@@ -295,7 +295,7 @@ The_Regulated_Friction_Project/
 
 ### January 2026 Signal Analysis
 
-Full-month signal map identifying three friction-compliance peaks and one trough, with 34 verified events. The 2-week lag holds across all major friction-compliance pairs. Signal escalates across the month rather than cycling at steady state.
+Full-month signal map identifying three friction-compliance peaks and one trough, with 34 verified events. The 2-week lag holds across all major friction-compliance pairs. Signal escalates across the month rather than cycling at steady state. Signal strength is rated 1–10 based on event density, media saturation, friction-compliance temporal proximity, and structural significance.
 
 | Peak | Dates | Signal | Key Events |
 |------|-------|--------|------------|
