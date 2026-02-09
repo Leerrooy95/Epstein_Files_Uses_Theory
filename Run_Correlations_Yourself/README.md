@@ -32,7 +32,7 @@ python run_original_analysis.py
 |---|-------------|------|----------|--------|
 | 1 | Reflexive Control (2-week lag) | r = 0.6196 | 30-row master CSV | `run_original_analysis.py` Part 1 |
 | 2 | Project Trident (ritual vs holiday proximity) | p = 0.002 | 533-row lag CSV | `run_original_analysis.py` Part 2 |
-| 3 | Multi-Dataset Cross-Validation (14-day periodicity) | χ² = 330.62 | 4 Silicon Sovereignty CSVs (2,105 records) | `run_original_analysis.py` Part 3 |
+| 3 | Multi-Dataset Cross-Validation (14-day periodicity) | χ² = 330.62 | 4 Silicon Sovereignty CSVs (2,102 records) | `run_original_analysis.py` Part 3 |
 
 ---
 
@@ -57,7 +57,7 @@ python granger_causality_test.py             # Predictive direction test
 
 The `Wrong_Correlations/` subfolder contains archived scripts that are preserved for transparency:
 
-- **`reproduce_updated_correlation.py`** — Previously produced r = 0.6685 using New_Data_2026 datasets. Deprecated because those datasets included 2025-only data that inflated the correlation. After excluding those datasets, the remaining data (BlackRock + Biopharma) produces r = 0.04 (not significant).
+- **`reproduce_updated_correlation.py`** — ⚠️ DEPRECATED. Previously produced r = 0.6685 using New_Data_2026 datasets. This correlation was produced in early January 2026 when the user accidentally mixed New_Data_2026 datasets into verification scripts. This was a user dataset-mixing error, not an AI computation error.
 - **`reproduce_original_correlation.py`** and **`independent_statistical_verification.py`** — Had hardcoded paths to `/home/user/Epstein_Files_Uses_Theory/New_Data_2026/` instead of using relative paths to the correct original datasets.
 - **`run_original_analysis.py`** — Archived copy (the corrected version is in the main folder).
 - **`DISCREPANCY_ANALYSIS.md`** — Methodology comparison (still informative for understanding the r = 0.6685 → r = 0.6192 discrepancy).

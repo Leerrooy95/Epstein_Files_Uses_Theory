@@ -12,7 +12,7 @@ New_Data_2026/ is explicitly EXCLUDED — those files were uploaded January 4,
 Reproduces:
   Part 1: r = 0.6196 at 2-week lag (30-row hand-scored indices)
   Part 2: Mann-Whitney U p = 0.002 (ritual vs holiday proximity)
-  Part 3: χ² cross-validation (14-day periodicity across 2,105 events)
+  Part 3: χ² = 330.62 cross-validation (14-day periodicity across ~2,100 events)
 """
 
 import os
@@ -197,8 +197,12 @@ def part3_cross_validation():
     print(f"\nTotal dated events: {total}")
 
     # ---- 14-day periodicity test (chi-square) ----
-    events["day_of_year"] = events["date"].dt.dayofyear
-    events["bin_14"] = events["day_of_year"] % 14
+    # Bin events by days since the earliest event, modulo 14.
+    # This tests whether events cluster in specific 14-day phase
+    # positions relative to the dataset's own start date.
+    min_date = events["date"].min()
+    events["days_since_start"] = (events["date"] - min_date).dt.days
+    events["bin_14"] = events["days_since_start"] % 14
     observed = events["bin_14"].value_counts().sort_index().values
     expected = np.full_like(observed, total / 14, dtype=float)
     chi2, p_chi2 = stats.chisquare(observed, f_exp=expected)

@@ -88,7 +88,7 @@ The US fog period involved post-2024 election chaos under Trump's reelection, in
 | 2026 (Pragmatism Shift) | Midterm foreshadowing; foreign policy adjustments. | Canada visit (Jan 2026). | Moderate: Post-peak stabilization. |
 
 #### 3. Temporal Correlation Test: Clustering During US Thermostat Intensification
-Pivots partially cluster: Australia's (2022) predates fog, but UK (2024-2025) and Canada (2025-2026) align with intensification peaks (e.g., 2025 backlash). Pearson correlation from Epstein theory (r = +0.6685) suggests non-random clustering, with allies exploiting US distractions. Yes, moderate correlation for UK/Canada during high-saturation periods.
+Pivots partially cluster: Australia's (2022) predates fog, but UK (2024-2025) and Canada (2025-2026) align with intensification peaks (e.g., 2025 backlash). Pearson correlation from Epstein theory (r = +0.6196 at 2-week lag, p = 0.0004) suggests non-random clustering, with allies exploiting US distractions. Yes, moderate correlation for UK/Canada during high-saturation periods.
 
 | Country | Pivot Initiation Post-Election | US Fog Overlap | Correlation Strength |
 |---------|-------------------------------|---------------|----------------------|

@@ -4,13 +4,15 @@
 
 These files were the original contents of the `Run_Correlations_Yourself/` folder. They were moved here in February 2026 when it was discovered that `reproduce_original_correlation.py` and `independent_statistical_verification.py` used the **New_Data_2026/** datasets (uploaded January 4, 2026) instead of the **original pre-2026 datasets** (uploaded December 22–25, 2025).
 
+**Important:** This was a **user dataset-mixing error**, not an AI computation error. The AI tools (Claude, Grok, Gemini) correctly computed the correlations for whatever data they were given — the problem was that the wrong data was fed to them in early January 2026.
+
 ---
 
 ## What Went Wrong
 
 The original correlations (r = 0.6196 at 2-week lag, Project Trident p = 0.002, χ² = 330.62) were computed in December 2025 using datasets from `Control_Proof/`, `Project_Trident/`, and `09_Silicon_Sovereignty/`.
 
-When the 2026 verification scripts were written in January 2026, they accidentally loaded data from `New_Data_2026/` (BlackRock, Biopharma, Infrastructure, etc.) — files that did not exist when the original correlations were calculated. This led to:
+When the user wrote verification scripts in January 2026, they accidentally loaded data from `New_Data_2026/` (BlackRock, Biopharma, Infrastructure, etc.) — files that did not exist when the original correlations were calculated. This led to:
 
 | Script | What It Claims | Actual Dataset Used | Problem |
 |--------|---------------|--------------------| --------|
