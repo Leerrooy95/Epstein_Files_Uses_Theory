@@ -14,9 +14,6 @@ New to this project? See [Glossary.md](https://github.com/Leerrooy95/The_Regulat
 - [The Three-Layer Model](#the-three-layer-model)
 - [Repository Structure](#repository-structure)
 - [What's New (v8.3)](#whats-new-v83---february-2026)
-- [What's New (v8.2)](#whats-new-v82---february-2026)
-- [What's New (v8.1)](#whats-new-v81---february-7-2026)
-- [What's New (v8.0)](#whats-new-v80---january-27-2026)
 - [Quick Navigation by Type](#quick-navigation-by-type)
 - [For Researchers](#for-researchers)
 - [For Policymakers & Journalists](#for-policymakers--journalists)
@@ -31,9 +28,9 @@ New to this project? See [Glossary.md](https://github.com/Leerrooy95/The_Regulat
 
 This repository documents statistically significant correlations between high-visibility "friction" events (file releases, scandals, media cycles) and institutional compliance events (policy shifts, financial positioning, regulatory changes).
 
-**Core Finding**: Friction and compliance events cluster simultaneously on shared calendar anchors (r = +0.6685, p < 0.0001).
+**Core Finding**: Friction events (document releases, scandals) predict institutional compliance events (policy shifts, financial moves) at a 2-week lag (r = +0.6196, p = 0.0004, n = 30 weeks).
 
-**What this means**: Multiple actors—domestic, foreign, financial—exploit the same low-attention windows without requiring central coordination.
+**What this means**: When high-visibility friction events spike, institutional compliance events follow ~14 days later — suggesting shared exploitation of calendar-driven attention windows.
 
 ---
 
@@ -49,12 +46,12 @@ This research uses Pearson correlation (r) to measure relationships between even
 | ±0.5-0.7 | Strong |
 | ±0.7-1.0 | Very strong |
 
-**Our finding (r = +0.6685)**: When friction events occur, compliance events cluster in the same time window 67% more than random chance would predict. The positive sign means they move together (both increase simultaneously).
+**Our finding (r = +0.6196)**: When friction events spike, compliance events follow approximately 2 weeks later. This correlation (p = 0.0004) has less than 0.05% probability of occurring by chance.
 
 **Why this matters**:
-- A correlation this strong (p < 0.0001) has less than 0.01% probability of occurring by chance
-- It's reproducible—run the scripts in `Run_Correlations_Yourself/` yourself
+- A correlation this strong is reproducible — run the scripts in `Run_Correlations_Yourself/` yourself
 - It suggests a structural pattern, not random coincidence
+- Separate analyses (Project Trident, cross-validation) confirm the pattern using independent datasets
 
 **Important caveat**: Correlation ≠ causation. We document that these events cluster together, not that one causes the other. The claim is structural: the pattern exists and is statistically significant.
 
@@ -64,15 +61,14 @@ This research uses Pearson correlation (r) to measure relationships between even
 
 | Finding | Value | Status |
 |---------|-------|--------|
-| Friction ↔ Compliance correlation | r = +0.6685 (simultaneous) | ✅ Verified |
-| Statistical significance | p < 0.0001, n = 229 weeks | ✅ Verified |
+| Friction → Compliance correlation | r = +0.6196 (2-week lag) | ✅ Verified |
+| Statistical significance | p = 0.0004, n = 30 weeks | ✅ Verified |
 | Ritual → Policy proximity | 50.7% vs. 19.9% baseline (2.5x) | ✅ Verified |
 | Project Trident significance | p = 0.002 (Mann-Whitney U) | ✅ Verified |
+| Cross-validation (14-day periodicity) | χ² = 330.62 (p < 0.0001, 2,105 events) | ✅ Verified |
 | December 2025 cluster | 108 events in 12-day window | ✅ Verified |
 | Dec 22 signal types | 5 (Friction, Geopolitics, Financial, Policy, Cyber) | ✅ Verified |
-| Dec 2025 exclusion robustness | r drops 29% but remains significant (p < 0.0001) | ✅ Verified |
-| Granger causality (30-row) | Friction → Compliance at lags 1-2 (p = 0.0008) | ✅ Verified |
-| Event colocation | Friction dates attract 40-60x more compliance than random dates | ✅ Verified |
+| Event colocation | Friction dates attract 3.5x more compliance than random dates | ✅ Verified |
 
 ---
 
@@ -91,7 +87,7 @@ Calendar Anchor (solstice, holiday, fiscal deadline)
 ↓       ↓       ↓
 Friction  Policy  Financial
         ↓
-Simultaneous Clustering (r = 0.6685)
+Lagged Clustering (r = 0.6196, 2-week lag)
 ```
 
 The raw data shows friction and compliance events cluster together rather than following a sequential cause-effect pattern. This makes the phenomenon more robust—it doesn't require coordination, just shared exploitation of the same calendar signals.
@@ -120,7 +116,7 @@ This repository is part of a three-layer analytical framework:
 
 | Layer | Repository | Focus | Primary Finding |
 |-------|-----------|-------|-----------------|
-| 1. Attention Capture | This repo | Friction ↔ compliance clustering | r = 0.6685 simultaneous |
+| 1. Attention Capture | This repo | Friction → compliance clustering | r = 0.6196 (2-week lag) |
 | 2. Vacuum Creation | DOGE_Global_Effects | Aid cuts → instability | r = 0.42-0.69, 3-12 month lag |
 | 3. Alternative Capture | BRICS-NDB-LocalCurrency-DiD | Alternative financial systems | +25.5 pp local currency lending |
 
@@ -160,7 +156,7 @@ The_Regulated_Friction_Project/
 │   └── Alternate_Mechanisms.md                 # Alternative explanations considered
 │
 ├── Methodology & Transparency
-│   ├── TRANSPARENCY_NOTE_FOR_2026_ANALYSIS.md  # Dataset inclusion/exclusion criteria for r = 0.6685
+│   ├── TRANSPARENCY_NOTE_FOR_2026_ANALYSIS.md  # Dataset inclusion/exclusion criteria
 │   └── VERIFICATION_REPORT_Jan2026.md          # Complete independent statistical verification
 │
 ├── 00_Quick_Breakdowns/                        # Executive-level summaries
@@ -242,9 +238,9 @@ The_Regulated_Friction_Project/
 │   │   ├── README.md                                  # Folder guide and correlation reference
 │   │   ├── requirements.txt                           # Python dependencies (pandas, numpy, scipy, statsmodels)
 │   │   ├── run_original_analysis.py                   # Reproduce r = 0.6196, p = 0.002, χ² (pre-2026 data)
-│   │   ├── reproduce_updated_correlation.py           # Reproduce r = 0.6685 and r = 0.5268 (New_Data_2026)
-│   │   └── Wrong_Correlations/                        # ⚠️ Archived scripts that used wrong datasets
+│   │   └── Wrong_Correlations/                        # ⚠️ Archived scripts that used wrong datasets or excluded data
 │   │       ├── README.md                              # Explanation of what went wrong
+│   │       ├── reproduce_updated_correlation.py       # (used 2025-only datasets inflating correlation to r = 0.6685)
 │   │       ├── original_correlation_test.py           # (used relative paths — was correct)
 │   │       ├── reproduce_original_correlation.py      # (used hardcoded paths to wrong datasets)
 │   │       ├── independent_statistical_verification.py # (used hardcoded paths to wrong datasets)
@@ -269,25 +265,10 @@ The_Regulated_Friction_Project/
 │       └── Copilot_Opus_4.6_Analysis/                 # Lead Researcher statistical verification
 │           ├── README.md                              # Transparency notice, methodology, work log
 │           ├── Statistical_Tests/                     # 9 runnable Python robustness scripts
-│           │   ├── original_data_loader.py            # Shared module: loads original pre-2026 datasets
-│           │   ├── permutation_test.py                # Shuffle-based significance testing
-│           │   ├── year_distribution_audit.py         # Year-skew diagnosis across all CSVs
-│           │   ├── autocorrelation_adjusted_test.py   # Durbin-Watson + block bootstrap
-│           │   ├── normalized_correlation.py          # Per-year equalized event-count correlation
-│           │   ├── cross_validation_dec2025.py        # Does the pattern hold without Dec 2025?
-│           │   ├── rolling_window_correlation.py      # Sliding-window correlation over time
-│           │   ├── event_study_framework.py           # Compliance response after friction events
-│           │   └── granger_causality_test.py          # Predictive direction test
-│           ├── Findings/                              # Written analysis and documentation
-│           │   ├── dataset_provenance.md              # Which data feeds which correlation
-│           │   ├── correlation_summary.md             # All five correlations in one place
-│           │   ├── new_analysis_findings.md           # Results of robustness tests
-│           │   ├── granger_causality_results.md       # Granger causality test findings
-│           │   └── backfill_guide.md                  # Recommendations for year coverage
-│           ├── Verification_Reports/                  # Scrutiny and verification audits
-│           │   └── scrutiny_report_feb8_2026.md       # Full scrutiny of all prior work
+│           ├── Findings/                              # Active analysis — provenance, backfill guide
+│           ├── Verification_Reports/                  # Prediction tracker
 │           ├── Consolidation_Analysis/                # Cross-domain consolidation assessment
-│           │   └── consolidation_pattern_significance.md  # Infrastructure consolidation significance report
+│           ├── Archive/                               # Previous analysis kept for transparency
 │           └── Datasets/                              # Local copies of original pre-2026 CSVs (19 files)
 │
 └── New_Data_2026/                              # January-February 2026 datasets
@@ -311,7 +292,7 @@ v8.3 corrects the correlation statistics throughout the README and Report to mat
 
 ### 1. Corrected Robustness Findings
 
-The original correlations (r = 0.6196, r = 0.6685, r = 0.5268) remain valid as separate analyses using their respective datasets. The key correction is to the **robustness story**:
+The original correlations (r = 0.6196) remain valid using the pre-2026 datasets. The previously reported r = 0.6685 and r = 0.5268 (from New_Data_2026) have been deprecated because those datasets included 2025-only data that inflated the correlations. The key correction is to the **robustness story**:
 
 | Test | Previous (Wrong Datasets) | Corrected (Original Datasets) |
 |------|--------------------------|-------------------------------|
@@ -347,174 +328,6 @@ Added previously undocumented files to the Repository Structure:
 
 ---
 
-## What's New (v8.2 - February 2026)
-
-### Repository Synchronization & Final Polish
-
-v8.2 is a synchronization release ensuring all research files are documented and the README/Report accurately reflect the full depth of the repository.
-
-### 1. "Privatized Integration" — Q1 2026 Applied Findings
-
-**New Subfolder**: `Project_Trident/Claude_Code_Analysis/`
-
-The Q1 2026 research extends the existing friction-compliance framework into a specific domain: the observation that while formal diplomatic normalization remains stalled, functional integration is proceeding through private channels.
-
-**What the files document:**
-
-| Domain | Traditional Mechanism | Observed Private Mechanism | Status |
-|--------|----------------------|---------------------------|--------|
-| **Diplomacy** | UN Security Council | Board of Peace (pay-to-play membership, lifetime chairman authority) | Charter signed Jan 22, 2026 |
-| **Finance** | Bilateral investment treaties | Affinity Partners → Phoenix Financial → Israeli settlement-linked companies | Operational (9.9% stake) |
-| **Defense** | Formal military alliances | MEAD-CDOC at Al Udeid under CENTCOM | Activated Jan 12, 2026 |
-| **Territory** | Sovereign reconstruction | "New Gaza" master plan (privatized real estate model) | Presented Jan 22, 2026 |
-
-Key files:
-- `Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Master document covering all five domains with sourced verification
-- `Phoenix_Settlement_Portfolio_and_New_Gaza.md` — Company-by-company Phoenix portfolio (18+ companies with UN OHCHR database cross-reference)
-- `LEAD_ANALYST_REVIEW.md` — Independent verification of all major claims, blind spot identification
-
-### 2. Independent Verification Suite
-
-**New Folder**: `Run_Correlations_Yourself/`
-
-Two corrected Python scripts enabling anyone to reproduce the core findings (previous scripts archived in `Wrong_Correlations/` for transparency):
-- `run_original_analysis.py` — Reproduce r = 0.6196, Mann-Whitney p = 0.002, χ² cross-validation (original pre-2026 datasets)
-- `reproduce_updated_correlation.py` — Reproduce r = 0.6685 (core scope) and r = 0.5268 (full scope) using New_Data_2026 datasets
-- `Wrong_Correlations/` — ⚠️ Previous scripts that used wrong datasets, kept for transparency
-- `Wrong_Correlations/DISCREPANCY_ANALYSIS.md` — Transparent explanation of why different dataset scopes yield r = 0.6685 vs r = 0.5268 (both significant at p < 0.0001)
-
-### 3. Executive Synthesis & Newly Documented Files
-
-**New Folder**: `00_Quick_Breakdowns/`
-- `Copilot_Executive_Synthesis_Feb2026.md` — Comprehensive AI-generated synthesis of the entire repository's findings
-
-**Newly documented root-level files:**
-- `SOURCES.md` — 138 unique sources catalogued across all datasets
-- `TRANSPARENCY_NOTE_FOR_2026_ANALYSIS.md` — Methodological transparency for dataset scope decisions
-- `China_State_Media_Null_and_Meanings.md` — Null finding: Chinese state media shows zero anticipatory signaling
-- `Case_Study_David_Barnes_Detention.md` — Hostage diplomacy as human leverage dimension
-
-**Newly documented section files:**
-- `05_Geopolitical_Vectors/Graham_Venezuela_Analysis.md` — Graham's 54-day Venezuela escalation pattern
-- `09_Silicon_Sovereignty/SILICON_SOVEREIGNTY_REPORT.md` — Core report on the compute-as-currency thesis
-- `12_The_Media_Firewall/1789_Symbolism_Analysis.md` — 1789 Capital / Gulf SWF intermediary funding network
-
-### 4. Accuracy Corrections
-
-- Removed phantom file references (`February_2026_Update.md`, `Control_Proof/correlation_test.py`) that were listed in v8.1 but did not exist
-- Fixed `CRINK_Analysis.md` path (lives in `05_Geopolitical_Vectors/`, not root)
-- Corrected `Veriify_Trident_Analysis.py` filename
-- Complete `Control_Proof/` listing (5 data files, no scripts — scripts are in `Run_Correlations_Yourself/`)
-- Full file listings for `09_Silicon_Sovereignty/`, `08_How_It's_Possible/`, and `New_Data_2026/`
-
----
-
-## What's New (v8.1 - February 7, 2026)
-
-### Three Major Additions
-
-1. **State-Level Infrastructure Analysis** — New folder `13_State_and_County_Analysis/` documenting how Arkansas legislation creates a closed regulatory loop
-2. **Geopolitical Parallel Operations** — Venezuela compliance stack and Saudi-UAE rupture during media saturation (in `05_Geopolitical_Vectors/`)
-3. **Network Documentation** — DOJ Epstein files, Musk emails verified, Palantir-Thiel-Mandelson triangle, Trump-UAE $500M deal (now documented in `Project_Trident/Claude_Code_Analysis/`)
-
----
-
-### State-Level Analysis: Arkansas Infrastructure Consolidation
-
-**New Folder**: `13_State_and_County_Analysis/`  
-**New File**: `arkansas_infrastructure_forensic_audit.md`
-
-Forensic verification of how state-level regulatory and legislative architecture enables infrastructure consolidation:
-
-- **Act 373 (2025)**: Creates iterative resubmission process where PSC denial is procedurally temporary while approval is functionally inevitable
-- **Act 548 (2025)**: "Two or more nonadjacent" clause enables aggregation of separate sites into single tax-exempt entity
-- **Jefferson Power Station**: PSC approved $1.5B project on January 28, 2026 **while explicitly finding the cost "not reasonable"**
-- **AVAIO Digital**: $6-21B data center campus backed by deliberately undisclosed "$25 billion investment manager" (5 years of sustained anonymity)
-- **League of Women Voters v. Jester**: 8th Circuit appeal creates legal uncertainty through July 3, 2026 signature deadline
-
-**Key Finding**: The Arkansas case demonstrates the "closed regulatory loop" at the state level—legislative authorization → constrained regulation → targeted incentives → undisclosed capital → restricted citizen recourse.
-
----
-
-### Venezuela Compliance Stack Documentation
-
-**New Files in 05_Geopolitical_Vectors**:
-- `Venezuela_Privatization_Amnesty_Stack_Feb2026.md`
-- `January_2026_Parallel_Operations_Timeline.md`
-
-**Venezuela Privatization-Amnesty Stack** (January 29 - February 6, 2026):
-
-| Date | Event | Function |
-|------|-------|----------|
-| Jan 3 | Maduro captured (Operation Absolute Resolve) | Friction: Global attention captured |
-| Jan 29 | Hydrocarbons Law enacted | Foreign capital enabled; U.S. Treasury controls revenues via General License 46 |
-| Jan 30 | Amnesty announced; El Helicoide closure signed | Legal/political reset begins |
-| Feb 5-6 | Amnesty law formally passed | Legal framework locked in |
-
-**Key Insight**: U.S. General License 46 (not Venezuelan statutory guarantees) provides the actual investor protection—oil revenues custodied under Treasury control.
-
-**January 2026 Parallel Operations** (January 2-9, 2026):
-
-| Theater | High Attention | Lower Attention |
-|---------|----------------|-----------------|
-| Venezuela | Maduro capture dominated news cycles | — |
-| Yemen | — | Saudi counter-offensive ended UAE military presence; STC dissolved |
-
-**Finding**: While global media covered Venezuela, Saudi Arabia executed fundamental restructuring of Gulf relations—including public accusation of UAE "undermining Saudi national security."
-
-**Significance**: The Saudi-UAE rupture complicates the "Consortium" model—same sovereign wealth funds cooperating on US tech acquisitions are now backing opposing forces in Yemen and Sudan.
-
----
-
-### February 2026 Update: DOJ Files and Network Documentation
-
-**Now documented in**: `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md`
-
-**DOJ Epstein Files Release** (Jan 30-31, 2026):
-- 3M+ pages released
-- Musk-Epstein correspondence verified (16+ emails, 2012-2013)
-- UAE connection documented: Epstein facilitated Sultan Ahmed bin Sulayem (DP World CEO) ↔ Musk introductions
-- Musk's daughter Vivian confirmed email authenticity
-
-**Palantir-Thiel-Epstein Triangle**:
-- 2014: Peter Thiel urged Epstein to meet Valar Ventures principals
-- 2015: Epstein invested $15M in Valar Ventures
-- 2018: Palantir hired Mandelson's Global Counsel while Epstein still active Valar partner
-- Current: Palantir holds £670M+ UK contracts (nuclear, NHS, MoD, police)
-
-**Mandelson Consequences** (February 2026):
-- Sacked as US Ambassador designate
-- Resigned from Labour Party and House of Lords
-- Metropolitan Police criminal investigation (misconduct in public office)
-- UK Parliament voted unanimously to disclose vetting documents
-
-**Trump-UAE $500M Deal** (WSJ, Feb 1):
-- Sheikh Tahnoon acquired 49% of World Liberty Financial ($500M)
-- Same Tahnoon chairs MGX (15% TikTok owner) and G42 (receives 20% of approved AI chips/year)
-- Congressional investigation launched (Rep. Khanna, Sen. Warren)
-
----
-
-## What's New (v8.0 - January 27, 2026)
-
-### Silicon Sovereignty: Infrastructure Consolidation Analysis
-
-**File**: `09_Silicon_Sovereignty/Infrastructure_Consolidation_Pattern_Jan2026.md`
-
-Documentation of overlapping ownership consortium (Oracle, Silver Lake, Saudi PIF, UAE MGX) acquiring control of:
-- **Gaming/Behavioral Data**: Electronic Arts ($55B), Niantic, 100M+ users
-- **Social Media/Algorithm**: TikTok U.S. operations ($14B), 200M+ users
-- **AI Infrastructure**: Stargate Project ($500B), Grok federal/Pentagon deployment
-- **Geospatial Mapping**: Niantic Spatial access
-
-**Key Findings**:
-1. TikTok censorship reports emerged 72 hours after Oracle/UAE takeover (Jan 25-27)
-2. Same consortium appears in EA, TikTok, Stargate, and Grok deals
-3. Switch acquisition failure (Jan 26) exposed AI infrastructure bottleneck
-4. Board of Peace + TikTok finalization both January 22, 2026
-
----
-
 ## Quick Navigation by Type
 
 ### Datasets
@@ -525,11 +338,10 @@ Documentation of overlapping ownership consortium (Oracle, Silver Lake, Saudi PI
 
 ### Statistical Verification
 - `Run_Correlations_Yourself/run_original_analysis.py` — Reproduce original r = 0.6196, p = 0.002, χ² (pre-2026 data)
-- `Run_Correlations_Yourself/reproduce_updated_correlation.py` — Reproduce r = 0.6685 and r = 0.5268 (New_Data_2026)
-- `Run_Correlations_Yourself/Wrong_Correlations/` — ⚠️ Archived scripts that used wrong datasets (kept for transparency)
+- `Run_Correlations_Yourself/Wrong_Correlations/` — ⚠️ Archived scripts that used wrong datasets or excluded data (kept for transparency)
 - `Project_Trident/Veriify_Trident_Analysis.py` — Verify ritual timing analysis
 - `Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/` — 9 robustness test scripts (permutation, autocorrelation, normalization, Dec 2025 exclusion, rolling window, event-study, Granger causality)
-- `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/correlation_summary.md` — All five correlations in one reference
+- `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/dataset_provenance.md` — Dataset provenance documentation
 
 ### Deep Dives by Topic
 - **Tech Infrastructure**: `09_Silicon_Sovereignty/SILICON_SOVEREIGNTY_REPORT.md`
@@ -557,9 +369,6 @@ pip install -r requirements.txt
 
 # Reproduce original correlations (pre-2026 datasets)
 python run_original_analysis.py              # r = 0.6196, p = 0.002, χ² cross-validation
-
-# Reproduce updated correlations (New_Data_2026 datasets)
-python reproduce_updated_correlation.py      # r = 0.6685 (core), r = 0.5268 (full)
 
 # Run robustness tests (from repo root)
 cd ../Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/
@@ -649,25 +458,21 @@ The "Main Characters," "Implications," and state-level analysis modules specific
 
 Core findings independently verified January–February 2026:
 - **Original correlation** (r = 0.6196, 2-week lag): ✅ Exact reproduction
-- **Updated correlation** (r = 0.6685, 0-lag): ✅ Reproduced as r = 0.6192
-- **Full scope correlation** (r = 0.5268, 0-lag): ✅ Reproduced
 - **Project Trident** (p = 0.002): ✅ Exact reproduction
 - **Ritual proximity** (50.7% vs 19.9%, 2.5x): ✅ Exact reproduction
+- **Cross-validation** (χ² = 330.62): ✅ Exact reproduction
 - **December 2025 anomaly**: ✅ Confirmed (z = 2.35, p < 0.01)
+
+**Note:** The previously reported r = 0.6685 and r = 0.5268 (from New_Data_2026) have been deprecated. Those correlations used 2025-only datasets that inflated the results. The archived scripts are in `Run_Correlations_Yourself/Wrong_Correlations/` for transparency.
 
 ### Robustness Tests (Copilot_Opus_4.6_Analysis, Feb 2026)
 
-Using the corrected original pre-2026 datasets:
-- **Permutation test**: r = 0.62 significant (p < 0.001, 1K shuffles)
-- **Autocorrelation adjustment**: Both Pearson (p = 0.0002) and Spearman ρ = 0.37 (p = 0.0001) survive block bootstrap
-- **Dec 2025 exclusion**: r drops 29% but remains significant (p < 0.0001) — signal is distributed across timeline, not concentrated in one month
-- **Event-study**: Friction dates attract 40–60x more compliance events than random dates (colocation, not sequential causation)
-- **Granger causality (30-row)**: Friction → Compliance at lags 1-2 (p = 0.0008), supports sequential hypothesis in hand-scored data
-- **Granger causality (event counts)**: Bidirectional at all lags — suggests common driver rather than simple cause-effect
+Using the original pre-2026 datasets plus newly incorporated data from folders 01, 02, 03:
+- **Permutation test (30-row)**: r = 0.62 significant (p < 0.001, 1K shuffles)
+- **Permutation test (multi-dataset)**: Spearman ρ = 0.61 significant (p < 0.0001, 10K shuffles)
+- **Granger causality (30-row)**: Friction → Compliance at lags 1-2 (p = 0.0008)
 
-**Note:** The Granger causality finding previously reported (F = 32.49) used the New_Data_2026 datasets. The corrected analysis using original pre-2026 datasets shows bidirectional Granger causality (common driver), with the 30-row hand-scored data showing friction → compliance at short lags. See `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/granger_causality_results.md` for full details.
-
-See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analysis/Verification_Reports/scrutiny_report_feb8_2026.md` for complete independent analyses.
+See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analysis/` for complete independent analyses.
 
 ---
 
@@ -675,4 +480,4 @@ See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analy
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
-**Last updated**: February 9, 2026 — Added requirements.txt, Consolidation Analysis report
+**Last updated**: February 9, 2026 — Corrected primary finding to r = 0.6196 (original analysis), deprecated r = 0.6685 (used 2025-only datasets), incorporated datasets from folders 01-03
