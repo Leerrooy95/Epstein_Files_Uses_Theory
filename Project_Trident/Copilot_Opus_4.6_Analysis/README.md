@@ -119,7 +119,7 @@ independently verified via web search.
 | Feb 9 | Consolidation pattern significance analysis (web-verified) |
 | Feb 9 | Prediction tracker: 8 README predictions tracked against real-world outcomes |
 | Feb 9 | Deprecated r=0.6685 / r=0.5268 (used 2025-only datasets). Archived related analysis to `Archive/` |
-| Feb 9 | Incorporated 4 previously unused datasets (01_Epstein_Files, 02_pep_banking, 03_MASTER_timeline, 03_updated_master) |
+| Feb 9 | Incorporated 4 previously unused datasets: `Epstein_Files_timeline.csv` (01), `pep_banking_combined.csv` (02), `MASTER_timeline_2015-2025_UPDATED.csv` (03), `updated_master_theory.csv` (03) |
 | Feb 9 | Updated `original_data_loader.py` — friction events: 1,526, compliance events: 1,425 |
 | Feb 9 | Updated README.md, Report.md, Run_Correlations_Yourself to use r=0.6196 as primary finding |
 
