@@ -366,6 +366,8 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 - Robustness tests (permutation, autocorrelation adjustment, Dec 2025 exclusion, normalization) documented in `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/new_analysis_findings.md`
 - Fork the repo and run your own analysis — core scripts in `Run_Correlations_Yourself/`, robustness scripts in `Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/`
 
+**If this were random coincidence, events would distribute evenly. Instead, we see a 2.5x higher clustering around ritual dates (50.7%) compared to the baseline (19.9%), with a statistical significance of p=0.002. Coincidence does not produce consistent 14-day lags across 30 weeks of data is the legitimate read of the data, but it doesnt prove cause.**
+
 ---
 
 ## Summary
