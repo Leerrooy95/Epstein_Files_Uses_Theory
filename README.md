@@ -338,11 +338,10 @@ Added previously undocumented files to the Repository Structure:
 
 ### Statistical Verification
 - `Run_Correlations_Yourself/run_original_analysis.py` — Reproduce original r = 0.6196, p = 0.002, χ² (pre-2026 data)
-- `Run_Correlations_Yourself/reproduce_updated_correlation.py` — Reproduce r = 0.6685 and r = 0.5268 (New_Data_2026)
-- `Run_Correlations_Yourself/Wrong_Correlations/` — ⚠️ Archived scripts that used wrong datasets (kept for transparency)
+- `Run_Correlations_Yourself/Wrong_Correlations/` — ⚠️ Archived scripts that used wrong datasets or excluded data (kept for transparency)
 - `Project_Trident/Veriify_Trident_Analysis.py` — Verify ritual timing analysis
 - `Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/` — 9 robustness test scripts (permutation, autocorrelation, normalization, Dec 2025 exclusion, rolling window, event-study, Granger causality)
-- `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/correlation_summary.md` — All five correlations in one reference
+- `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/dataset_provenance.md` — Dataset provenance documentation
 
 ### Deep Dives by Topic
 - **Tech Infrastructure**: `09_Silicon_Sovereignty/SILICON_SOVEREIGNTY_REPORT.md`
@@ -370,9 +369,6 @@ pip install -r requirements.txt
 
 # Reproduce original correlations (pre-2026 datasets)
 python run_original_analysis.py              # r = 0.6196, p = 0.002, χ² cross-validation
-
-# Reproduce updated correlations (New_Data_2026 datasets)
-python reproduce_updated_correlation.py      # r = 0.6685 (core), r = 0.5268 (full)
 
 # Run robustness tests (from repo root)
 cd ../Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/
@@ -462,25 +458,21 @@ The "Main Characters," "Implications," and state-level analysis modules specific
 
 Core findings independently verified January–February 2026:
 - **Original correlation** (r = 0.6196, 2-week lag): ✅ Exact reproduction
-- **Updated correlation** (r = 0.6685, 0-lag): ✅ Reproduced as r = 0.6192
-- **Full scope correlation** (r = 0.5268, 0-lag): ✅ Reproduced
 - **Project Trident** (p = 0.002): ✅ Exact reproduction
 - **Ritual proximity** (50.7% vs 19.9%, 2.5x): ✅ Exact reproduction
+- **Cross-validation** (χ² = 330.62): ✅ Exact reproduction
 - **December 2025 anomaly**: ✅ Confirmed (z = 2.35, p < 0.01)
+
+**Note:** The previously reported r = 0.6685 and r = 0.5268 (from New_Data_2026) have been deprecated. Those correlations used 2025-only datasets that inflated the results. The archived scripts are in `Run_Correlations_Yourself/Wrong_Correlations/` for transparency.
 
 ### Robustness Tests (Copilot_Opus_4.6_Analysis, Feb 2026)
 
-Using the corrected original pre-2026 datasets:
-- **Permutation test**: r = 0.62 significant (p < 0.001, 1K shuffles)
-- **Autocorrelation adjustment**: Both Pearson (p = 0.0002) and Spearman ρ = 0.37 (p = 0.0001) survive block bootstrap
-- **Dec 2025 exclusion**: r drops 29% but remains significant (p < 0.0001) — signal is distributed across timeline, not concentrated in one month
-- **Event-study**: Friction dates attract 40–60x more compliance events than random dates (colocation, not sequential causation)
-- **Granger causality (30-row)**: Friction → Compliance at lags 1-2 (p = 0.0008), supports sequential hypothesis in hand-scored data
-- **Granger causality (event counts)**: Bidirectional at all lags — suggests common driver rather than simple cause-effect
+Using the original pre-2026 datasets plus newly incorporated data from folders 01, 02, 03:
+- **Permutation test (30-row)**: r = 0.62 significant (p < 0.001, 1K shuffles)
+- **Permutation test (multi-dataset)**: Spearman ρ = 0.61 significant (p < 0.0001, 10K shuffles)
+- **Granger causality (30-row)**: Friction → Compliance at lags 1-2 (p = 0.0008)
 
-**Note:** The Granger causality finding previously reported (F = 32.49) used the New_Data_2026 datasets. The corrected analysis using original pre-2026 datasets shows bidirectional Granger causality (common driver), with the 30-row hand-scored data showing friction → compliance at short lags. See `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/granger_causality_results.md` for full details.
-
-See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analysis/Verification_Reports/scrutiny_report_feb8_2026.md` for complete independent analyses.
+See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analysis/` for complete independent analyses.
 
 ---
 
@@ -488,4 +480,4 @@ See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analy
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
-**Last updated**: February 9, 2026 — Added requirements.txt, Consolidation Analysis report
+**Last updated**: February 9, 2026 — Corrected primary finding to r = 0.6196 (original analysis), deprecated r = 0.6685 (used 2025-only datasets), incorporated datasets from folders 01-03
