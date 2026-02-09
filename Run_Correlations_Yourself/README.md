@@ -32,7 +32,7 @@ python run_original_analysis.py
 |---|-------------|------|----------|--------|
 | 1 | Reflexive Control (2-week lag) | r = 0.6196 | 30-row master CSV | `run_original_analysis.py` Part 1 |
 | 2 | Project Trident (ritual vs holiday proximity) | p = 0.002 | 533-row lag CSV | `run_original_analysis.py` Part 2 |
-| 3 | Multi-Dataset Cross-Validation (14-day periodicity) | χ² = 330.62 | 4 Silicon Sovereignty CSVs (2,105 records) | `run_original_analysis.py` Part 3 |
+| 3 | Multi-Dataset Cross-Validation (14-day periodicity) | χ² = 330.62 | 4 Silicon Sovereignty CSVs (2,102 records) | `run_original_analysis.py` Part 3 |
 
 ---
 

@@ -93,14 +93,14 @@ The original hypothesis assumed a cause-effect sequence: friction creates a dist
 | Test | Result | Verdict |
 |------|--------|---------|
 | Permutation (1K shuffles) | r = 0.62 significant (p < 0.001) | ✅ Pass |
-| Autocorrelation adjustment | Pearson p = 0.0002, Spearman ρ = 0.37 (p = 0.0001) | ✅ Both survive |
-| Dec 2025 exclusion | r drops 29% but remains significant (p < 0.0001) | ✅ Signal distributed across timeline |
-| Normalized (binary) | r = 0.36 (positive) | ✅ Presence/absence correlation holds |
-| Event-study | Friction dates attract 40-60x more compliance than random | ✅ Strong colocation |
-| Granger (30-row, hand-scored) | Friction → Compliance at lags 1-2 (p = 0.0008) | ✅ Supports sequential hypothesis |
-| Granger (event counts) | Bidirectional at all lags | ℹ️ Refines model: suggests common driver, not simple cause-effect |
+| Autocorrelation adjustment | Pearson p = 0.008 (block-bootstrap), Spearman ρ = 0.61 (p = 0.0001) | ✅ Both survive |
+| Dec 2025 exclusion | Pearson r drops 6% (0.1099→0.1031), Spearman ρ = 0.60 (p < 0.0001) | ✅ Signal survives removal |
+| Normalized (binary) | r = 0.59 (p < 0.0001) | ✅ Presence/absence correlation holds |
+| Event-study | Friction dates attract 20–42x more compliance than random | ✅ Strong colocation |
+| Granger (30-row, hand-scored) | Friction → Compliance at lag 1 (p = 0.0008), lag 2 (p = 0.027) | ✅ Supports sequential hypothesis |
+| Granger (event counts) | Bidirectional at lags 1-3 | ℹ️ Refines model: suggests common driver, not simple cause-effect |
 
-**Key correction:** The previous robustness analysis (using wrong datasets) showed December 2025 removal destroyed the correlation (90% drop). With the correct original datasets, removal only causes a 29% drop and the correlation remains highly significant — the signal is distributed across the full 1990-2025 timeline.
+**Key correction:** The previous robustness analysis (using wrong datasets) showed December 2025 removal destroyed the correlation (90% drop). With the correct original datasets, Pearson r drops only 6% when December 2025 is excluded. However, excluding all of 2025 reduces Pearson r to 0.035 (not significant), while Spearman ρ remains robust at 0.57 (p < 0.0001). This indicates: (a) the rank-order pattern is broadly distributed, but (b) magnitude-based Pearson is sensitive to 2025 event concentration.
 
 ### December 2025: The Case Study
 
@@ -235,7 +235,7 @@ The "thermostat" metaphor describes emergent behavior: multiple actors respondin
 
 1. **Correlation ≠ causation:** Events cluster together; one doesn't necessarily cause the other
 2. **Event classification involves judgment:** What counts as "friction" vs. "compliance" requires researcher decisions
-3. **December 2025 concentration:** Heavy clustering in one period contributes significantly to headline r values (29% of correlation strength), but robustness tests confirm signal presence across the full timeline (remains significant at p < 0.0001 after removal)
+3. **December 2025 / 2025 concentration:** Pearson r on expanded event counts drops from 0.11 to 0.04 (not significant) when all of 2025 is excluded. Spearman ρ remains robust (0.57, p < 0.0001) across all exclusion windows, confirming the rank-order pattern is broadly distributed even though Pearson magnitude is sensitive to 2025 event density
 4. **Granger causality is bidirectional:** Event-count data shows both directions predict each other, suggesting a common driver rather than simple friction → compliance causation (hand-scored data does show friction → compliance at short lags)
 5. **Scraping artifacts:** Some dataset records contain projections or duplicates
 6. **Alternative explanations:** Fiscal calendar effects, bureaucratic cycles, and simple coincidence remain possible
@@ -252,7 +252,7 @@ git clone https://github.com/Leerrooy95/The_Regulated_Friction_Project.git
 
 # Reproduce original correlations (pre-2026 datasets)
 cd Run_Correlations_Yourself/
-python run_original_analysis.py              # r = 0.6196, p = 0.002, χ² cross-validation
+python run_original_analysis.py              # r = 0.6196, p = 0.0004, Mann-Whitney p = 0.002
 
 # Run robustness tests (from repo root)
 cd ../Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/
@@ -263,7 +263,7 @@ python event_study_framework.py             # Compliance response analysis
 python granger_causality_test.py             # Predictive direction test
 ```
 
-**Methodology transparency:** The primary correlation (r = 0.6196) uses 30 weeks of hand-scored friction/compliance indices at a 2-week lag. The multi-dataset Spearman rank correlation (ρ = 0.61) confirms the pattern across 2,951 events from all repository datasets.
+**Methodology transparency:** The primary correlation (r = 0.6196) uses 30 weeks of hand-scored friction/compliance indices at a 2-week lag. The multi-dataset Spearman rank correlation (ρ = 0.61) confirms the rank-order pattern across 2,951 events from all repository datasets. The Pearson r on expanded event counts (r = 0.11) is weaker due to magnitude sensitivity but remains significant after autocorrelation adjustment (block-bootstrap p = 0.008).
 
 Key datasets:
 - `Control_Proof/master_reflexive_correlation_data.csv` — Original weekly friction/compliance indices
@@ -278,7 +278,7 @@ Key datasets:
 | Prediction | Timeframe | Status | How to Verify |
 |-----------|-----------|--------|---------------|
 | Event clustering at next file deadline | Ongoing | Confirmed (Jan 30-Feb 1) | Media cycle tracking |
-| Tu BiShvat policy action | Feb 12, 2026 | Pending | Policy/funding shifts |
+| Tu BiShvat policy action | Feb 1-2, 2026 | ✅ Window confirmed (DOJ files + WLFI deal) | Policy/funding shifts |
 | Gulf SWF Q4 positioning revealed | Feb 2026 | Pending (13F filings) | SEC EDGAR |
 | DOGE-predicted instability | Q1 2026 | Tracking (Mali, Syria, Sudan) | Situation monitoring |
 | California TikTok investigation findings | Q1 2026 | Pending | AG office |
@@ -321,7 +321,7 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 
 This research documents two connected patterns:
 
-**The statistical foundation:** Friction events predict compliance events at a 2-week lag (r = +0.6196, p = 0.0004). This finding is confirmed by the multi-dataset Spearman rank correlation (ρ = 0.61, p < 0.0001) across 2,951 events from all repository datasets. Robustness testing confirms the signal survives permutation testing (p < 0.001) and Granger causality shows friction → compliance at lags 1-2 (p = 0.0008). December 2025 demonstrated this in real-time: five independent signal types converged on the same window.
+**The statistical foundation:** Friction events predict compliance events at a 2-week lag (r = +0.6196, p = 0.0004) in the 30-week hand-scored dataset. This finding is confirmed by the multi-dataset Spearman rank correlation (ρ = 0.61, p < 0.0001) across 2,951 events from all repository datasets. Robustness testing confirms the signal survives permutation testing (p < 0.001), Granger causality shows friction → compliance at lag 1 (p = 0.0008), and binary presence/absence correlation is r = 0.59. The Spearman rank-order pattern is robust to December 2025 exclusion (ρ = 0.60), though Pearson r on expanded event counts (r = 0.11) is sensitive to 2025 concentration. December 2025 demonstrated the pattern in real-time: five independent signal types converged on the same window.
 
 **The structural extension (Q1 2026):** During these same clustering windows, formal institutional mechanisms are being supplemented by private channels — Gulf sovereign capital flowing through US private equity into settlement-linked companies, a pay-to-play governance body bypassing UN frameworks, technical military integration proceeding without bilateral treaties, and territorial reconstruction treated as a privatized real estate venture. At the state level, legislative architecture in Arkansas creates a regulatory environment where denial is procedurally temporary and approval functionally inevitable.
 
@@ -345,4 +345,4 @@ The data is public. The code is public. The claims are reproducible and sourced.
 
 ---
 
-*This report was last updated February 9, 2026 (v8.3). For the latest findings, see the repository README.*
+*This report was last updated February 9, 2026 (v8.3). Corrected robustness table values from actual script output, corrected Tu BiShvat date (Feb 1-2, not Feb 12), fixed χ² reproduction (now reproduces 330.62 exactly), and clarified Pearson vs Spearman sensitivity to 2025 data concentration. For the latest findings, see the repository README.*

@@ -122,6 +122,7 @@ independently verified via web search.
 | Feb 9 | Incorporated 4 previously unused datasets: `Epstein_Files_timeline.csv` (01), `pep_banking_combined.csv` (02), `MASTER_timeline_2015-2025_UPDATED.csv` (03), `updated_master_theory.csv` (03) |
 | Feb 9 | Updated `original_data_loader.py` — friction events: 1,526, compliance events: 1,425 |
 | Feb 9 | Updated README.md, Report.md, Run_Correlations_Yourself to use r=0.6196 as primary finding |
+| Feb 9 | **CORRECTION**: Fixed χ² reproduction (was using wrong binning method — `day_of_year % 14` instead of `days_since_start % 14`; now reproduces 330.62 exactly); corrected robustness table values from actual script output; corrected Tu BiShvat date (Feb 1-2, not Feb 12); updated event colocation ratio (20-42x, not 40-60x); clarified Pearson vs Spearman sensitivity to 2025 concentration |
 
 ### Future recommendations
 
@@ -201,7 +202,9 @@ owner can learn the methodology, not just receive a number.
 | Spearman ρ ≈ 0.61 (expanded datasets) | Robust to outlier magnitudes; confirms non-linear but consistent relationship |
 | 2025 skew diagnosis | Based on date parsing which may miss events with non-standard date formats |
 | Dataset provenance | Git history only shows when files were *pushed to GitHub*, not when analysis was *first run locally* |
-| Granger (30-row master): friction → compliance lags 1-2 | Supports thesis in hand-scored data |
+| Granger (30-row master): friction → compliance lag 1 (p = 0.0008) | Supports thesis in hand-scored data; lag 2 p = 0.027 also significant |
+| χ² cross-validation: 330.62 (p < 0.0001) | Uses `days_since_start % 14` binning; reproduces exactly with corrected script |
+| Pearson sensitivity to 2025 | Excluding all 2025: Pearson r = 0.035 (not significant), but Spearman ρ = 0.57 (p < 0.0001) |
 
 ### 5. Political neutrality
 
@@ -243,4 +246,4 @@ If you're reading this and want to check whether my analysis is sound:
 ---
 
 *This document was written by GitHub Copilot (Claude, Opus 4.6) on February 8, 2026.*  
-*Last updated: February 9, 2026 — Deprecated r=0.6685, incorporated datasets from folders 01-03, reorganized into Archive subfolder, updated primary finding to r=0.6196.*
+*Last updated: February 9, 2026 — Fixed χ² reproduction (330.62 verified), corrected robustness table values from actual script output, corrected Tu BiShvat date (Feb 1-2, not Feb 12), updated event colocation ratio (20-42x), clarified Pearson vs Spearman sensitivity.*

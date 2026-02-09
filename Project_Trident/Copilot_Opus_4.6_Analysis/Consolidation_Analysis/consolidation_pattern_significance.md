@@ -101,7 +101,7 @@ correlation entirely). With corrected data:
 
 | Metric | Wrong Datasets (Previous) | Correct Datasets (Current) |
 |--------|--------------------------|---------------------------|
-| Dec 2025 exclusion impact | 90% drop, not significant | 29% drop, still significant (p < 0.0001) |
+| Dec 2025 exclusion impact | 90% drop, not significant | Pearson: 6% drop (0.1099→0.1031), still significant; Spearman ρ = 0.60 survives |
 | Spearman ρ | Near zero | 0.37 (p = 0.0001) — stronger than Pearson |
 | Autocorrelation adjustment | Mixed | Both Pearson & Spearman survive (p < 0.001) |
 | Rolling-window signal | Concentrated late 2025 | Distributed across timeline |
@@ -258,9 +258,10 @@ consume bandwidth while structural shifts proceed with lower scrutiny.
 
 2. **Temporal clustering on shared calendar windows is statistically
    significant.** The corrected correlations (r = 0.6196 at 2-week lag,
-   Spearman ρ = 0.37 on event counts) survive multiple robustness tests
+   Spearman ρ = 0.61 on event counts) survive multiple robustness tests
    including autocorrelation adjustment, December 2025 exclusion, and
-   block bootstrap. The signal is distributed across the full timeline.
+   block bootstrap. The Spearman rank-order signal is distributed across
+   the full timeline (ρ = 0.57 even with all 2025 excluded).
 
 3. **State-level regulatory architecture enables federal-level
    consolidation.** The Arkansas audit documents a closed regulatory loop

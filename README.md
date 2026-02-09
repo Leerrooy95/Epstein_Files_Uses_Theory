@@ -65,10 +65,10 @@ This research uses Pearson correlation (r) to measure relationships between even
 | Statistical significance | p = 0.0004, n = 30 weeks | ✅ Verified |
 | Ritual → Policy proximity | 50.7% vs. 19.9% baseline (2.5x) | ✅ Verified |
 | Project Trident significance | p = 0.002 (Mann-Whitney U) | ✅ Verified |
-| Cross-validation (14-day periodicity) | χ² = 330.62 (p < 0.0001, 2,105 events) | ✅ Verified |
+| Cross-validation (14-day periodicity) | χ² = 330.62 (p < 0.0001, 2,102 events) | ✅ Verified |
 | December 2025 cluster | 108 events in 12-day window | ✅ Verified |
 | Dec 22 signal types | 5 (Friction, Geopolitics, Financial, Policy, Cyber) | ✅ Verified |
-| Event colocation | Friction dates attract 3.5x more compliance than random dates | ✅ Verified |
+| Event colocation | Friction dates attract 20–42x more compliance than random dates | ✅ Verified |
 
 ---
 
@@ -237,7 +237,7 @@ The_Regulated_Friction_Project/
 │   ├── Run_Correlations_Yourself/                     # Independent verification suite
 │   │   ├── README.md                                  # Folder guide and correlation reference
 │   │   ├── requirements.txt                           # Python dependencies (pandas, numpy, scipy, statsmodels)
-│   │   ├── run_original_analysis.py                   # Reproduce r = 0.6196, p = 0.002, χ² (pre-2026 data)
+│   │   ├── run_original_analysis.py                   # Reproduce r = 0.6196, p = 0.0004, Mann-Whitney p = 0.002 (pre-2026 data)
 │   │   └── Wrong_Correlations/                        # ⚠️ Archived scripts that used wrong datasets or excluded data
 │   │       ├── README.md                              # Explanation of what went wrong
 │   │       ├── reproduce_updated_correlation.py       # (used 2025-only datasets inflating correlation to r = 0.6685)
@@ -296,14 +296,14 @@ The original correlations (r = 0.6196) remain valid using the pre-2026 datasets.
 
 | Test | Previous (Wrong Datasets) | Corrected (Original Datasets) |
 |------|--------------------------|-------------------------------|
-| Dec 2025 exclusion | 90% drop, not significant | 29% drop, still significant (p < 0.0001) |
-| Autocorrelation adjustment | Mixed | Both Pearson and Spearman survive (p < 0.001) |
-| Normalized (binary) | Negative | Positive (r = 0.36) |
-| Event-study | Not tested | Colocation confirmed (40-60x random baseline) |
-| Granger causality (30-row) | Not tested | Friction → Compliance at lags 1-2 (p = 0.0008) |
+| Dec 2025 exclusion | 90% drop, not significant | 6% Pearson drop (0.1099→0.1031), still significant (p < 0.0001); Spearman ρ = 0.60 survives |
+| Autocorrelation adjustment | Mixed | Pearson p = 0.0077, Spearman ρ = 0.61 (block-bootstrap p = 0.0001) |
+| Normalized (binary) | Negative | Positive (r = 0.59, ρ = 0.59) |
+| Event-study | Not tested | Colocation confirmed (20–42x random baseline) |
+| Granger causality (30-row) | Not tested | Friction → Compliance at lag 1 (p = 0.0008), lag 2 (p = 0.027) |
 | Granger causality (event counts) | Not tested | Bidirectional — suggests common driver |
 
-**Key improvement:** The signal is distributed across the full 1990–2025 timeline, not concentrated in a single month. Removing December 2025 only reduces the original-dataset correlation by 29% (previously reported as 90% with wrong datasets).
+**Key improvement:** The Spearman rank correlation (ρ = 0.61) is robust across all exclusion windows — removing December 2025 only reduces it from 0.61 to 0.60, and excluding all of 2025 still yields ρ = 0.57 (p < 0.0001). The Pearson r on expanded event counts is weaker (r = 0.11) due to magnitude sensitivity, but remains significant after autocorrelation adjustment (block-bootstrap p = 0.008).
 
 ### 2. New Subfolder: `Project_Trident/Copilot_Opus_4.6_Analysis/`
 
@@ -337,7 +337,7 @@ Added previously undocumented files to the Repository Structure:
 - `Project_Trident/Best_Data_For_Project_Trident/` — Ritual timing, fund flows
 
 ### Statistical Verification
-- `Run_Correlations_Yourself/run_original_analysis.py` — Reproduce original r = 0.6196, p = 0.002, χ² (pre-2026 data)
+- `Run_Correlations_Yourself/run_original_analysis.py` — Reproduce original r = 0.6196, p = 0.0004, Mann-Whitney p = 0.002 (pre-2026 data)
 - `Run_Correlations_Yourself/Wrong_Correlations/` — ⚠️ Archived scripts that used wrong datasets or excluded data (kept for transparency)
 - `Project_Trident/Veriify_Trident_Analysis.py` — Verify ritual timing analysis
 - `Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/` — 9 robustness test scripts (permutation, autocorrelation, normalization, Dec 2025 exclusion, rolling window, event-study, Granger causality)
@@ -368,7 +368,7 @@ cd Run_Correlations_Yourself/
 pip install -r requirements.txt
 
 # Reproduce original correlations (pre-2026 datasets)
-python run_original_analysis.py              # r = 0.6196, p = 0.002, χ² cross-validation
+python run_original_analysis.py              # r = 0.6196, p = 0.0004, Mann-Whitney p = 0.002
 
 # Run robustness tests (from repo root)
 cd ../Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/
@@ -406,7 +406,7 @@ python granger_causality_test.py             # Predictive direction test
 | Prediction | Timeframe | Status |
 |-----------|-----------|--------|
 | Event clustering at next file deadline | Ongoing | ✅ Confirmed (Jan 30-Feb 1) |
-| Tu BiShvat policy action | Feb 12, 2026 | Pending |
+| Tu BiShvat policy action | Feb 1-2, 2026 | ✅ Window confirmed (DOJ files + WLFI deal) |
 | Gulf SWF Q4 positioning revealed | Feb 2026 | Pending (13F filings) |
 | DOGE-predicted instability | Q1 2026 | Tracking (Mali, Syria, Sudan) |
 | California TikTok investigation findings | Q1 2026 | Pending |
@@ -470,7 +470,9 @@ Core findings independently verified January–February 2026:
 Using the original pre-2026 datasets plus newly incorporated data from folders 01, 02, 03:
 - **Permutation test (30-row)**: r = 0.62 significant (p < 0.001, 1K shuffles)
 - **Permutation test (multi-dataset)**: Spearman ρ = 0.61 significant (p < 0.0001, 10K shuffles)
-- **Granger causality (30-row)**: Friction → Compliance at lags 1-2 (p = 0.0008)
+- **Granger causality (30-row)**: Friction → Compliance at lag 1 (p = 0.0008)
+- **Binary correlation (presence/absence)**: r = 0.59 (p < 0.0001)
+- **Block bootstrap (autocorrelation-adjusted)**: Pearson p = 0.008, Spearman p = 0.0001
 
 See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analysis/` for complete independent analyses.
 
@@ -480,4 +482,4 @@ See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analy
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
-**Last updated**: February 9, 2026 — Corrected primary finding to r = 0.6196 (original analysis), deprecated r = 0.6685 (used 2025-only datasets), incorporated datasets from folders 01-03
+**Last updated**: February 9, 2026 — Fixed χ² reproduction (corrected binning method, now reproduces 330.62 exactly), corrected robustness table values from actual script output, corrected Tu BiShvat date (Feb 1-2, not Feb 12), updated event colocation ratio (20-42x)

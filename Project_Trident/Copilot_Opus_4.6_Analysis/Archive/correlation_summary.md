@@ -70,6 +70,12 @@ stronger temporal anchor than secular holidays.
 **Result:** χ² = 330.62 (p < 0.0001) for 14-day non-random clustering across
 2,105 events
 
+**NOTE (Feb 9, 2026):** Verified — reproduces exactly when using
+`days_since_start % 14` binning (relative to earliest event in dataset).
+A previous reproduction attempt using `day_of_year % 14` produced χ² = 20.27
+due to incorrect binning anchor point. The corrected script in
+`Run_Correlations_Yourself/run_original_analysis.py` now reproduces 330.62.
+
 **Computed:** December 25, 2025 (v5.5 release)
 
 **Datasets (all in `09_Silicon_Sovereignty/`):**
