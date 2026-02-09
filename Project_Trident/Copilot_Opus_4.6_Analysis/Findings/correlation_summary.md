@@ -14,8 +14,8 @@ datasets behind it, and where to reproduce it.
 | 1 | Reflexive Control (2-week lag) | r = 0.6196 | 0.0004 | 30-row master CSV | `Run_Correlations_Yourself/run_original_analysis.py` Part 1 |
 | 2 | Project Trident (ritual vs holiday proximity) | Mann-Whitney U, p = 0.002 | 0.002 | 533-row lag CSV | `Run_Correlations_Yourself/run_original_analysis.py` Part 2 |
 | 3 | Multi-Dataset Cross-Validation (14-day periodicity) | χ² = 330.62 | < 0.0001 | 4 Silicon Sovereignty CSVs (2,105 records) | `Run_Correlations_Yourself/run_original_analysis.py` Part 3 |
-| 4 | Updated event-count (core scope, 0-lag) | r = 0.6685 | < 0.0001 | 5 New_Data_2026 CSVs (~1,010 events) | `Run_Correlations_Yourself/reproduce_original_correlation.py` |
-| 5 | Updated event-count (full scope, 0-lag) | r = 0.5268 | < 0.0001 | 6 New_Data_2026 CSVs (~2,069 events) | `Run_Correlations_Yourself/independent_statistical_verification.py` |
+| 4 | Updated event-count (core scope, 0-lag) | r = 0.6685 | < 0.0001 | 5 New_Data_2026 CSVs (~1,010 events) | `Run_Correlations_Yourself/reproduce_updated_correlation.py` |
+| 5 | Updated event-count (full scope, 0-lag) | r = 0.5268 | < 0.0001 | 6 New_Data_2026 CSVs (~2,069 events) | `Run_Correlations_Yourself/reproduce_updated_correlation.py` |
 
 ---
 
@@ -168,8 +168,7 @@ genuine rank-order signal even though it dilutes the magnitude-based Pearson r.
 - Correlations 1–3 use **only** pre-2026 datasets — reproducible via
   `Run_Correlations_Yourself/run_original_analysis.py`
 - Correlations 4–5 use **only** New_Data_2026 CSVs — reproducible via
-  `Run_Correlations_Yourself/reproduce_original_correlation.py` and
-  `Run_Correlations_Yourself/independent_statistical_verification.py`
+  `Run_Correlations_Yourself/reproduce_updated_correlation.py`
 - The two groups use **completely independent datasets** — the original
   correlation was computed 12 days before New_Data_2026 files existed
 

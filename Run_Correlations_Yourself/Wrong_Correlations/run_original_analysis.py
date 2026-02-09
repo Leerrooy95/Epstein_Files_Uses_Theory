@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
 """
-Run Original Analysis — Corrected Version (February 2026)
+Run Original Analysis — Uses ONLY the original datasets from Control_Proof/,
+Project_Trident/, and 09_Silicon_Sovereignty/.
 
-Uses ONLY the original datasets from Control_Proof/, Project_Trident/, and
-09_Silicon_Sovereignty/. These were the datasets used for the original
-correlations in December 2025 (v3.1–v5.5 releases).
+The New_Data_2026/ folder was NOT part of the original correlations and should
+not be used here. This script reproduces the three core statistical findings
+using only the datasets that were documented in the release notes (v3.1–v5.5).
 
-New_Data_2026/ is explicitly EXCLUDED — those files were uploaded January 4,
-2026 and were not part of the original correlations.
-
-Reproduces:
-  Part 1: r = 0.6196 at 2-week lag (30-row hand-scored indices)
-  Part 2: Mann-Whitney U p = 0.002 (ritual vs holiday proximity)
-  Part 3: χ² cross-validation (14-day periodicity across 2,105 events)
+Original Datasets Used:
+  1. Control_Proof/master_reflexive_correlation_data.csv        (30 weeks)
+  2. Control_Proof/reflexive_control_scraped_data.csv           (OSINT triggers)
+  3. Project_Trident/Best_Data_For_Project_Trident/
+       Lag_Correlation_Analysis_Verified_Holidays.csv           (533 records)
+  4. 09_Silicon_Sovereignty/Coalition_Narrative_Map_2015-2025.csv   (456 records)
+  5. 09_Silicon_Sovereignty/VOCA_funding_timeline_clean.csv         (667 records)
+  6. 09_Silicon_Sovereignty/Regulatory_Map_Data_CLEANED.csv         (76 records)
+  7. 09_Silicon_Sovereignty/REFINED_supercomputer_geopolitics (1).csv (906 records)
 """
 
 import os
@@ -20,10 +23,10 @@ import sys
 import pandas as pd
 import numpy as np
 from scipy import stats
-from scipy.stats import pearsonr, spearmanr, chi2_contingency
+from scipy.stats import pearsonr, chi2_contingency
 
 # ---------------------------------------------------------------------------
-# Resolve paths relative to this script → repository root
+# Resolve paths relative to the repository root
 # ---------------------------------------------------------------------------
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
@@ -31,7 +34,6 @@ REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 CONTROL_PROOF = os.path.join(REPO_ROOT, "Control_Proof")
 PROJECT_TRIDENT = os.path.join(REPO_ROOT, "Project_Trident")
 SILICON_SOV = os.path.join(REPO_ROOT, "09_Silicon_Sovereignty")
-
 
 # ============================================================================
 # PART 1 — Reflexive Control Correlation (r = 0.6196 at 2-week lag)
@@ -68,20 +70,15 @@ def part1_reflexive_control():
     r_direct, p_direct = pearsonr(friction, compliance)
     print(f"\n0-lag (simultaneous):  r = {r_direct:.4f}, p = {p_direct:.4f}")
 
-    # Spearman rank correlation
-    rho, p_spearman = spearmanr(friction, compliance)
-    print(f"Spearman (0-lag):      ρ = {rho:.4f}, p = {p_spearman:.4f}")
-
     # 2-week lagged correlation (the original finding)
     friction_lagged = friction.shift(2)
     valid = ~friction_lagged.isna()
     r_lagged, p_lagged = pearsonr(friction_lagged[valid], compliance[valid])
-    print(f"\n2-week lag (Friction leads): r = {r_lagged:.4f}, p = {p_lagged:.4f}")
+    print(f"2-week lag (Friction leads): r = {r_lagged:.4f}, p = {p_lagged:.4f}")
 
     match = abs(r_lagged - 0.6196) < 0.01
-    tag = "✅ VERIFIED" if match else "⚠ DISCREPANCY"
+    tag = "VERIFIED" if match else "DISCREPANCY"
     print(f"\n{tag}: Original claim r = 0.6196  |  Reproduced r = {r_lagged:.4f}")
-
 
 # ============================================================================
 # PART 2 — Project Trident Mann-Whitney U (p = 0.002)
@@ -124,14 +121,8 @@ def part2_project_trident():
     print(f"p-value: {p_value:.6f}")
 
     match = abs(p_value - 0.002) < 0.005
-    tag = "✅ VERIFIED" if match else "⚠ DISCREPANCY"
+    tag = "VERIFIED" if match else "DISCREPANCY"
     print(f"\n{tag}: Original claim p = 0.002  |  Reproduced p = {p_value:.6f}")
-
-    # Cohen's d effect size
-    pooled_std = np.sqrt((ritual_lags.std()**2 + holiday_lags.std()**2) / 2)
-    if pooled_std > 0:
-        cohens_d = (ritual_lags.mean() - holiday_lags.mean()) / pooled_std
-        print(f"Effect size (Cohen's d): {cohens_d:.3f}")
 
     # Proximity analysis
     for window in [7, 14, 21, 30]:
@@ -139,7 +130,6 @@ def part2_project_trident():
         h_in = (holiday_lags <= window).mean() * 100
         ratio = r_in / h_in if h_in > 0 else float("inf")
         print(f"  Within ±{window}d:  Ritual {r_in:.1f}%  |  Holiday {h_in:.1f}%  |  Ratio {ratio:.1f}x")
-
 
 # ============================================================================
 # PART 3 — Multi-Dataset Cross-Validation (χ² = 330.62)
@@ -215,14 +205,13 @@ def part3_cross_validation():
         for src, cnt in dec_cluster["source"].value_counts().items():
             print(f"  {src}: {cnt}")
 
-
 # ============================================================================
 # MAIN
 # ============================================================================
 
 if __name__ == "__main__":
     print("=" * 80)
-    print("ORIGINAL ANALYSIS REPRODUCTION SUITE — CORRECTED VERSION")
+    print("ORIGINAL ANALYSIS REPRODUCTION SUITE")
     print("Uses ONLY pre-2026 datasets (Control_Proof, Project_Trident, Silicon_Sovereignty)")
     print("New_Data_2026/ is explicitly EXCLUDED — those datasets were not part")
     print("of the original correlations.")
@@ -245,7 +234,7 @@ if __name__ == "__main__":
 6. 09_Silicon_Sovereignty/Regulatory_Map_Data_CLEANED.csv         (76 records, v5.5)
 7. 09_Silicon_Sovereignty/REFINED_supercomputer_geopolitics (1).csv (906 records, v5.5)
 
-NOT USED (New_Data_2026/ — these are a SEPARATE analysis, not the original correlations):
+NOT USED (New_Data_2026/ — intended for future analysis, not original correlations):
   - Additional_Anchors_Jan2026_Final.csv
   - Biopharma.csv
   - BlackRock_Timeline_Full_Decade.csv
