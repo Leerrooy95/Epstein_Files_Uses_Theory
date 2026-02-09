@@ -205,7 +205,7 @@ The EU Commission must decide by February 10 (tomorrow) whether to approve Googl
 **Why this matters:** This is a massive tech consolidation decision being made during the DHS/ICE friction window. The decision date (Feb 10) falls one day before Netanyahu's visit (Feb 11) and three days before the DHS deadline (Feb 13).
 
 **Sources:**
-- European Business Magazine: [EU Decides Google's $23bn Wiz Deal by Feb 10](https://europeanbusinessmagazine.com/business/eu-antitrust-regulators-set-deadline-on-googles-wiz-acquisition/)
+- European Business Magazine: [EU Decides Google's $23bn Wiz Deal by Feb 10](https://europeanbusinessmagazine.com/business/eu-antitrust-regulators-set-deadline-on-googles-wiz-acquisition/) *(Note: headline uses earlier $23B valuation; deal finalized at $32B per Yahoo Finance, SecurityWeek)*
 - Yahoo Finance: [EU antitrust regulators to decide on Google's Wiz deal by February 10](https://finance.yahoo.com/news/eu-antitrust-regulators-decide-googles-101705605.html)
 
 ---
