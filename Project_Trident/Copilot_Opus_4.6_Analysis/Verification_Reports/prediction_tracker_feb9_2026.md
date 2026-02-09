@@ -43,7 +43,7 @@ confirmed this:
 | Jan 30-31 | DOJ releases 3M+ pages of Epstein files | Friction |
 | Jan 30 | Venezuela amnesty announced; El Helicoide closure signed | Compliance |
 | Feb 1 | WSJ reports Trump-UAE $500M World Liberty Financial deal | Financial |
-| Feb 1-2 | Tu BiShvat (Jewish New Year for Trees) | Calendar anchor |
+| Feb 1-2 | Tu BiShvat (New Year for Trees) | Calendar anchor |
 | Feb 3-4 | Met Police confirms Mandelson criminal investigation | Institutional |
 | Feb 5 | House Democrats launch formal WLFI probe (Rep. Khanna) | Compliance |
 
