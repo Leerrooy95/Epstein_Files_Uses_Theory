@@ -27,7 +27,10 @@ Original datasets and their roles:
     - VOCA_funding_timeline_clean.csv            — 667 funding events
     - Regulatory_Map_Data_CLEANED.csv            — 76 regulatory events
     - REFINED_supercomputer_geopolitics (1).csv  — 906 hardware events
+
+  NOT LOADED (present in Datasets/ but excluded from correlation functions):
     - Fund_Flow_Ritual_Coordination_2025.csv     — 97 fund flow events
+      (multi-year 2008-2025, but not used in any correlation function)
 
   INDEX-SCORED source (Part 1):
     - master_reflexive_correlation_data.csv — 30 weeks pre-scored friction/compliance
