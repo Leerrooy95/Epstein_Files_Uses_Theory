@@ -12,6 +12,8 @@ Original datasets and their roles:
     - Holidays_2015_2025_Verified.csv   — 59 verified holiday dates
     - MASTER_reflexive_control_v2.csv   — 149 reflexive control events (w/ Theory_Label)
     - thermostat_control_data.csv       — 150 thermostat events (w/ Theory_Label)
+    - Epstein_Files_timeline.csv        — 935 Epstein document release events (01_Levers_and_Frictions)
+    - updated_master_theory.csv         — 416 master theory events (03_Master_Framework)
 
   COMPLIANCE (response/anchor) sources:
     - anchor_events_parsed.csv          — 70 institutional anchor events
@@ -21,6 +23,10 @@ Original datasets and their roles:
     - aid_timeline_clean.csv            — 190 US aid timeline entries
     - policy_cleaned.csv                — 60 policy events
     - tech_filled_dates.csv             — 357 technology events
+    - pep_banking_combined.csv          — 71 PEP banking/financial records (02_Anchors_and_Financials)
+
+  MIXED (friction + compliance by event_type) sources:
+    - MASTER_timeline_2015-2025_UPDATED.csv — 388 events with event_type (03_Master_Framework)
 
   MIXED / PERIODICITY sources (Silicon Sovereignty — used for chi-square):
     - Coalition_Narrative_Map_2015-2025.csv      — 456 narrative events
@@ -81,6 +87,25 @@ COMPLIANCE_LAG_CATEGORIES = {
     'Expanded_Policy_Anchor', 'AI_Policy', 'Aid_Tech', 'Tech_Events',
 }
 
+# ── MASTER_timeline event_type classification ────────────────────────────────
+# From 03_Master_Framework/MASTER_timeline_2015-2025_UPDATED.csv
+# These event types map to friction vs compliance categories.
+
+MASTER_TIMELINE_FRICTION_TYPES = {
+    'Defense_Security',  # Military/security events create public attention
+}
+
+MASTER_TIMELINE_COMPLIANCE_TYPES = {
+    'Policy',            # Policy shifts = compliance
+    'Investment',        # Capital flows = compliance
+    'Product_Launch',    # Tech launches = compliance
+    'R&D',              # Research shifts = compliance
+    'Talent',           # Personnel moves = compliance
+    'Partnership',       # Institutional partnerships = compliance
+    'Infrastructure',    # Infrastructure deals = compliance
+}
+# 'Other' is excluded — too ambiguous to classify
+
 # Date column candidates across all original datasets
 DATE_COLS = [
     'date_parsed_v2', 'date_parsed', 'date_found', 'Date', 'date',
@@ -136,6 +161,38 @@ def load_friction_events():
                 if pd.notna(d):
                     rows.append({'date': d, 'source': 'dossier_friction',
                                  'detail': vec})
+
+    # 4. Epstein Files timeline (935 document release events — 01_Levers_and_Frictions)
+    path = os.path.join(DATASETS_DIR, 'Epstein_Files_timeline.csv')
+    if os.path.exists(path):
+        df = pd.read_csv(path)
+        for _, r in df.iterrows():
+            d = pd.to_datetime(r.get('date'), errors='coerce')
+            if pd.notna(d):
+                rows.append({'date': d, 'source': 'epstein_files',
+                             'detail': r.get('doc_type', '')})
+
+    # 5. Updated master theory (416 theory events — 03_Master_Framework)
+    path = os.path.join(DATASETS_DIR, 'updated_master_theory.csv')
+    if os.path.exists(path):
+        df = pd.read_csv(path)
+        for _, r in df.iterrows():
+            d = pd.to_datetime(r.get('date'), errors='coerce')
+            if pd.notna(d):
+                rows.append({'date': d, 'source': 'master_theory',
+                             'detail': str(r.get('description', ''))[:80]})
+
+    # 6. MASTER_timeline friction events (Defense_Security — 03_Master_Framework)
+    path = os.path.join(DATASETS_DIR, 'MASTER_timeline_2015-2025_UPDATED.csv')
+    if os.path.exists(path):
+        df = pd.read_csv(path)
+        for _, r in df.iterrows():
+            et = str(r.get('event_type', ''))
+            if et in MASTER_TIMELINE_FRICTION_TYPES:
+                d = pd.to_datetime(r.get('date'), errors='coerce')
+                if pd.notna(d):
+                    rows.append({'date': d, 'source': 'master_timeline_friction',
+                                 'detail': et})
 
     return pd.DataFrame(rows) if rows else pd.DataFrame(columns=['date', 'source', 'detail'])
 
@@ -226,6 +283,28 @@ def load_compliance_events():
                     d = d.tz_localize(None)
                 rows.append({'date': d, 'source': 'aid_timeline',
                              'detail': r.get('Category', '')})
+
+    # 8. PEP banking combined (71 records — 02_Anchors_and_Financials)
+    path = os.path.join(DATASETS_DIR, 'pep_banking_combined.csv')
+    if os.path.exists(path):
+        df = pd.read_csv(path)
+        for _, r in df.iterrows():
+            d = pd.to_datetime(r.get('date'), errors='coerce')
+            if pd.notna(d):
+                rows.append({'date': d, 'source': 'pep_banking',
+                             'detail': str(r.get('title', ''))[:80]})
+
+    # 9. MASTER_timeline compliance events (Policy, Investment, etc. — 03_Master_Framework)
+    path = os.path.join(DATASETS_DIR, 'MASTER_timeline_2015-2025_UPDATED.csv')
+    if os.path.exists(path):
+        df = pd.read_csv(path)
+        for _, r in df.iterrows():
+            et = str(r.get('event_type', ''))
+            if et in MASTER_TIMELINE_COMPLIANCE_TYPES:
+                d = pd.to_datetime(r.get('date'), errors='coerce')
+                if pd.notna(d):
+                    rows.append({'date': d, 'source': 'master_timeline_compliance',
+                                 'detail': et})
 
     result = pd.DataFrame(rows) if rows else pd.DataFrame(columns=['date', 'source', 'detail'])
     # Ensure all dates are tz-naive for consistency
