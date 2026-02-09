@@ -18,7 +18,7 @@ The incorrect scripts have been moved to `Wrong_Correlations/` for transparency.
 
 ```bash
 # Install dependencies
-pip install pandas numpy scipy
+pip install -r requirements.txt
 
 # Reproduce the three ORIGINAL correlations (pre-2026 datasets)
 python run_original_analysis.py
