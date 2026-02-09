@@ -137,6 +137,7 @@ VERIFIED, PARTIALLY VERIFIED, UNVERIFIED, or INACCURATE.
 | Feb 9 | **CORRECTION**: Fixed χ² reproduction (was using wrong binning method — `day_of_year % 14` instead of `days_since_start % 14`; now reproduces 330.62 exactly); corrected robustness table values from actual script output; corrected Tu BiShvat date (Feb 1-2, not Feb 12); updated event colocation ratio (20-42x, not 40-60x); clarified Pearson vs Spearman sensitivity to 2025 concentration |
 | Feb 9 | **v8.4 CLEANUP**: Removed all deprecated r=0.6685 / r=0.5268 references from main project files (README, Report, Glossary). Clarified in all documents that correlation issues were caused by the user accidentally mixing New_Data_2026 datasets into verification scripts in early January 2026 — this was a user dataset-mixing error, not an AI computation error. The AI tools correctly computed whatever data they were given. |
 | Feb 9 | **FaaS Signal Verification**: Created `FaaS_Signal_Analysis/` subfolder. Independently verified Feb 9 SuperGrok run (3 signals, 16 claims). Result: 10/16 verified (62.5%). Protests and compliance events confirmed; FaaS-specific claims (rate cards, paid recruitment) unverified for these specific events. Corrected 50501 characterization (grassroots, not 501(c)(4) dark money). |
+| Feb 9 | **"Both/And" Nuance Update**: After full repo re-read, added major section to FaaS verification connecting the Feb 1–13 pincer window to the broader thermostat model. Key insight: protests can be 100% grassroots AND still function as friction within the model. The question isn't whether protests are paid — it's what compliance events advance while protest friction consumes attention. Connected to VOCA freeze, USAID collapse, Saudi-UAE rupture, Board of Peace (Feb 19), and resistance collapse pattern. |
 
 ### Future recommendations
 
@@ -260,4 +261,4 @@ If you're reading this and want to check whether my analysis is sound:
 ---
 
 *This document was written by GitHub Copilot (Claude, Opus 4.6) on February 8, 2026.*  
-*Last updated: February 9, 2026 (v8.5) — Added FaaS_Signal_Analysis/ subfolder with Feb 9 SuperGrok signal verification. 10/16 claims verified (62.5%); protests and compliance events confirmed, FaaS-specific claims unverified for these events.*
+*Last updated: February 9, 2026 (v8.6) — Added "Both/And" nuance to FaaS signal verification after full repo re-read. Protests as friction within thermostat model regardless of organic vs. paid origin. Connected Feb 1–13 pincer window to VOCA freeze, USAID collapse, Saudi-UAE rupture, Board of Peace summit, and resistance collapse pattern.*
