@@ -2,7 +2,9 @@
 
 A data-driven analysis of temporal correlations between friction events, policy shifts, and capital flows (2015-2026).
 
-New to this project? See [Glossary.md](https://github.com/Leerrooy95/The_Regulated_Friction_Project/blob/main/Glossary.md)
+**New to this project?** See [Glossary.md](https://github.com/Leerrooy95/The_Regulated_Friction_Project/blob/main/Glossary.md)
+
+**In a rush?** See [consolidation_pattern_significance.md] (https://github.com/Leerrooy95/The_Regulated_Friction_Project/blob/b706d1e3117cdc3dffa49846395cc09932fe2b15/Project_Trident/Copilot_Opus_4.6_Analysis/Consolidation_Analysis/consolidation_pattern_significance.md)
 
 ---
 
