@@ -5,9 +5,9 @@ Purpose: Stress-test observed correlations by shuffling friction values and
          checking whether real correlations beat random noise.
 
 Part 1 – 30-row master CSV  (original index-based dataset)
-Part 2 – Multi-dataset test (event counts from BlackRock, Infrastructure,
-         Timeline_Update, Anchors, Biopharma aggregated into weekly bins —
-         ~213 weeks, ~1,000+ classified events)
+Part 2 – Multi-dataset test (event counts from original pre-2026 datasets
+         — Control_Proof, Project_Trident, Silicon_Sovereignty — aggregated
+         into weekly bins via original_data_loader)
 """
 
 import os
@@ -108,135 +108,51 @@ summarise("PART 1 · 2-WEEK LAG", r_lagged, perm_lagged)
 
 
 # ═════════════════════════════════════════════════════════════════════════════
-#  PART 2 — Multi-dataset permutation test (event counts → weekly bins)
+#  PART 2 — Original pre-2026 datasets permutation test (event counts → weekly bins)
 # ═════════════════════════════════════════════════════════════════════════════
 N_PERM_PART2 = 10_000          # more permutations → finer p-value resolution
 
+from original_data_loader import load_friction_events, load_compliance_events, build_weekly_counts
+
 print("\n\n" + "#" * 70)
-print("#  PART 2 — Multi-dataset event-count test (10,000 permutations)")
+print("#  PART 2 — Original pre-2026 datasets event-count test (10,000 permutations)")
 print("#" * 70)
 
-# ── Event classification rules ───────────────────────────────────────────────
-friction_categories = {
-    'Crisis_Event', 'Political_Event', 'Media_Reaction', 'Conflict',
-    'Legislation', 'Ritual_Event', 'Political_Org', 'Holiday',
-}
-compliance_categories = {
-    'Strategic_Shift', 'Government_Ties', 'Crypto_Pivot', 'Crypto_Sentiment',
-    'ESG_Policy', 'ESG_Origins', 'Tech_Dominance', 'Policy', 'Geopolitics',
-    'Corporate', 'FDA_Reg', 'Funding', 'Federal_Contract',
-    'Corporate_Action', 'Financial_Performance', 'Clinical_Milestone',
-    'General_Update',
-}
+# ── Load events from original datasets ───────────────────────────────────────
+print("\nLoading friction events from original datasets ...")
+friction_events = load_friction_events()
+print(f"  Friction events loaded : {len(friction_events)}")
 
-# ── Load & classify events ───────────────────────────────────────────────────
-dataset_files = {
-    'blackrock':       'New_Data_2026/BlackRock_Timeline_Full_Decade.csv',
-    'infrastructure':  'New_Data_2026/Infrastructure_Forensics.csv',
-    'timeline_update': 'New_Data_2026/Timeline_Update_Jan2026_Corrected (1).csv',
-    'anchors':         'New_Data_2026/Additional_Anchors_Jan2026_Final.csv',
-    'biopharma':       'New_Data_2026/Biopharma.csv',
-}
-dataset_files_full = {
-    **dataset_files,
-    'high_growth': 'New_Data_2026/High_Growth_Companies_2015_2026.csv',
-}
+print("Loading compliance events from original datasets ...")
+compliance_events = load_compliance_events()
+print(f"  Compliance events loaded : {len(compliance_events)}")
 
+# ── Build weekly counts ──────────────────────────────────────────────────────
+weekly = build_weekly_counts(friction_events, compliance_events)
+f_series = weekly['friction'].values.astype(float)
+c_series = weekly['compliance'].values.astype(float)
+n_weeks = len(f_series)
 
-def classify_events(file_map):
-    """Load CSVs, classify each row as friction / compliance, return DataFrame."""
-    rows = []
-    for name, relpath in file_map.items():
-        path = os.path.join(repo_root, relpath)
-        try:
-            raw = pd.read_csv(path)
-        except FileNotFoundError:
-            print(f"  ⚠ skipping {relpath} (file not found)")
-            continue
-        except Exception as exc:
-            print(f"  ⚠ skipping {relpath} ({exc})")
-            continue
+print(f"\n  Weekly bins       : {n_weeks}")
+print(f"  Date range        : {weekly.index.min()} → {weekly.index.max()}")
 
-        # detect date and category columns
-        date_col = next((c for c in ['date', 'Date', 'event_date',
-                                      'publication_date', 'action_date']
-                         if c in raw.columns), None)
-        cat_col = next((c for c in ['category', 'Category', 'event_type',
-                                     'type']
-                        if c in raw.columns), None)
-        if not date_col or not cat_col:
-            continue
+# ── Observed correlations ────────────────────────────────────────────────────
+r_obs, p_par = pearsonr(f_series, c_series)
+rho_obs, _ = spearmanr(f_series, c_series)
+print(f"  Observed Pearson  : r = {r_obs:.4f}  (parametric p = {p_par:.6f})")
+print(f"  Observed Spearman : ρ = {rho_obs:.4f}")
 
-        for _, row in raw.iterrows():
-            try:
-                d = pd.to_datetime(row[date_col])
-                cat = row[cat_col]
-            except (ValueError, TypeError, KeyError):
-                continue
-            if cat in friction_categories:
-                rows.append({'date': d, 'type': 'friction', 'source': name})
-            elif cat in compliance_categories:
-                rows.append({'date': d, 'type': 'compliance', 'source': name})
+# ── Permutation loop — shuffle weekly friction counts ────────────────────────
+perm_r = np.empty(N_PERM_PART2)
+perm_rho = np.empty(N_PERM_PART2)
+for i in range(N_PERM_PART2):
+    shuf = rng.permutation(f_series)
+    perm_r[i] = np.corrcoef(shuf, c_series)[0, 1]
+    perm_rho[i] = spearmanr(shuf, c_series).statistic
 
-    return pd.DataFrame(rows)
-
-
-def build_weekly(events_df, start='2020-02-24', end='2026-01-05'):
-    """Aggregate events into weekly friction / compliance counts."""
-    events_df = events_df.copy()
-    events_df['week'] = events_df['date'].dt.to_period('W')
-    wk = events_df.groupby(['week', 'type']).size().unstack(fill_value=0)
-    wk = wk.sort_index()
-    sp, ep = pd.Period(start, 'W'), pd.Period(end, 'W')
-    wk = wk[(wk.index >= sp) & (wk.index <= ep)]
-    for col in ['friction', 'compliance']:
-        if col not in wk.columns:
-            wk[col] = 0
-    return wk
-
-
-def run_multi_permutation(label, file_map):
-    """Classify events, aggregate by week, run permutation test."""
-    print(f"\n{'─' * 70}")
-    print(f"  {label}")
-    print(f"{'─' * 70}")
-
-    events = classify_events(file_map)
-    n_friction = (events['type'] == 'friction').sum()
-    n_compliance = (events['type'] == 'compliance').sum()
-    print(f"  Events classified : {len(events)}  "
-          f"(friction {n_friction}, compliance {n_compliance})")
-
-    weekly = build_weekly(events)
-    f_series = weekly['friction'].values.astype(float)
-    c_series = weekly['compliance'].values.astype(float)
-    n_weeks = len(f_series)
-    print(f"  Weekly bins       : {n_weeks}")
-
-    # observed Pearson & Spearman
-    r_obs, p_par = pearsonr(f_series, c_series)
-    rho_obs, _ = spearmanr(f_series, c_series)
-    print(f"  Observed Pearson  : r = {r_obs:.4f}  (parametric p = {p_par:.6f})")
-    print(f"  Observed Spearman : ρ = {rho_obs:.4f}")
-
-    # permutation loop — shuffle weekly friction counts
-    perm_r = np.empty(N_PERM_PART2)
-    perm_rho = np.empty(N_PERM_PART2)
-    for i in range(N_PERM_PART2):
-        shuf = rng.permutation(f_series)
-        perm_r[i] = np.corrcoef(shuf, c_series)[0, 1]
-        perm_rho[i] = spearmanr(shuf, c_series).statistic
-
-    summarise(f"{label} · Pearson r", r_obs, perm_r)
-    summarise(f"{label} · Spearman ρ (rank-based, outlier-resistant)", rho_obs,
-              perm_rho)
-
-
-# ── Run both scopes ──────────────────────────────────────────────────────────
-print("\nLoading and classifying events from New_Data_2026/ ...")
-run_multi_permutation("CORE scope (excl. High_Growth_Companies)", dataset_files)
-run_multi_permutation("FULL scope (incl. High_Growth_Companies)",
-                      dataset_files_full)
+summarise("PART 2 · Pearson r (original pre-2026 datasets)", r_obs, perm_r)
+summarise("PART 2 · Spearman ρ (rank-based, outlier-resistant)", rho_obs,
+          perm_rho)
 
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -247,10 +163,9 @@ print("  BOTTOM LINE")
 print("=" * 70)
 print("""
   Part 1 tested the original 30-row index-score dataset.
-  Part 2 tested the full multi-dataset event counts (~1,000+ events,
-  ~213 weekly bins) in two scopes:
-    • Core  – strategic institutional events only
-    • Full  – adds biotech operational events (High_Growth_Companies)
+  Part 2 tested the original pre-2026 datasets (Control_Proof,
+  Project_Trident, Silicon_Sovereignty) aggregated into weekly
+  friction / compliance event counts.
 
   The permutation test shuffles friction values thousands of times and
   checks how often random noise produces a correlation as strong as
@@ -280,9 +195,7 @@ print("""
      Weeks with zero events in BOTH columns still matter — they
      tell the model "nothing happened here."  The current code
      fills gaps with 0, which is correct, but make sure every
-     dataset actually covers the full 2020-2026 window.  Datasets
-     that only cover Dec 2025 (like Timeline_Update) will create
-     a spike that inflates the correlation.
+     dataset actually covers the full date range.
 
   4. ADD A SPEARMAN / RANK TEST
      Pearson r is sensitive to outliers and assumes a linear
