@@ -240,6 +240,7 @@ The_Regulated_Friction_Project/
 │   │
 │   ├── Run_Correlations_Yourself/                     # Independent verification suite
 │   │   ├── README.md                                  # Folder guide and correlation reference
+│   │   ├── requirements.txt                           # Python dependencies (pandas, numpy, scipy, statsmodels)
 │   │   ├── run_original_analysis.py                   # Reproduce r = 0.6196, p = 0.002, χ² (pre-2026 data)
 │   │   ├── reproduce_updated_correlation.py           # Reproduce r = 0.6685 and r = 0.5268 (New_Data_2026)
 │   │   └── Wrong_Correlations/                        # ⚠️ Archived scripts that used wrong datasets
@@ -285,6 +286,8 @@ The_Regulated_Friction_Project/
 │           │   └── backfill_guide.md                  # Recommendations for year coverage
 │           ├── Verification_Reports/                  # Scrutiny and verification audits
 │           │   └── scrutiny_report_feb8_2026.md       # Full scrutiny of all prior work
+│           ├── Consolidation_Analysis/                # Cross-domain consolidation assessment
+│           │   └── consolidation_pattern_significance.md  # Infrastructure consolidation significance report
 │           └── Datasets/                              # Local copies of original pre-2026 CSVs (19 files)
 │
 └── New_Data_2026/                              # January-February 2026 datasets
@@ -530,6 +533,7 @@ Documentation of overlapping ownership consortium (Oracle, Silver Lake, Saudi PI
 
 ### Deep Dives by Topic
 - **Tech Infrastructure**: `09_Silicon_Sovereignty/SILICON_SOVEREIGNTY_REPORT.md`
+- **Infrastructure Consolidation**: `Project_Trident/Copilot_Opus_4.6_Analysis/Consolidation_Analysis/consolidation_pattern_significance.md`
 - **Privatized Integration**: `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md`
 - **State Regulatory Capture**: `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md`
 - **Geopolitical Shifts**: `05_Geopolitical_Vectors/` (Venezuela, Yemen, CRINK, allied elections)
@@ -547,8 +551,11 @@ Documentation of overlapping ownership consortium (Oracle, Silver Lake, Saudi PI
 
 ### Verify the Statistics
 ```bash
-# Reproduce original correlations (pre-2026 datasets)
+# Install dependencies
 cd Run_Correlations_Yourself/
+pip install -r requirements.txt
+
+# Reproduce original correlations (pre-2026 datasets)
 python run_original_analysis.py              # r = 0.6196, p = 0.002, χ² cross-validation
 
 # Reproduce updated correlations (New_Data_2026 datasets)
@@ -668,4 +675,4 @@ See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analy
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
-**Last updated**: February 9, 2026
+**Last updated**: February 9, 2026 — Added requirements.txt, Consolidation Analysis report

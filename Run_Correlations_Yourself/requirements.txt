@@ -1,0 +1,7 @@
+# Requirements for The Regulated Friction Project
+# Install with: pip install -r requirements.txt
+
+pandas>=1.5.0
+numpy>=1.23.0
+scipy>=1.9.0
+statsmodels>=0.13.0
