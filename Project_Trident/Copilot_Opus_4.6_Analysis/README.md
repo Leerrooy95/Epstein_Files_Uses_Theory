@@ -42,8 +42,7 @@ Copilot_Opus_4.6_Analysis/
 ├── README.md                 ← You are here
 ├── Statistical_Tests/        ← 9 runnable Python scripts + shared data loader
 ├── Findings/                 ← Active analysis documents
-│   ├── dataset_provenance.md ← Which data feeds which correlation
-│   └── backfill_guide.md     ← Recommendations for year coverage
+│   └── dataset_provenance.md ← Which data feeds which correlation
 ├── Verification_Reports/     ← Prediction tracking
 │   └── prediction_tracker_feb9_2026.md ← Testable predictions vs real-world outcomes
 ├── Consolidation_Analysis/   ← Cross-domain consolidation assessment
