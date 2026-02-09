@@ -100,7 +100,7 @@ The data shows something different. Friction and compliance peak *together*—bo
 | Normalized (binary) | r = 0.36 (positive) | ✅ Presence/absence correlation holds |
 | Event-study | Friction dates attract 40-60x more compliance than random | ✅ Strong colocation |
 | Granger (30-row, hand-scored) | Friction → Compliance at lags 1-2 (p = 0.0008) | ✅ Supports sequential hypothesis |
-| Granger (event counts) | Bidirectional at all lags | ⚠️ Suggests common driver, not simple cause-effect |
+| Granger (event counts) | Bidirectional at all lags | ℹ️ Refines model: suggests common driver, not simple cause-effect |
 
 **Key correction:** The previous robustness analysis (using wrong datasets) showed December 2025 removal destroyed the correlation (90% drop). With the correct original datasets, removal only causes a 29% drop and the correlation remains highly significant — the signal is distributed across the full 1990-2025 timeline.
 
@@ -237,7 +237,7 @@ The "thermostat" metaphor describes emergent behavior: multiple actors respondin
 
 1. **Correlation ≠ causation:** Events cluster together; one doesn't necessarily cause the other
 2. **Event classification involves judgment:** What counts as "friction" vs. "compliance" requires researcher decisions
-3. **December 2025 concentration:** Heavy clustering in one period inflates the headline r values, though corrected robustness tests show the signal survives Dec 2025 removal (29% drop, still significant at p < 0.0001)
+3. **December 2025 concentration:** Heavy clustering in one period contributes significantly to headline r values (29% of correlation strength), but robustness tests confirm signal presence across the full timeline (remains significant at p < 0.0001 after removal)
 4. **Granger causality is bidirectional:** Event-count data shows both directions predict each other, suggesting a common driver rather than simple friction → compliance causation (hand-scored data does show friction → compliance at short lags)
 5. **Scraping artifacts:** Some dataset records contain projections or duplicates
 6. **Alternative explanations:** Fiscal calendar effects, bureaucratic cycles, and simple coincidence remain possible
