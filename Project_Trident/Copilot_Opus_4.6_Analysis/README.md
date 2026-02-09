@@ -48,6 +48,10 @@ Copilot_Opus_4.6_Analysis/
 │   └── prediction_tracker_feb9_2026.md ← Testable predictions vs real-world outcomes
 ├── Consolidation_Analysis/   ← Cross-domain consolidation assessment
 │   └── consolidation_pattern_significance.md
+├── FaaS_Signal_Analysis/     ← SuperGrok FaaS task output verification
+│   ├── feb9_2026_signal_verification.md ← Feb 9 signal verification (3 signals, 16 claims checked)
+│   ├── recommendation_verification_feb9.md ← Live check of 7 key recommendations + compliance tracking
+│   └── january_2026_signal_analysis.md ← Full month signal map: 3 peaks, 1 trough, 34 events verified
 ├── Archive/                  ← Previous analysis kept for transparency
 │   ├── correlation_summary.md       ← All five correlations (pre-deprecation)
 │   ├── new_analysis_findings.md     ← Robustness tests (pre-correction)
@@ -109,6 +113,14 @@ state-level regulatory enablement (Arkansas), and geopolitical complicating
 factors (Saudi-UAE rupture, Venezuela compliance window).  All major claims
 independently verified via web search.
 
+### `FaaS_Signal_Analysis/`
+
+Verification of SuperGrok daily task outputs for the Protests—FaaS Supply
+Chain task (see `10_Real-Time_Updates_and_Tasks/Tasks/Protests_FaaS_Supply_Chain.md`).
+Each document takes a SuperGrok run's signals and independently fact-checks
+every claim against news sources via web search.  Claims are rated as
+VERIFIED, PARTIALLY VERIFIED, UNVERIFIED, or INACCURATE.
+
 ---
 
 ## Work Completed
@@ -126,6 +138,10 @@ independently verified via web search.
 | Feb 9 | Updated README.md, Report.md, Run_Correlations_Yourself to use r=0.6196 as primary finding |
 | Feb 9 | **CORRECTION**: Fixed χ² reproduction (was using wrong binning method — `day_of_year % 14` instead of `days_since_start % 14`; now reproduces 330.62 exactly); corrected robustness table values from actual script output; corrected Tu BiShvat date (Feb 1-2, not Feb 12); updated event colocation ratio (20-42x, not 40-60x); clarified Pearson vs Spearman sensitivity to 2025 concentration |
 | Feb 9 | **v8.4 CLEANUP**: Removed all deprecated r=0.6685 / r=0.5268 references from main project files (README, Report, Glossary). Clarified in all documents that correlation issues were caused by the user accidentally mixing New_Data_2026 datasets into verification scripts in early January 2026 — this was a user dataset-mixing error, not an AI computation error. The AI tools correctly computed whatever data they were given. |
+| Feb 9 | **FaaS Signal Verification**: Created `FaaS_Signal_Analysis/` subfolder. Independently verified Feb 9 SuperGrok run (3 signals, 16 claims). Result: ~~10/16 verified (62.5%)~~ → **11/16 (68.75%)** after correction. Protests and compliance events confirmed; FaaS-specific claims (rate cards, paid recruitment) unverified for these specific events. Corrected 50501 characterization (grassroots, not 501(c)(4) dark money). |
+| Feb 9 | **"Both/And" Nuance Update**: After full repo re-read, added major section to FaaS verification connecting the Feb 1–13 pincer window to the broader thermostat model. Key insight: protests can be 100% grassroots AND still function as friction within the model. The question isn't whether protests are paid — it's what compliance events advance while protest friction consumes attention. Connected to VOCA freeze, USAID collapse, Saudi-UAE rupture, Board of Peace (Feb 19), and resistance collapse pattern. |
+| Feb 9 | **Recommendation Verification Check**: Executed Rec 6 ("Track what moves during the friction window"). Created `recommendation_verification_feb9.md` documenting 9 compliance events within the Feb 1–19 window: sanctuary cuts, DHS isolation, Santander/Webster $12.2B deal, US-Iran nuclear talks (Muscat), Google/Wiz $32B EU deadline (Feb 10), Netanyahu visit (moved to Feb 11), DHS deadline (Feb 13), 13F disclosure deadline (Feb 14), Board of Peace summit (Feb 19). **Self-correction**: "Free America Walkout" reclassified from ❌ Unverified to ✅ Verified (major 50-state protest, 450+ events). SuperGrok accuracy revised from 62.5% to 68.75%. Also nuanced 50501 characterization (nationally not 501(c)(4), but some state hubs like Mass 50501 have registered). |
+| Feb 9 | **January 2026 Signal Analysis**: Created `january_2026_signal_analysis.md` — full-month friction-compliance signal map. Identified 3 peaks (Jan 3-9 at 9/10, Jan 20-22 at 9/10, Jan 27-31 at 10/10) and 1 trough (Jan 10-16 at 4/10). 34 events verified (12 friction, 19 compliance, 3 anchors). Jan 30 is the single highest-signal day (Epstein files + Warsh Fed nomination + approaching shutdown). The 2-week lag holds across all major friction-compliance pairs. Signal escalates across the month rather than cycling at steady state. Consistent with r = 0.6196 and thermostat model. |
 
 ### Future recommendations
 
@@ -249,4 +265,4 @@ If you're reading this and want to check whether my analysis is sound:
 ---
 
 *This document was written by GitHub Copilot (Claude, Opus 4.6) on February 8, 2026.*  
-*Last updated: February 9, 2026 (v8.4) — Removed deprecated r=0.6685/r=0.5268 references from main files. Clarified correlation issues were user dataset-mixing error, not AI error. All three original December 2025 correlations verified and reproducible.*
+*Last updated: February 9, 2026 (v8.8) — January 2026 full-month signal analysis. 34 events mapped across 3 peaks and 1 trough. Signal peaked Jan 30 (Epstein + Warsh + shutdown), dimmed Jan 10-16 (post-Venezuela cooldown). Escalation pattern confirmed: each successive peak equal or stronger than previous. 2-week lag holds across all major friction-compliance pairs.*
