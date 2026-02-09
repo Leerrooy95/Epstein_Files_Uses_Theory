@@ -252,11 +252,12 @@ All data and code are public:
 # Clone the repository
 git clone https://github.com/Leerrooy95/The_Regulated_Friction_Project.git
 
-# Reproduce the core findings
+# Reproduce original correlations (pre-2026 datasets)
 cd Run_Correlations_Yourself/
-python original_correlation_test.py          # Reproduces r = 0.6196 (30-week)
-python reproduce_original_correlation.py     # Reproduces r = 0.6685 (229-week)
-python independent_statistical_verification.py  # Full independent verification
+python run_original_analysis.py              # r = 0.6196, p = 0.002, χ² cross-validation
+
+# Reproduce updated correlations (New_Data_2026 datasets)
+python reproduce_updated_correlation.py      # r = 0.6685 (core), r = 0.5268 (full)
 
 # Run robustness tests (from repo root)
 cd ../Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/
@@ -267,7 +268,7 @@ python event_study_framework.py             # Compliance response analysis
 python granger_causality_test.py             # Predictive direction test
 ```
 
-**Methodology transparency:** The correlation depends on dataset scope. Strategic institutional events (policy shifts, government ties, financial positioning) yield r = 0.6685. Including operational biotech events (clinical milestones, earnings) yields r = 0.5268. Both are statistically significant (p < 0.0001). The difference is explained in `Run_Correlations_Yourself/DISCREPANCY_ANALYSIS.md`.
+**Methodology transparency:** The correlation depends on dataset scope. Strategic institutional events (policy shifts, government ties, financial positioning) yield r = 0.6685. Including operational biotech events (clinical milestones, earnings) yields r = 0.5268. Both are statistically significant (p < 0.0001). The difference is explained in `Run_Correlations_Yourself/Wrong_Correlations/DISCREPANCY_ANALYSIS.md`.
 
 Key datasets:
 - `Control_Proof/master_reflexive_correlation_data.csv` — Original weekly friction/compliance indices

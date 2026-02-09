@@ -239,10 +239,16 @@ The_Regulated_Friction_Project/
 │   │   └── correlation_results.txt
 │   │
 │   ├── Run_Correlations_Yourself/                     # Independent verification suite
-│   │   ├── original_correlation_test.py               # Reproduce r = 0.6196 finding
-│   │   ├── reproduce_original_correlation.py          # Reproduce r = 0.6685 finding
-│   │   ├── independent_statistical_verification.py    # Full independent verification
-│   │   └── DISCREPANCY_ANALYSIS.md                    # Methodology comparison (0.6685 vs 0.5268)
+│   │   ├── README.md                                  # Folder guide and correlation reference
+│   │   ├── run_original_analysis.py                   # Reproduce r = 0.6196, p = 0.002, χ² (pre-2026 data)
+│   │   ├── reproduce_updated_correlation.py           # Reproduce r = 0.6685 and r = 0.5268 (New_Data_2026)
+│   │   └── Wrong_Correlations/                        # ⚠️ Archived scripts that used wrong datasets
+│   │       ├── README.md                              # Explanation of what went wrong
+│   │       ├── original_correlation_test.py           # (used relative paths — was correct)
+│   │       ├── reproduce_original_correlation.py      # (used hardcoded paths to wrong datasets)
+│   │       ├── independent_statistical_verification.py # (used hardcoded paths to wrong datasets)
+│   │       ├── run_original_analysis.py               # (was correct — archived copy)
+│   │       └── DISCREPANCY_ANALYSIS.md                # Methodology comparison (still valid)
 │   │
 │   └── Project_Trident/                               # Temporal correlation study
 │       ├── PROJECT_TRIDENT_CASE_STUDY.md
@@ -368,11 +374,11 @@ Key files:
 
 **New Folder**: `Run_Correlations_Yourself/`
 
-Three Python scripts and a methodology document enabling anyone to reproduce the core findings:
-- `original_correlation_test.py` — Reproduce r = 0.6196 (30-week, 1-10 scale)
-- `reproduce_original_correlation.py` — Reproduce r = 0.6685 (229-week, raw event counts)
-- `independent_statistical_verification.py` — Full independent verification
-- `DISCREPANCY_ANALYSIS.md` — Transparent explanation of why different dataset scopes yield r = 0.6685 vs r = 0.5268 (both significant at p < 0.0001)
+Two corrected Python scripts enabling anyone to reproduce the core findings (previous scripts archived in `Wrong_Correlations/` for transparency):
+- `run_original_analysis.py` — Reproduce r = 0.6196, Mann-Whitney p = 0.002, χ² cross-validation (original pre-2026 datasets)
+- `reproduce_updated_correlation.py` — Reproduce r = 0.6685 (core scope) and r = 0.5268 (full scope) using New_Data_2026 datasets
+- `Wrong_Correlations/` — ⚠️ Previous scripts that used wrong datasets, kept for transparency
+- `Wrong_Correlations/DISCREPANCY_ANALYSIS.md` — Transparent explanation of why different dataset scopes yield r = 0.6685 vs r = 0.5268 (both significant at p < 0.0001)
 
 ### 3. Executive Synthesis & Newly Documented Files
 
@@ -515,8 +521,9 @@ Documentation of overlapping ownership consortium (Oracle, Silver Lake, Saudi PI
 - `Project_Trident/Best_Data_For_Project_Trident/` — Ritual timing, fund flows
 
 ### Statistical Verification
-- `Run_Correlations_Yourself/` — Three Python scripts to reproduce all core findings
-- `Run_Correlations_Yourself/DISCREPANCY_ANALYSIS.md` — Methodology transparency
+- `Run_Correlations_Yourself/run_original_analysis.py` — Reproduce original r = 0.6196, p = 0.002, χ² (pre-2026 data)
+- `Run_Correlations_Yourself/reproduce_updated_correlation.py` — Reproduce r = 0.6685 and r = 0.5268 (New_Data_2026)
+- `Run_Correlations_Yourself/Wrong_Correlations/` — ⚠️ Archived scripts that used wrong datasets (kept for transparency)
 - `Project_Trident/Veriify_Trident_Analysis.py` — Verify ritual timing analysis
 - `Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/` — 9 robustness test scripts (permutation, autocorrelation, normalization, Dec 2025 exclusion, rolling window, event-study, Granger causality)
 - `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/correlation_summary.md` — All five correlations in one reference
@@ -540,14 +547,15 @@ Documentation of overlapping ownership consortium (Oracle, Silver Lake, Saudi PI
 
 ### Verify the Statistics
 ```bash
-# Reproduce core findings
+# Reproduce original correlations (pre-2026 datasets)
 cd Run_Correlations_Yourself/
-python original_correlation_test.py          # Reproduces r = 0.6196
-python reproduce_original_correlation.py     # Reproduces r = 0.6685
-python independent_statistical_verification.py  # Full independent verification
+python run_original_analysis.py              # r = 0.6196, p = 0.002, χ² cross-validation
+
+# Reproduce updated correlations (New_Data_2026 datasets)
+python reproduce_updated_correlation.py      # r = 0.6685 (core), r = 0.5268 (full)
 
 # Run robustness tests (from repo root)
-cd Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/
+cd ../Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/
 python permutation_test.py                   # Shuffle-based significance
 python autocorrelation_adjusted_test.py      # Block bootstrap
 python cross_validation_dec2025.py           # Dec 2025 exclusion test
