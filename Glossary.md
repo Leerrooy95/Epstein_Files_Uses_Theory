@@ -51,7 +51,7 @@ The finding that friction and compliance events cluster *simultaneously* on shar
 
 **Revised finding**: Friction + Compliance + Financial positioning all cluster on the same anchor dates, simultaneously
 
-**Statistical basis**: r = +0.6685 at 0-lag (simultaneous), compared to r = +0.6196 at 14-day lag
+**Statistical basis**: r = +0.6196 at 14-day lag (original, verified December 2025)
 
 **Why it matters**: The pattern doesn't require one event to "cause" another—all actors respond to the same environmental signals independently.
 
@@ -62,7 +62,7 @@ The hypothesis that friction events function as a regulatory mechanism for publi
 
 **Metaphor**: Information releases (file drops, scandals) turn attention "on" to specific topics while allowing other areas to proceed with less scrutiny.
 
-**Key metrics**: r = 0.6685 (friction ↔ compliance correlation), p < 0.0001
+**Key metrics**: r = 0.6196 (friction → compliance correlation at 2-week lag), p = 0.0004
 
 ---
 
@@ -175,7 +175,7 @@ A measure of how strongly two variables move together, ranging from -1 to +1.
 | r = ±0.67 | Strong relationship |
 | r = ±1.0 | Perfect relationship |
 
-**Our finding**: r = +0.6685 means friction and compliance events are 67% more likely to cluster in the same time window than random chance would predict.
+**Our finding**: r = +0.6196 means friction and compliance events at a 2-week lag are strongly correlated — this relationship has less than a 0.05% probability of occurring by chance (p = 0.0004).
 
 ---
 
@@ -286,7 +286,7 @@ Data analytics company founded by Peter Thiel. Holds £670M+ in UK government co
 ## Key Datasets
 
 ### master_reflexive_correlation_data.csv
-Weekly counts of friction events and compliance events from 2015-2026. The core dataset enabling the r = 0.6685 finding.
+Weekly counts of friction events and compliance events from 2015-2025. The core dataset enabling the r = 0.6196 finding (at 2-week lag).
 
 **Location**: `Control_Proof/`
 

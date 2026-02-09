@@ -2,7 +2,7 @@
 
 **Author:** Austin
 **Last Updated:** February 9, 2026
-**Version:** v8.3
+**Version:** v8.4
 **Repository:** [https://github.com/Leerrooy95/The_Regulated_Friction_Project](https://github.com/Leerrooy95/The_Regulated_Friction_Project)
 
 ---
@@ -86,7 +86,7 @@ The original hypothesis assumed a cause-effect sequence: friction creates a dist
 
 **Methodology note:** The r = 0.6196 uses 1-10 scoring over 30 weeks. The multi-dataset Spearman ρ = 0.61 uses raw event counts across all repository datasets and confirms the rank-order relationship. Both findings are independently significant.
 
-**Note:** The previously reported r = 0.6685 (from New_Data_2026) has been deprecated because those datasets included 2025-only data that inflated the correlation.
+**Note:** The previously reported r = 0.6685 (from New_Data_2026) has been deprecated since v8.3. That correlation was produced in early January 2026 when the user accidentally mixed New_Data_2026 datasets (uploaded January 4, 2026) into verification scripts intended for the original December 2025 data. This was a user dataset-mixing error, not an AI computation error — the AI tools correctly computed the correlations for the data they were given. See `Run_Correlations_Yourself/Wrong_Correlations/` for the archived scripts.
 
 **Robustness (Feb 2026 — corrected datasets):** The original robustness tests were inadvertently run against the wrong datasets (New_Data_2026 files instead of original pre-2026 datasets). After correction (see `Project_Trident/Copilot_Opus_4.6_Analysis/`):
 
@@ -298,7 +298,7 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 - Run scripts in `Run_Correlations_Yourself/` to verify statistics
 - Run robustness tests in `Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/` for full verification suite
 - Review `Repository_Synthesis.md` for the three-layer framework
-- See `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/correlation_summary.md` for all five correlations in one reference
+- See `Project_Trident/Copilot_Opus_4.6_Analysis/Archive/correlation_summary.md` for correlation reference (note: correlations 4-5 are deprecated)
 - See `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` for Q1 2026 applied findings
 
 ### Journalists/Policymakers
@@ -345,4 +345,4 @@ The data is public. The code is public. The claims are reproducible and sourced.
 
 ---
 
-*This report was last updated February 9, 2026 (v8.3). Corrected robustness table values from actual script output, corrected Tu BiShvat date (Feb 1-2, not Feb 12), fixed χ² reproduction (now reproduces 330.62 exactly), and clarified Pearson vs Spearman sensitivity to 2025 data concentration. For the latest findings, see the repository README.*
+*This report was last updated February 9, 2026 (v8.4). Removed deprecated r = 0.6685 / r = 0.5268 references. Clarified correlation issues were due to user accidentally mixing datasets in early January 2026, not AI error. All three original December 2025 correlations verified and reproducible. For the latest findings, see the repository README.*
