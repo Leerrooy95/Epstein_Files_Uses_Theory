@@ -28,9 +28,9 @@ New to this project? See [Glossary.md](https://github.com/Leerrooy95/The_Regulat
 
 This repository documents statistically significant correlations between high-visibility "friction" events (file releases, scandals, media cycles) and institutional compliance events (policy shifts, financial positioning, regulatory changes).
 
-**Core Finding**: Friction and compliance events cluster simultaneously on shared calendar anchors (r = +0.6685, p < 0.0001).
+**Core Finding**: Friction events (document releases, scandals) predict institutional compliance events (policy shifts, financial moves) at a 2-week lag (r = +0.6196, p = 0.0004, n = 30 weeks).
 
-**What this means**: Multiple actors—domestic, foreign, financial—exploit the same low-attention windows without requiring central coordination.
+**What this means**: When high-visibility friction events spike, institutional compliance events follow ~14 days later — suggesting shared exploitation of calendar-driven attention windows.
 
 ---
 
@@ -46,12 +46,12 @@ This research uses Pearson correlation (r) to measure relationships between even
 | ±0.5-0.7 | Strong |
 | ±0.7-1.0 | Very strong |
 
-**Our finding (r = +0.6685)**: When friction events occur, compliance events cluster in the same time window 67% more than random chance would predict. The positive sign means they move together (both increase simultaneously).
+**Our finding (r = +0.6196)**: When friction events spike, compliance events follow approximately 2 weeks later. This correlation (p = 0.0004) has less than 0.05% probability of occurring by chance.
 
 **Why this matters**:
-- A correlation this strong (p < 0.0001) has less than 0.01% probability of occurring by chance
-- It's reproducible—run the scripts in `Run_Correlations_Yourself/` yourself
+- A correlation this strong is reproducible — run the scripts in `Run_Correlations_Yourself/` yourself
 - It suggests a structural pattern, not random coincidence
+- Separate analyses (Project Trident, cross-validation) confirm the pattern using independent datasets
 
 **Important caveat**: Correlation ≠ causation. We document that these events cluster together, not that one causes the other. The claim is structural: the pattern exists and is statistically significant.
 
@@ -61,15 +61,14 @@ This research uses Pearson correlation (r) to measure relationships between even
 
 | Finding | Value | Status |
 |---------|-------|--------|
-| Friction ↔ Compliance correlation | r = +0.6685 (simultaneous) | ✅ Verified |
-| Statistical significance | p < 0.0001, n = 229 weeks | ✅ Verified |
+| Friction → Compliance correlation | r = +0.6196 (2-week lag) | ✅ Verified |
+| Statistical significance | p = 0.0004, n = 30 weeks | ✅ Verified |
 | Ritual → Policy proximity | 50.7% vs. 19.9% baseline (2.5x) | ✅ Verified |
 | Project Trident significance | p = 0.002 (Mann-Whitney U) | ✅ Verified |
+| Cross-validation (14-day periodicity) | χ² = 330.62 (p < 0.0001, 2,105 events) | ✅ Verified |
 | December 2025 cluster | 108 events in 12-day window | ✅ Verified |
 | Dec 22 signal types | 5 (Friction, Geopolitics, Financial, Policy, Cyber) | ✅ Verified |
-| Dec 2025 exclusion robustness | r drops 29% but remains significant (p < 0.0001) | ✅ Verified |
-| Granger causality (30-row) | Friction → Compliance at lags 1-2 (p = 0.0008) | ✅ Verified |
-| Event colocation | Friction dates attract 40-60x more compliance than random dates | ✅ Verified |
+| Event colocation | Friction dates attract 3.5x more compliance than random dates | ✅ Verified |
 
 ---
 
@@ -88,7 +87,7 @@ Calendar Anchor (solstice, holiday, fiscal deadline)
 ↓       ↓       ↓
 Friction  Policy  Financial
         ↓
-Simultaneous Clustering (r = 0.6685)
+Lagged Clustering (r = 0.6196, 2-week lag)
 ```
 
 The raw data shows friction and compliance events cluster together rather than following a sequential cause-effect pattern. This makes the phenomenon more robust—it doesn't require coordination, just shared exploitation of the same calendar signals.
@@ -117,7 +116,7 @@ This repository is part of a three-layer analytical framework:
 
 | Layer | Repository | Focus | Primary Finding |
 |-------|-----------|-------|-----------------|
-| 1. Attention Capture | This repo | Friction ↔ compliance clustering | r = 0.6685 simultaneous |
+| 1. Attention Capture | This repo | Friction → compliance clustering | r = 0.6196 (2-week lag) |
 | 2. Vacuum Creation | DOGE_Global_Effects | Aid cuts → instability | r = 0.42-0.69, 3-12 month lag |
 | 3. Alternative Capture | BRICS-NDB-LocalCurrency-DiD | Alternative financial systems | +25.5 pp local currency lending |
 
@@ -157,7 +156,7 @@ The_Regulated_Friction_Project/
 │   └── Alternate_Mechanisms.md                 # Alternative explanations considered
 │
 ├── Methodology & Transparency
-│   ├── TRANSPARENCY_NOTE_FOR_2026_ANALYSIS.md  # Dataset inclusion/exclusion criteria for r = 0.6685
+│   ├── TRANSPARENCY_NOTE_FOR_2026_ANALYSIS.md  # Dataset inclusion/exclusion criteria
 │   └── VERIFICATION_REPORT_Jan2026.md          # Complete independent statistical verification
 │
 ├── 00_Quick_Breakdowns/                        # Executive-level summaries
@@ -239,9 +238,9 @@ The_Regulated_Friction_Project/
 │   │   ├── README.md                                  # Folder guide and correlation reference
 │   │   ├── requirements.txt                           # Python dependencies (pandas, numpy, scipy, statsmodels)
 │   │   ├── run_original_analysis.py                   # Reproduce r = 0.6196, p = 0.002, χ² (pre-2026 data)
-│   │   ├── reproduce_updated_correlation.py           # Reproduce r = 0.6685 and r = 0.5268 (New_Data_2026)
-│   │   └── Wrong_Correlations/                        # ⚠️ Archived scripts that used wrong datasets
+│   │   └── Wrong_Correlations/                        # ⚠️ Archived scripts that used wrong datasets or excluded data
 │   │       ├── README.md                              # Explanation of what went wrong
+│   │       ├── reproduce_updated_correlation.py       # (used 2025-only datasets inflating correlation to r = 0.6685)
 │   │       ├── original_correlation_test.py           # (used relative paths — was correct)
 │   │       ├── reproduce_original_correlation.py      # (used hardcoded paths to wrong datasets)
 │   │       ├── independent_statistical_verification.py # (used hardcoded paths to wrong datasets)
@@ -266,25 +265,10 @@ The_Regulated_Friction_Project/
 │       └── Copilot_Opus_4.6_Analysis/                 # Lead Researcher statistical verification
 │           ├── README.md                              # Transparency notice, methodology, work log
 │           ├── Statistical_Tests/                     # 9 runnable Python robustness scripts
-│           │   ├── original_data_loader.py            # Shared module: loads original pre-2026 datasets
-│           │   ├── permutation_test.py                # Shuffle-based significance testing
-│           │   ├── year_distribution_audit.py         # Year-skew diagnosis across all CSVs
-│           │   ├── autocorrelation_adjusted_test.py   # Durbin-Watson + block bootstrap
-│           │   ├── normalized_correlation.py          # Per-year equalized event-count correlation
-│           │   ├── cross_validation_dec2025.py        # Does the pattern hold without Dec 2025?
-│           │   ├── rolling_window_correlation.py      # Sliding-window correlation over time
-│           │   ├── event_study_framework.py           # Compliance response after friction events
-│           │   └── granger_causality_test.py          # Predictive direction test
-│           ├── Findings/                              # Written analysis and documentation
-│           │   ├── dataset_provenance.md              # Which data feeds which correlation
-│           │   ├── correlation_summary.md             # All five correlations in one place
-│           │   ├── new_analysis_findings.md           # Results of robustness tests
-│           │   ├── granger_causality_results.md       # Granger causality test findings
-│           │   └── backfill_guide.md                  # Recommendations for year coverage
-│           ├── Verification_Reports/                  # Scrutiny and verification audits
-│           │   └── scrutiny_report_feb8_2026.md       # Full scrutiny of all prior work
+│           ├── Findings/                              # Active analysis — provenance, backfill guide
+│           ├── Verification_Reports/                  # Prediction tracker
 │           ├── Consolidation_Analysis/                # Cross-domain consolidation assessment
-│           │   └── consolidation_pattern_significance.md  # Infrastructure consolidation significance report
+│           ├── Archive/                               # Previous analysis kept for transparency
 │           └── Datasets/                              # Local copies of original pre-2026 CSVs (19 files)
 │
 └── New_Data_2026/                              # January-February 2026 datasets
@@ -308,7 +292,7 @@ v8.3 corrects the correlation statistics throughout the README and Report to mat
 
 ### 1. Corrected Robustness Findings
 
-The original correlations (r = 0.6196, r = 0.6685, r = 0.5268) remain valid as separate analyses using their respective datasets. The key correction is to the **robustness story**:
+The original correlations (r = 0.6196) remain valid using the pre-2026 datasets. The previously reported r = 0.6685 and r = 0.5268 (from New_Data_2026) have been deprecated because those datasets included 2025-only data that inflated the correlations. The key correction is to the **robustness story**:
 
 | Test | Previous (Wrong Datasets) | Corrected (Original Datasets) |
 |------|--------------------------|-------------------------------|
