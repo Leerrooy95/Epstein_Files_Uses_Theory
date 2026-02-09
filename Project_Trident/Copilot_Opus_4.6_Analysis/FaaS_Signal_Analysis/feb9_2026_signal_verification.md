@@ -167,11 +167,20 @@ Confirmed. The partial shutdown ran January 31 – February 3, 2026.
 - Wikipedia: [2026 United States federal government shutdown](https://en.wikipedia.org/wiki/2026_United_States_federal_government_shutdown)
 - CBS News: [Trump signs funding bill to end shutdown after package clears House](https://www.cbsnews.com/live-updates/government-shutdown-latest-house-vote-funding-package/)
 
-#### ❌ UNVERIFIED — "March for Democracy" on Feb 28 and "Free America Walkout" on Jan 20
+#### ✅ VERIFIED — "Free America Walkout" on Jan 20 *(CORRECTED — originally marked unverified)*
 
-No credible sources were found for events called the "March for Democracy" on February 28, 2026 or the "Free America Walkout" on January 20, 2026 as named by SuperGrok. These event names may be AI-generated conflations or may refer to events under different names.
+**Correction (same day):** The Free America Walkout was a **major, nationally-coordinated protest** on January 20, 2026 — the first anniversary of Trump's second inauguration. 450+ events across all 50 states plus international locations. Organized by Women's March with 50501, Indivisible, and allied groups. Triggered by ICE enforcement escalation and the fatal shooting of Renee Nicole Good in Minneapolis. Has its own Wikipedia page.
 
-**Note:** January 20, 2026 (Inauguration Day anniversary) did see protest activity — the SuperGrok daily log for that date reads "Flashbang signals active nationwide," suggesting real-world events were occurring. But the specific event name "Free America Walkout" could not be verified.
+My initial search missed this event. This correction was identified during the recommendation verification check (see `recommendation_verification_feb9.md`).
+
+**Sources:**
+- TIME: [Nationwide 'Free America' Walkout Held in Protest of Trump](https://time.com/7353699/trump-free-america-walkout-protest/)
+- Fast Company: [Free America Walkout: January 20 protests](https://www.fastcompany.com/91474507/free-america-walkout-january-20-protests-against-trump-ice-womens-march-organizers-walk-out-of-work-cities)
+- Wikipedia: [Free America Walkout](https://en.wikipedia.org/wiki/Free_America_Walkout)
+
+#### ⚠️ PARTIALLY VERIFIED — "March for Democracy" on Feb 28 *(UPDATED)*
+
+Local "March for Democracy" events under this name exist — e.g., "March for Democracy: Defend Our Future" organized by Indivisible Ames at Iowa State University on Feb 28, 2026. However, no single national DC march under this name was confirmed. SuperGrok may have aggregated scattered local events into a centralized DC event that doesn't exist as described.
 
 #### ❌ UNVERIFIED — Pre-Paid Cards and "Hawthorn Group-like Entities"
 
@@ -231,14 +240,14 @@ The FaaS framework remains a useful forensic lens for auditing protest infrastru
 | NYC rallies in lower Manhattan | ✅ Accurate (Foley Square, not Washington Square Park) |
 | National Shutdown protests Jan 30–31 | ✅ Accurate |
 | 50501 is a 501(c)(4) dark money group | ❌ Inaccurate — grassroots/decentralized per all available evidence |
-| "March for Democracy" Feb 28 | ❌ Unverified event name |
-| "Free America Walkout" Jan 20 | ❌ Unverified event name |
+| "March for Democracy" Feb 28 | ⚠️ Partially verified — local events under this name exist, but not a single national DC march |
+| "Free America Walkout" Jan 20 | ✅ Verified — major 50-state protest (450+ events), organized by Women's March + 50501 *(CORRECTED)* |
 | Rate cards ($15–$50/hr) | ⚠️ Plausible general range but not linked to these specific events |
 | Pre-paid debit card recruitment | ❌ No evidence for these specific events |
 | Hawthorn Group-like entity involvement | ❌ No evidence for these specific events |
 | Revolution Messaging subsidized campaigns | ❌ No evidence for these specific events |
 
-**Overall accuracy: 10/16 claims verified or accurate (62.5%)**
+**Overall accuracy: 11/16 claims verified or accurate (68.75%)** *(Updated from 10/16 after Free America Walkout correction; see `recommendation_verification_feb9.md`)*
 
 The SuperGrok output correctly identifies the underlying events and compliance timeline but overstates the FaaS-specific evidence. The rate cards and recruitment signatures appear to be pattern-matched from general job board data rather than confirmed protest-specific hiring.
 
@@ -314,7 +323,7 @@ Whether the protests are paid or grassroots doesn't change the structural functi
 
 1. **Separate the signal from the noise:** The most valuable part of this output is the compliance event timeline (sanctuary funding cuts → shutdown → DHS deadline). That temporal framework is independently verifiable and analytically useful.
 
-2. **Flag AI-generated event names:** "March for Democracy" and "Free America Walkout" could not be verified. SuperGrok may be generating plausible-sounding event names from fragmentary data. Always cross-reference event names against news sources.
+2. **Flag AI-generated event names — but re-check your own flags too:** "March for Democracy" remains only partially verified (local events exist, but no national DC march confirmed). However, the "Free America Walkout" IS real — I incorrectly flagged it as unverified in my initial analysis. When flagging AI outputs as unreliable, verify that your own verification process isn't producing false negatives. *(See `recommendation_verification_feb9.md` for full correction.)*
 
 3. **Correct the 50501 characterization:** 50501 is a grassroots movement, not a 501(c)(4) dark money group. The task prompt's instruction to cross-reference against "known providers" may be causing SuperGrok to pattern-match against the wrong template.
 
