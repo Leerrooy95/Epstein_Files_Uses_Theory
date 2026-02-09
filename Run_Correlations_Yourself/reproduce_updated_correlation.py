@@ -16,9 +16,13 @@ narrow time windows inflate correlations. Excluded files:
   - Timeline_Update_Jan2026_Corrected (1).csv  (2025-2026 only)
   - Additional_Anchors_Jan2026_Final.csv  (2025-2026 only)
 
-Reproduces:
-  - Core scope (excluding High_Growth_Companies): uses BlackRock + Biopharma
-  - Full scope (including High_Growth_Companies): adds High_Growth
+IMPORTANT: High_Growth_Companies_2015_2026.csv is also EXCLUDED because the
+scraping methodology needs to be redone before it can be trusted for
+correlation analysis.
+
+Uses:
+  - BlackRock_Timeline_Full_Decade.csv (2015-2026)
+  - Biopharma.csv (2023-2026)
 """
 
 import os
@@ -64,11 +68,6 @@ COMPLIANCE_CATEGORIES = [
     'FDA_Reg',
     'Funding',
     'Federal_Contract',
-    # Full scope adds these (from High_Growth_Companies):
-    'Corporate_Action',
-    'Financial_Performance',
-    'Clinical_Milestone',
-    'General_Update',
 ]
 
 
@@ -174,7 +173,7 @@ if __name__ == "__main__":
 
     # ---- Load core scope datasets (excluding High_Growth_Companies) ----
     print("\n" + "=" * 80)
-    print("STEP 1: Loading CORE scope datasets (excluding High_Growth_Companies)")
+    print("STEP 1: Loading datasets (BlackRock + Biopharma)")
     print("=" * 80)
 
     core_datasets = {}
@@ -219,53 +218,22 @@ if __name__ == "__main__":
         print(f"  datasets that have been excluded. The current result reflects")
         print(f"  only multi-year datasets (BlackRock, Biopharma).")
 
-    # ---- Load full scope (including High_Growth_Companies) ----
-    print("\n" + "=" * 80)
-    print("STEP 2: FULL scope (including High_Growth_Companies)")
-    print("=" * 80)
-
-    full_datasets = dict(core_datasets)
-    hg_path = os.path.join(NEW_DATA, 'High_Growth_Companies_2015_2026.csv')
-    if os.path.exists(hg_path):
-        full_datasets['high_growth'] = pd.read_csv(hg_path)
-        print(f"  ✓ high_growth: {len(full_datasets['high_growth'])} records")
-    else:
-        print(f"  ✗ high_growth: NOT FOUND at {hg_path}")
-
-    full_events = load_and_classify(full_datasets)
-    friction_count = len(full_events[full_events['type'] == 'friction'])
-    compliance_count = len(full_events[full_events['type'] == 'compliance'])
-    print(f"\nTotal classified: {len(full_events)} events")
-    print(f"  Friction: {friction_count}")
-    print(f"  Compliance: {compliance_count}")
-
-    r_full, p_full = calculate_correlation(full_events, "FULL SCOPE")
-
-    if r_full is not None:
-        print(f"\n  Note: The previously reported r = 0.5268 included 2025-only")
-        print(f"  datasets that have been excluded. The current result reflects")
-        print(f"  only multi-year datasets (BlackRock, Biopharma, High_Growth).")
-
     # ---- Final Summary ----
     print("\n" + "=" * 80)
     print("FINAL SUMMARY")
     print("=" * 80)
     r_core_str = f"{r_core:.4f}" if r_core is not None else "N/A"
-    r_full_str = f"{r_full:.4f}" if r_full is not None else "N/A"
 
     print(f"""
-Correlation 4 — Core scope (excl. High_Growth_Companies):
+Updated correlation (BlackRock + Biopharma only):
   Previous (with 2025-only datasets):  r = 0.6685
   Current  (multi-year datasets only): r = {r_core_str}
 
-Correlation 5 — Full scope (incl. High_Growth_Companies):
-  Previous (with 2025-only datasets):  r = 0.5268
-  Current  (multi-year datasets only): r = {r_full_str}
-
-Excluded 2025-only datasets:
+Excluded datasets:
   - Infrastructure_Forensics.csv          (2025 only, 107 rows)
   - Timeline_Update_Jan2026_Corrected (1).csv  (2025-2026 only, 99 rows)
   - Additional_Anchors_Jan2026_Final.csv  (2025-2026 only, 50 rows)
+  - High_Growth_Companies_2015_2026.csv   (scraping methodology needs redo)
 
 Both correlations use New_Data_2026/ datasets (uploaded January 4, 2026).
 These are SEPARATE from the original r = 0.6196 correlation which used
