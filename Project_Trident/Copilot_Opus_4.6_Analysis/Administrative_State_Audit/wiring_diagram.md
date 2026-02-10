@@ -83,10 +83,10 @@ With **FBI** (The Enforcer) as an adjacent node controlling internal security an
 | EO 14210 mandates DOGE Team Leads with hiring veto | OPM issues guidance implementing veto authority | FedScoop; Federal Register |
 | DOGE demands agency reorganization plans by March 13 | OPM/OMB joint guidance instructs agencies on RIF procedures | OPM transmittal memo |
 | DOGE directs probationary employee terminations | OPM provides boilerplate termination language used by agencies | Federal News Network; FedSmith |
-| **DOGE disbands (Nov 2025)** | **OPM absorbs DOGE's workforce functions** | Time; HR Grapevine; Fed News Network |
-| DOGE's workforce agenda needs permanence | OPM publishes Schedule Policy/Career final rule (Feb 2026) | Federal Register; OPM.gov |
+| **DOGE disbands (Nov 2025)** | **OPM (under Director Kupor, ex-a16z) absorbs DOGE's workforce functions; declares "DOGE doesn't exist"** | CNBC; Benzinga; Time; HR Grapevine; Fed News Network |
+| DOGE's workforce agenda needs permanence | OPM publishes Schedule Policy/Career final rule (Feb 2026); 94% of 40,500 comments opposed; published regardless | Federal Register; OPM.gov; FedSmith; FEDweek |
 
-**Assessment**: This channel is **the strongest verified connection**. OPM consistently executed DOGE directives, then absorbed DOGE's entire function. The Nov 2025 transition is the clearest evidence of institutional lock-in.
+**Assessment**: This channel is **the strongest verified connection**. OPM consistently executed DOGE directives, then absorbed DOGE's entire function. The Nov 2025 transition is the clearest evidence of institutional lock-in. **Verified Feb 10**: OPM Director Kupor publicly confirmed "DOGE doesn't exist" (CNBC, Nov 24 2025). 317,000 federal employees departed in 2025, exceeding the 300K target (Federal News Network).
 
 ---
 
@@ -121,11 +121,13 @@ With **FBI** (The Enforcer) as an adjacent node controlling internal security an
 
 | Action | Response | Evidence |
 |--------|---------|----------|
-| AG Bondi establishes "weaponization working group" | FBI aligns investigations with administration priorities | CBS News |
+| AG Bondi establishes "weaponization working group" (Feb 5, 2025; initially led by Ed Martin) | FBI aligns investigations with administration priorities | CBS News; NBC News |
+| Ed Martin removed as weaponization czar (Jan 2026) after leaking grand jury materials | DOJ internal review finds misconduct; Martin reassigned to pardon attorney role | CBS News; Bloomberg Law; Yahoo News |
 | White House fires Biden-era U.S. Attorneys | FBI senior leadership simultaneously purged | NBC News; Just Security |
 | Joint FBI/DOJ memo on Epstein files: "no client list" | Institutional narrative control over document releases | Repo: Feb 5 2026 update |
 | DOJ fires 230+ lawyers, 6,400+ employees | FBI fires/reassigns 75+ career officials | Multiple sources |
 | DOJ needs enforcement capacity after career attorney exodus | FBI decentralizes, creating parallel enforcement structure (Huntsville/field offices) | AL.com; Reuters |
+| Comey and Letitia James prosecutions (weaponization group) dismissed — prosecutor unlawfully appointed | Courts functioned as partial check on retaliatory prosecution capacity | Newsmax; U.S. News |
 
 **Assessment**: This channel is **bidirectional and deeply integrated**. FBI and DOJ purges were coordinated (simultaneous, same targets — Jan 6 / Trump investigation personnel). The joint Epstein memo shows operational coordination on information control.
 
@@ -152,17 +154,19 @@ This is the mechanism Austin specifically flagged in the problem statement:
 ```
 DOGE directs mass firings
         ↓
-OPM processes terminations
+OPM processes terminations (317,000 departed in 2025)
         ↓
 Employees appeal to MSPB
         ↓
-MSPB overwhelmed (thousands of simultaneous appeals)
+MSPB overwhelmed (2,145% surge — ~12,000 new appeals in FY2025)
+        ↓
+MSPB quorum temporarily lost again in 2025
         ↓
 DOJ appeals reinstatement orders to SCOTUS
         ↓
-OPM publishes Schedule Policy/Career rule (Feb 2026)
+OPM publishes Schedule Policy/Career rule (Feb 5, 2026; 94% of comments opposed)
         ↓
-~50,000 positions lose MSPB appeal rights
+~50,000 positions lose MSPB appeal rights (effective Mar 9, 2026)
         ↓
 The defense mechanism is eliminated
         ↓
@@ -171,10 +175,10 @@ Future removals face no institutional check
 LOOP CLOSES
 ```
 
-**Assessment**: This is the **strongest evidence of a closed loop**. The sequence is:
-1. **Overwhelm** the defense mechanism (flood MSPB with appeals)
-2. **Delay** its response (DOJ appeals reinstatement orders)
-3. **Eliminate** the defense mechanism (Schedule Policy/Career strips MSPB rights)
+**Assessment**: This is the **strongest evidence of a closed loop**. The sequence is now **quantified**:
+1. **Overwhelm** the defense mechanism (2,145% increase in appeals; ~12,000 new cases in FY2025)
+2. **Delay** its response (DOJ appeals reinstatement orders; MSPB quorum lost again)
+3. **Eliminate** the defense mechanism (Schedule Policy/Career strips MSPB rights for ~50,000 positions; published despite 94% opposition)
 4. **Result**: The mechanism that was designed to prevent arbitrary removals is itself removed
 
 ---
@@ -219,4 +223,5 @@ This is what Austin's repo calls **"the permanent void"** — the institutional 
 ---
 
 *Document generated by GitHub Copilot (Claude, Opus 4.6) on February 10, 2026.*
+*Updated: February 10, 2026 — Incorporated Austin's independent verification + Lead Analyst re-verification. Added: Kupor name/a16z background, "DOGE doesn't exist" quote, Ed Martin removal/grand jury leak, failed Comey/James prosecutions, 317K departures, 94% opposition stat, MSPB overwhelm quantified (2,145% surge, 12K cases), NTEU lawsuits, Feb 27 court-ordered disclosure. See verification_of_wiring_diagram.md for full sourcing.*
 *All dates and events independently web-search verified unless otherwise noted.*

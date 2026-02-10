@@ -58,10 +58,16 @@ OPM transformed from a neutral civil service management agency into the **implem
 
 | Date | Event | Source | Significance |
 |------|-------|--------|-------------|
+| **Jul 2025** | Scott Kupor sworn in as OPM Director | [FedSmith](https://www.fedsmith.com/2025/07/15/scott-kupor-sworn-in-as-opm-director/), [ExecutiveGov](https://executivegov.com/articles/scott-kupor-opm-director-federal-workforce-performance-management-standards) | Former founding employee and managing partner of Andreessen Horowitz (a16z). a16z is funded by Sanabil Investments (PIF/Saudi sovereign wealth). Brings private-sector VC approach to federal workforce management. |
 | **Nov 2025** | OPM absorbs DOGE workforce functions | [HR Grapevine](https://www.hrgrapevine.com/us/content/article/2025-11-24-opm-takes-charge-as-the-elon-musk-led-department-quietly-vanishes) | **Critical transition**: DOGE's temporary mandate becomes OPM's permanent function. OPM now *is* the workforce reduction apparatus. |
+| **Nov 2025** | Kupor confirms "DOGE doesn't exist"; states "no target around reductions" | [CNBC](https://www.cnbc.com/2025/11/24/doge-doesnt-exist-with-eight-months-left-on-its-charter.html), [WTOP](https://wtop.com/government/2025/08/new-opm-director-estimates-300000-federal-job-cuts-this-year-no-plans-to-relocate-jobs-from-dc/) | Normalization: reductions no longer need explicit targets; they proceed through operational momentum. |
+| **Nov 2025** | 317,000 federal employees departed in 2025 (exceeded 300K target) | [Federal News Network](https://federalnewsnetwork.com/workforce/2025/11/317000-feds-have-left-the-government-this-year-surpassing-opms-goal/) | Scale: exceeded original target by 17,000. Primarily voluntary separations, not RIFs. |
 | **Nov 2025** | Hiring freeze lifted; 1:4 replacement ratio continues | [Partnership for Public Service](https://ourpublicservice.org/press-release/partnership-for-public-service-statement-in-response-to-reports-that-doge-has-been-disbanded/) | The freeze ends but the ratio ensures continued attrition. OPM administers the ongoing reduction. |
+| **Nov 2025** | NTEU files FOIA lawsuit against OPM for Schedule Policy/Career position lists | [FEDweek](https://www.fedweek.com/fedweek/nteu-sues-for-release-of-positions-recommended-for-schedule-policy-career/), [Fed News Network](https://federalnewsnetwork.com/workforce-rightsgovernance/2025/11/federal-union-sues-opm-seeking-release-of-schedule-policy-career-records/) | Transparency challenge: OPM refused to disclose which positions agencies recommended for reclassification. |
+| **Jan 20, 2026** | NTEU files second lawsuit challenging legality of Schedule Policy/Career EO | [NTEU 282](https://www.282nteu.org/copy-of-wrongfully-fired-employees) | Direct constitutional challenge to the executive order. Currently paused pending OPM rulemaking completion. |
 | **Feb 5, 2026** | Schedule Policy/Career final rule published | [Federal Register](https://www.federalregister.gov/documents/2026/02/06/2026-02375/improving-performance-accountability-and-responsiveness-in-the-civil-service) | ~50,000 positions reclassified to at-will. MSPB appeal rights stripped. 94% of 40,500 public comments opposed. Published regardless. |
 | **Feb 5, 2026** | OPM issues implementing guidance for final rule | [DCPAS/DoD](https://www.dcpas.osd.mil/sites/default/files/2026-02/OPM%20Memo%20Initial%20Implementing%20Guidance%20for%20Schedule%20Policy%20-%20Career%20Final%20Rule%202-5-2026.pdf) | Agencies given procedures for reclassifying positions. President has final authority over designations. |
+| **Feb 27, 2026** | Court-ordered OPM disclosure deadline (NTEU FOIA lawsuit) | [FEDweek](https://www.fedweek.com/fedweek/nteu-sues-for-release-of-positions-recommended-for-schedule-policy-career/), [NTEU 282](https://www.282nteu.org/copy-of-wrongfully-fired-employees) | **UPCOMING**: Judge ordered OPM to release position lists by this date. First public view of which positions/agencies are targeted. |
 | **Mar 8–9, 2026** | Schedule Policy/Career effective date (pending) | Federal Register | 30-day waiting period. Positions formally become at-will. |
 
 ---
@@ -117,13 +123,18 @@ The "Fork in the Road" email came from OPM — not DOGE. This matters because OP
 ### 🚩 Flag 3: DOGE → OPM Succession is Not Disbanding
 When DOGE was "disbanded" in November 2025, its workforce functions were transferred to OPM. This is not the end of the consolidation program — it is the **completion** of it. The temporary organization's mandate became a permanent agency's responsibility. The "disbanding" narrative obscures the fact that every structural change DOGE initiated is now institutionalized.
 
-### 🚩 Flag 4: The MSPB Neutralization Sequence
-1. Mass firings overwhelmed MSPB with thousands of appeals (Feb–Jul 2025)
-2. Supreme Court blocked broad reinstatement orders
-3. Schedule Policy/Career rule strips MSPB appeal rights for ~50,000 positions (Feb 2026)
-4. **Net effect**: The appeals mechanism was first overwhelmed, then structurally eliminated for the highest-impact positions
+### 🚩 Flag 4: The MSPB Neutralization Sequence — Now Quantified
+1. Mass firings overwhelmed MSPB with thousands of appeals (Feb–Jul 2025) — **2,145% increase in FY2025, ~12,000 new cases** (GovExec, DailyFED)
+2. MSPB quorum temporarily lost again in 2025, further delaying relief (FedSmith)
+3. Supreme Court blocked broad reinstatement orders
+4. Schedule Policy/Career rule strips MSPB appeal rights for ~50,000 positions (Feb 2026)
+5. **Net effect**: The appeals mechanism was first overwhelmed, then structurally eliminated for the highest-impact positions
+
+### 🚩 Flag 5: The Kupor-a16z-Sanabil Structural Overlap (Added Feb 10)
+OPM Director Scott Kupor was the founding employee and managing partner of Andreessen Horowitz (a16z), managing its growth from $300M to $90B+ AUM. a16z is directly funded by Sanabil Investments, the venture arm of Saudi Arabia's Public Investment Fund (PIF). The repo's Media Firewall section (`12_The_Media_Firewall/README.md`) already documents the PIF → Sanabil → a16z pipeline as a key intermediary layer between Gulf sovereign wealth and US infrastructure. The OPM Director who is eliminating MSPB protections for 50,000 positions came from the same firm that receives capital from the pipeline the repo has mapped. **This does not prove intent or impropriety** — Kupor left a16z before joining OPM — but it represents a structural overlap between the administrative consolidation and the Vendor-State capital architecture. The model should track *personnel flows* through intermediary layers, not just capital flows.
 
 ---
 
 *Document generated by GitHub Copilot (Claude, Opus 4.6) on February 10, 2026.*
+*Updated: February 10, 2026 — Added Kupor confirmation, 317K departures, NTEU lawsuits, court-ordered Feb 27 disclosure deadline, Kupor-a16z-Sanabil structural overlap (Phase 3 timeline + Flags 4-5). MSPB overwhelm quantified (2,145% surge, 12,000 new cases).*
 *All dates and events independently web-search verified unless otherwise noted.*
