@@ -1,8 +1,8 @@
 # The Regulated Friction Project: Report
 
 **Author:** Austin
-**Last Updated:** February 9, 2026
-**Version:** v8.5
+**Last Updated:** February 10, 2026
+**Version:** v8.6
 **Repository:** [https://github.com/Leerrooy95/The_Regulated_Friction_Project](https://github.com/Leerrooy95/The_Regulated_Friction_Project)
 
 ---
@@ -138,17 +138,18 @@ Three unrelated events—document release, UN speech, think tank publication—c
 
 ---
 
-## The Three-Layer Framework
+## The Friction-Compliance Framework
 
-This repository is one piece of a larger analytical structure:
+This repository documents the core statistical relationship:
 
-| Layer | Repository | Finding | Mechanism |
-|-------|-----------|---------|-----------|
-| **1. Attention Capture** | This repo | r = +0.6196 (2-week lag) | Friction saturates media bandwidth |
-| **2. Vacuum Creation** | [DOGE_Global_Effects](https://github.com/Leerrooy95/DOGE_Global_Effects) | Aid cuts → instability (r = 0.42-0.69) | Policy creates geographic voids |
-| **3. Alternative Capture** | [BRICS-NDB-LocalCurrency-DiD](https://github.com/Leerrooy95/BRICS-NDB-LocalCurrency-DiD) | +25.5 pp local currency lending | Competitors fill US-created gaps |
+| Finding | Value | Verification |
+|---------|-------|--------------|
+| Friction → Compliance correlation | r = +0.6196 (2-week lag) | ✅ Verified (30 weeks, hand-scored) |
+| Statistical significance | p = 0.0004 | ✅ Less than 0.05% chance of random |
 
-**Unified thesis:** Domestic chaos consumes attention (Layer 1) while foreign policy creates vacuums (Layer 2) that alternative systems then capture (Layer 3).
+**Thesis:** Domestic friction saturates media bandwidth, creating calendar windows in which compliance events (policy shifts, financial moves) proceed with reduced scrutiny.
+
+> **Note (v8.6):** This section previously presented a "Three-Layer Framework" that included two external repositories (DOGE_Global_Effects, BRICS-NDB-LocalCurrency-DiD). Those repositories contained Grok-fabricated data and have been retracted. The retracted references are preserved in [`Archive/Retracted_Three_Layer_References.md`](Archive/Retracted_Three_Layer_References.md). See the [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md) for the full audit.
 
 ---
 
@@ -344,7 +345,7 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 - Start with `New_Data_2026/2026_Analysis.md` for methodology
 - Run scripts in `Run_Correlations_Yourself/` to verify statistics
 - Run robustness tests in `Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/` for full verification suite
-- Review `Repository_Synthesis.md` for the three-layer framework
+- Review `Archive/Repository_Synthesis.md` for the original three-layer framework (archived — Layers 2-3 used fabricated data)
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/FaaS_Signal_Analysis/january_2026_signal_analysis.md` for full January 2026 signal map
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/Influencer_Narrative_Timing/media_firewall_narrative_timing_analysis.md` for narrative timing analysis
 - See `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` for Q1 2026 applied findings
@@ -400,4 +401,4 @@ The data is public. The code is public. The claims are reproducible and sourced.
 
 ---
 
-*This report was last updated February 9, 2026 (v8.5). Added January 2026 signal analysis (3 peaks, 1 trough, 34 verified events), Media Firewall narrative timing analysis, February 2026 compliance window (Feb 1–19, 9 compliance events), updated testable predictions. For the latest findings, see the repository README.*
+*This report was last updated February 10, 2026 (v8.6). Retracted Layers 2-3 (Grok-fabricated data from DOGE_Global_Effects and BRICS-NDB-LocalCurrency-DiD) moved to Archive/Retracted_Three_Layer_References.md. All internal statistics (r = 0.6196, χ² = 330.62) confirmed clean. See AI Fabrication Case Study for full details. For the latest findings, see the repository README.*

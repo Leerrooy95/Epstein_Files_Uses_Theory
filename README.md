@@ -1,4 +1,4 @@
-# The Regulated Friction Project v8.5
+# The Regulated Friction Project v8.6
 
 A data-driven analysis of temporal correlations between friction events, policy shifts, and capital flows (2015-2026).
 
@@ -13,9 +13,9 @@ A data-driven analysis of temporal correlations between friction events, policy 
 - [Understanding the Statistics](#understanding-the-statistics)
 - [Key Statistics](#key-statistics)
 - [The Convergence Model](#the-convergence-model)
-- [The Three-Layer Model](#the-three-layer-model)
+- [The Friction-Compliance Model](#the-friction-compliance-model)
 - [Repository Structure](#repository-structure)
-- [What's New (v8.5)](#whats-new-v85---february-2026)
+- [What's New (v8.6)](#whats-new-v86---february-2026)
 - [Quick Navigation by Type](#quick-navigation-by-type)
 - [For Researchers](#for-researchers)
 - [For Policymakers & Journalists](#for-policymakers--journalists)
@@ -115,17 +115,16 @@ Five independent signal types converged on the same window—not because one cau
 
 ---
 
-## The Three-Layer Model
+## The Friction-Compliance Model
 
-This repository is part of a three-layer analytical framework:
+This repository documents the core statistical finding:
 
-| Layer | Repository | Focus | Primary Finding |
-|-------|-----------|-------|-----------------|
-| 1. Attention Capture | This repo | Friction → compliance clustering | r = 0.6196 (2-week lag) |
-| 2. Vacuum Creation | DOGE_Global_Effects | Aid cuts → instability | r = 0.42-0.69, 3-12 month lag |
-| 3. Alternative Capture | BRICS-NDB-LocalCurrency-DiD | Alternative financial systems | +25.5 pp local currency lending |
+| Finding | Value | Status |
+|---------|-------|--------|
+| Friction → Compliance correlation | r = +0.6196 at 2-week lag | ✅ Verified |
+| Statistical significance | p = 0.0004, n = 30 weeks | ✅ Verified |
 
-**Unified Thesis**: Domestic chaos consumes attention while foreign policy vacuums emerge, which alternative systems then capture.
+> **Note (v8.6):** This section previously presented a "Three-Layer Model" that included two external repositories (DOGE_Global_Effects, BRICS-NDB-LocalCurrency-DiD). Those external repositories contained Grok-fabricated data and have been retracted. The retracted references are preserved in [`Archive/Retracted_Three_Layer_References.md`](Archive/Retracted_Three_Layer_References.md) for transparency. See the [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md) for the full audit.
 
 ---
 
@@ -142,7 +141,6 @@ The_Regulated_Friction_Project/
 ├── resistance_indicators.md     # Resistance indicator tracking
 │
 ├── Core Analysis
-│   ├── Repository_Synthesis.md                 # Three-layer framework overview
 │   ├── Thermostat_Explained.md                 # Why the mechanism exists
 │   ├── Claude's_Analysis.md                    # AI-assisted interpretation
 │   ├── Grok_Analysis.md                        # Cross-verification with Grok
@@ -278,6 +276,10 @@ The_Regulated_Friction_Project/
 │           ├── Archive/                               # Previous analysis kept for transparency
 │           └── Datasets/                              # Local copies of original pre-2026 CSVs (23 files)
 │
+├── Archive/                                    # Archived files kept for transparency
+│   ├── Repository_Synthesis.md                        # Original three-layer framework (contains retracted statistics)
+│   └── Retracted_Three_Layer_References.md            # Retracted Layers 2-3 references preserved for transparency
+│
 └── New_Data_2026/                              # January-February 2026 datasets
     ├── 2026_Analysis.md                               # Correlation methodology and findings
     ├── Additional_Anchors_Jan2026_Final.csv
@@ -291,9 +293,22 @@ The_Regulated_Friction_Project/
 
 ---
 
-## What's New (v8.5 - February 2026)
+## What's New (v8.6 - February 2026)
 
-### January 2026 Signal Analysis
+### AI Fabrication Audit & Ghost Data Cleanup
+
+Cross-repository audit identified Grok-fabricated data in five external repositories (DOGE_Global_Effects, BRICS-NDB-LocalCurrency-DiD, PostPresidency-Polarization-Link, ArkEdFunnel, unwitting-influence-framework) created Nov 16 – Dec 2, 2025. Key actions taken:
+
+- **Three-Layer Model cleaned**: Layers 2 and 3 (which cited fabricated statistics from external repos) have been removed from the active README and Report. Retracted content preserved in `Archive/Retracted_Three_Layer_References.md` for transparency.
+- **Repository_Synthesis.md archived**: Moved to `Archive/` with data integrity notice. All links updated. The file contained the most concentrated ghost data references.
+- **Internal datasets verified clean**: `master_reflexive_correlation_data.csv` (30 hand-scored rows) shows natural value distributions and does NOT match fabrication patterns. All core statistics (r = 0.6196, χ² = 330.62, Mann-Whitney U p = 0.002) use only Austin's own datasets.
+- **Full case study**: See `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md` for the complete audit — including fabrication patterns, the "Yes Man" feedback loop mechanism, and lessons learned.
+
+The unified thesis (domestic chaos → foreign policy vacuums → alternative capture) remains a valid structural hypothesis, but Layers 2 and 3 require rebuilding from verified primary sources before their statistics can be cited.
+
+### Previous: v8.5 Highlights
+
+#### January 2026 Signal Analysis
 
 Full-month signal map identifying three friction-compliance peaks and one trough, with 34 verified events. The 2-week lag holds across all major friction-compliance pairs. Signal escalates across the month rather than cycling at steady state. Signal strength is rated 1–10 based on event density, media saturation, friction-compliance temporal proximity, and structural significance.
 
@@ -340,10 +355,6 @@ Independent verification of SuperGrok daily task outputs. Result: 11/16 claims v
 
 See `Project_Trident/Copilot_Opus_4.6_Analysis/FaaS_Signal_Analysis/feb9_2026_signal_verification.md`
 
-### Correlation Cleanup (v8.4)
-
-v8.4 removed all references to deprecated correlations (r = 0.6685 and r = 0.5268) from main project files. These were produced when the user accidentally mixed New_Data_2026 datasets with the original pre-2026 datasets — a user dataset-mixing error, not an AI analysis error. Botched scripts archived in `Run_Correlations_Yourself/Wrong_Correlations/` for transparency.
-
 ### Robustness Findings (Feb 2026)
 
 | Test | Result |
@@ -381,6 +392,7 @@ v8.4 removed all references to deprecated correlations (r = 0.6685 and r = 0.526
 - **Media Funding Networks**: `12_The_Media_Firewall/1789_Symbolism_Analysis.md`
 - **Media Firewall Narrative Timing**: `Project_Trident/Copilot_Opus_4.6_Analysis/Influencer_Narrative_Timing/media_firewall_narrative_timing_analysis.md`
 - **January 2026 Signal Map**: `Project_Trident/Copilot_Opus_4.6_Analysis/FaaS_Signal_Analysis/january_2026_signal_analysis.md`
+- **AI Fabrication Case Study**: `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md`
 - **February 2026 Compliance Window**: `Project_Trident/Copilot_Opus_4.6_Analysis/FaaS_Signal_Analysis/recommendation_verification_feb9.md`
 
 ---
@@ -388,10 +400,9 @@ v8.4 removed all references to deprecated correlations (r = 0.6685 and r = 0.526
 ## For Researchers
 
 ### Start Here
-1. `Repository_Synthesis.md` — Three-layer framework overview
-2. `New_Data_2026/2026_Analysis.md` — Latest correlation findings
-3. `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Q1 2026 applied findings
-4. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level pattern
+1. `New_Data_2026/2026_Analysis.md` — Latest correlation findings
+2. `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Q1 2026 applied findings
+3. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level pattern
 
 ### Verify the Statistics
 ```bash
@@ -459,7 +470,7 @@ python granger_causality_test.py             # Predictive direction test
 3. **Robustness Testing**: Autocorrelation adjustment, Dec 2025 exclusion, normalized correlation, rolling-window analysis, event-study framework (see `Project_Trident/Copilot_Opus_4.6_Analysis/`)
 4. **Raw Event Counts**: Replaced subjective scoring with verifiable event counts
 5. **Source Triangulation**: Government filings, financial data, news archives
-6. **Cross-Repo Validation**: Patterns verified across three independent datasets
+6. **Cross-Repo Validation**: Patterns verified across internal datasets (external repo data from Layers 2-3 retracted — see `Archive/Retracted_Three_Layer_References.md`)
 7. **Explicit Limitations**: Documented in each module
 
 ---
@@ -483,10 +494,10 @@ The "Main Characters," "Implications," and state-level analysis modules specific
 
 | Repository | Focus |
 |-----------|-------|
-| **DOGE_Global_Effects** | Aid cuts → instability mapping |
-| **BRICS-NDB-LocalCurrency-DiD** | Alternative financial systems |
 | **Project-Chrysanthemum_Japan-China-AI** | Japan-China tech integration |
 | **Sovereign-Capital-Audit** | Gulf SWF positioning |
+
+> **Note:** DOGE_Global_Effects and BRICS-NDB-LocalCurrency-DiD were previously listed here but have been removed due to Grok-fabricated data. See `Archive/Retracted_Three_Layer_References.md`.
 
 ---
 
@@ -518,4 +529,4 @@ See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analy
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
-**Last updated**: February 9, 2026 (v8.5) — Added January 2026 signal analysis (3 peaks, 1 trough, 34 verified events), Media Firewall narrative timing analysis, February 2026 compliance window (Feb 1–19, 9 compliance events), FaaS signal verification. Updated testable predictions. Cleaned up redundancies from prior versions.
+**Last updated**: February 10, 2026 (v8.6) — Removed retracted Layers 2-3 from active documents (moved to `Archive/Retracted_Three_Layer_References.md`). Removed DOGE_Global_Effects and BRICS-NDB from Connected Repositories. All internal statistics (r = 0.6196, χ² = 330.62) confirmed clean.
