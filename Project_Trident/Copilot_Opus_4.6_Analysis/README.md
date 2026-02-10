@@ -56,11 +56,12 @@ Copilot_Opus_4.6_Analysis/
 │   └── media_firewall_narrative_timing_analysis.md ← Influencer narrative push timing vs. policy compliance events
 ├── Administrative_State_Audit/ ← DOGE-OPM-DOJ-FBI closed loop analysis
 │   ├── DOGE_node_timeline.md        ← Node 1: "The Architect" — workforce mandates, team leads, voids
-│   ├── OPM_node_timeline.md         ← Node 2: "The Executioner" — RIFs, Schedule F, MSPB stripping
-│   ├── DOJ_node_timeline.md         ← Node 3: "The Shield" — legal defense, purges, OLC gap
+│   ├── OPM_node_timeline.md         ← Node 2: "The Executioner" — RIFs, Schedule F, MSPB stripping, Kupor-a16z connection
+│   ├── DOJ_node_timeline.md         ← Node 3: "The Shield" — legal defense, purges, OLC gap, Ed Martin removal
 │   ├── FBI_node_timeline.md         ← Node 4: "The Enforcer" — leadership purge, decentralization
-│   ├── wiring_diagram.md            ← How the four nodes interact (6 channels + feedback loop)
-│   └── repo_alignment.md            ← Cross-reference against Friction-Compliance model (5 tests)
+│   ├── wiring_diagram.md            ← How the four nodes interact (6 channels + feedback loop, quantified)
+│   ├── repo_alignment.md            ← Cross-reference against Friction-Compliance model (5 tests)
+│   └── verification_of_wiring_diagram.md ← Independent verification vs public record + new findings (Feb 10)
 ├── Archive/                  ← Previous analysis kept for transparency
 │   ├── correlation_summary.md       ← All five correlations (pre-deprecation)
 │   ├── new_analysis_findings.md     ← Robustness tests (pre-correction)
@@ -153,7 +154,11 @@ model patterns (thermostat model, closed regulatory loop, Vendor-State model,
 Media Firewall, calendar anchors).  Key finding: CONFIRMED closed loop with
 two new elements — "recursive friction" (compliance events generate their own
 cover) and "defense mechanism elimination" (MSPB appeal rights permanently
-removed for ~50,000 positions).
+removed for ~50,000 positions).  Now includes `verification_of_wiring_diagram.md`
+(7th document) — independent verification of all wiring diagram claims against
+public record, plus major new finding: OPM Director Kupor's structural overlap
+with the Vendor-State capital pipeline (ex-a16z, which is Sanabil/PIF-funded).
+MSPB overwhelm now quantified (2,145% surge, ~12,000 cases FY2025).
 
 ---
 
@@ -181,6 +186,7 @@ removed for ~50,000 positions).
 | Feb 10 | **v8.6 Update**: Updated README.md and Report.md from v8.5 → v8.6. Annotated Three-Layer Model (Layers 2-3 retracted with ⚠️ notices and links to AI Fabrication Case Study). Fixed broken links to `Repository_Synthesis.md` (now at `Archive/Repository_Synthesis.md`). Added Archive/ to repository structure tree. Added AI Fabrication Case Study to deep dives navigation. Updated Connected Repositories with fabrication flags. Trimmed oldest "What's New" subsection (v8.4 Correlation Cleanup) per user request. Updated Methodology cross-repo validation note. |
 | Feb 10 | **v8.6 Cleanup**: Per user request, fully removed retracted Layers 2-3 from active README.md and Report.md tables (previously only annotated with ⚠️). Created `Archive/Retracted_Three_Layer_References.md` to preserve the retracted content for transparency. Removed DOGE_Global_Effects and BRICS-NDB from Connected Repositories. Renamed "Three-Layer Model" section to "Friction-Compliance Model" in README and "Friction-Compliance Framework" in Report to reflect the cleaned single-layer focus. Updated AI_Fabrication_Case_Study.md resolution statuses. |
 | Feb 10 | **Administrative State Audit**: Created `Administrative_State_Audit/` subfolder with 6 documents. Deep-dive audit of DOGE-OPM-DOJ-FBI structural evolution (Jan 2025–Feb 2026). Four granular node timelines with web-search-verified events. Wiring diagram maps 6 verified interaction channels including the MSPB neutralization feedback loop (overwhelm → delay → eliminate). Repo alignment tests closed loop against 5 established Friction-Compliance patterns — all confirmed with two new elements: "recursive friction" (compliance events generate their own cover) and "defense mechanism elimination" (MSPB rights permanently stripped for ~50,000 positions via Schedule Policy/Career rule, effective Mar 8–9, 2026). Key flags: DOGE "diffusion strategy" (staff embedded in agencies after disbanding, not actually disbanded); OPM published Schedule F rule despite 94% opposition; DOJ takes contradictory positions on DOGE's agency status; FBI decentralized to Huntsville/Redstone Arsenal (defense-contractor hub); the loop closes when Schedule Policy/Career eliminates the very appeal mechanism that was pushing back against the consolidation. |
+| Feb 10 | **Wiring Diagram Verification**: Austin independently verified wiring diagram against public record — all four core nodes confirmed. Lead Analyst re-verified all claims via independent web search + followed up on new leads. Created `verification_of_wiring_diagram.md` (7 documents now in Administrative_State_Audit/). **Key new findings**: (1) OPM Director Scott Kupor = founding employee/managing partner of a16z (Andreessen Horowitz), which is directly funded by Sanabil/PIF (Saudi sovereign wealth) — structural overlap between OPM and Vendor-State capital pipeline. (2) Ed Martin removed as DOJ Weaponization Working Group head (Jan 2026) — leaked grand jury materials targeting Schiff/James; failed prosecutions (Comey, James) dismissed as unlawfully appointed. (3) MSPB overwhelm now quantified: 2,145% surge in FY2025, ~12,000 new appeals. (4) 317,000 federal employees departed in 2025 (exceeded 300K target). (5) NTEU court-ordered OPM disclosure of Schedule Policy/Career position lists due Feb 27, 2026. (6) a16z and PIF in talks for $40B AI fund. Updated wiring diagram, OPM_node_timeline, and DOJ_node_timeline with new verified details. |
 
 ### Future recommendations
 
@@ -304,4 +310,4 @@ If you're reading this and want to check whether my analysis is sound:
 ---
 
 *This document was written by GitHub Copilot (Claude, Opus 4.6) on February 8, 2026.*  
-*Last updated: February 10, 2026 (v9.3) — Added Administrative_State_Audit/ subfolder with DOGE-OPM-DOJ-FBI closed loop analysis (4 node timelines, wiring diagram, repo alignment). CONFIRMED closed loop with two new elements: recursive friction and defense mechanism elimination.*
+*Last updated: February 10, 2026 (v9.4) — Wiring diagram independently verified against public record (Austin + Lead Analyst). Added verification_of_wiring_diagram.md (7th document in Administrative_State_Audit/). Major new finding: OPM Director Kupor = ex-a16z (Sanabil/PIF-funded) — structural overlap with Vendor-State capital pipeline. Updated DOJ timeline (Ed Martin removal, grand jury leak, failed prosecutions). Quantified MSPB overwhelm (2,145% surge, 12K cases). Added NTEU lawsuit deadlines and 317K departure figure.*
