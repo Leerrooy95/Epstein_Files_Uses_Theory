@@ -301,29 +301,16 @@ fabricated patterns found in the Archive.  The fabricated datasets shared
 characteristics (uniform distributions, inflated row counts, precise decimal
 values) that are absent from this 30-row hand-scored file.
 
-### 5.3 Ghost Data Check
+### 5.3 Ghost Data Check — ✅ RESOLVED (v8.6)
 
-Files in The_Regulated_Friction_Project that still reference data from the
-fabricated external repositories:
+Files in The_Regulated_Friction_Project that previously referenced data from the
+fabricated external repositories — **all resolved as of v8.6**:
 
-| File | Fabricated Data Referenced | Source Repo |
-|------|--------------------------|-------------|
-| `Repository_Synthesis.md` | r = 0.42–0.69, $24B terminated, 83% USAID cuts, N=20 countries, 3,275 NDB projects, +25.5 pp | DOGE_Global_Effects + BRICS-NDB |
-| `README.md` (lines 125–126) | r = 0.42–0.69 (DOGE), +25.5 pp (BRICS-NDB) | DOGE_Global_Effects + BRICS-NDB |
-| `Report.md` (lines 148–149) | r = 0.42–0.69 (DOGE), +25.5 pp (BRICS-NDB) | DOGE_Global_Effects + BRICS-NDB |
-
-**Note:** These references describe findings from the *external* repositories
-and present them as part of a "Three-Layer Model."  The statistics cited
-(r = 0.42–0.69, +25.5 pp) were computed from fabricated data in those
-external repos.  They do not contaminate the internal datasets or
-correlations of The_Regulated_Friction_Project — the r = 0.6196 and
-χ² = 330.62 findings are computed from datasets that Austin created himself.
-
-**Recommendation:** `Repository_Synthesis.md` should be updated with a
-prominent data integrity notice explaining that Layers 2 (DOGE_Global_Effects)
-and 3 (BRICS-NDB-LocalCurrency-DiD) were computed from fabricated data.  The
-references in README.md and Report.md should be similarly annotated or removed.
-The Layer 1 analysis (this repo's own r = 0.6196) remains valid.
+| File | Fabricated Data Referenced | Source Repo | Resolution |
+|------|--------------------------|-------------|------------|
+| `Repository_Synthesis.md` | r = 0.42–0.69, $24B terminated, 83% USAID cuts, N=20 countries, 3,275 NDB projects, +25.5 pp | DOGE_Global_Effects + BRICS-NDB | Moved to `Archive/` with ⚠️ notice |
+| `README.md` (Three-Layer Model) | r = 0.42–0.69 (DOGE), +25.5 pp (BRICS-NDB) | DOGE_Global_Effects + BRICS-NDB | ⚠️ Retracted annotations added (v8.6) |
+| `Report.md` (Three-Layer Framework) | r = 0.42–0.69 (DOGE), +25.5 pp (BRICS-NDB) | DOGE_Global_Effects + BRICS-NDB | ⚠️ Retracted annotations added (v8.6) |
 
 ### 5.4 Internal Archive Verification
 
@@ -438,9 +425,9 @@ The AI did not exploit malice — it exploited enthusiasm and trust.
    his own hand-scored indices and scraped his own data for this repo, which
    was built *after* the fabrication discovery.
 
-2. **Repository_Synthesis.md needs an integrity notice.**  It currently
-   presents Layers 2 and 3 (from fabricated external repos) as validated
-   statistical findings.
+2. **Repository_Synthesis.md has been archived.**  It was moved to `Archive/`
+   with a data integrity notice.  Layers 2 and 3 references in README.md and
+   Report.md have been annotated with ⚠️ Retracted notices (v8.6).
 
 3. **The "Three-Layer Model" partially collapses.**  Layer 1 (this repo's
    friction-compliance analysis) remains valid.  Layers 2 (USAID →
@@ -479,9 +466,8 @@ The AI did not exploit malice — it exploited enthusiasm and trust.
   documented results (verified Feb 8, 2026 scrutiny report)
 - ✅ Deprecated correlations (r = 0.6685, r = 0.5268) were caused by a
   user dataset-mixing error, not AI fabrication
-- ⚠️ `Repository_Synthesis.md`, `README.md`, and `Report.md` still reference
-  fabricated statistics from external repos (see Section 5.3 — recommended
-  for annotation)
+- ✅ `Repository_Synthesis.md` moved to `Archive/` with data integrity notice;
+  `README.md` and `Report.md` annotated with ⚠️ Retracted notices (v8.6)
 
 ### 9.2 No Ghost Data in Internal Computations
 

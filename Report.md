@@ -1,8 +1,8 @@
 # The Regulated Friction Project: Report
 
 **Author:** Austin
-**Last Updated:** February 9, 2026
-**Version:** v8.5
+**Last Updated:** February 10, 2026
+**Version:** v8.6
 **Repository:** [https://github.com/Leerrooy95/The_Regulated_Friction_Project](https://github.com/Leerrooy95/The_Regulated_Friction_Project)
 
 ---
@@ -145,10 +145,12 @@ This repository is one piece of a larger analytical structure:
 | Layer | Repository | Finding | Mechanism |
 |-------|-----------|---------|-----------|
 | **1. Attention Capture** | This repo | r = +0.6196 (2-week lag) | Friction saturates media bandwidth |
-| **2. Vacuum Creation** | [DOGE_Global_Effects](https://github.com/Leerrooy95/DOGE_Global_Effects) | Aid cuts → instability (r = 0.42-0.69) | Policy creates geographic voids |
-| **3. Alternative Capture** | [BRICS-NDB-LocalCurrency-DiD](https://github.com/Leerrooy95/BRICS-NDB-LocalCurrency-DiD) | +25.5 pp local currency lending | Competitors fill US-created gaps |
+| **2. Vacuum Creation** | [DOGE_Global_Effects](https://github.com/Leerrooy95/DOGE_Global_Effects) | ⚠️ Retracted — Grok-fabricated data | Policy creates geographic voids |
+| **3. Alternative Capture** | [BRICS-NDB-LocalCurrency-DiD](https://github.com/Leerrooy95/BRICS-NDB-LocalCurrency-DiD) | ⚠️ Retracted — Grok-fabricated data | Competitors fill US-created gaps |
 
 **Unified thesis:** Domestic chaos consumes attention (Layer 1) while foreign policy creates vacuums (Layer 2) that alternative systems then capture (Layer 3).
+
+> **⚠️ Data Integrity Notice (v8.6):** The Layer 2 statistics (previously cited as r = 0.42–0.69) and Layer 3 statistics (previously cited as +25.5 pp local currency lending) were computed from datasets fabricated by Grok (xAI) in November 2025. The external repositories have been archived. Layer 1 (this repo's r = 0.6196) uses Austin's own hand-scored datasets and is unaffected. The unified thesis remains structurally valid as a hypothesis but Layers 2 and 3 require rebuilding from verified primary sources. See [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md) and [Archived Repository_Synthesis.md](Archive/Repository_Synthesis.md) for details.
 
 ---
 
@@ -344,7 +346,7 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 - Start with `New_Data_2026/2026_Analysis.md` for methodology
 - Run scripts in `Run_Correlations_Yourself/` to verify statistics
 - Run robustness tests in `Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/` for full verification suite
-- Review `Repository_Synthesis.md` for the three-layer framework
+- Review `Archive/Repository_Synthesis.md` for the three-layer framework (⚠️ Layers 2-3 retracted — see [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md))
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/FaaS_Signal_Analysis/january_2026_signal_analysis.md` for full January 2026 signal map
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/Influencer_Narrative_Timing/media_firewall_narrative_timing_analysis.md` for narrative timing analysis
 - See `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` for Q1 2026 applied findings
@@ -400,4 +402,4 @@ The data is public. The code is public. The claims are reproducible and sourced.
 
 ---
 
-*This report was last updated February 9, 2026 (v8.5). Added January 2026 signal analysis (3 peaks, 1 trough, 34 verified events), Media Firewall narrative timing analysis, February 2026 compliance window (Feb 1–19, 9 compliance events), updated testable predictions. For the latest findings, see the repository README.*
+*This report was last updated February 10, 2026 (v8.6). AI fabrication audit: annotated Three-Layer Framework (Layers 2-3 retracted — Grok-fabricated data from DOGE_Global_Effects and BRICS-NDB-LocalCurrency-DiD). Archived Repository_Synthesis.md, fixed broken links. All internal statistics (r = 0.6196, χ² = 330.62) confirmed clean. See AI Fabrication Case Study for full details. For the latest findings, see the repository README.*
