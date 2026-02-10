@@ -306,7 +306,7 @@ Deep-dive audit of how four federal nodes — DOGE, OPM, DOJ, and FBI — evolve
 **Key findings:**
 
 - **Closed loop confirmed**: DOGE designed mandates → OPM executed them (RIFs, "Fork in the Road," Schedule Policy/Career) → DOJ defended them in court → FBI enforced internal compliance. When DOGE disbanded (Nov 2025), OPM absorbed its functions — the loop persisted without the original node.
-- **Scale**: 317,000 federal employees departed in 2025 (exceeded OPM's 300,000 target). The federal civilian workforce shrank by ~9% — the largest annual reduction since post-WWII.
+- **Scale**: 317,000 federal employees departed in 2025 (exceeded OPM's 300,000 target). The federal civilian workforce shrank by ~9% — bringing staffing to levels not seen since 1973.
 - **Schedule Policy/Career rule** (published Feb 5, 2026; effective Mar 9, 2026): Converts ~50,000 "policy-influencing" positions to at-will employment, removing MSPB appeal rights. Published despite 94% of 40,500 public comments opposing it.
 - **MSPB overwhelm quantified**: 2,145% increase in appeals (FY2025), ~12,000 new cases filed — while the board that hears them lost its quorum again. The mechanism is: overwhelm the appeals board → create delay → then eliminate the appeal right entirely via the Schedule Policy/Career rule.
 - **Kupor–a16z–Sanabil structural overlap**: OPM Director Scott Kupor (sworn in Jul 2025) was founding employee and managing partner of Andreessen Horowitz (a16z), which receives capital from Sanabil Investments (PIF's venture arm). This connects the OPM Director to the same Vendor-State capital pipeline the project documents in `12_The_Media_Firewall/`. No claim of impropriety — structural overlap is the documented fact.

@@ -2,7 +2,7 @@
 
 **Author:** Austin
 **Last Updated:** February 10, 2026
-**Version:** v8.6
+**Version:** v8.7
 **Repository:** [https://github.com/Leerrooy95/The_Regulated_Friction_Project](https://github.com/Leerrooy95/The_Regulated_Friction_Project)
 
 ---
@@ -250,6 +250,60 @@ The window demonstrates the thermostat model's prediction: if DHS shutdown begin
 
 ---
 
+## Administrative State Consolidation (v8.7)
+
+### What This Section Covers
+
+The project previously documented friction-compliance patterns in external events (file releases, capital flows, geopolitical operations). This section documents the same pattern applied *to the federal workforce itself* — how four government nodes formed a self-reinforcing loop that restructured the civil service while each step generated its own media friction.
+
+### The Closed Loop
+
+**In plain language:** Think of it like a factory assembly line, but for government restructuring:
+
+1. **DOGE (The Architect)** designed the mandates — what gets cut, who gets the "Fork in the Road" email, which agencies get Team Leads with veto authority over spending.
+2. **OPM (The Executioner)** carried them out — processed mass layoffs, sent the email to 2M+ employees offering "deferred resignation," and published the Schedule Policy/Career rule that converts ~50,000 positions to at-will employment.
+3. **DOJ (The Shield)** defended these actions when they were challenged in court — arguing that DOGE had legal authority and that workforce reductions were within executive power.
+4. **FBI (The Enforcer)** ensured internal compliance — leadership was purged and replaced, and the agency was decentralized to Huntsville, Alabama (a defense-contractor hub).
+
+When DOGE officially disbanded in November 2025, OPM absorbed its functions. The loop persisted without the original node — like removing a scaffolding after the structure is built.
+
+### By the Numbers
+
+| Metric | Value | Source |
+|--------|-------|--------|
+| Federal employees departed in 2025 | 317,000+ (exceeded 300K target) | Federal News Network, OPM |
+| Federal civilian workforce reduction | ~9% — staffing at levels not seen since 1973 | GovExec, NBC Washington |
+| MSPB appeals surge (FY2025) | 2,145% increase (~12,000 new cases) | GovExec, CBS News |
+| Positions losing MSPB protections | ~50,000 (Schedule Policy/Career) | OPM, FedSmith |
+| Public comments opposing the rule | 94% of 40,500 comments | GovExec, FEDweek |
+| Schedule Policy/Career effective date | March 9, 2026 | Federal Register |
+
+### New Model Elements
+
+**Recursive friction:** The standard thermostat model assumes external friction (Epstein files, military operations) creates a distraction window for compliance events. The Administrative State consolidation introduces a variation: the compliance event *itself* generates friction. Mass firings produce protests, lawsuits, and 24/7 media coverage. That media coverage then covers the *next* compliance event (e.g., the Schedule Policy/Career rule was published Feb 5, 2026 — during maximum friction from Epstein files coverage and the approaching DHS shutdown).
+
+**Defense mechanism elimination:** The appeal board (MSPB) that employees would normally use to challenge adverse actions was overwhelmed by a 2,145% surge in cases. While the board was drowning in backlog, the Schedule Policy/Career rule was published — which *eliminates* the MSPB appeal right entirely for the affected positions. The sequence is: overwhelm → delay → eliminate.
+
+### The Kupor–a16z–Sanabil Structural Overlap
+
+OPM Director Scott Kupor (sworn in July 2025) was the founding employee and managing partner of Andreessen Horowitz (a16z), which receives capital from Sanabil Investments — the venture arm of Saudi Arabia's Public Investment Fund (PIF). The project already documents the PIF → Sanabil → a16z pipeline as a key layer in the Vendor-State capital model (see `12_The_Media_Firewall/`).
+
+This does **not** prove coordination, conflict of interest, or impropriety. Kupor resigned from a16z management upon taking office, per federal ethics requirements. But the structural overlap is documented and verifiable: the person executing the administrative restructuring has direct professional history within the same capital pipeline the project tracks.
+
+### Key Upcoming Dates
+
+| Date | Event | Significance |
+|------|-------|-------------|
+| Feb 14, 2026 | 13F disclosure deadline | Gulf SWF Q4 2025 positions revealed via SEC EDGAR |
+| Feb 19, 2026 | Board of Peace first summit | Washington, D.C. — fundraising for Gaza reconstruction |
+| Feb 27, 2026 | NTEU court-ordered OPM disclosure | First public view of which specific positions lose protections |
+| Mar 1, 2026 | Khanna investigation document deadline | $500M UAE deal documents due (Select Committee on China) |
+| Mar 9, 2026 | Schedule Policy/Career effective date | ~50,000 positions formally become at-will |
+
+See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` for the full 7-document audit.
+
+---
+
 ## CRINK Integration
 
 CRINK (China-Russia-Iran-North Korea) actors appear as primary beneficiaries across all three layers:
@@ -326,14 +380,16 @@ Key datasets:
 |-----------|-----------|--------|---------------|
 | Event clustering at next file deadline | Ongoing | ✅ Confirmed (Jan 30-Feb 1: Epstein files + WLFI deal + Mandelson) | Media cycle tracking |
 | Tu BiShvat policy action | Feb 1-2, 2026 | ✅ Window confirmed (DOJ files + WLFI deal) | Policy/funding shifts |
-| Gulf SWF Q4 positioning revealed | Feb 14, 2026 | Pending (13F filings) | SEC EDGAR |
+| Gulf SWF Q4 positioning revealed | Feb 14, 2026 | Pending (13F filings — extended to Feb 17 due to Presidents' Day) | SEC EDGAR |
 | DOGE-predicted instability | Q1 2026 | Tracking (Mali, Syria, Sudan) | Situation monitoring |
 | California TikTok investigation findings | Q1 2026 | Pending | AG office |
 | Khanna Congressional investigation findings | March 2026 | Document deadline March 1 | Congressional record |
 | UK Mandelson disclosure | Feb-March 2026 | ✅ Escalated (Met Police criminal investigation; parliamentary vote passed) | UK Hansard |
-| Board of Peace first summit | Feb 19, 2026 | ✅ Confirmed (TIME, Politico, Axios) | White House, Institute of Peace |
+| Board of Peace first summit | Feb 19, 2026 | ✅ Confirmed (TIME, Politico, Axios — fundraising for Gaza reconstruction) | White House, Institute of Peace |
 | Arkansas PSC order text release | Q1 2026 | FOIA pending | State records |
 | Feb 1–19 compliance window density | Feb 2026 | ✅ Confirmed (9 compliance events documented) | See recommendation_verification_feb9.md |
+| NTEU court-ordered position list disclosure | Feb 27, 2026 | Pending — first public view of which jobs lose protections | Court records |
+| Schedule Policy/Career implementation | Mar 9, 2026 | Pending — ~50,000 positions become at-will | Federal Register, OPM |
 
 These predictions derive from the model's logic: if calendar anchors drive clustering, future anchors should show similar patterns. The Q1 2026 predictions extend to include institutional outcomes from the Privatized Integration pattern.
 
@@ -348,10 +404,12 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 - Review `Archive/Repository_Synthesis.md` for the original three-layer framework (archived — Layers 2-3 used fabricated data)
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/FaaS_Signal_Analysis/january_2026_signal_analysis.md` for full January 2026 signal map
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/Influencer_Narrative_Timing/media_firewall_narrative_timing_analysis.md` for narrative timing analysis
+- See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` for DOGE→OPM→DOJ(+FBI) closed loop audit (7 docs)
 - See `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` for Q1 2026 applied findings
 
 ### Journalists/Policymakers
 - Start with `How_This_Happened-A_Policy_Breif.md` for regulatory questions
+- See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/wiring_diagram.md` for the federal workforce restructuring loop
 - See `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` for Board of Peace, capital flows, and defense integration documentation
 - See `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` for state-level regulatory capture
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/FaaS_Signal_Analysis/recommendation_verification_feb9.md` for Feb 1–19 compliance window tracking
@@ -359,6 +417,7 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 - Key question: Why do the same entities appear in EA, TikTok, Stargate, Board of Peace, and World Liberty Financial?
 - Key question: Why was Warsh's Fed Chair nomination announced the same day as the largest Epstein file release?
 - Key question: Why does the Media Firewall ecosystem never cover Gulf sovereign fund capital flows or Board of Peace financial architecture?
+- Key question: Why was the Schedule Policy/Career rule published despite 94% opposition — and during the Epstein files media cycle?
 
 ### Skeptics
 - The claim is narrow: clustering exists and is statistically significant
@@ -373,13 +432,15 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 
 ## Summary
 
-This research documents three connected patterns:
+This research documents four connected patterns:
 
 **The statistical foundation:** Friction events predict compliance events at a 2-week lag (r = +0.6196, p = 0.0004) in the 30-week hand-scored dataset. This finding is confirmed by the multi-dataset Spearman rank correlation (ρ = 0.61, p < 0.0001) across 2,951 events from all repository datasets. Robustness testing confirms the signal survives permutation testing (p < 0.001), Granger causality shows friction → compliance at lag 1 (p = 0.0008), and binary presence/absence correlation is r = 0.59. The Spearman rank-order pattern is robust to December 2025 exclusion (ρ = 0.60), though Pearson r on expanded event counts (r = 0.11) is sensitive to 2025 concentration.
 
 **The structural extension (Q1 2026):** During these same clustering windows, formal institutional mechanisms are being supplemented by private channels — Gulf sovereign capital flowing through US private equity into settlement-linked companies, a pay-to-play governance body bypassing UN frameworks, technical military integration proceeding without bilateral treaties, and territorial reconstruction treated as a privatized real estate venture. At the state level, legislative architecture in Arkansas creates a regulatory environment where denial is procedurally temporary and approval functionally inevitable.
 
 **The signal map (Jan–Feb 2026):** January 2026 full-month analysis identified three peaks (Jan 3–9, Jan 20–22, Jan 27–31) and one trough (Jan 10–16) across 34 verified events. The 2-week lag held across all major friction-compliance pairs. The signal escalated across the month. The Media Firewall narrative timing analysis revealed that influencer narrative pushes precede compliance events at the same 2-week lag, with consistent structural silence on financial architecture. The February 2026 compliance window (Feb 1–19) documented 9 compliance events — including US-Iran nuclear talks, Netanyahu's visit, the Board of Peace first summit, and the 13F filing deadline — executing during maximum domestic friction from protests and the DHS funding crisis.
+
+**The administrative consolidation (Feb 2026):** The friction-compliance pattern operates inside the government itself. Four federal nodes (DOGE→OPM→DOJ+FBI) formed a closed loop that restructured the civil service — 317,000+ employees departed in 2025, ~50,000 positions are losing appeal rights via the Schedule Policy/Career rule (effective Mar 9, 2026), and the appeals board (MSPB) was overwhelmed by a 2,145% surge in cases before the rule eliminated the appeal right. The compliance events generate their own friction ("recursive friction"), and the OPM Director who executed the restructuring came from a VC firm (a16z) funded by the same sovereign capital pipeline the project documents.
 
 The phenomenon doesn't require conspiracy — it is observable through public filings, official press releases, charter texts, and congressional records. The same entities appear across multiple domains simultaneously. Whether this overlap represents coordination or independent positioning is an interpretive question this research does not answer.
 
@@ -401,4 +462,4 @@ The data is public. The code is public. The claims are reproducible and sourced.
 
 ---
 
-*This report was last updated February 10, 2026 (v8.6). Retracted Layers 2-3 (Grok-fabricated data from DOGE_Global_Effects and BRICS-NDB-LocalCurrency-DiD) moved to Archive/Retracted_Three_Layer_References.md. All internal statistics (r = 0.6196, χ² = 330.62) confirmed clean. See AI Fabrication Case Study for full details. For the latest findings, see the repository README.*
+*This report was last updated February 10, 2026 (v8.7). Added Administrative State Consolidation section (DOGE→OPM→DOJ+FBI closed loop, recursive friction, MSPB overwhelm, Kupor-a16z-Sanabil overlap, Schedule Policy/Career rule). Updated predictions with upcoming deadlines. All internal statistics (r = 0.6196, χ² = 330.62) confirmed clean. For the full audit, see `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/`.*
