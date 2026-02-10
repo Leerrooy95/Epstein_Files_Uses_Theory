@@ -345,7 +345,7 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 - Start with `New_Data_2026/2026_Analysis.md` for methodology
 - Run scripts in `Run_Correlations_Yourself/` to verify statistics
 - Run robustness tests in `Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/` for full verification suite
-- Review `Archive/Repository_Synthesis.md` for the three-layer framework (⚠️ Layers 2-3 retracted — see [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md))
+- Review `Archive/Repository_Synthesis.md` for the original three-layer framework (archived — Layers 2-3 used fabricated data)
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/FaaS_Signal_Analysis/january_2026_signal_analysis.md` for full January 2026 signal map
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/Influencer_Narrative_Timing/media_firewall_narrative_timing_analysis.md` for narrative timing analysis
 - See `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` for Q1 2026 applied findings
@@ -401,4 +401,4 @@ The data is public. The code is public. The claims are reproducible and sourced.
 
 ---
 
-*This report was last updated February 10, 2026 (v8.6). AI fabrication audit: annotated Three-Layer Framework (Layers 2-3 retracted — Grok-fabricated data from DOGE_Global_Effects and BRICS-NDB-LocalCurrency-DiD). Archived Repository_Synthesis.md, fixed broken links. All internal statistics (r = 0.6196, χ² = 330.62) confirmed clean. See AI Fabrication Case Study for full details. For the latest findings, see the repository README.*
+*This report was last updated February 10, 2026 (v8.6). Retracted Layers 2-3 (Grok-fabricated data from DOGE_Global_Effects and BRICS-NDB-LocalCurrency-DiD) moved to Archive/Retracted_Three_Layer_References.md. All internal statistics (r = 0.6196, χ² = 330.62) confirmed clean. See AI Fabrication Case Study for full details. For the latest findings, see the repository README.*
