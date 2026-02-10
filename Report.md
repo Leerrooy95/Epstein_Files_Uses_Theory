@@ -138,19 +138,18 @@ Three unrelated events—document release, UN speech, think tank publication—c
 
 ---
 
-## The Three-Layer Framework
+## The Friction-Compliance Framework
 
-This repository is one piece of a larger analytical structure:
+This repository documents the core statistical relationship:
 
-| Layer | Repository | Finding | Mechanism |
-|-------|-----------|---------|-----------|
-| **1. Attention Capture** | This repo | r = +0.6196 (2-week lag) | Friction saturates media bandwidth |
-| **2. Vacuum Creation** | [DOGE_Global_Effects](https://github.com/Leerrooy95/DOGE_Global_Effects) | ⚠️ Retracted — Grok-fabricated data | Policy creates geographic voids |
-| **3. Alternative Capture** | [BRICS-NDB-LocalCurrency-DiD](https://github.com/Leerrooy95/BRICS-NDB-LocalCurrency-DiD) | ⚠️ Retracted — Grok-fabricated data | Competitors fill US-created gaps |
+| Finding | Value | Verification |
+|---------|-------|--------------|
+| Friction → Compliance correlation | r = +0.6196 (2-week lag) | ✅ Verified (30 weeks, hand-scored) |
+| Statistical significance | p = 0.0004 | ✅ Less than 0.05% chance of random |
 
-**Unified thesis:** Domestic chaos consumes attention (Layer 1) while foreign policy creates vacuums (Layer 2) that alternative systems then capture (Layer 3).
+**Thesis:** Domestic friction saturates media bandwidth, creating calendar windows in which compliance events (policy shifts, financial moves) proceed with reduced scrutiny.
 
-> **⚠️ Data Integrity Notice (v8.6):** The Layer 2 statistics (previously cited as r = 0.42–0.69) and Layer 3 statistics (previously cited as +25.5 pp local currency lending) were computed from datasets fabricated by Grok (xAI) in November 2025. The external repositories have been archived. Layer 1 (this repo's r = 0.6196) uses Austin's own hand-scored datasets and is unaffected. The unified thesis remains structurally valid as a hypothesis but Layers 2 and 3 require rebuilding from verified primary sources. See [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md) and [Archived Repository_Synthesis.md](Archive/Repository_Synthesis.md) for details.
+> **Note (v8.6):** This section previously presented a "Three-Layer Framework" that included two external repositories (DOGE_Global_Effects, BRICS-NDB-LocalCurrency-DiD). Those repositories contained Grok-fabricated data and have been retracted. The retracted references are preserved in [`Archive/Retracted_Three_Layer_References.md`](Archive/Retracted_Three_Layer_References.md). See the [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md) for the full audit.
 
 ---
 

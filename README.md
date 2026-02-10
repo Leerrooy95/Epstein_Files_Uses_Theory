@@ -13,7 +13,7 @@ A data-driven analysis of temporal correlations between friction events, policy 
 - [Understanding the Statistics](#understanding-the-statistics)
 - [Key Statistics](#key-statistics)
 - [The Convergence Model](#the-convergence-model)
-- [The Three-Layer Model](#the-three-layer-model)
+- [The Friction-Compliance Model](#the-friction-compliance-model)
 - [Repository Structure](#repository-structure)
 - [What's New (v8.6)](#whats-new-v86---february-2026)
 - [Quick Navigation by Type](#quick-navigation-by-type)
@@ -115,19 +115,16 @@ Five independent signal types converged on the same window—not because one cau
 
 ---
 
-## The Three-Layer Model
+## The Friction-Compliance Model
 
-This repository is part of a three-layer analytical framework:
+This repository documents the core statistical finding:
 
-| Layer | Repository | Focus | Primary Finding |
-|-------|-----------|-------|-----------------|
-| 1. Attention Capture | This repo | Friction → compliance clustering | r = 0.6196 (2-week lag) |
-| 2. Vacuum Creation | DOGE_Global_Effects | Aid cuts → instability | ⚠️ Retracted — see [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md) |
-| 3. Alternative Capture | BRICS-NDB-LocalCurrency-DiD | Alternative financial systems | ⚠️ Retracted — see [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md) |
+| Finding | Value | Status |
+|---------|-------|--------|
+| Friction → Compliance correlation | r = +0.6196 at 2-week lag | ✅ Verified |
+| Statistical significance | p = 0.0004, n = 30 weeks | ✅ Verified |
 
-**Unified Thesis**: Domestic chaos consumes attention while foreign policy vacuums emerge, which alternative systems then capture.
-
-> **⚠️ Data Integrity Notice (v8.6):** The Layer 2 (DOGE_Global_Effects, r = 0.42–0.69) and Layer 3 (BRICS-NDB-LocalCurrency-DiD, +25.5 pp) statistics were computed from datasets fabricated by Grok (xAI) in November 2025. These external repositories have been archived. The Layer 1 analysis (this repo's r = 0.6196) uses Austin's own hand-scored datasets and is unaffected. The unified thesis remains a valid structural hypothesis but Layers 2 and 3 require rebuilding from verified primary sources. See [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md) and [Archived Repository_Synthesis.md](Archive/Repository_Synthesis.md) for full details.
+> **Note (v8.6):** This section previously presented a "Three-Layer Model" that included two external repositories (DOGE_Global_Effects, BRICS-NDB-LocalCurrency-DiD). Those external repositories contained Grok-fabricated data and have been retracted. The retracted references are preserved in [`Archive/Retracted_Three_Layer_References.md`](Archive/Retracted_Three_Layer_References.md) for transparency. See the [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md) for the full audit.
 
 ---
 
@@ -280,7 +277,8 @@ The_Regulated_Friction_Project/
 │           └── Datasets/                              # Local copies of original pre-2026 CSVs (23 files)
 │
 ├── Archive/                                    # Archived files kept for transparency
-│   └── Repository_Synthesis.md                        # Three-layer framework (⚠️ contains retracted statistics from Grok-fabricated repos)
+│   ├── Repository_Synthesis.md                        # Original three-layer framework (contains retracted statistics)
+│   └── Retracted_Three_Layer_References.md            # Retracted Layers 2-3 references preserved for transparency
 │
 └── New_Data_2026/                              # January-February 2026 datasets
     ├── 2026_Analysis.md                               # Correlation methodology and findings
@@ -301,7 +299,7 @@ The_Regulated_Friction_Project/
 
 Cross-repository audit identified Grok-fabricated data in five external repositories (DOGE_Global_Effects, BRICS-NDB-LocalCurrency-DiD, PostPresidency-Polarization-Link, ArkEdFunnel, unwitting-influence-framework) created Nov 16 – Dec 2, 2025. Key actions taken:
 
-- **Three-Layer Model annotated**: Layer 2 (r = 0.42–0.69) and Layer 3 (+25.5 pp) statistics were computed from fabricated datasets. These have been flagged with ⚠️ Retracted notices throughout README and Report.
+- **Three-Layer Model cleaned**: Layers 2 and 3 (which cited fabricated statistics from external repos) have been removed from the active README and Report. Retracted content preserved in `Archive/Retracted_Three_Layer_References.md` for transparency.
 - **Repository_Synthesis.md archived**: Moved to `Archive/` with data integrity notice. All links updated. The file contained the most concentrated ghost data references.
 - **Internal datasets verified clean**: `master_reflexive_correlation_data.csv` (30 hand-scored rows) shows natural value distributions and does NOT match fabrication patterns. All core statistics (r = 0.6196, χ² = 330.62, Mann-Whitney U p = 0.002) use only Austin's own datasets.
 - **Full case study**: See `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md` for the complete audit — including fabrication patterns, the "Yes Man" feedback loop mechanism, and lessons learned.
@@ -402,10 +400,9 @@ See `Project_Trident/Copilot_Opus_4.6_Analysis/FaaS_Signal_Analysis/feb9_2026_si
 ## For Researchers
 
 ### Start Here
-1. `Archive/Repository_Synthesis.md` — Three-layer framework overview (⚠️ Layers 2-3 use retracted data — see [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md))
-2. `New_Data_2026/2026_Analysis.md` — Latest correlation findings
-3. `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Q1 2026 applied findings
-4. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level pattern
+1. `New_Data_2026/2026_Analysis.md` — Latest correlation findings
+2. `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Q1 2026 applied findings
+3. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level pattern
 
 ### Verify the Statistics
 ```bash
@@ -473,7 +470,7 @@ python granger_causality_test.py             # Predictive direction test
 3. **Robustness Testing**: Autocorrelation adjustment, Dec 2025 exclusion, normalized correlation, rolling-window analysis, event-study framework (see `Project_Trident/Copilot_Opus_4.6_Analysis/`)
 4. **Raw Event Counts**: Replaced subjective scoring with verifiable event counts
 5. **Source Triangulation**: Government filings, financial data, news archives
-6. **Cross-Repo Validation**: Layer 1 patterns verified across internal datasets; Layers 2-3 external repo data retracted (see [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md))
+6. **Cross-Repo Validation**: Patterns verified across internal datasets (external repo data from Layers 2-3 retracted — see `Archive/Retracted_Three_Layer_References.md`)
 7. **Explicit Limitations**: Documented in each module
 
 ---
@@ -497,10 +494,10 @@ The "Main Characters," "Implications," and state-level analysis modules specific
 
 | Repository | Focus |
 |-----------|-------|
-| **DOGE_Global_Effects** | Aid cuts → instability mapping (⚠️ Contains Grok-fabricated data — archived) |
-| **BRICS-NDB-LocalCurrency-DiD** | Alternative financial systems (⚠️ Contains Grok-fabricated data — archived) |
 | **Project-Chrysanthemum_Japan-China-AI** | Japan-China tech integration |
 | **Sovereign-Capital-Audit** | Gulf SWF positioning |
+
+> **Note:** DOGE_Global_Effects and BRICS-NDB-LocalCurrency-DiD were previously listed here but have been removed due to Grok-fabricated data. See `Archive/Retracted_Three_Layer_References.md`.
 
 ---
 
@@ -532,4 +529,4 @@ See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analy
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
-**Last updated**: February 10, 2026 (v8.6) — AI fabrication audit: annotated Three-Layer Model (Layers 2-3 retracted), archived Repository_Synthesis.md, fixed broken links, added AI Fabrication Case Study to navigation. Trimmed v8.4 changelog. All internal statistics (r = 0.6196, χ² = 330.62) confirmed clean.
+**Last updated**: February 10, 2026 (v8.6) — Removed retracted Layers 2-3 from active documents (moved to `Archive/Retracted_Three_Layer_References.md`). Removed DOGE_Global_Effects and BRICS-NDB from Connected Repositories. All internal statistics (r = 0.6196, χ² = 330.62) confirmed clean.
