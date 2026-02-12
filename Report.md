@@ -367,7 +367,7 @@ Research verification confirmed a three-pillar privatized security model for the
 
 | Pillar | Entity | Role | Verification |
 |--------|--------|------|-------------|
-| **Private Contractors** | UG Solutions (NC-based) | Active BoP talks (Feb 11), recruiting Arabic-speaking veterans, Ballard Partners lobbyist | ✅ VERIFIED |
+| **Private Contractors** | UG Solutions (NC-based) | Active Board of Peace (BoP) talks (Feb 11), recruiting Arabic-speaking veterans, Ballard Partners lobbyist | ✅ VERIFIED |
 | **State Military** | Pakistan (SMDA), Indonesia | Pakistan: SMDA collective defense pact (Sep 2025, "no exceptions, no limits"). Indonesia: 5,000–8,000 troops in active preparation, expected first to deploy | ✅ VERIFIED |
 | **Cyber/Identity** | Palo Alto/CyberArk, G42/Microsoft | $25B merger closed Feb 11 (TASE dual listing, Unit 8200 DNA). G42/Microsoft $15.2B AI infrastructure | ✅ VERIFIED |
 

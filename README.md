@@ -191,7 +191,7 @@ The_Regulated_Friction_Project/
 │   ├── Graham_Venezuela_Posts_Timeline.csv            # Supporting timeline data
 │   ├── January_2026_Parallel_Operations_Timeline.md   # Venezuela-Yemen parallel operations
 │   ├── Venezuela_Privatization_Amnesty_Stack_Feb2026.md  # Venezuela compliance stack
-│   ├── Board_of_Peace_Security_Architecture.md        # ISF enforcement layer: UG Solutions, Pakistan/ISF, Palo Alto/CyberArk, G42
+│   ├── Board_of_Peace_Security_Architecture.md        # ISF enforcement layer: UG Solutions, Pakistan ISF troops, Palo Alto/CyberArk, G42
 │   └── thermostat_control_data.csv                    # Nation-state linkage data
 │
 ├── 06_Visualizations/                          # Charts and images
