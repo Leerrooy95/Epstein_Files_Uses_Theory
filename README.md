@@ -1,4 +1,4 @@
-# The Regulated Friction Project v8.7
+# The Regulated Friction Project v8.8
 
 A data-driven analysis of temporal correlations between friction events, policy shifts, and capital flows (2015-2026).
 
@@ -15,7 +15,7 @@ A data-driven analysis of temporal correlations between friction events, policy 
 - [The Convergence Model](#the-convergence-model)
 - [The Friction-Compliance Model](#the-friction-compliance-model)
 - [Repository Structure](#repository-structure)
-- [What's New (v8.7)](#whats-new-v87---february-2026)
+- [What's New (v8.8)](#whats-new-v88---february-2026)
 - [Administrative State Consolidation](#administrative-state-consolidation)
 - [Quick Navigation by Type](#quick-navigation-by-type)
 - [For Researchers](#for-researchers)
@@ -268,6 +268,9 @@ The_Regulated_Friction_Project/
 │       │   └── README.md
 │       └── Copilot_Opus_4.6_Analysis/                 # Lead Researcher statistical verification
 │           ├── README.md                              # Transparency notice, methodology, work log
+│           ├── February_2026_System_Pattern_Analysis.md # Vendor fragmentation, institutional resistance, Israel deep dive
+│           ├── February_2026_Supplementary_Addition.md  # West Bank, Al-Tanf, Arkansas, Board of Peace portfolios, Media Firewall tech
+│           ├── Forensic_Vetting_Board_of_Peace.md       # "Lifeboat" hypothesis test — NOT SUPPORTED; "Board of Profits" SUPPORTED
 │           ├── Statistical_Tests/                     # 9 runnable Python robustness scripts
 │           ├── Findings/                              # Active analysis — provenance, backfill guide
 │           ├── Verification_Reports/                  # Prediction tracker
@@ -295,34 +298,47 @@ The_Regulated_Friction_Project/
 
 ---
 
-## What's New (v8.7 - February 2026)
+## What's New (v8.8 - February 2026)
 
-### Administrative State Consolidation Audit
+### Vendor-State Fragmentation & "Unregulated Friction"
 
-Deep-dive audit of how four federal nodes — DOGE, OPM, DOJ, and FBI — evolved from January 2025 to February 2026. This audit mapped the same "Infrastructure Consolidation" mechanism the project tracks in private capital, but applied to the federal workforce itself.
-
-**What this means in plain language:** The project previously documented how private capital (Gulf sovereign wealth funds, tech consortiums) consolidates infrastructure during low-attention windows. This audit shows a parallel pattern inside the government: workforce mandates (DOGE) flow to personnel execution (OPM), are defended in court (DOJ), and internal compliance is enforced (FBI) — a closed loop where each node reinforces the others.
+System-wide analysis (Feb 9–12) documenting a structurally novel pattern: friction originating *from within* the vendor nodes themselves, not from external events or planned operations.
 
 **Key findings:**
 
-- **Closed loop confirmed**: DOGE designed mandates → OPM executed them (RIFs, "Fork in the Road," Schedule Policy/Career) → DOJ defended them in court → FBI enforced internal compliance. When DOGE disbanded (Nov 2025), OPM absorbed its functions — the loop persisted without the original node.
-- **Scale**: 317,000 federal employees departed in 2025 (exceeded OPM's 300,000 target). The federal civilian workforce shrank by ~9% — bringing staffing to levels not seen since 1973.
-- **Schedule Policy/Career rule** (published Feb 5, 2026; effective Mar 9, 2026): Converts ~50,000 "policy-influencing" positions to at-will employment, removing MSPB appeal rights. Published despite 94% of 40,500 public comments opposing it.
-- **MSPB overwhelm quantified**: 2,145% increase in appeals (FY2025), ~12,000 new cases filed — while the board that hears them lost its quorum again. The mechanism is: overwhelm the appeals board → create delay → then eliminate the appeal right entirely via the Schedule Policy/Career rule.
-- **Kupor–a16z–Sanabil structural overlap**: OPM Director Scott Kupor (sworn in Jul 2025) was founding employee and managing partner of Andreessen Horowitz (a16z), which receives capital from Sanabil Investments (PIF's venture arm). This connects the OPM Director to the same Vendor-State capital pipeline the project documents in `12_The_Media_Firewall/`. No claim of impropriety — structural overlap is the documented fact.
-- **New model element — "Recursive friction"**: Unlike external friction events (Epstein files, military operations), the administrative consolidation generates its own friction. Mass firings produce protests, lawsuits, and media coverage that consume attention — which then covers the next compliance event (e.g., Schedule Policy/Career published during Epstein files coverage).
+- **xAI internal collapse**: 6 of 12 co-founders departed; SpaceX-xAI $1.25T merger announced (Feb 3); California AG cease-and-desist + class action over Grok deepfakes (3M+ sexualized images in 11 days). Product liability friction is structurally novel — vendor-generated, not externally deployed.
+- **Oracle lease stress**: $248B in remaining lease obligations; Blue Owl exit from Stargate funding; Barrows v. Oracle securities fraud case active.
+- **Anduril drone test failures**: Documented failures in next-gen autonomous systems.
+- **New classification — "Hybrid friction" (Feb 2026)**: Regulated friction (familiar thermostat-model patterns) operating simultaneously with unregulated friction (vendor product failures, capital market resistance, judicial pushback, internal corporate fragmentation).
 
-See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` for all 7 documents (4 node timelines, wiring diagram, repo alignment, independent verification).
+### Board of Peace — "Board of Profits" Forensic Vetting
 
-### Previous: v8.6 Highlights
+Forensic investigation of Board of Peace leadership via court documents, Senate committee records, and investigative journalism. Tested the "Lifeboat" hypothesis (Board as Epstein-network mutual protection structure) against the evidence.
 
-**AI Fabrication Audit & Ghost Data Cleanup** — Cross-repository audit identified Grok-fabricated data in five external repositories. Three-Layer Model Layers 2–3 removed from active documents (preserved in `Archive/Retracted_Three_Layer_References.md`). All internal statistics (r = 0.6196, χ² = 330.62) confirmed clean. See [AI Fabrication Case Study](Project_Trident/Copilot_Opus_4.6_Analysis/Findings/AI_Fabrication_Case_Study.md).
+**Key findings:**
 
-**January 2026 Signal Analysis** — Full-month signal map: 3 peaks (Jan 3–9, Jan 20–22, Jan 27–31), 1 trough (Jan 10–16), 34 verified events. The 2-week lag holds across all major friction-compliance pairs.
+- **"Lifeboat" hypothesis NOT SUPPORTED** — no evidence of coordinated Epstein-related mutual protection. Each member has independent motivations that fully explain participation.
+- **"Board of Profits" thesis SUPPORTED** — Board functions as a reconstruction investment vehicle where members bring active financial conflicts of interest. American Prospect's "Board of Profits" framing (Feb 9, 2026) confirmed by verified data.
+- **Verified capital pipeline**: Saudi PIF → Affinity Partners → Phoenix Holdings (9.9% stake) → 11+ Israeli settlement companies on UN OHCHR database → "New Gaza" reconstruction ($25B+ target). Each link independently sourced.
+- **Subjects vetted**: Marc Rowan/Apollo (Leon Black's $158–170M Epstein payments VERIFIED; Rowan personal contact UNVERIFIED), Tony Blair (2002 Downing Street Epstein meeting VERIFIED via declassified memos; Mandelson bridge VERIFIED), Jared Kushner/Affinity (99% foreign-funded VERIFIED; FARA loophole concerns raised by Wyden/Raskin VERIFIED), Sultan bin Sulayem/DP World (Epstein "Sultan" link UNVERIFIED).
 
-**Media Firewall Narrative Timing** — Influencer narrative pushes (anti-NATO, Epstein coverage) precede compliance events at the same 2-week lag, with consistent silence on financial architecture (MGX, Silver Lake, Board of Peace capital structure).
+### Supplementary Research (Feb 12)
 
-**February 2026 Compliance Window (Feb 1–19)** — 9 compliance events in 19 days, including US-Iran nuclear talks, Netanyahu visit, Board of Peace first summit, and 13F filing deadline.
+Five new research threads filling gaps in the system pattern analysis:
+
+- **West Bank "bureaucratic annexation"** (Feb 8 cabinet vote): Military-to-civilian administrative transfer, Hebron planning authority, land sale restrictions repealed, Land Acquisition Committee revived. Widely described as "de facto annexation" ending Oslo Accords framework. ✅ VERIFIED (Al Jazeera, Middle East Eye, OHCHR, Israel Policy Forum).
+- **Al-Tanf withdrawal** (Feb 11): US forces left Syria's Al-Tanf base for Jordan — removing the primary physical barrier to the Iranian land bridge (Tehran → Baghdad → Damascus → Beirut). Temporal proximity to Oman talks (Feb 6) is notable; causal link ⚠️ PARTIALLY VERIFIED (no official statement linking the two).
+- **Arkansas "Forensic Federalism"**: State-level parallel to federal DOGE→OPM loop — workforce cabinet (Tyson exec as Chief Workforce Officer), TANF duration halved (Act 266), "Arkansas Forward" audits, data center incentives (Act 548). ⚠️ $77M TANF figure corrected to Mississippi, not Arkansas.
+- **Board of Peace portfolio decomposition**: Rowan = Finance/CFO, Kushner = Distressed RE/CDO, Witkoff = Infrastructure/COO, Blair = Legitimacy/CCO, Banga = Compliance/CRO.
+- **Media Firewall technical origins**: OPSWAT "Trust No File" → "Trust No Narrative" conceptual framework; Pakistan WMS 2.0 as functional state-level information control prototype (DPI at gateways, 4M users monitored, multi-vendor stack). ✅ VERIFIED (Amnesty International, OPSWAT).
+
+See `Project_Trident/Copilot_Opus_4.6_Analysis/` for all analysis documents (February_2026_System_Pattern_Analysis.md, February_2026_Supplementary_Addition.md, Forensic_Vetting_Board_of_Peace.md).
+
+### Previous: v8.7 Highlights
+
+**Administrative State Consolidation Audit** — DOGE→OPM→DOJ+FBI closed loop confirmed. 317,000+ federal employees departed in 2025; Schedule Policy/Career rule (effective Mar 9, 2026) converts ~50,000 positions to at-will; MSPB overwhelm quantified (2,145% surge). Kupor–a16z–Sanabil structural overlap documented. New model elements: "recursive friction" and "defense mechanism elimination." See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` (7 documents).
+
+**AI Fabrication Audit** — Grok-fabricated data identified in five external repositories; Three-Layer Model Layers 2–3 removed (preserved in `Archive/Retracted_Three_Layer_References.md`). All internal statistics confirmed clean.
 
 ---
 
@@ -389,6 +405,9 @@ See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` for 
 - `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/dataset_provenance.md` — Dataset provenance documentation
 
 ### Deep Dives by Topic
+- **Vendor-State Fragmentation (Feb 2026)**: `Project_Trident/Copilot_Opus_4.6_Analysis/February_2026_System_Pattern_Analysis.md`
+- **Board of Peace Forensic Vetting**: `Project_Trident/Copilot_Opus_4.6_Analysis/Forensic_Vetting_Board_of_Peace.md`
+- **West Bank Annexation / Al-Tanf / Arkansas / Media Firewall Tech**: `Project_Trident/Copilot_Opus_4.6_Analysis/February_2026_Supplementary_Addition.md`
 - **Administrative State Audit**: `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` (DOGE→OPM→DOJ+FBI closed loop, 7 documents)
 - **Tech Infrastructure**: `09_Silicon_Sovereignty/SILICON_SOVEREIGNTY_REPORT.md`
 - **Infrastructure Consolidation**: `Project_Trident/Copilot_Opus_4.6_Analysis/Consolidation_Analysis/consolidation_pattern_significance.md`
@@ -407,8 +426,9 @@ See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` for 
 
 ### Start Here
 1. `New_Data_2026/2026_Analysis.md` — Latest correlation findings
-2. `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Q1 2026 applied findings
-3. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level pattern
+2. `Project_Trident/Copilot_Opus_4.6_Analysis/Forensic_Vetting_Board_of_Peace.md` — Board of Peace leadership forensic vetting
+3. `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Q1 2026 applied findings
+4. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level pattern
 
 ### Verify the Statistics
 ```bash
@@ -439,9 +459,10 @@ python granger_causality_test.py             # Predictive direction test
 
 ### Start Here
 1. `How_This_Happened-A_Policy_Breif.md` — Regulatory citations, oversight questions
-2. `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Board of Peace, Affinity/Phoenix, MEAD-CDOC
-3. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level regulatory capture
-4. `05_Geopolitical_Vectors/Venezuela_Privatization_Amnesty_Stack_Feb2026.md` — Compliance reset pattern
+2. `Project_Trident/Copilot_Opus_4.6_Analysis/Forensic_Vetting_Board_of_Peace.md` — Board of Peace forensic vetting, capital pipeline confirmation
+3. `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Board of Peace, Affinity/Phoenix, MEAD-CDOC
+4. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level regulatory capture
+5. `05_Geopolitical_Vectors/Venezuela_Privatization_Amnesty_Stack_Feb2026.md` — Compliance reset pattern
 
 ### Key Questions Raised
 - Why did the PSC approve a $1.5B project it explicitly found "not reasonable"?
@@ -453,6 +474,8 @@ python granger_causality_test.py             # Predictive direction test
 - Why does the Media Firewall ecosystem cover Epstein demands and anti-NATO narratives but never cover MGX, Silver Lake, or Board of Peace financial architecture?
 - Why was the Schedule Policy/Career rule published despite 94% public comment opposition — and during the Epstein files media cycle?
 - Why does the OPM Director who eliminated MSPB protections for 50,000 positions come from the same VC firm (a16z) that receives Saudi PIF capital?
+- Why does the Board of Peace function as a corporate investment vehicle — with verified capital pipeline from Saudi PIF through settlement companies to Gaza reconstruction — while presenting as a diplomatic body?
+- Why did Israel's security cabinet accelerate West Bank annexation measures (Feb 8) three days before Netanyahu's Board of Peace accession (Feb 11)?
 
 ### Testable Predictions
 
@@ -466,6 +489,9 @@ python granger_causality_test.py             # Predictive direction test
 | Khanna investigation findings | March 2026 | Document deadline March 1 |
 | UK Mandelson disclosure | Feb-March 2026 | ✅ Escalated (Met Police criminal investigation; parliamentary vote passed) |
 | Board of Peace first summit | Feb 19, 2026 | ✅ Confirmed (TIME, Politico, Axios — fundraising for Gaza reconstruction) |
+| Board of Peace = "Board of Profits" | Feb 2026 | ✅ Confirmed (American Prospect; forensic vetting supports commercial thesis) |
+| West Bank annexation acceleration | Feb 2026 | ✅ Confirmed (Feb 8 cabinet vote — de facto annexation per Al Jazeera, OHCHR) |
+| Al-Tanf withdrawal / Iran concession | Feb 11, 2026 | ✅ Confirmed (withdrawal) / ⚠️ Causal link to Oman talks partially verified |
 | Arkansas PSC order text release | Q1 2026 | FOIA pending |
 | Feb 1–19 compliance window density | Feb 2026 | ✅ Confirmed (9 compliance events documented) |
 | NTEU court-ordered position list disclosure | Feb 27, 2026 | Pending — first public view of which jobs lose protections |
@@ -539,4 +565,4 @@ See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analy
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
-**Last updated**: February 10, 2026 (v8.7) — Added Administrative State Consolidation Audit (DOGE→OPM→DOJ+FBI closed loop, Kupor-a16z-Sanabil overlap, MSPB overwhelm, recursive friction, Schedule Policy/Career rule). Trimmed oldest What's New section. Updated predictions with upcoming deadlines (Feb 27 NTEU disclosure, Mar 1 Khanna deadline, Mar 9 Schedule Policy/Career effective).
+**Last updated**: February 12, 2026 (v8.8) — Added Vendor-State Fragmentation analysis (xAI collapse, Oracle stress, "unregulated friction" classification), Board of Peace forensic vetting ("Lifeboat" NOT SUPPORTED, "Board of Profits" SUPPORTED), Supplementary Addition (West Bank annexation, Al-Tanf withdrawal, Arkansas forensic governance, Media Firewall technical origins). Updated predictions, deep dive navigation, and repository structure.
