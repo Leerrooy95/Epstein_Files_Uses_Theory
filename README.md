@@ -319,7 +319,7 @@ Forensic investigation of Board of Peace leadership via court documents, Senate 
 
 - **"Lifeboat" hypothesis NOT SUPPORTED** — no evidence of coordinated Epstein-related mutual protection. Each member has independent motivations that fully explain participation.
 - **"Board of Profits" thesis SUPPORTED** — Board functions as a reconstruction investment vehicle where members bring active financial conflicts of interest. American Prospect's "Board of Profits" framing (Feb 9, 2026) confirmed by verified data.
-- **Verified capital pipeline**: Saudi PIF → Affinity Partners → Phoenix Holdings (9.9% stake) → 11+ Israeli settlement companies on UN OHCHR database → "New Gaza" reconstruction ($25B+ target). Each link independently sourced.
+- **Verified capital pipeline**: Saudi PIF → Affinity Partners → Phoenix Holdings (9.9% stake) → 11+ Israeli settlement companies on UN OHCHR database → "New Gaza" reconstruction ($25B+ target). Each connection in this pipeline independently verified via Senate Finance Committee records, court filings, and investigative journalism.
 - **Subjects vetted**: Marc Rowan/Apollo (Leon Black's $158–170M Epstein payments VERIFIED; Rowan personal contact UNVERIFIED), Tony Blair (2002 Downing Street Epstein meeting VERIFIED via declassified memos; Mandelson bridge VERIFIED), Jared Kushner/Affinity (99% foreign-funded VERIFIED; FARA loophole concerns raised by Wyden/Raskin VERIFIED), Sultan bin Sulayem/DP World (Epstein "Sultan" link UNVERIFIED).
 
 ### Supplementary Research (Feb 12)
@@ -328,7 +328,7 @@ Five new research threads filling gaps in the system pattern analysis:
 
 - **West Bank "bureaucratic annexation"** (Feb 8 cabinet vote): Military-to-civilian administrative transfer, Hebron planning authority, land sale restrictions repealed, Land Acquisition Committee revived. Widely described as "de facto annexation" ending Oslo Accords framework. ✅ VERIFIED (Al Jazeera, Middle East Eye, OHCHR, Israel Policy Forum).
 - **Al-Tanf withdrawal** (Feb 11): US forces left Syria's Al-Tanf base for Jordan — removing the primary physical barrier to the Iranian land bridge (Tehran → Baghdad → Damascus → Beirut). Temporal proximity to Oman talks (Feb 6) is notable; causal link ⚠️ PARTIALLY VERIFIED (no official statement linking the two).
-- **Arkansas "Forensic Federalism"**: State-level parallel to federal DOGE→OPM loop — workforce cabinet (Tyson exec as Chief Workforce Officer), TANF duration halved (Act 266), "Arkansas Forward" audits, data center incentives (Act 548). ⚠️ $77M TANF figure corrected to Mississippi, not Arkansas.
+- **Arkansas "Forensic Federalism"**: State-level parallel to federal DOGE→OPM loop — workforce cabinet (Tyson exec as Chief Workforce Officer), TANF duration halved (Act 266), "Arkansas Forward" audits, data center incentives (Act 548). ⚠️ Previously cited $77M TANF waste figure corrected — that figure pertains to Mississippi's 2020–2022 scandal, not Arkansas.
 - **Board of Peace portfolio decomposition**: Rowan = Finance/CFO, Kushner = Distressed RE/CDO, Witkoff = Infrastructure/COO, Blair = Legitimacy/CCO, Banga = Compliance/CRO.
 - **Media Firewall technical origins**: OPSWAT "Trust No File" → "Trust No Narrative" conceptual framework; Pakistan WMS 2.0 as functional state-level information control prototype (DPI at gateways, 4M users monitored, multi-vendor stack). ✅ VERIFIED (Amnesty International, OPSWAT).
 

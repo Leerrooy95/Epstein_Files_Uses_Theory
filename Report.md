@@ -333,12 +333,12 @@ Forensic vetting of four Board of Peace subjects tested the "Lifeboat" hypothesi
 | **Jared Kushner / Affinity** | 99% foreign-funded (VERIFIED). $157M+ fees from Gulf sovereigns (VERIFIED). Wyden/Raskin FARA probe (VERIFIED). PIF → Affinity → Phoenix → settlements pipeline (VERIFIED). | Full pipeline ✅ |
 | **Sultan bin Sulayem / DP World** | "Sultan" in Epstein files: no credible source identifies Bin Sulayem. Gaza port contract: unconfirmed. | ❌ UNVERIFIED |
 
-**Conclusion**: The "Lifeboat" hypothesis is **NOT SUPPORTED** in its strong form. The "Board of Profits" thesis **IS SUPPORTED** — the Board functions as a reconstruction investment vehicle where members bring documented financial conflicts of interest. The verified capital pipeline:
+**Conclusion**: The "Lifeboat" hypothesis is **NOT SUPPORTED** in its strong form. The "Board of Profits" thesis **IS SUPPORTED** — the Board functions as a reconstruction investment vehicle where members bring documented financial conflicts of interest. The verified capital pipelines:
 
 ```
-Saudi PIF → Affinity Partners → Phoenix Holdings (9.9%) → 11+ settlement companies
-         → Apollo Global ($700B+ AUM) → Board of Peace financial architecture
-         → "New Gaza" reconstruction ($25B+ target)
+Pipeline 1 (Territory):  Saudi PIF → Affinity Partners → Phoenix Holdings (9.9%) → 11+ settlement companies
+Pipeline 2 (Finance):    Apollo Global ($700B+ AUM) → Board of Peace financial architecture
+Pipeline 3 (Target):     Board of Peace → "New Gaza" reconstruction ($25B+ target)
 ```
 
 ### Supplementary Findings (Feb 12)
@@ -347,7 +347,7 @@ Five research threads documented in the Supplementary Addition:
 
 1. **West Bank administrative annexation** (Feb 8): Israeli security cabinet transferred control from military to civilian ministries. ✅ VERIFIED (Al Jazeera, OHCHR, Israel Policy Forum)
 2. **Al-Tanf withdrawal** (Feb 11): US forces left Syria's Al-Tanf base — removing the primary barrier to the Iranian land bridge. ⚠️ PARTIALLY VERIFIED (event confirmed; causal link to Oman talks not officially confirmed)
-3. **Arkansas "Forensic Federalism"**: State-level parallel to federal administrative consolidation — workforce restructuring + infrastructure incentives + safety net reduction. ✅ VERIFIED (mechanisms confirmed; $77M TANF figure corrected to Mississippi)
+3. **Arkansas "Forensic Federalism"**: State-level parallel to federal administrative consolidation — workforce restructuring + infrastructure incentives + safety net reduction. ✅ VERIFIED (mechanisms confirmed; previously cited $77M TANF waste figure corrected — pertains to Mississippi's 2020–2022 scandal, not Arkansas)
 4. **Board of Peace portfolio decomposition**: Each member maps to a corporate function (CFO, CDO, COO, CCO, CRO). ✅ VERIFIED (backgrounds confirmed)
 5. **Media Firewall technical origins**: OPSWAT "Trust No File" framework + Pakistan WMS 2.0 as state-level information control prototype. ✅ VERIFIED (Amnesty International, OPSWAT)
 
