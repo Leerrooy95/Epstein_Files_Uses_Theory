@@ -1,8 +1,8 @@
 # The Regulated Friction Project: Report
 
 **Author:** Austin
-**Last Updated:** February 10, 2026
-**Version:** v8.7
+**Last Updated:** February 12, 2026
+**Version:** v8.8
 **Repository:** [https://github.com/Leerrooy95/The_Regulated_Friction_Project](https://github.com/Leerrooy95/The_Regulated_Friction_Project)
 
 ---
@@ -304,6 +304,57 @@ See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` for 
 
 ---
 
+## Vendor-State Fragmentation & Board of Peace Forensic Vetting (v8.8)
+
+### What This Section Covers
+
+Previous sections documented external friction-compliance patterns and internal administrative consolidation. This section documents two new developments from February 9–12, 2026: (1) structural stress emerging *from within* the vendor nodes themselves, and (2) forensic vetting of the Board of Peace leadership's financial conflicts of interest.
+
+### Vendor-State Fragmentation: "Unregulated Friction"
+
+The friction-compliance model previously assumed vendor consolidation would proceed without significant internal resistance. February 2026 data challenges this assumption:
+
+| Vendor Node | Stress Indicator | Verification |
+|-------------|-----------------|-------------|
+| **xAI** | 6/12 co-founders departed; SpaceX-xAI $1.25T merger (Feb 3); Grok deepfake lawsuits (3M+ images in 11 days); California AG cease-and-desist | ✅ TechCrunch, CNBC, Bloomberg Law |
+| **Oracle** | $248B remaining lease obligations; Blue Owl exit from Stargate funding; Barrows v. Oracle securities fraud | ✅ Financial filings, court records |
+| **Anduril** | Next-generation autonomous drone test failures documented | ✅ Defense reporting |
+
+**New model classification — "Hybrid friction"**: February 2026 is classified as "hybrid" — regulated friction (familiar thermostat-model patterns) co-occurring with unregulated friction (vendor product failures, capital market resistance, judicial pushback). This is structurally novel: previous months showed friction originating from external events or planned operations, not from vendor internal collapse.
+
+### Board of Peace: "Board of Profits" Thesis
+
+Forensic vetting of four Board of Peace subjects tested the "Lifeboat" hypothesis (Board as Epstein-network mutual protection) against court documents, Senate committee records, and investigative journalism:
+
+| Subject | Key Finding | Verdict |
+|---------|------------|---------|
+| **Marc Rowan / Apollo** | Co-founder Leon Black paid Epstein $158–170M (VERIFIED). Rowan personal Epstein contact: no evidence found. | Institutional link ✅ / Personal link ❌ |
+| **Tony Blair** | May 14, 2002 Downing Street meeting with Epstein (VERIFIED via declassified memos). Mandelson as bridge (VERIFIED). Ongoing relationship: no evidence. | Single meeting ✅ / Ongoing ❌ |
+| **Jared Kushner / Affinity** | 99% foreign-funded (VERIFIED). $157M+ fees from Gulf sovereigns (VERIFIED). Wyden/Raskin FARA probe (VERIFIED). PIF → Affinity → Phoenix → settlements pipeline (VERIFIED). | Full pipeline ✅ |
+| **Sultan bin Sulayem / DP World** | "Sultan" in Epstein files: no credible source identifies Bin Sulayem. Gaza port contract: unconfirmed. | ❌ UNVERIFIED |
+
+**Conclusion**: The "Lifeboat" hypothesis is **NOT SUPPORTED** in its strong form. The "Board of Profits" thesis **IS SUPPORTED** — the Board functions as a reconstruction investment vehicle where members bring documented financial conflicts of interest. The verified capital pipelines:
+
+```
+Pipeline 1 (Territory):  Saudi PIF → Affinity Partners → Phoenix Holdings (9.9%) → 11+ settlement companies
+Pipeline 2 (Finance):    Apollo Global ($700B+ AUM) → Board of Peace financial architecture
+Pipeline 3 (Target):     Board of Peace → "New Gaza" reconstruction ($25B+ target)
+```
+
+### Supplementary Findings (Feb 12)
+
+Five research threads documented in the Supplementary Addition:
+
+1. **West Bank administrative annexation** (Feb 8): Israeli security cabinet transferred control from military to civilian ministries. ✅ VERIFIED (Al Jazeera, OHCHR, Israel Policy Forum)
+2. **Al-Tanf withdrawal** (Feb 11): US forces left Syria's Al-Tanf base — removing the primary barrier to the Iranian land bridge. ⚠️ PARTIALLY VERIFIED (event confirmed; causal link to Oman talks not officially confirmed)
+3. **Arkansas "Forensic Federalism"**: State-level parallel to federal administrative consolidation — workforce restructuring + infrastructure incentives + safety net reduction. ✅ VERIFIED (mechanisms confirmed; previously cited $77M TANF waste figure corrected — pertains to Mississippi's 2020–2022 scandal, not Arkansas)
+4. **Board of Peace portfolio decomposition**: Each member maps to a corporate function (CFO, CDO, COO, CCO, CRO). ✅ VERIFIED (backgrounds confirmed)
+5. **Media Firewall technical origins**: OPSWAT "Trust No File" framework + Pakistan WMS 2.0 as state-level information control prototype. ✅ VERIFIED (Amnesty International, OPSWAT)
+
+See `Project_Trident/Copilot_Opus_4.6_Analysis/` for all analysis documents.
+
+---
+
 ## CRINK Integration
 
 CRINK (China-Russia-Iran-North Korea) actors appear as primary beneficiaries across all three layers:
@@ -386,6 +437,9 @@ Key datasets:
 | Khanna Congressional investigation findings | March 2026 | Document deadline March 1 | Congressional record |
 | UK Mandelson disclosure | Feb-March 2026 | ✅ Escalated (Met Police criminal investigation; parliamentary vote passed) | UK Hansard |
 | Board of Peace first summit | Feb 19, 2026 | ✅ Confirmed (TIME, Politico, Axios — fundraising for Gaza reconstruction) | White House, Institute of Peace |
+| Board of Peace = "Board of Profits" | Feb 2026 | ✅ Confirmed (American Prospect; forensic vetting supports commercial thesis) | Senate Finance Committee, court filings |
+| West Bank annexation acceleration | Feb 2026 | ✅ Confirmed (Feb 8 cabinet vote — de facto annexation per Al Jazeera, OHCHR) | Israeli cabinet records, OHCHR |
+| Al-Tanf withdrawal / Iran concession | Feb 11, 2026 | ✅ Confirmed (withdrawal) / ⚠️ Causal link partially verified | CENTCOM, regional reporting |
 | Arkansas PSC order text release | Q1 2026 | FOIA pending | State records |
 | Feb 1–19 compliance window density | Feb 2026 | ✅ Confirmed (9 compliance events documented) | See recommendation_verification_feb9.md |
 | NTEU court-ordered position list disclosure | Feb 27, 2026 | Pending — first public view of which jobs lose protections | Court records |
@@ -402,6 +456,8 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 - Run scripts in `Run_Correlations_Yourself/` to verify statistics
 - Run robustness tests in `Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/` for full verification suite
 - Review `Archive/Repository_Synthesis.md` for the original three-layer framework (archived — Layers 2-3 used fabricated data)
+- See `Project_Trident/Copilot_Opus_4.6_Analysis/February_2026_System_Pattern_Analysis.md` for vendor fragmentation and "unregulated friction" classification
+- See `Project_Trident/Copilot_Opus_4.6_Analysis/Forensic_Vetting_Board_of_Peace.md` for Board of Peace leadership forensic vetting
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/FaaS_Signal_Analysis/january_2026_signal_analysis.md` for full January 2026 signal map
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/Influencer_Narrative_Timing/media_firewall_narrative_timing_analysis.md` for narrative timing analysis
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` for DOGE→OPM→DOJ(+FBI) closed loop audit (7 docs)
@@ -409,8 +465,10 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 
 ### Journalists/Policymakers
 - Start with `How_This_Happened-A_Policy_Breif.md` for regulatory questions
+- See `Project_Trident/Copilot_Opus_4.6_Analysis/Forensic_Vetting_Board_of_Peace.md` for Board of Peace forensic vetting and verified capital pipeline
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/wiring_diagram.md` for the federal workforce restructuring loop
 - See `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` for Board of Peace, capital flows, and defense integration documentation
+- See `Project_Trident/Copilot_Opus_4.6_Analysis/February_2026_Supplementary_Addition.md` for West Bank annexation, Al-Tanf withdrawal, Arkansas forensic governance
 - See `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` for state-level regulatory capture
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/FaaS_Signal_Analysis/recommendation_verification_feb9.md` for Feb 1–19 compliance window tracking
 - Key question: Why did the PSC approve a $1.5B project it explicitly found "not reasonable"?
@@ -418,6 +476,7 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 - Key question: Why was Warsh's Fed Chair nomination announced the same day as the largest Epstein file release?
 - Key question: Why does the Media Firewall ecosystem never cover Gulf sovereign fund capital flows or Board of Peace financial architecture?
 - Key question: Why was the Schedule Policy/Career rule published despite 94% opposition — and during the Epstein files media cycle?
+- Key question: Why does the verified capital pipeline (PIF → Affinity → Phoenix → settlements → Gaza reconstruction) run through a body presented as a diplomatic peace initiative?
 
 ### Skeptics
 - The claim is narrow: clustering exists and is statistically significant
@@ -432,7 +491,7 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 
 ## Summary
 
-This research documents four connected patterns:
+This research documents five connected patterns:
 
 **The statistical foundation:** Friction events predict compliance events at a 2-week lag (r = +0.6196, p = 0.0004) in the 30-week hand-scored dataset. This finding is confirmed by the multi-dataset Spearman rank correlation (ρ = 0.61, p < 0.0001) across 2,951 events from all repository datasets. Robustness testing confirms the signal survives permutation testing (p < 0.001), Granger causality shows friction → compliance at lag 1 (p = 0.0008), and binary presence/absence correlation is r = 0.59. The Spearman rank-order pattern is robust to December 2025 exclusion (ρ = 0.60), though Pearson r on expanded event counts (r = 0.11) is sensitive to 2025 concentration.
 
@@ -441,6 +500,8 @@ This research documents four connected patterns:
 **The signal map (Jan–Feb 2026):** January 2026 full-month analysis identified three peaks (Jan 3–9, Jan 20–22, Jan 27–31) and one trough (Jan 10–16) across 34 verified events. The 2-week lag held across all major friction-compliance pairs. The signal escalated across the month. The Media Firewall narrative timing analysis revealed that influencer narrative pushes precede compliance events at the same 2-week lag, with consistent structural silence on financial architecture. The February 2026 compliance window (Feb 1–19) documented 9 compliance events — including US-Iran nuclear talks, Netanyahu's visit, the Board of Peace first summit, and the 13F filing deadline — executing during maximum domestic friction from protests and the DHS funding crisis.
 
 **The administrative consolidation (Feb 2026):** The friction-compliance pattern operates inside the government itself. Four federal nodes (DOGE→OPM→DOJ+FBI) formed a closed loop that restructured the civil service — 317,000+ employees departed in 2025, ~50,000 positions are losing appeal rights via the Schedule Policy/Career rule (effective Mar 9, 2026), and the appeals board (MSPB) was overwhelmed by a 2,145% surge in cases before the rule eliminated the appeal right. The compliance events generate their own friction ("recursive friction"), and the OPM Director who executed the restructuring came from a VC firm (a16z) funded by the same sovereign capital pipeline the project documents.
+
+**The vendor-state stress test (Feb 2026):** The friction-compliance model assumed vendor stability — that infrastructure vendors (xAI, Oracle, Anduril) would consolidate without significant internal resistance. February 2026 data contradicts this assumption: xAI lost 6 of 12 co-founders amid deepfake lawsuits and the $1.25T SpaceX merger; Oracle carries $248B in lease stress with active securities fraud litigation; Anduril shows drone test failures. This "unregulated friction" — originating from within vendor nodes rather than from external events — introduces a structurally novel pattern. Simultaneously, forensic vetting of the Board of Peace confirmed the "Board of Profits" thesis: verified capital pipeline from Saudi PIF through Affinity Partners to Israeli settlement companies and Gaza reconstruction, with Board members bringing active financial conflicts of interest rather than coordinated Epstein protection (the "Lifeboat" hypothesis was NOT SUPPORTED).
 
 The phenomenon doesn't require conspiracy — it is observable through public filings, official press releases, charter texts, and congressional records. The same entities appear across multiple domains simultaneously. Whether this overlap represents coordination or independent positioning is an interpretive question this research does not answer.
 
@@ -462,4 +523,4 @@ The data is public. The code is public. The claims are reproducible and sourced.
 
 ---
 
-*This report was last updated February 10, 2026 (v8.7). Added Administrative State Consolidation section (DOGE→OPM→DOJ+FBI closed loop, recursive friction, MSPB overwhelm, Kupor-a16z-Sanabil overlap, Schedule Policy/Career rule). Updated predictions with upcoming deadlines. All internal statistics (r = 0.6196, χ² = 330.62) confirmed clean. For the full audit, see `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/`.*
+*This report was last updated February 12, 2026 (v8.8). Added Vendor-State Fragmentation analysis (xAI collapse, Oracle stress, "unregulated friction" classification), Board of Peace forensic vetting ("Lifeboat" NOT SUPPORTED, "Board of Profits" SUPPORTED, verified capital pipeline), Supplementary Addition (West Bank annexation, Al-Tanf withdrawal, Arkansas forensic governance, Board of Peace portfolios, Media Firewall technical origins). Updated predictions with new confirmed events. Summary expanded from four to five connected patterns.*
