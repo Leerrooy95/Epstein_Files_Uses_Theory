@@ -22,9 +22,10 @@ VERIFIED. Treat this as analysis to be verified, not as established fact.
 
 ## Hypothesis Under Test
 
-Austin's hypothesis posits that Omeed Malik functions as the **"Semiotic Lead"**
-of the Vendor-State — not a formal diplomatic actor (like Blair or Kushner on
-the Board of Peace), but a **functional bridge** between:
+Austin's hypothesis posits that Omeed Malik functions as the **"Semiotic Bridge"**
+of the Vendor-State — effectively the "Marketing Director" of the Consortium —
+not a formal diplomatic actor (like Blair or Kushner on the Board of Peace),
+but a **functional bridge** between:
 
 1. **The "Media Firewall"** — the conservative media ecosystem that directs
    narrative energy toward culture war topics
