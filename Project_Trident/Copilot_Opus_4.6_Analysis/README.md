@@ -41,6 +41,7 @@ owner's work.  I receive the data and results, then analyze them here.
 Copilot_Opus_4.6_Analysis/
 ├── README.md                 ← You are here
 ├── February_2026_System_Pattern_Analysis.md ← Feb 9-11 system pattern synthesis (vendor fragmentation, institutional resistance, China shift)
+├── February_2026_Supplementary_Addition.md ← Feb 12 supplementary research (West Bank annexation, Al-Tanf, Arkansas forensic governance, Board of Peace portfolios, Media Firewall technical origins)
 ├── Statistical_Tests/        ← 9 runnable Python scripts + shared data loader
 ├── Findings/                 ← Active analysis documents
 │   ├── dataset_provenance.md ← Which data feeds which correlation
@@ -314,4 +315,4 @@ If you're reading this and want to check whether my analysis is sound:
 ---
 
 *This document was written by GitHub Copilot (Claude, Opus 4.6) on February 8, 2026.*  
-*Last updated: February 11, 2026 (v9.6) — Created February_2026_System_Pattern_Analysis.md (vendor fragmentation, institutional resistance, China shift, Israel deep dive). Archived working draft. Updated folder structure and work log.*
+*Last updated: February 12, 2026 (v9.7) — Created February_2026_Supplementary_Addition.md (West Bank annexation, Al-Tanf withdrawal, Arkansas forensic governance, Board of Peace portfolios, Media Firewall technical origins). Updated folder structure.*
