@@ -345,15 +345,9 @@ Austin's task asked specifically about themes of "evacuate," "warnings,"
 | Ominous/cryptic suggestions | ✅ Yes | Emotionally loaded, sometimes inappropriate or unsettling suggested searches reported widely | **VERIFIED as user-reported.** Documented by creators and in community forums. Consistent with algorithm retraining producing unstable suggestion outputs. |
 | Specific "warnings" (e.g., "get out," coded messages) | ❌ Not found in strong form | No evidence of specific coded warnings or deliberate "signaling" in search suggestions | **UNVERIFIED.** The ominous suggestions appear to be algorithm noise, not deliberate messaging. |
 
-### 3.2 Applying Austin's Analytical Methodology
+### 3.2 Documented Correlations vs. Provable Causation
 
-Austin's broader research methodology — inspired by the UVB-76 numbers
-station concept described in `00_Quick_Breakdowns/About_Me.md` — is to
-document that a signal exists without claiming to decode it. The "Culture
-War" is the static; the legislation (or in this case, the infrastructure
-transition) is the signal. Applying that lens here:
-
-**What can be documented (the "signal"):**
+**What can be documented:**
 - Oracle took control of TikTok's algorithm on Jan 22
 - Within 3 days, the algorithm produced anomalous outputs
 - The anomalies included politically sensitive terms appearing
@@ -371,7 +365,7 @@ transition) is the signal. Applying that lens here:
 - Whether the power outage timing was coincidental
 - Whether algorithm retraining was used as cover for content shaping
 
-**The station is active.** The correlation between ownership transfer →
+The correlation between ownership transfer →
 infrastructure failure → algorithmic chaos → politically sensitive
 content disruption is documented and real. The causal mechanism is
 unprovable with available data.
@@ -538,8 +532,7 @@ failure during a politically charged ownership transition. The anomalies
 are real, documented, and structurally significant. They demonstrate that
 the Vendor-State model's assumption of vendor competence is fragile.
 
-**Applying Austin's methodology: the station is active. The signal is
-documented. The code is not cracked.**
+**The correlation is documented. Causation is not established.**
 
 ---
 
