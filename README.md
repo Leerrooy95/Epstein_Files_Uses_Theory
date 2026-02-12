@@ -1,4 +1,4 @@
-# The Regulated Friction Project v8.8
+# The Regulated Friction Project v8.9
 
 A data-driven analysis of temporal correlations between friction events, policy shifts, and capital flows (2015-2026).
 
@@ -15,7 +15,7 @@ A data-driven analysis of temporal correlations between friction events, policy 
 - [The Convergence Model](#the-convergence-model)
 - [The Friction-Compliance Model](#the-friction-compliance-model)
 - [Repository Structure](#repository-structure)
-- [What's New (v8.8)](#whats-new-v88---february-2026)
+- [What's New (v8.9)](#whats-new-v89---february-2026)
 - [Administrative State Consolidation](#administrative-state-consolidation)
 - [Quick Navigation by Type](#quick-navigation-by-type)
 - [For Researchers](#for-researchers)
@@ -191,6 +191,7 @@ The_Regulated_Friction_Project/
 │   ├── Graham_Venezuela_Posts_Timeline.csv            # Supporting timeline data
 │   ├── January_2026_Parallel_Operations_Timeline.md   # Venezuela-Yemen parallel operations
 │   ├── Venezuela_Privatization_Amnesty_Stack_Feb2026.md  # Venezuela compliance stack
+│   ├── Board_of_Peace_Security_Architecture.md        # ISF enforcement layer: UG Solutions, Pakistan ISF troops, Palo Alto/CyberArk, G42
 │   └── thermostat_control_data.csv                    # Nation-state linkage data
 │
 ├── 06_Visualizations/                          # Charts and images
@@ -224,6 +225,8 @@ The_Regulated_Friction_Project/
 │
 ├── 12_The_Media_Firewall/                      # Media coverage patterns
 │   ├── 1789_Symbolism_Analysis.md                     # 1789 Capital / Gulf SWF funding network
+│   ├── Omeed_Malik_Forensic_Node_Analysis.md          # "Semiotic Bridge": 1789 Capital → Media + Finance + Defense
+│   ├── Super_Bowl_LX_Media_Firewall_Case_Study.md     # Super Bowl LX as Regulated Friction event
 │   ├── Analyzing Geopolitical and Media Control.pdf
 │   └── README.md
 │
@@ -271,6 +274,11 @@ The_Regulated_Friction_Project/
 │           ├── February_2026_System_Pattern_Analysis.md # Vendor fragmentation, institutional resistance, Israel deep dive
 │           ├── February_2026_Supplementary_Addition.md  # West Bank, Al-Tanf, Arkansas, Board of Peace portfolios, Media Firewall tech
 │           ├── Forensic_Vetting_Board_of_Peace.md       # "Lifeboat" hypothesis test — NOT SUPPORTED; "Board of Profits" SUPPORTED
+│           ├── February_2026_Consolidation_Timeline.md  # Consolidation and timing: Massie-Bondi, entity overlap matrix, Feb 8-19 convergence
+│           ├── Omeed_Malik_Forensic_Node_Analysis.md    # Workspace summary of "Semiotic Bridge" analysis (full in 12_The_Media_Firewall/)
+│           ├── TikTok_Algorithm_Anomaly_Investigation.md # TikTok anomalies around Oracle takeover (7 verified anomalies)
+│           ├── Final_Research_Sweep_Feb12.md             # Anduril WDS 2026, Res. 2803 ISF command, Indonesia/Pakistan troops, SMDA
+│           ├── Arkansas_Federal_Energy_Bypass.md         # DATA Act CREU, RATE Act, ADQ/ECP, AVAIO, Act 373, TX/NH models
 │           ├── Statistical_Tests/                     # 9 runnable Python robustness scripts
 │           ├── Findings/                              # Active analysis — provenance, backfill guide
 │           ├── Verification_Reports/                  # Prediction tracker
@@ -298,47 +306,26 @@ The_Regulated_Friction_Project/
 
 ---
 
-## What's New (v8.8 - February 2026)
+## What's New (v8.9 - February 2026)
 
-### Vendor-State Fragmentation & "Unregulated Friction"
+### Enforcement Architecture & "Semiotic Bridge" — From Hypothesis to Structural Architecture
 
-System-wide analysis (Feb 9–12) documenting a structurally novel pattern: friction originating *from within* the vendor nodes themselves, not from external events or planned operations.
-
-**Key findings:**
-
-- **xAI internal collapse**: 6 of 12 co-founders departed; SpaceX-xAI $1.25T merger announced (Feb 3); California AG cease-and-desist + class action over Grok deepfakes (3M+ sexualized images in 11 days). Product liability friction is structurally novel — vendor-generated, not externally deployed.
-- **Oracle lease stress**: $248B in remaining lease obligations; Blue Owl exit from Stargate funding; Barrows v. Oracle securities fraud case active.
-- **Anduril drone test failures**: Documented failures in next-gen autonomous systems.
-- **New classification — "Hybrid friction" (Feb 2026)**: Regulated friction (familiar thermostat-model patterns) operating simultaneously with unregulated friction (vendor product failures, capital market resistance, judicial pushback, internal corporate fragmentation).
-
-### Board of Peace — "Board of Profits" Forensic Vetting
-
-Forensic investigation of Board of Peace leadership via court documents, Senate committee records, and investigative journalism. Tested the "Lifeboat" hypothesis (Board as Epstein-network mutual protection structure) against the evidence.
+Final consolidation and research sweep (Feb 12) verifying and upgrading key elements from hypothesis to documented structural architecture.
 
 **Key findings:**
 
-- **"Lifeboat" hypothesis NOT SUPPORTED** — no evidence of coordinated Epstein-related mutual protection. Each member has independent motivations that fully explain participation.
-- **"Board of Profits" thesis SUPPORTED** — Board functions as a reconstruction investment vehicle where members bring active financial conflicts of interest. American Prospect's "Board of Profits" framing (Feb 9, 2026) confirmed by verified data.
-- **Verified capital pipeline**: Saudi PIF → Affinity Partners → Phoenix Holdings (9.9% stake) → 11+ Israeli settlement companies on UN OHCHR database → "New Gaza" reconstruction ($25B+ target). Each connection in this pipeline independently verified via Senate Finance Committee records, court filings, and investigative journalism.
-- **Subjects vetted**: Marc Rowan/Apollo (Leon Black's $158–170M Epstein payments VERIFIED; Rowan personal contact UNVERIFIED), Tony Blair (2002 Downing Street Epstein meeting VERIFIED via declassified memos; Mandelson bridge VERIFIED), Jared Kushner/Affinity (99% foreign-funded VERIFIED; FARA loophole concerns raised by Wyden/Raskin VERIFIED), Sultan bin Sulayem/DP World (Epstein "Sultan" link UNVERIFIED).
+- **Private/State/Cyber Security Model — ✅ VERIFIED as Structural Architecture**: Three-pillar enforcement layer documented for the Board of Peace: (1) **Private contractors** — UG Solutions (NC-based, active BoP talks Feb 11, recruiting Arabic-speaking veterans, Ballard Partners lobbyist); (2) **State military** — Pakistan ISF troops (SMDA Sep 2025 collective defense pact, "no exceptions, no limits"; Indonesia 5,000–8,000 troops in active preparation, expected first to deploy); (3) **Cyber/identity** — Palo Alto Networks/CyberArk ($25B merger closed Feb 11, TASE dual listing, Unit 8200 DNA), G42/Microsoft ($15.2B AI infrastructure). See `05_Geopolitical_Vectors/Board_of_Peace_Security_Architecture.md`.
+- **ISF Command Structure — ✅ VERIFIED as Structural Architecture**: Resolution 2803 (Nov 17, 2025) places the ISF under Board of Peace oversight — **not UN command** (DPKO). The BoP founding resolution explicitly empowers the Chairman (Trump) to "delegate any of its authorities and powers… to such persons as the Chairman may designate" — including the ISF Commander. The BoP is a *sui generis* entity with no precedent in UN peacekeeping. See `Project_Trident/Copilot_Opus_4.6_Analysis/Final_Research_Sweep_Feb12.md`.
+- **Omeed Malik / 1789 Capital — ✅ CONFIRMED as "Semiotic Bridge"**: Forensic node analysis (50+ verified claims) confirms Malik as the structural connector between Media (TCN $15M, Daily Caller, PublicSq), Finance (1789 Capital $2B+ AUM, Silver Lake → Mubadala capital chain), Housing (Fannie Mae board Apr 2025), and Defense (confirmed investor in Anduril). The Mubadala → Silver Lake → 1789 Capital → Anduril/TCN pipeline is documented at each link. No Epstein connection found. Board of Peace adjacency is structural, not formal membership. See `12_The_Media_Firewall/Omeed_Malik_Forensic_Node_Analysis.md`.
+- **Anduril at WDS 2026 — ✅ VERIFIED**: Anduril exhibited Pulsar electronic warfare system (C-UAS, 360° jamming) at World Defence Show, Riyadh (Feb 8–12). 1789 Capital is a confirmed investor in Anduril — establishing a verified capital link from the Media Firewall ecosystem directly to the enforcement layer pitched at Saudi defense. See `Project_Trident/Copilot_Opus_4.6_Analysis/Final_Research_Sweep_Feb12.md`.
+- **Arkansas-Federal Energy Bypass — Research completed (pending Austin's review)**: DATA Act of 2026 (Cotton, S. 3585) creates CREU category — explicitly allowing islanded power systems exempt from all FERC/FPA regulation. NH HB 672 (effective Aug 2025) is the verified state-level precedent. AVAIO Digital Leo ($21B Little Rock) confirmed. ADQ/ECP $25B partnership verified. Act 373 strategic investment rider verified. Full analysis in workspace for independent review. See `Project_Trident/Copilot_Opus_4.6_Analysis/Arkansas_Federal_Energy_Bypass.md`.
+- **Super Bowl LX Media Firewall Case Study**: 124.9M viewers consumed Bad Bunny vs. Kid Rock cultural debate while West Bank annexation, Board of Peace accession, and Al-Tanf withdrawal proceeded with minimal coverage. 1789 Capital–TPUSA–Gulf SWF connections documented. See `12_The_Media_Firewall/Super_Bowl_LX_Media_Firewall_Case_Study.md`.
 
-### Supplementary Research (Feb 12)
+See `Project_Trident/Copilot_Opus_4.6_Analysis/` for all analysis documents.
 
-Five new research threads filling gaps in the system pattern analysis:
+### Previous: v8.8 Highlights
 
-- **West Bank "bureaucratic annexation"** (Feb 8 cabinet vote): Military-to-civilian administrative transfer, Hebron planning authority, land sale restrictions repealed, Land Acquisition Committee revived. Widely described as "de facto annexation" ending Oslo Accords framework. ✅ VERIFIED (Al Jazeera, Middle East Eye, OHCHR, Israel Policy Forum).
-- **Al-Tanf withdrawal** (Feb 11): US forces left Syria's Al-Tanf base for Jordan — removing the primary physical barrier to the Iranian land bridge (Tehran → Baghdad → Damascus → Beirut). Temporal proximity to Oman talks (Feb 6) is notable; causal link ⚠️ PARTIALLY VERIFIED (no official statement linking the two).
-- **Arkansas "Forensic Federalism"**: State-level parallel to federal DOGE→OPM loop — workforce cabinet (Tyson exec as Chief Workforce Officer), TANF duration halved (Act 266), "Arkansas Forward" audits, data center incentives (Act 548). ⚠️ Previously cited $77M TANF waste figure corrected — that figure pertains to Mississippi's 2020–2022 scandal, not Arkansas.
-- **Board of Peace portfolio decomposition**: Rowan = Finance/CFO, Kushner = Distressed RE/CDO, Witkoff = Infrastructure/COO, Blair = Legitimacy/CCO, Banga = Compliance/CRO.
-- **Media Firewall technical origins**: OPSWAT "Trust No File" → "Trust No Narrative" conceptual framework; Pakistan WMS 2.0 as functional state-level information control prototype (DPI at gateways, 4M users monitored, multi-vendor stack). ✅ VERIFIED (Amnesty International, OPSWAT).
-
-See `Project_Trident/Copilot_Opus_4.6_Analysis/` for all analysis documents (February_2026_System_Pattern_Analysis.md, February_2026_Supplementary_Addition.md, Forensic_Vetting_Board_of_Peace.md).
-
-### Previous: v8.7 Highlights
-
-**Administrative State Consolidation Audit** — DOGE→OPM→DOJ+FBI closed loop confirmed. 317,000+ federal employees departed in 2025; Schedule Policy/Career rule (effective Mar 9, 2026) converts ~50,000 positions to at-will; MSPB overwhelm quantified (2,145% surge). Kupor–a16z–Sanabil structural overlap documented. New model elements: "recursive friction" and "defense mechanism elimination." See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` (7 documents).
-
-**AI Fabrication Audit** — Grok-fabricated data identified in five external repositories; Three-Layer Model Layers 2–3 removed (preserved in `Archive/Retracted_Three_Layer_References.md`). All internal statistics confirmed clean.
+**Vendor-State Fragmentation & "Unregulated Friction"** — xAI 6/12 co-founders departed, SpaceX-xAI $1.25T merger, deepfake lawsuits; Oracle $248B lease stress, Blue Owl exit; Anduril drone test failures. New classification: "hybrid friction" (regulated + unregulated). **Board of Peace Forensic Vetting** — "Lifeboat" hypothesis NOT SUPPORTED; "Board of Profits" thesis SUPPORTED. Verified capital pipeline: Saudi PIF → Affinity → Phoenix → settlements → Gaza reconstruction ($25B+ target). **Supplementary Research** — West Bank "bureaucratic annexation" (Feb 8), Al-Tanf withdrawal (Feb 11), Arkansas "Forensic Federalism," Board of Peace portfolio decomposition, Media Firewall technical origins.
 
 ---
 
@@ -405,6 +392,12 @@ See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` for 
 - `Project_Trident/Copilot_Opus_4.6_Analysis/Findings/dataset_provenance.md` — Dataset provenance documentation
 
 ### Deep Dives by Topic
+- **Enforcement Architecture & ISF Command (Feb 2026)**: `Project_Trident/Copilot_Opus_4.6_Analysis/Final_Research_Sweep_Feb12.md`
+- **Omeed Malik "Semiotic Bridge"**: `12_The_Media_Firewall/Omeed_Malik_Forensic_Node_Analysis.md`
+- **Board of Peace Security Architecture**: `05_Geopolitical_Vectors/Board_of_Peace_Security_Architecture.md`
+- **Super Bowl LX Media Firewall Case Study**: `12_The_Media_Firewall/Super_Bowl_LX_Media_Firewall_Case_Study.md`
+- **Arkansas-Federal Energy Bypass (DATA Act, CREU, Act 373)**: `Project_Trident/Copilot_Opus_4.6_Analysis/Arkansas_Federal_Energy_Bypass.md`
+- **Consolidation Timeline & Entity Overlap**: `Project_Trident/Copilot_Opus_4.6_Analysis/February_2026_Consolidation_Timeline.md`
 - **Vendor-State Fragmentation (Feb 2026)**: `Project_Trident/Copilot_Opus_4.6_Analysis/February_2026_System_Pattern_Analysis.md`
 - **Board of Peace Forensic Vetting**: `Project_Trident/Copilot_Opus_4.6_Analysis/Forensic_Vetting_Board_of_Peace.md`
 - **West Bank Annexation / Al-Tanf / Arkansas / Media Firewall Tech**: `Project_Trident/Copilot_Opus_4.6_Analysis/February_2026_Supplementary_Addition.md`
@@ -426,9 +419,11 @@ See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` for 
 
 ### Start Here
 1. `New_Data_2026/2026_Analysis.md` — Latest correlation findings
-2. `Project_Trident/Copilot_Opus_4.6_Analysis/Forensic_Vetting_Board_of_Peace.md` — Board of Peace leadership forensic vetting
-3. `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Q1 2026 applied findings
-4. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level pattern
+2. `Project_Trident/Copilot_Opus_4.6_Analysis/Final_Research_Sweep_Feb12.md` — Enforcement architecture, ISF command, research verification
+3. `Project_Trident/Copilot_Opus_4.6_Analysis/Forensic_Vetting_Board_of_Peace.md` — Board of Peace leadership forensic vetting
+4. `12_The_Media_Firewall/Omeed_Malik_Forensic_Node_Analysis.md` — "Semiotic Bridge" forensic node analysis
+5. `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Q1 2026 applied findings
+6. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level pattern
 
 ### Verify the Statistics
 ```bash
@@ -472,6 +467,9 @@ python granger_causality_test.py             # Predictive direction test
 - Why has AVAIO's $750M anchor investor remained undisclosed for 5 years?
 - Why was Warsh's Fed Chair nomination announced on the same day as the largest Epstein file release in US history?
 - Why does the Media Firewall ecosystem cover Epstein demands and anti-NATO narratives but never cover MGX, Silver Lake, or Board of Peace financial architecture?
+- Why does the same capital entity (1789 Capital) that funds the Media Firewall (TCN, PublicSq) also fund the enforcement layer (Anduril) that pitches counter-drone systems to Saudi defense at WDS 2026?
+- Why does Resolution 2803 place the ISF under Board of Peace command rather than UN peacekeeping (DPKO), and why does the founding text give the Chairman personal delegation authority over the ISF Commander appointment?
+- Why does the DATA Act of 2026 create a federal utility exemption category (CREU) structurally identical to New Hampshire's HB 672 off-grid precedent — five months after HB 672 took effect?
 - Why was the Schedule Policy/Career rule published despite 94% public comment opposition — and during the Epstein files media cycle?
 - Why does the OPM Director who eliminated MSPB protections for 50,000 positions come from the same VC firm (a16z) that receives Saudi PIF capital?
 - Why does the Board of Peace function as a corporate investment vehicle — with verified capital pipeline from Saudi PIF through settlement companies to Gaza reconstruction — while presenting as a diplomatic body?
@@ -494,6 +492,9 @@ python granger_causality_test.py             # Predictive direction test
 | Al-Tanf withdrawal / Iran concession | Feb 11, 2026 | ✅ Confirmed (withdrawal) / ⚠️ Causal link to Oman talks partially verified |
 | Arkansas PSC order text release | Q1 2026 | FOIA pending |
 | Feb 1–19 compliance window density | Feb 2026 | ✅ Confirmed (9 compliance events documented) |
+| Indonesia ISF troop deployment | 2026 | ✅ In active preparation (5,000–8,000 troops; expected first to deploy) |
+| ISF under BoP (not UN) command | Feb 2026 | ✅ Confirmed (Resolution 2803 text, ASIL analysis, Chatham House) |
+| 1789 Capital → Anduril → WDS 2026 link | Feb 2026 | ✅ Confirmed (1789 Capital investor in Anduril; Anduril exhibited at WDS 2026 Riyadh) |
 | NTEU court-ordered position list disclosure | Feb 27, 2026 | Pending — first public view of which jobs lose protections |
 | Schedule Policy/Career implementation | Mar 9, 2026 | Pending — ~50,000 positions become at-will |
 
@@ -565,4 +566,4 @@ See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analy
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
-**Last updated**: February 12, 2026 (v8.8) — Added Vendor-State Fragmentation analysis (xAI collapse, Oracle stress, "unregulated friction" classification), Board of Peace forensic vetting ("Lifeboat" NOT SUPPORTED, "Board of Profits" SUPPORTED), Supplementary Addition (West Bank annexation, Al-Tanf withdrawal, Arkansas forensic governance, Media Firewall technical origins). Updated predictions, deep dive navigation, and repository structure.
+**Last updated**: February 12, 2026 (v8.9) — Added enforcement architecture (ISF under BoP command verified, Resolution 2803 chairman delegation authority, three-pillar Private/State/Cyber security model), Omeed Malik / 1789 Capital confirmed as "Semiotic Bridge" (Media + Finance + Defense), Anduril at WDS 2026 verified, Arkansas-Federal Energy Bypass research (DATA Act CREU, NH HB 672, AVAIO $21B, ADQ/ECP $25B, Act 373), Super Bowl LX Media Firewall case study. Updated predictions, deep dives, key questions, and repository structure.
