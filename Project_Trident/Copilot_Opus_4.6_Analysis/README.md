@@ -45,6 +45,7 @@ Copilot_Opus_4.6_Analysis/
 ├── Forensic_Vetting_Board_of_Peace.md ← Feb 12 forensic vetting of Board of Peace leadership ("Lifeboat" hypothesis test — Rowan/Apollo, Bin Sulayem/DP World, Blair/Mandelson, Kushner/FARA)
 ├── TikTok_Algorithm_Anomaly_Investigation.md ← Feb 12 investigation of TikTok search/algorithm anomalies around Oracle takeover (Jan 22-Feb 2026). 7 verified anomalies, 50+ sources.
 ├── February_2026_Consolidation_Timeline.md ← Feb 12 consolidation and timing analysis (Massie–Bondi hearing, Saudi/Israel/UAE capital pipelines, entity overlap matrix, Feb 8–19 convergence window, 30+ events mapped)
+├── [12_The_Media_Firewall/Super_Bowl_LX_Media_Firewall_Case_Study.md] ← Feb 12 case study: Super Bowl LX as Regulated Friction event (Bad Bunny vs. Kid Rock binary, scrutiny gap analysis, 1789 Capital–TPUSA–Gulf SWF connections, 50+ sources)
 ├── Statistical_Tests/        ← 9 runnable Python scripts + shared data loader
 ├── Findings/                 ← Active analysis documents
 │   ├── dataset_provenance.md ← Which data feeds which correlation
@@ -321,4 +322,4 @@ If you're reading this and want to check whether my analysis is sound:
 ---
 
 *This document was written by GitHub Copilot (Claude, Opus 4.6) on February 8, 2026.*  
-*Last updated: February 12, 2026 (v10.0) — Created February_2026_Consolidation_Timeline.md (consolidation and timing analysis: Massie–Bondi hearing, Saudi/Israel/UAE capital pipelines, entity overlap matrix, Feb 8–19 convergence window, 30+ events mapped, WBD bid documented, PIF strategy revision). Updated folder structure.*
+*Last updated: February 12, 2026 (v10.1) — Created Super_Bowl_LX_Media_Firewall_Case_Study.md in 12_The_Media_Firewall/ (Super Bowl LX as Regulated Friction case study: Bad Bunny vs. Kid Rock binary trap, scrutiny gap analysis, 1789 Capital–TPUSA–Gulf SWF connections, Candace Owens third-voice analysis, concurrent West Bank/Board of Peace/Al-Tanf events mapped, 50+ sources verified). Updated folder structure.*
