@@ -171,8 +171,9 @@ Peace membership structure, or the West Bank annexation vote occurring
 that same day. The "firewall" held: the critique stayed within the
 cultural layer.
 
-**Context:** Owens was fired from Daily Wire in March 2024 over Israel
-commentary — an event this repository's `Influencer_Narrative_Timing/`
+**Context:** Owens departed from Daily Wire in March 2024 following public
+clashes over Israel commentary — an event this repository's
+`Influencer_Narrative_Timing/`
 analysis identifies as a "structural boundary marker" showing where the
 Media Firewall's tolerance ends: precisely where the financial
 architecture begins.
