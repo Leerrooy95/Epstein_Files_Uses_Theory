@@ -1,8 +1,8 @@
 # The Regulated Friction Project: Report
 
 **Author:** Austin
-**Last Updated:** February 12, 2026
-**Version:** v8.9
+**Last Updated:** February 14, 2026
+**Version:** v9.0
 **Repository:** [https://github.com/Leerrooy95/The_Regulated_Friction_Project](https://github.com/Leerrooy95/The_Regulated_Friction_Project)
 
 ---
@@ -294,7 +294,7 @@ This does **not** prove coordination, conflict of interest, or impropriety. Kupo
 
 | Date | Event | Significance |
 |------|-------|-------------|
-| Feb 14, 2026 | 13F disclosure deadline | Gulf SWF Q4 2025 positions revealed via SEC EDGAR |
+| Feb 14, 2026 | 13F disclosure deadline | ✅ Q3 baseline established — Q4 filings due Feb 17+ (see 13F_Analysis/) |
 | Feb 19, 2026 | Board of Peace first summit | Washington, D.C. — fundraising for Gaza reconstruction |
 | Feb 27, 2026 | NTEU court-ordered OPM disclosure | First public view of which specific positions lose protections |
 | Mar 1, 2026 | Khanna investigation document deadline | $500M UAE deal documents due (Select Committee on China) |
@@ -391,7 +391,7 @@ Forensic node analysis (50+ verified claims) confirmed that Omeed Malik function
 | Domain | Connection | Verification |
 |--------|-----------|-------------|
 | **Media** | TCN ($15M seed), Daily Caller (minority owner), PublicSq (board), Substack (investor) | ✅ VERIFIED |
-| **Finance** | 1789 Capital ($2B+ AUM), Silver Lake → Mubadala capital chain, Colombier III SPAC ($260M) | ✅ VERIFIED |
+| **Finance** | 1789 Capital ($1B+ AUM), Silver Lake → Mubadala capital chain, Colombier III SPAC ($260M) | ✅ VERIFIED |
 | **Housing** | Fannie Mae board appointment (Apr 2025, Pulte) | ✅ VERIFIED |
 | **Defense** | Confirmed investor in Anduril (C-UAS, Pulsar EW system pitched at WDS 2026 Riyadh) | ✅ VERIFIED |
 
@@ -418,6 +418,100 @@ Anduril Industries exhibited the **Pulsar electronic warfare system** (360° C-U
 This establishes a verified link from the Media Firewall ecosystem directly to the enforcement layer: the same capital that funds narrative infrastructure (TCN) also funds the defense technology being pitched to the Board of Peace's Gulf state partners.
 
 See `Project_Trident/Copilot_Opus_4.6_Analysis/Final_Research_Sweep_Feb12.md` for full verification, `12_The_Media_Firewall/Omeed_Malik_Forensic_Node_Analysis.md` for forensic node analysis, and `05_Geopolitical_Vectors/Board_of_Peace_Security_Architecture.md` for enforcement architecture.
+
+---
+
+## 13F Baseline & Apollo Credit Architecture (v9.0)
+
+### What This Section Covers
+
+Previous sections documented friction-compliance patterns, administrative consolidation, vendor-state fragmentation, enforcement architecture, and the Media Firewall semiotic bridge. This section documents the financial architecture layer — how SEC 13F filing analysis (Feb 14, 2026) reveals both what the tracked entities hold and, critically, what the 13F framework *cannot* show.
+
+### The 13F Visibility Gap
+
+Cross-referencing 10 tracked entities and 12 securities of interest against Q3 2025 13F filings revealed a structural finding: **the most strategically significant financial arrangements operate below the 13F visibility threshold.**
+
+| Arrangement | Why It's 13F-Invisible |
+|---|---|
+| Affinity → Phoenix Financial (9.9%) | Phoenix trades on TASE (Tel Aviv), not US exchange |
+| 1789 Capital → Anduril, xAI, SpaceX | All private companies |
+| MGX → TikTok USDS (15%), OpenAI, xAI | All private investments/JVs |
+| PIF → EA acquisition (post-close) | Will go private after deal closes |
+| Silver Lake → TikTok USDS (15%) | Private JV structure |
+| ADQ → ECP $25B partnership | Private partnership |
+| Gulf SWF → LP stakes in US PE/VC | CFIUS § 800.307 Passive LP Exemption |
+
+This is not a disconfirmation of the model — it confirms the regulatory exemption layer that makes such arrangements structurally invisible to standard disclosure mechanisms.
+
+### What 13F Data Does Show (Q3 2025 Baseline)
+
+| Entity | Key Finding | Status |
+|---|---|---|
+| **Saudi PIF** | EA position confirmed: 24.8M shares, $3.96B, 9.9%. Portfolio concentrated from 57 positions (Q2) to just 6 (Q3). $6.73B in gaming (EA + Take-Two). No Oracle or defense positions. | ✅ Verified |
+| **Mubadala** | GlobalFoundries 81.1% ($16.14B) — validates CHIPS Act vulnerability thesis. New Lockheed Martin entry ($9.26M, first prime defense position). Klarna overlap with Silver Lake. | ✅ Verified |
+| **Affinity Partners** | Sole holding: QXO ($623M, 32.67M shares). 100% concentration. Phoenix stake invisible (TASE-listed). | ✅ Verified |
+| **Silver Lake** | No EA in Q3 13F (deal end-of-quarter). No Oracle. Klarna $530M position overlaps with Mubadala. | ⚠️ Expected |
+| **1789 Capital** | No 13F filed. Portfolio entirely private. Form D registrations only. Colombier III SPAC ($260M, NYSE: CLBR) board includes Trump Jr., Masters, Ingraham. | ⚠️ Expected |
+| **MGX** | No 13F found. Investments all private (OpenAI, xAI, Mistral, Aligned Data Centers). | ⚠️ Expected |
+| **Apollo** | 13F dominated by insurance/hospitality — **structurally irrelevant** to Trident role (see below). | ⚠️ Misleading without credit analysis |
+
+### Apollo: The Credit Backbone (Upgraded TIER 2 → TIER 1 CRITICAL)
+
+Apollo's role in the Trident framework is **Debt/Financing**, not Equity. Its 13F portfolio (insurance, security services, hospitality) tells us almost nothing about its actual structural position because credit facilities, term loans, and debt arrangements do not appear in 13F filings.
+
+**Verified Apollo credit pipeline (Q4 2025 / Q1 2026):**
+
+| Entity | Apollo Credit Role | Amount | Date | Status |
+|---|---|---|---|---|
+| **QXO** | $1.2B convertible preferred + $1.8B additional (with Temasek) | $3.0B | Jan 2026 | ✅ Verified |
+| **xAI/Valor Compute** | Triple net lease for NVIDIA GB200 GPU data center | $3.5B | Jan 2026 | ✅ Verified |
+| **Meta** | Lead structurer/co-lender for data center expansion | $29B | 2025-2026 | ✅ Verified |
+| **Stream Data Centers** | Majority stake acquisition (4+ GW pipeline) | Undisclosed (billions) | Aug 2025 | ✅ Verified |
+
+**The Apollo–QXO–Affinity Triangle:**
+
+```
+Affinity Partners (Kushner, PIF/QIA-backed) ─── $623M equity ──→ QXO
+Apollo (Rowan, Board of Peace executive) ────── $3.0B credit ──→ QXO
+Temasek (Singapore SWF) ────────────────────── $1.8B co-lead ──→ QXO
+                                                                  │
+                                                    Building Products
+                                                    Consolidation
+                                                    ($50B revenue target)
+```
+
+Apollo is not an equity investor in the Trident architecture — it is the **credit backbone**: invisible in 13F filings but load-bearing. Marc Rowan's dual position (Board of Peace executive + Apollo CEO) creates a governance → financing pipeline where the same person participates in reconstruction governance and provides the credit infrastructure that funds the consolidation vehicle (QXO) owned by a Board member (Kushner).
+
+### QXO: Strategic Consolidation Vehicle
+
+Affinity Partners' 100% 13F concentration in QXO ($623M) is not a simple building products bet — QXO is a consolidation platform:
+
+- **Beacon Roofing Supply** ($11B, closed Apr 2025) — ~$8B revenue
+- **Kodiak Building Partners** ($2.25B, announced Feb 11, 2026) — $2.4B revenue, 26+ states, full building envelope coverage
+- **Revenue target:** $50B within a decade (Brad Jacobs' fourth industry roll-up)
+- **Backers:** Apollo ($3B credit), Temasek, Affinity Partners, Sequoia Heritage
+
+Reconstruction alignment is **STRUCTURALLY PLAUSIBLE, NOT CONFIRMED** — QXO creates a platform capable of serving large-scale reconstruction, but no direct evidence links QXO to any specific reconstruction project.
+
+### Oracle/Defense "Beard" Search
+
+Austin identified a methodological correction: instead of looking for explicit SWF names, search for generic LLCs or unknown entities entering institutional holder lists. Results:
+
+- **Norges Bank** (Norwegian SWF) nearly doubled its Oracle position (+8.9M shares to ~22.2M, $4.3B) — the **only** sovereign accumulator visible in Oracle. Norwegian, not Gulf.
+- **No suspicious generic LLCs** identified in Oracle, Palantir, or L3Harris Q3/Q4 2025 institutional holder data
+- Gulf SWF exposure, if any, likely operates through managed mandates (appearing as Vanguard/BlackRock), confidential treatment, or private channels
+
+### Key Q4 2025 Questions (Filings Due Feb 17+)
+
+The Q3 data establishes the baseline. The Q4 2025 filings will be the first real test of the "December pincer window" accumulation predictions:
+
+1. Did PIF's EA position change from 24.8M shares?
+2. Did Mubadala's Lockheed Martin position increase? Any new defense/AI entries?
+3. Does EA appear in Silver Lake's 13F?
+4. Any new Gulf SWF entries in Oracle top holders?
+5. Any new securities held by 2+ tracked entities (cross-entity clustering)?
+
+See `Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/` for the full analysis, companion CSVs, and entity/security cross-references.
 
 ---
 
@@ -488,6 +582,9 @@ Key datasets:
 - `New_Data_2026/CRINK_Intelligence_Dataset_Final_Verified.csv` — CRINK discourse tracking
 - `Project_Trident/Best_Data_For_Project_Trident/ritual_events_parsed.csv` — Project Trident ritual timing
 - `New_Data_2026/` — Updated datasets for raw event count analysis (8 datasets)
+- `Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/13F_Holdings_Baseline_Q3_2025.csv` — Q3 2025 13F holdings (37 positions, 6 filers)
+- `Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/Entity_13F_Cross_Reference.csv` — Entity-level Trident relevance tiers
+- `Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/Security_Level_Cross_Reference.csv` — Security-level cross-entity analysis
 
 ---
 
@@ -497,7 +594,7 @@ Key datasets:
 |-----------|-----------|--------|---------------|
 | Event clustering at next file deadline | Ongoing | ✅ Confirmed (Jan 30-Feb 1: Epstein files + WLFI deal + Mandelson) | Media cycle tracking |
 | Tu BiShvat policy action | Feb 1-2, 2026 | ✅ Window confirmed (DOJ files + WLFI deal) | Policy/funding shifts |
-| Gulf SWF Q4 positioning revealed | Feb 14, 2026 | Pending (13F filings — extended to Feb 17 due to Presidents' Day) | SEC EDGAR |
+| Gulf SWF Q4 positioning revealed | Feb 14, 2026 | ⚠️ Q3 baseline established; Q4 filings due Feb 17+ (critical test) | SEC EDGAR, 13F_Analysis/ |
 | DOGE-predicted instability | Q1 2026 | Tracking (Mali, Syria, Sudan) | Situation monitoring |
 | California TikTok investigation findings | Q1 2026 | Pending | AG office |
 | Khanna Congressional investigation findings | March 2026 | Document deadline March 1 | Congressional record |
@@ -513,6 +610,10 @@ Key datasets:
 | 1789 Capital → Anduril → WDS 2026 | Feb 2026 | ✅ Confirmed (1789 Capital investor in Anduril; Pulsar EW system at WDS 2026) | Fox Business, Army Recognition |
 | NTEU court-ordered position list disclosure | Feb 27, 2026 | Pending — first public view of which jobs lose protections | Court records |
 | Schedule Policy/Career implementation | Mar 9, 2026 | Pending — ~50,000 positions become at-will | Federal Register, OPM |
+| Q4 2025 13F: PIF EA position change | Feb 17+, 2026 | Pending — did EA change from 24.8M shares? | SEC EDGAR |
+| Q4 2025 13F: Mubadala defense expansion | Feb 17+, 2026 | Pending — did Mubadala's LMT increase? New defense/AI entries? | SEC EDGAR |
+| Q4 2025 13F: Gulf SWF Oracle/defense entries | Feb 17+, 2026 | Pending — critical test of December pincer window | SEC EDGAR |
+| QXO further acquisitions | 2026 | Tracking — $10B M&A war chest, "very active" pipeline | QXO IR, SEC filings |
 
 These predictions derive from the model's logic: if calendar anchors drive clustering, future anchors should show similar patterns. The Q1 2026 predictions extend to include institutional outcomes from the Privatized Integration pattern.
 
@@ -525,6 +626,8 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 - Run scripts in `Run_Correlations_Yourself/` to verify statistics
 - Run robustness tests in `Project_Trident/Copilot_Opus_4.6_Analysis/Statistical_Tests/` for full verification suite
 - Review `Archive/Repository_Synthesis.md` for the original three-layer framework (archived — Layers 2-3 used fabricated data)
+- See `Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/13F_Verification_Report_Feb14_2026.md` for 13F baseline (10 entities, 12 securities, Q3 2025)
+- See `Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/13F_Supplementary_Analysis_Feb14_2026.md` for Apollo credit pipeline, QXO consolidation, beard search
 - See `Project_Trident/Copilot_Opus_4.6_Analysis/Final_Research_Sweep_Feb12.md` for enforcement architecture verification and ISF command structure
 - See `12_The_Media_Firewall/Omeed_Malik_Forensic_Node_Analysis.md` for "Semiotic Bridge" forensic node analysis
 - See `05_Geopolitical_Vectors/Board_of_Peace_Security_Architecture.md` for enforcement layer (UG Solutions, Pakistan/ISF, Palo Alto/CyberArk)
@@ -553,6 +656,9 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 - Key question: Why does Resolution 2803 place ISF command under the Board of Peace rather than UN DPKO — and give the Chairman personal appointment authority?
 - Key question: Why was the Schedule Policy/Career rule published despite 94% opposition — and during the Epstein files media cycle?
 - Key question: Why does the verified capital pipeline (PIF → Affinity → Phoenix → settlements → Gaza reconstruction) run through a body presented as a diplomatic peace initiative?
+- Key question: Why does Apollo provide $3B+ in credit to QXO while Marc Rowan sits on the Board of Peace executive committee that manages reconstruction contracts?
+- Key question: Why did PIF concentrate from 57 US equity positions to just 6 in a single quarter — and where did the exited capital go?
+- Key question: Why does the most strategically significant financial architecture operate entirely below the SEC 13F visibility threshold?
 
 ### Skeptics
 - The claim is narrow: clustering exists and is statistically significant
@@ -567,7 +673,7 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 
 ## Summary
 
-This research documents six connected patterns:
+This research documents seven connected patterns:
 
 **The statistical foundation:** Friction events predict compliance events at a 2-week lag (r = +0.6196, p = 0.0004) in the 30-week hand-scored dataset. This finding is confirmed by the multi-dataset Spearman rank correlation (ρ = 0.61, p < 0.0001) across 2,951 events from all repository datasets. Robustness testing confirms the signal survives permutation testing (p < 0.001), Granger causality shows friction → compliance at lag 1 (p = 0.0008), and binary presence/absence correlation is r = 0.59. The Spearman rank-order pattern is robust to December 2025 exclusion (ρ = 0.60), though Pearson r on expanded event counts (r = 0.11) is sensitive to 2025 concentration.
 
@@ -580,6 +686,8 @@ This research documents six connected patterns:
 **The vendor-state stress test (Feb 2026):** The friction-compliance model assumed vendor stability — that infrastructure vendors (xAI, Oracle, Anduril) would consolidate without significant internal resistance. February 2026 data contradicts this assumption: xAI lost 6 of 12 co-founders amid deepfake lawsuits and the $1.25T SpaceX merger; Oracle carries $248B in lease stress with active securities fraud litigation; Anduril shows drone test failures. This "unregulated friction" — originating from within vendor nodes rather than from external events — introduces a structurally novel pattern. Simultaneously, forensic vetting of the Board of Peace confirmed the "Board of Profits" thesis: verified capital pipeline from Saudi PIF through Affinity Partners to Israeli settlement companies and Gaza reconstruction, with Board members bringing active financial conflicts of interest rather than coordinated Epstein protection (the "Lifeboat" hypothesis was NOT SUPPORTED).
 
 **The enforcement architecture & semiotic bridge (Feb 2026):** The Board of Peace's enforcement layer is a three-pillar privatized security model — private contractors (UG Solutions), state military (Pakistan SMDA, Indonesia ISF troops), and cyber/identity infrastructure (Palo Alto/CyberArk, G42/Microsoft) — all operating under a command structure where the ISF reports to the Board of Peace (not UN DPKO) and the Chairman has personal delegation authority over the ISF Commander appointment (Resolution 2803). The "Semiotic Bridge" connecting the Media Firewall to the enforcement layer is verified: 1789 Capital (Omeed Malik) simultaneously funds narrative infrastructure (TCN $15M, Daily Caller, PublicSq), defense technology (Anduril — Pulsar EW system exhibited at WDS 2026 Riyadh), and sits on government boards (Fannie Mae), all linked through a Gulf SWF capital chain (Mubadala → Silver Lake → 1789 Capital). This confirms that the same capital pipeline funds both the narrative cover and the physical enforcement mechanism.
+
+**The financial architecture layer (Feb 14, 2026):** SEC 13F filing analysis reveals that the most strategically significant financial arrangements operate below the 13F visibility threshold — private deals, non-US securities (TASE), LP interests, and private JVs are all structurally invisible. What 13F data does show: PIF's EA position (9.9%, $3.96B) is verified; Mubadala's GlobalFoundries dominance (81.1%, $16.14B) validates the CHIPS Act vulnerability thesis; Affinity Partners' sole holding is QXO ($623M), a strategic consolidation vehicle with a $50B revenue target. The critical finding is Apollo's role as the credit backbone — providing $3B to QXO, $3.5B to xAI/Valor Compute, and $29B to Meta data centers, while Marc Rowan sits on the Board of Peace executive committee. This creates a governance → financing pipeline where the same person participates in reconstruction governance and funds the consolidation platform owned by another Board member (Kushner via Affinity). The 13F visibility gap itself confirms Prong 2 (Regulatory Exemptions) of the Trident framework: the architecture is deliberately structured to operate within regulatory blind spots.
 
 The phenomenon doesn't require conspiracy — it is observable through public filings, official press releases, charter texts, and congressional records. The same entities appear across multiple domains simultaneously. Whether this overlap represents coordination or independent positioning is an interpretive question this research does not answer.
 
