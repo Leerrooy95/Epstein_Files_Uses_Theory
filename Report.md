@@ -611,7 +611,7 @@ Key datasets:
 | NTEU court-ordered position list disclosure | Feb 27, 2026 | Pending — first public view of which jobs lose protections | Court records |
 | Schedule Policy/Career implementation | Mar 9, 2026 | Pending — ~50,000 positions become at-will | Federal Register, OPM |
 | Q4 2025 13F: PIF EA position change | Feb 17+, 2026 | Pending — did EA change from 24.8M shares? | SEC EDGAR |
-| Q4 2025 13F: Mubadala defense expansion | Feb 17+, 2026 | Pending — LMT increase? New defense/AI entries? | SEC EDGAR |
+| Q4 2025 13F: Mubadala defense expansion | Feb 17+, 2026 | Pending — did Mubadala's LMT increase? New defense/AI entries? | SEC EDGAR |
 | Q4 2025 13F: Gulf SWF Oracle/defense entries | Feb 17+, 2026 | Pending — critical test of December pincer window | SEC EDGAR |
 | QXO further acquisitions | 2026 | Tracking — $10B M&A war chest, "very active" pipeline | QXO IR, SEC filings |
 
