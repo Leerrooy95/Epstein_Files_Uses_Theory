@@ -2,7 +2,7 @@
 
 **Author:** Austin
 **Last Updated:** February 14, 2026
-**Version:** v9.0
+**Version:** v9.1
 **Repository:** [https://github.com/Leerrooy95/The_Regulated_Friction_Project](https://github.com/Leerrooy95/The_Regulated_Friction_Project)
 
 ---
@@ -673,7 +673,7 @@ These predictions derive from the model's logic: if calendar anchors drive clust
 
 ## Summary
 
-This research documents seven connected patterns:
+This research documents eight connected patterns:
 
 **The statistical foundation:** Friction events predict compliance events at a 2-week lag (r = +0.6196, p = 0.0004) in the 30-week hand-scored dataset. This finding is confirmed by the multi-dataset Spearman rank correlation (ρ = 0.61, p < 0.0001) across 2,951 events from all repository datasets. Robustness testing confirms the signal survives permutation testing (p < 0.001), Granger causality shows friction → compliance at lag 1 (p = 0.0008), and binary presence/absence correlation is r = 0.59. The Spearman rank-order pattern is robust to December 2025 exclusion (ρ = 0.60), though Pearson r on expanded event counts (r = 0.11) is sensitive to 2025 concentration.
 
@@ -688,6 +688,8 @@ This research documents seven connected patterns:
 **The enforcement architecture & semiotic bridge (Feb 2026):** The Board of Peace's enforcement layer is a three-pillar privatized security model — private contractors (UG Solutions), state military (Pakistan SMDA, Indonesia ISF troops), and cyber/identity infrastructure (Palo Alto/CyberArk, G42/Microsoft) — all operating under a command structure where the ISF reports to the Board of Peace (not UN DPKO) and the Chairman has personal delegation authority over the ISF Commander appointment (Resolution 2803). The "Semiotic Bridge" connecting the Media Firewall to the enforcement layer is verified: 1789 Capital (Omeed Malik) simultaneously funds narrative infrastructure (TCN $15M, Daily Caller, PublicSq), defense technology (Anduril — Pulsar EW system exhibited at WDS 2026 Riyadh), and sits on government boards (Fannie Mae), all linked through a Gulf SWF capital chain (Mubadala → Silver Lake → 1789 Capital). This confirms that the same capital pipeline funds both the narrative cover and the physical enforcement mechanism.
 
 **The financial architecture layer (Feb 14, 2026):** SEC 13F filing analysis reveals that the most strategically significant financial arrangements operate below the 13F visibility threshold — private deals, non-US securities (TASE), LP interests, and private JVs are all structurally invisible. What 13F data does show: PIF's EA position (9.9%, $3.96B) is verified; Mubadala's GlobalFoundries dominance (81.1%, $16.14B) validates the CHIPS Act vulnerability thesis; Affinity Partners' sole holding is QXO ($623M), a strategic consolidation vehicle with a $50B revenue target. The critical finding is Apollo's role as the credit backbone — providing $3B to QXO, $3.5B to xAI/Valor Compute, and $29B to Meta data centers, while Marc Rowan sits on the Board of Peace executive committee. This creates a governance → financing pipeline where the same person participates in reconstruction governance and funds the consolidation platform owned by another Board member (Kushner via Affinity). The 13F visibility gap itself confirms Prong 2 (Regulatory Exemptions) of the Trident framework: the architecture is deliberately structured to operate within regulatory blind spots.
+
+**The enforcement hollowing layer (Feb 14, 2026):** Four underreported administrative actions advance with minimal mainstream coverage while high-friction events (UFO declassification, Epstein drama) dominate the news: HUD proposed removing the disparate impact standard (comment period closed Feb 13, 24-state AG coalition opposing); CFPB killed HMDA email alerts citing "operational constraints"; USDA launched an "Agricultural Lawfare" framework reframing environmental protections; and the White House released the Maritime Action Plan with "Maritime Prosperity Zones" for allied investment. These "technical" changes cluster within 3 days of the 13F deadline. Simultaneously, enforcement capacity is hollowed across five agencies: SEC lost 15%+ of staff with enforcement at record lows; CFTC lost 21.5% of staff with an Inspector General warning of "capacity crisis"; CFIUS faces quadrupled workload with flat resources; and Schedule Policy/Career (effective Mar 9, 2026) makes ~50,000 policy-influencing positions at-will. This completes the three-prong architecture: Prong 1 (regulatory exemptions), Prong 2 (structural complexity), and Prong 3 (enforcement capacity gaps). The PineBridge Form D anomaly ($586M identical filings 2023-2024, then acceleration to $981M by 2026 coinciding with MetLife acquisition) exemplifies the kind of pattern that GS-13 to GS-15 career analysts would detect — the same analysts now departing or being made at-will. As Austin framed it: "You hollow out the watchers, and the watched can do whatever they want."
 
 The phenomenon doesn't require conspiracy — it is observable through public filings, official press releases, charter texts, and congressional records. The same entities appear across multiple domains simultaneously. Whether this overlap represents coordination or independent positioning is an interpretive question this research does not answer.
 
@@ -709,4 +711,4 @@ The data is public. The code is public. The claims are reproducible and sourced.
 
 ---
 
-*This report was last updated February 12, 2026 (v8.9). Added enforcement architecture (three-pillar Private/State/Cyber security model, ISF under BoP command verified via Resolution 2803 text, Chairman delegation authority confirmed), Omeed Malik / 1789 Capital confirmed as "Semiotic Bridge" (Media + Finance + Housing + Defense), Anduril WDS 2026 (Media Firewall → enforcement layer link verified), research sweep verification (Indonesia/Pakistan ISF troops, SMDA language, Resolution 2803 cross-reference). Summary expanded from five to six connected patterns. Updated predictions, audience navigation, and key questions.*
+*This report was last updated February 14, 2026 (v9.1). Added enforcement hollowing layer (four underreported agency actions verified: HUD disparate impact, CFPB HMDA alerts, USDA Agricultural Lawfare, Maritime Action Plan; enforcement capacity crisis across SEC/CFPB/CFTC/CFIUS/HUD; Schedule Policy/Career as Prong 3; PineBridge Form D anomaly; Feb 14 UFO/Epstein friction screen). Summary expanded from seven to eight connected patterns.*
