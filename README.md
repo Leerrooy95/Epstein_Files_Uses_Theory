@@ -1,4 +1,4 @@
-# The Regulated Friction Project v9.0
+# The Regulated Friction Project v9.1
 
 A data-driven analysis of temporal correlations between friction events, policy shifts, and capital flows (2015-2026).
 
@@ -15,7 +15,7 @@ A data-driven analysis of temporal correlations between friction events, policy 
 - [The Convergence Model](#the-convergence-model)
 - [The Friction-Compliance Model](#the-friction-compliance-model)
 - [Repository Structure](#repository-structure)
-- [What's New (v9.0)](#whats-new-v90---february-2026)
+- [What's New (v9.1)](#whats-new-v91---february-2026)
 - [Administrative State Consolidation](#administrative-state-consolidation)
 - [Quick Navigation by Type](#quick-navigation-by-type)
 - [For Researchers](#for-researchers)
@@ -77,6 +77,7 @@ This research uses Pearson correlation (r) to measure relationships between even
 | Feb 1–19 compliance window | 9 compliance events to 6 friction events in 19 days | ✅ Verified |
 | 13F visibility gap | Architecture operates below 13F threshold — private deals, non-US securities, LP interests | ✅ Verified (Q3 2025 baseline) |
 | Apollo credit pipeline | $3B QXO + $3.5B xAI + $29B Meta — TIER 1 CRITICAL | ✅ Verified (Feb 14, 2026) |
+| Enforcement hollowing (Prong 3) | SEC 15%+ departed, CFTC 21.5% cut, CFPB HMDA alerts killed, Schedule P/C 50K positions | ✅ Verified (Feb 14, 2026) |
 
 ---
 
@@ -314,27 +315,24 @@ The_Regulated_Friction_Project/
 
 ---
 
-## What's New (v9.0 - February 2026)
+## What's New (v9.1 - February 2026)
 
-### 13F Baseline Analysis & Apollo Credit Architecture
+### Enforcement Hollowing, Underreported Actions & PineBridge Analysis
 
-SEC 13F filing cross-reference (Feb 14, 2026) establishes a Q3 2025 pre-window baseline across 10 tracked entities and 12 securities. Three critical analytical adjustments identified by Austin reshape the financial architecture understanding.
+Comprehensive analysis (Feb 14, 2026) verifying that coordinated administrative actions across agencies advance with minimal mainstream coverage while high-friction events (UFO declassification, Epstein drama) dominate the news cycle. Completes the three-prong architecture: Prong 1 (regulatory exemptions) + Prong 2 (structural complexity) + **Prong 3 (enforcement capacity gaps)**.
 
 **Key findings:**
 
-- **13F Visibility Gap — ✅ VERIFIED as Structural Feature**: The most strategically significant financial arrangements in the Trident framework operate *below* the 13F visibility threshold. Affinity → Phoenix (TASE-listed), 1789 Capital → Anduril (private), MGX → TikTok USDS/OpenAI/xAI (private JVs), and Gulf SWF LP stakes in US PE/VC firms (CFIUS § 800.307 passive exemption) are all 13F-invisible by design. This confirms Prong 2 (Regulatory Exemptions) of the Trident framework. See `Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/13F_Verification_Report_Feb14_2026.md`.
-- **Apollo Upgraded TIER 2 → TIER 1 CRITICAL**: Apollo's Trident role is Debt/Financing, not Equity — its 13F is structurally irrelevant. Apollo's private credit pipeline connects to every major framework entity: **$3B to QXO** ($1.2B convertible preferred + $1.8B with Temasek, Jan 2026), **$3.5B to xAI/Valor Compute** (data center infrastructure, Jan 2026), **$29B to Meta** (data center co-lending), and **majority stake in Stream Data Centers** (4+ GW pipeline). Total origination $305B in 2025 alone. Marc Rowan's dual role (Board of Peace executive + Apollo CEO) creates a governance → financing pipeline. See `Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/13F_Supplementary_Analysis_Feb14_2026.md`.
-- **QXO Assessed as Strategic Consolidation Vehicle**: Affinity Partners' sole 13F holding ($623M in QXO) is not just a building products company — it's a consolidation platform with a $50B revenue target. Beacon Roofing ($11B, Apr 2025) + Kodiak Building Partners ($2.25B, Feb 11, 2026) give QXO full building envelope coverage across 26+ states. Key backers: Apollo ($3B credit), Temasek, Affinity Partners (Kushner), Sequoia Heritage. Reconstruction alignment assessed as **STRUCTURALLY PLAUSIBLE, NOT CONFIRMED** — no direct evidence links QXO to any specific reconstruction project. See `Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/13F_Supplementary_Analysis_Feb14_2026.md`.
-- **PIF EA Position Confirmed (9.9%)**: 24.8M shares, $3.96B — matches consortium role exactly. PIF simultaneously concentrated from 57 positions (Q2) to just 6 (Q3), with $6.73B in gaming alone (EA + Take-Two). Where the exited capital went is the key Q4 question.
-- **Mubadala GFS Dominance Confirmed (81.1%)**: $16.14B GlobalFoundries position validates CHIPS Act vulnerability thesis. New Lockheed Martin entry ($9.26M) — first direct prime defense contractor position. Klarna overlap with Silver Lake ($110M + $530M, same quarter).
-- **Oracle/Defense "Beard" Search — ❌ No Gulf Intermediaries Found**: Norges Bank (Norwegian SWF) is the only sovereign accumulator in Oracle (+9M shares to ~22.2M, Q4 2025). No suspicious generic LLCs identified in Oracle, Palantir, or L3Harris institutional holder data. Gulf SWF exposure, if any, likely operates through private deals, managed mandates, or confidential treatment.
-- **Q4 2025 Filings (Feb 17+) Will Be Critical Test**: Q3 data predates the December pincer window. The Q4 filings will provide the first data from the predicted accumulation period.
+- **Four Underreported Agency Actions — ✅ ALL VERIFIED**: (1) HUD proposed removing disparate impact standard (Jan 14, comment period closed Feb 13 — one day before 13F deadline; 24-state AG coalition led by CA AG Bonta filed formal opposition). (2) CFPB killed HMDA email alerts (Jan 20, "operational constraints" — shifts compliance monitoring from proactive to passive). (3) USDA launched "Agricultural Lawfare" framework (Feb 11 — reframes environmental protections as regulatory overreach; broad enough to apply to data center land disputes like AVAIO $21B). (4) White House released Maritime Action Plan (Feb 13 — Maritime Prosperity Zones for "allied investment," Gulf SWF port investment potential via DP World). Three of four actions cluster within 3 days of the 13F deadline.
+- **Enforcement Capacity Crisis Quantified Across 5 Agencies**: SEC (15%+ departed, enforcement down 23%, regional offices 10→3), CFPB (HMDA alerts killed, "operational constraints"), CFTC (21.5% staff reduction, Inspector General warns of "capacity crisis"), CFIUS (quadrupled mitigation agreements vs. flat resources), HUD (disparate impact removal pending). Schedule Policy/Career (effective Mar 9) makes ~50,000 policy-influencing positions at-will — attacking the GS-13 to GS-15 analysts who would detect anomalies like PineBridge Form D patterns or Apollo credit pipelines.
+- **PineBridge Form D Anomaly Analyzed**: Ownership chain verified (AIG Investments → Richard Li/Pacific Century Group → MetLife, closed Dec 30 **2025** not 2024). Identical $586M filings for 2023-2024 flagged as unusual. Acceleration to $703M (2025) → $981M (2026) coincides with acquisition. Sub-investment-grade credit fund occupies same private credit layer as Apollo. Connection to broader private credit expansion confirmed.
+- **Feb 14 Friction Screen Documented**: UFO declassification and Epstein drama consume media attention on the same day as 13F deadline and 5 days before Board of Peace summit — matching the r = 0.6196 friction-compliance clustering pattern.
 
-See `Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/` for all analysis documents and companion CSVs.
+See `Project_Trident/Copilot_Opus_4.6_Analysis/Enforcement_Hollowing_and_PineBridge_Analysis_Feb14_2026.md` for full analysis.
 
-### Previous: v8.9 Highlights
+### Previous: v9.0 Highlights
 
-**Enforcement Architecture & "Semiotic Bridge"** — Three-pillar privatized security model for Board of Peace ISF (UG Solutions private contractors, Pakistan/Indonesia state military via SMDA, Palo Alto/CyberArk cyber layer). Resolution 2803 places ISF under BoP (not UN DPKO) command; Chairman delegation authority verified. Omeed Malik / 1789 Capital confirmed as "Semiotic Bridge" (Media + Finance + Housing + Defense; 50+ verified claims; Mubadala → Silver Lake → 1789 Capital pipeline documented). Anduril Pulsar EW system at WDS 2026 Riyadh — 1789 Capital → Anduril enforcement link verified. Arkansas-Federal Energy Bypass research (DATA Act CREU, NH HB 672, AVAIO $21B, ADQ/ECP $25B, Act 373). Super Bowl LX Media Firewall case study (124.9M viewers on cultural debate vs. minimal coverage of West Bank annexation/Board of Peace).
+**13F Baseline Analysis & Apollo Credit Architecture** — Q3 2025 13F cross-reference (10 entities, 12 securities). Apollo upgraded TIER 2 → TIER 1 ($3B QXO + $3.5B xAI + $29B Meta credit pipeline). QXO assessed as strategic consolidation vehicle ($50B target). PIF EA 9.9% confirmed. Mubadala GFS 81.1% confirmed. Oracle/defense "beard" search yielded only Norges Bank. 13F visibility gap verified as structural feature. Q4 filings (Feb 17+) critical test.
 
 ---
 
