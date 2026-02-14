@@ -1,4 +1,4 @@
-# The Regulated Friction Project v9.1
+# The Regulated Friction Project v9.2
 
 A data-driven analysis of temporal correlations between friction events, policy shifts, and capital flows (2015-2026).
 
@@ -15,7 +15,7 @@ A data-driven analysis of temporal correlations between friction events, policy 
 - [The Convergence Model](#the-convergence-model)
 - [The Friction-Compliance Model](#the-friction-compliance-model)
 - [Repository Structure](#repository-structure)
-- [What's New (v9.1)](#whats-new-v91---february-2026)
+- [What's New (v9.2)](#whats-new-v92---february-2026)
 - [Administrative State Consolidation](#administrative-state-consolidation)
 - [Quick Navigation by Type](#quick-navigation-by-type)
 - [For Researchers](#for-researchers)
@@ -78,6 +78,8 @@ This research uses Pearson correlation (r) to measure relationships between even
 | 13F visibility gap | Architecture operates below 13F threshold — private deals, non-US securities, LP interests | ✅ Verified (Q3 2025 baseline) |
 | Apollo credit pipeline | $3B QXO + $3.5B xAI + $29B Meta — TIER 1 CRITICAL | ✅ Verified (Feb 14, 2026) |
 | Enforcement hollowing (Prong 3) | SEC 15%+ departed, CFTC 21.5% cut, CFPB HMDA alerts killed, Schedule P/C 50K positions | ✅ Verified (Feb 14, 2026) |
+| Feb 11 single-day compliance density | 7 compliance events (5 EOs + USDA framework + QXO acquisition) — highest single-day density in 2026 dataset | ✅ Verified (Feb 14, 2026) |
+| Bondi hearing ±7 day window | 17 compliance events vs ~3-4 baseline expectation (+467% above baseline) | ✅ Verified (Feb 14, 2026) |
 
 ---
 
@@ -282,6 +284,10 @@ The_Regulated_Friction_Project/
 │           ├── TikTok_Algorithm_Anomaly_Investigation.md # TikTok anomalies around Oracle takeover (7 verified anomalies)
 │           ├── Final_Research_Sweep_Feb12.md             # Anduril WDS 2026, Res. 2803 ISF command, Indonesia/Pakistan troops, SMDA
 │           ├── Arkansas_Federal_Energy_Bypass.md         # DATA Act CREU, RATE Act, ADQ/ECP, AVAIO, Act 373, TX/NH models
+│           ├── Narrative_Case_Studies/               # Narrative-policy cross-reference case studies
+│           │   └── Bondi_Hearing_Feb14_2026.md           # Feb 11 Bondi hearing: ±7 day window (17 events, 467% above baseline), EO 14375 BoP substrate
+│           ├── Changelogs/                           # Version changelogs
+│           │   └── v9.2_Integration_Notes.md             # v9.2 integration, verification, and cleanup notes
 │           ├── Statistical_Tests/                     # 9 runnable Python robustness scripts
 │           ├── Findings/                              # Active analysis — provenance, backfill guide
 │           ├── Verification_Reports/                  # Prediction tracker
@@ -315,61 +321,27 @@ The_Regulated_Friction_Project/
 
 ---
 
-## What's New (v9.1 - February 2026)
+## What's New (v9.2 - February 2026)
 
-### Manufactured Indispensability Thesis & Three-Prong Architecture
+### Bondi Hearing Case Study & EO 14375 Integration
 
-New analytical framework (Feb 14, 2026) documenting how individuals positioned within critical systems create the perception that they *are* the critical systems — making accountability appear synonymous with systemic collapse. This is the narrative layer that protects the structural architecture documented throughout this project.
-
-**The core distinction:**
-
-```
-ACTUAL SITUATION                    PERCEIVED SITUATION
-
-"These individuals occupy           "These individuals ARE
-positions in critical systems"      the critical systems"
-        │                                   │
-        ↓                                   ↓
-"Removal = Vacancy"                 "Removal = Collapse"
-        │                                   │
-        ↓                                   ↓
-"Reorganization required"           "Civilization ends"
-        │                                   │
-        ↓                                   ↓
-ACCOUNTABILITY POSSIBLE             ACCOUNTABILITY IMPOSSIBLE
-```
-
-**Why this matters:** The operation documented in this project isn't just about occupying positions — it's about becoming *perceived as indispensable* to those positions. Board seats, governance roles, capital allocation authority, AI safety boards, media ownership, settlement development — each placement makes accountability threaten not just the individual, but everything they've been wired into. The world reorganized after 2008. It reorganized after Enron. The question isn't whether systems can survive personnel changes — it's whether the people who benefit from the current arrangement can convince everyone else that reorganization is apocalypse.
-
-**The documented mechanism:**
-
-| Domain | Capture Type | Key Entity |
-|--------|-------------|------------|
-| Governance | Board of Peace = governance capture | Kushner, Rowan, Blair |
-| Finance | Apollo credit pipeline = financial capture ($73B+) | Apollo (TIER 1 CRITICAL) |
-| Narrative | 1789 Capital = media/narrative capture | Omeed Malik |
-| Territory | Phoenix settlements = physical infrastructure capture | Affinity Partners → Phoenix (9.9% stake) |
-| Information | AI model influence = information layer capture | xAI, TikTok/Oracle |
-| Enforcement | Schedule P/C = enforcement capacity destruction | OPM (50K positions at-will) |
-
-**Important caveat:** This thesis documents correlations and structural patterns. It does not claim causation or intent. The pattern describes observed positioning — not proven conspiracy. The world doesn't need *these specific individuals*. The world needs the *functions* they've positioned themselves to control. Those are different things.
-
-### Enforcement Hollowing, Underreported Actions & PineBridge Analysis
-
-Comprehensive analysis (Feb 14, 2026) verifying that coordinated administrative actions across agencies advance with minimal mainstream coverage while high-friction events (UFO declassification, Epstein drama) dominate the news cycle. Completes the three-prong architecture: Prong 1 (regulatory exemptions) + Prong 2 (structural complexity) + **Prong 3 (enforcement capacity gaps)**.
+New narrative-policy cross-reference case study (Feb 14, 2026) documenting the Feb 11 Bondi hearing as a friction event, with the highest single-day compliance density observed in the 2026 dataset. Integration of EO 14375, the direct legal substrate for the Board of Peace.
 
 **Key findings:**
 
-- **Four Underreported Agency Actions — ✅ ALL VERIFIED**: (1) HUD proposed removing disparate impact standard (Jan 14, comment period closed Feb 13 — one day before 13F deadline; 24-state AG coalition led by CA AG Bonta filed formal opposition). (2) CFPB killed HMDA email alerts (Jan 20, "operational constraints" — shifts compliance monitoring from proactive to passive). (3) USDA launched "Agricultural Lawfare" framework (Feb 11 — reframes environmental protections as regulatory overreach; broad enough to apply to data center land disputes like AVAIO $21B). (4) White House released Maritime Action Plan (Feb 13 — Maritime Prosperity Zones for "allied investment," Gulf SWF port investment potential via DP World). Three of four actions cluster within 3 days of the 13F deadline.
-- **Enforcement Capacity Crisis Quantified Across 5 Agencies**: SEC (15%+ departed, enforcement down 23%, regional offices 10→3), CFPB (HMDA alerts killed, "operational constraints"), CFTC (21.5% staff reduction, Inspector General warns of "capacity crisis"), CFIUS (quadrupled mitigation agreements vs. flat resources), HUD (disparate impact removal pending). Schedule Policy/Career (effective Mar 9) makes ~50,000 policy-influencing positions at-will — attacking the GS-13 to GS-15 analysts who would detect anomalies like PineBridge Form D patterns or Apollo credit pipelines.
-- **PineBridge Form D Anomaly Analyzed**: Ownership chain verified (AIG Investments → Richard Li/Pacific Century Group → MetLife, closed Dec 30 **2025** not 2024). Identical $586M filings for 2023-2024 flagged as unusual. Acceleration to $703M (2025) → $981M (2026) coincides with acquisition. Sub-investment-grade credit fund occupies same private credit layer as Apollo. Connection to broader private credit expansion confirmed.
-- **Feb 14 Friction Screen Documented**: UFO declassification and Epstein drama consume media attention on the same day as 13F deadline and 5 days before Board of Peace summit — matching the r = 0.6196 friction-compliance clustering pattern.
+- **Feb 11, 2026 single-day density:** 7 compliance events on one day — 5 executive orders (EOs 14382–14385 + Coal Power Fleet EO), USDA "Agricultural Lawfare" framework, and QXO-Kodiak $2.25B acquisition — all simultaneous with the Bondi hearing's 5+ hours of Epstein-focused media capture. This is the highest single-day compliance density documented in the 2026 dataset.
+- **±7 day temporal density:** 17 compliance events in the Feb 4–18 window vs ~3–4 baseline expectation (+467% above baseline). Pattern classification: **PATTERN MATCH** with the repository's documented r = 0.6196 friction-compliance clustering.
+- **EO 14375 (HIGH PRIORITY):** Signed Jan 16, published Jan 22, 2026 — designates the Board of Peace as a public international organization under the International Organizations Immunities Act (22 U.S.C. 288). Grants legal immunities, exemption from lawsuits, and property/asset protection. This is the **direct legal substrate** for the Board of Peace. Legal scholars at Just Security question presidential authority to extend IOIA status without Congressional approval.
+- **New testable prediction:** EO 14375 will face legal challenge regarding Congressional authorization (per Just Security analysis).
+- **Apollo credit pipeline update:** Second $3.4B xAI/Nvidia chip-leasing deal nearing close (Feb 2026), bringing total Apollo-xAI credit exposure to ~$6.9B.
 
-See `Project_Trident/Copilot_Opus_4.6_Analysis/Enforcement_Hollowing_and_PineBridge_Analysis_Feb14_2026.md` for full analysis.
+**Date correction:** Bondi hearing was Feb 11, 2026 (not Feb 14 as initially noted). Coverage dominated Feb 11–14.
 
-### Previous: v9.0 Highlights
+See `Project_Trident/Copilot_Opus_4.6_Analysis/Narrative_Case_Studies/Bondi_Hearing_Feb14_2026.md` for full case study.
 
-**13F Baseline Analysis & Apollo Credit Architecture** — Q3 2025 13F cross-reference (10 entities, 12 securities). Apollo upgraded TIER 2 → TIER 1 ($3B QXO + $3.5B xAI + $29B Meta credit pipeline). QXO assessed as strategic consolidation vehicle ($50B target). PIF EA 9.9% confirmed. Mubadala GFS 81.1% confirmed. Oracle/defense "beard" search yielded only Norges Bank. 13F visibility gap verified as structural feature. Q4 filings (Feb 17+) critical test.
+### Previous: v9.1 Highlights
+
+**Manufactured Indispensability Thesis & Three-Prong Architecture** — New analytical framework documenting how individuals positioned within critical systems create the perception that they *are* the systems, making accountability appear synonymous with collapse. Six capture domains: governance (Board of Peace), finance (Apollo $73B+), narrative (1789 Capital), territory (Phoenix settlements), information (xAI/TikTok), enforcement (Schedule P/C). Three-prong architecture completed: regulatory exemptions + structural complexity + enforcement capacity gaps. Enforcement hollowing verified across SEC/CFPB/CFTC/CFIUS/HUD. PineBridge Form D anomaly documented.
 
 ---
 
@@ -410,11 +382,13 @@ The project's core finding is that friction events (scandals, crises) cluster wi
 
 | Date | Event | Why It Matters |
 |------|-------|----------------|
+| Jan 16, 2026 | EO 14375: Board of Peace designated as public international organization (IOIA) | ✅ Signed; grants legal immunities. Legal challenge expected (Just Security) |
 | Feb 14, 2026 | 13F disclosure deadline | ✅ Q3 baseline established — Q4 filings due Feb 17+ (see 13F_Analysis/) |
-| Feb 19, 2026 | Board of Peace first summit | Washington, D.C. — fundraising for Gaza reconstruction |
-| Feb 27, 2026 | NTEU court-ordered OPM disclosure | First public view of which specific positions lose protections |
-| Mar 1, 2026 | Khanna investigation document deadline | $500M UAE deal documents due (Select Committee on China) |
-| Mar 9, 2026 | Schedule Policy/Career effective date | ~50,000 positions formally become at-will |
+| Feb 17, 2026 | Rule 13f-2 / Form SHO compliance date | New short position disclosure requirement takes effect |
+| Feb 19, 2026 | Board of Peace first summit | ✅ Confirmed — Washington, D.C. at US Institute of Peace (TIME, Politico, Axios) |
+| Feb 27, 2026 | NTEU court-ordered OPM disclosure | ✅ Still scheduled — first public view of which specific positions lose protections |
+| Mar 1, 2026 | Khanna investigation document deadline | ✅ Still scheduled — $500M UAE deal documents due (Select Committee on China) |
+| Mar 9, 2026 | Schedule Policy/Career effective date | ✅ Confirmed — ~50,000 positions formally become at-will |
 
 See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` for the full audit (7 documents).
 
@@ -442,6 +416,7 @@ See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` for 
 - **13F Baseline & Apollo Credit Architecture (Feb 14, 2026)**: `Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/13F_Verification_Report_Feb14_2026.md`
 - **Apollo Credit Pipeline & QXO Consolidation**: `Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/13F_Supplementary_Analysis_Feb14_2026.md`
 - **Enforcement Architecture & ISF Command (Feb 2026)**: `Project_Trident/Copilot_Opus_4.6_Analysis/Final_Research_Sweep_Feb12.md`
+- **Bondi Hearing Narrative Case Study (Feb 14, 2026)**: `Project_Trident/Copilot_Opus_4.6_Analysis/Narrative_Case_Studies/Bondi_Hearing_Feb14_2026.md`
 - **Omeed Malik "Semiotic Bridge"**: `12_The_Media_Firewall/Omeed_Malik_Forensic_Node_Analysis.md`
 - **Board of Peace Security Architecture**: `05_Geopolitical_Vectors/Board_of_Peace_Security_Architecture.md`
 - **Super Bowl LX Media Firewall Case Study**: `12_The_Media_Firewall/Super_Bowl_LX_Media_Firewall_Case_Study.md`
@@ -526,6 +501,7 @@ python granger_causality_test.py             # Predictive direction test
 - Why does the Board of Peace function as a corporate investment vehicle — with verified capital pipeline from Saudi PIF through settlement companies to Gaza reconstruction — while presenting as a diplomatic body?
 - Why did Israel's security cabinet accelerate West Bank annexation measures (Feb 8) three days before Netanyahu's Board of Peace accession (Feb 11)?
 - Why does Apollo provide $3B+ in credit to QXO (Affinity Partners' sole public holding) while Marc Rowan sits on the Board of Peace executive committee that manages reconstruction contracts?
+- Why was the Board of Peace granted IOIA immunities (EO 14375) without Congressional authorization or treaty basis — and what are the legal implications of extending sovereign immunity to a body chaired by a sitting president?
 - Why did PIF concentrate from 57 US equity positions to just 6 in a single quarter — and where did the exited capital go?
 - Why does the most strategically significant financial architecture (Affinity → Phoenix, 1789 Capital → Anduril, MGX → TikTok) operate entirely below the SEC 13F visibility threshold?
 - If the world reorganized after Enron (2001) and the 2008 financial crisis without systemic collapse, why does the current narrative frame the removal of specific individuals from critical positions as civilizational catastrophe — and who benefits from that framing?
@@ -556,6 +532,8 @@ python granger_causality_test.py             # Predictive direction test
 | Q4 2025 13F: Mubadala defense expansion | Feb 17+, 2026 | Pending — did Mubadala's LMT increase? Any new defense/AI entries? |
 | Q4 2025 13F: New Gulf SWF Oracle/defense entries | Feb 17+, 2026 | Pending — critical test of December pincer window accumulation |
 | QXO further acquisitions | 2026 | Tracking — "very active" pipeline, $10B M&A war chest |
+| EO 14375 legal challenge (IOIA authorization) | 2026 | Pending — Just Security analysis questions Congressional authorization |
+| Feb 11 compliance density repeat at next major hearing | Ongoing | Pending — testable prediction from Bondi case study |
 
 ---
 
@@ -625,4 +603,4 @@ See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analy
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
-**Last updated**: February 14, 2026 (v9.1) — Added Manufactured Indispensability Thesis (new analytical framework: individuals positioned within critical systems create perception that they ARE the systems, making accountability appear synonymous with collapse). Integrated three-prong architecture (regulatory exemptions + structural complexity + enforcement capacity gaps). Added enforcement hollowing layer (HUD disparate impact, CFPB HMDA alerts, USDA Agricultural Lawfare, Maritime Action Plan). Apollo TIER 1 credit backbone ($73B+ pipeline). Schedule P/C as Prong 3 accelerant (~50K positions at-will). PineBridge Form D anomaly. Summary expanded from eight to nine connected patterns.
+**Last updated**: February 14, 2026 (v9.2) — Integrated Bondi hearing case study (Feb 11 single-day density: 7 compliance events, highest in 2026 dataset; ±7 day window 17 events, +467% above baseline). EO 14375 integration (Board of Peace designated as public international organization under IOIA, Jan 16/22 2026 — direct legal substrate for BoP immunities). Apollo credit pipeline updated ($3.4B second xAI deal nearing close). All key dates verified via web search (BoP summit Feb 19 ✅, Schedule P/C Mar 9 ✅, 13F Feb 17 ✅, NTEU Feb 27 ✅, Khanna Mar 1 ✅). New testable prediction: EO 14375 legal challenge. Summary expanded from nine to ten connected patterns.
