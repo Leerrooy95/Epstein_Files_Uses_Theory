@@ -73,6 +73,11 @@ Copilot_Opus_4.6_Analysis/
 │   ├── wiring_diagram.md            ← How the four nodes interact (6 channels + feedback loop, quantified)
 │   ├── repo_alignment.md            ← Cross-reference against Friction-Compliance model (5 tests)
 │   └── verification_of_wiring_diagram.md ← Independent verification vs public record + new findings (Feb 10)
+├── 13F_Analysis/             ← SEC 13F filing cross-reference analysis (Feb 14, 2026)
+│   ├── 13F_Verification_Report_Feb14_2026.md ← Comprehensive 13F cross-reference report: 10 entities, 12 securities, Q3 2025 baseline vs Pre_13F predictions
+│   ├── 13F_Holdings_Baseline_Q3_2025.csv     ← All identified 13F holdings for tracked entities (37 positions across 6 filers)
+│   ├── Entity_13F_Cross_Reference.csv        ← Entity-level filing status, CIK, key holdings, Trident relevance tier
+│   └── Security_Level_Cross_Reference.csv    ← Security-level analysis across all tracked entities (12 securities)
 ├── Archive/                  ← Previous analysis kept for transparency
 │   ├── correlation_summary.md       ← All five correlations (pre-deprecation)
 │   ├── new_analysis_findings.md     ← Robustness tests (pre-correction)
