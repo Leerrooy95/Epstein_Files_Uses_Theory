@@ -304,6 +304,141 @@ Note: `Arkansas_Federal_Energy_Bypass.md` and `Final_Research_Sweep_Feb12.md` re
 
 ---
 
-*Review updated: February 13, 2026*
-*Update scope: Copilot sweep integration, new claim verification, 13F baseline, administrative friction log, FaaS signal assessment*
-*Methodology: Independent web verification of all major claims, cross-reference with existing repository documents*
+---
+
+## 9. Update: February 14, 2026 — 13F Analysis Integration (Apollo Credit Pipeline)
+
+### 9A. Source Files Reviewed
+
+The Copilot_Opus_4.6_Analysis team produced five 13F analysis files on February 14, 2026. All were read in full and cross-referenced against the existing Claude_Code_Analysis documents:
+
+| File | Key Finding |
+|---|---|
+| `13F_Verification_Report_Feb14_2026.md` | Entity-by-entity Q3 2025 holdings; confirmed PIF EA 9.9%, Mubadala GFS 81.1%; identified 13F visibility gap |
+| `13F_Supplementary_Analysis_Feb14_2026.md` | **CRITICAL** — Apollo credit pipeline discovery ($37.5B+); QXO consolidation vehicle; "beard" search for Oracle |
+| `13F_Holdings_Baseline_Q3_2025.csv` | Raw Q3 holdings for 10 tracked entities |
+| `Entity_13F_Cross_Reference.csv` | Entity tier assignments with Apollo upgraded to TIER 1 |
+| `Security_Level_Cross_Reference.csv` | Cross-entity security overlap (Klarna = only shared position) |
+
+Full integration analysis: `13F_Analysis_Integration.md` (this subfolder).
+
+### 9B. Apollo Tier Upgrade — TIER 2 to TIER 1 (CRITICAL)
+
+**Previous classification (Section 7D, Feb 13):** Apollo listed as standard 13F verification target — "any Gaza-reconstruction-adjacent infrastructure positions."
+
+**Revised classification:** **TIER 1 — CRITICAL.** Apollo's role is debt/financing, not equity. The 13F portfolio (insurance, security, hospitality) is structurally irrelevant to understanding Apollo's framework position.
+
+**Verified credit pipeline:**
+
+| Recipient | Amount | Date |
+|---|---|---|
+| QXO (Affinity's sole 13F holding) | $3.0B ($1.2B preferred + $1.8B w/Temasek) | Jan 2026 |
+| xAI (Valor Compute data center) | $3.5B | Jan 2026 |
+| Meta (data center expansion) | Up to $29B | 2025-2026 |
+| Stream Data Centers (majority stake) | Billions (undisclosed) | Aug-Nov 2025 |
+
+Marc Rowan = Board of Peace Executive Board member + Apollo CEO ($1T AUM, $690B+ credit). This is the governance-to-financing pipeline previously flagged as "underexplored" in Section 3F of this review. It is now documented.
+
+**Connection to Section 3F recommendation:** "Apollo/Rowan thread: Marc Rowan's role deserves expansion. Apollo's $785B AUM and expertise in distressed-asset financial structuring is directly relevant to understanding how Gaza reconstruction would be financialized." The 13F Supplementary Analysis provides this expansion — with verified credit data, not just AUM estimates. (Note: AUM updated from $785B to ~$1T per Q4 2025 earnings call, Feb 9, 2026.)
+
+### 9C. 13F Visibility Gap — Documented
+
+The 13F analysis confirms the structural prediction from `Pre_13F_Verification_Baseline.md`: the framework's most consequential capital flows operate in 13F-invisible structures.
+
+**Visibility ratio (estimated):**
+- 13F-visible capital: ~$52B (across all tracked entities)
+- 13F-invisible capital: ~$120B+ (private equity, credit, non-US securities, below-threshold, LP interests)
+- **~70% of tracked capital is structurally invisible to SEC 13F disclosure**
+
+**Specific blind spots confirmed:**
+
+| Mechanism | Example | $ Invisible |
+|---|---|---|
+| Non-US exchange | Affinity → Phoenix Financial (TASE) | $300M+ |
+| Private companies | 1789 Capital → Anduril, Vulcan Elements | $2B+ |
+| Private JV/investment | MGX → TikTok USDS, OpenAI, xAI | Multi-billion |
+| Credit (not equity) | Apollo → QXO, xAI, Meta, Stream DC | $37.5B+ |
+| Going private | EA acquisition post-close | $55B |
+| Passive LP exemption | Gulf SWF → US PE/VC fund interests | Unknown |
+
+This confirms **Prong 2 (Regulatory Exemptions)** of the Trident framework as an active, measurable phenomenon — not just theoretical.
+
+### 9D. Pre_13F_Verification_Baseline — Results Against Predictions
+
+Cross-referencing Section 7D predictions against actual Q3 2025 findings:
+
+| Prediction | Q3 Result | Status |
+|---|---|---|
+| PIF holds EA (~9.9%) | **24.8M shares, 9.9%, $3.96B** | CONFIRMED |
+| Mubadala dominates GlobalFoundries | **81.1%, $16.14B** | CONFIRMED |
+| Silver Lake shows EA position | Not in Q3 13F (deal end-of-quarter) | EXPECTED — check Q4 |
+| Affinity Partners files 13F | **Yes — sole holding is QXO, not Phoenix** | PARTIALLY CONFIRMED |
+| Gulf SWFs accumulate Oracle | **No Gulf SWF in ORCL holders** | NOT SUPPORTED |
+| Gulf SWFs accumulate defense | **Mubadala: $9.26M in LMT (new, small)** | WEAK SIGNAL |
+| 1789 Capital files 13F | **No — Form D only** | EXPECTED |
+| MGX appears in 13F | **No — all private investments** | EXPECTED |
+| Position clustering across Gulf SWFs | **Klarna only (Mubadala + Silver Lake)** | LIMITED |
+| December pincer window accumulation | **Q4 filings needed** | PENDING |
+
+**Assessment:** The model's specific financial predictions (Oracle accumulation, defense tech clustering) are not supported by Q3 data. But Q3 predates the "December pincer window" — Q4 filings are the actual test. The structural prediction (13F visibility gap) is strongly confirmed.
+
+### 9E. New Signals Identified
+
+| Signal | Details | Significance |
+|---|---|---|
+| PIF portfolio concentration | Slashed from 57 positions (Q2) to 6 (Q3) | Where did exited capital go? Consistent with private redeployment |
+| Mubadala defense rotation | Exited Leidos (IT defense) → initiated LMT (prime contractor) | Hardware/manufacturing shift |
+| Klarna coordination | Mubadala ($110M) + Silver Lake ($530M) same quarter entry | Silver Lake is Mubadala LP; only cross-entity clustering signal |
+| Affinity 100% concentration in QXO | Unusual for $2B+ fund; signals private portfolio dominance | Building materials consolidation vehicle |
+| Norges Bank Oracle accumulation | +9M shares in 2025 (~67% increase to $4.3B) | Only SWF accumulating ORCL — but Norwegian, not Gulf |
+
+### 9F. Next Steps — Q4 Filing Review (Feb 17+)
+
+**Priority 1 (Immediate):**
+1. PIF Q4: EA position change from 24.8M shares? New sectors?
+2. Mubadala Q4: LMT position increase? New defense/Oracle entries?
+3. Silver Lake Q4: EA formal position appears?
+4. Affinity Q4: QXO still sole holding?
+
+**Priority 2 (New entity search):**
+5. 1789 Capital: First-time 13F filing?
+6. MGX: First-time 13F filing?
+7. Colombier III (CLBR): Institutional holders?
+
+**Priority 3 (Pattern verification):**
+8. Oracle: New Gulf SWF entries in Q4?
+9. Cross-entity clustering: New securities held by 2+ entities?
+10. "Beard" entities: New unidentifiable LLCs in Oracle/PLTR/LHX top holders?
+
+**Verification protocol:** Download raw Q4 13F from EDGAR → cross-reference against `13F_Analysis_Integration.md` Section 3 targets → produce Post-13F Verification Report → update tier assignments if warranted.
+
+### 9G. Updated File Structure
+
+```
+Project_Trident/Claude_Code_Analysis/
+├── README.md
+├── LEAD_ANALYST_REVIEW.md                                   # This file (updated Feb 14)
+├── 13F_Analysis_Integration.md                              # NEW — Apollo credit pipeline + Q4 targets
+├── Privatized_Integration_Networks_Q1_2026_Synthesis.md     # Master document
+├── Phoenix_Settlement_Portfolio_and_New_Gaza.md              # Reference appendix
+├── Critical Model Analysis Framework.txt                    # Gemini deep research (verified)
+├── Pre_13F_Verification_Baseline.md                         # 13F targets (baseline — compare to actual)
+├── Internal_Administrative_Friction_Verification.md         # Friction events
+└── FaaS_Signal_Verification_Feb13.md                        # FaaS signal check
+```
+
+Cross-reference files in Copilot workspace:
+```
+Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/
+├── 13F_Verification_Report_Feb14_2026.md
+├── 13F_Supplementary_Analysis_Feb14_2026.md
+├── 13F_Holdings_Baseline_Q3_2025.csv
+├── Entity_13F_Cross_Reference.csv
+└── Security_Level_Cross_Reference.csv
+```
+
+---
+
+*Review updated: February 14, 2026*
+*Update scope: 13F analysis integration, Apollo tier upgrade, visibility gap documentation, Q4 verification targets*
+*Methodology: Cross-reference of Copilot 13F analysis against existing Claude_Code_Analysis synthesis documents*
