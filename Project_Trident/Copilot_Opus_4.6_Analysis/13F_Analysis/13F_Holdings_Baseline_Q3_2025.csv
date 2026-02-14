@@ -1,0 +1,38 @@
+Filer,SEC_CIK,Filing_Quarter,Security_Name,Ticker,Shares_Held,Market_Value_USD,Pct_of_Portfolio,Position_Change_vs_Prior,Sector,Trident_Relevance,Source,Notes
+Public Investment Fund,0001767640,Q3 2025,Uber Technologies Inc,UBER,72840541,6800000000,28.50%,Maintained,Ride-hailing/Tech,Medium — PIF portfolio anchor,Fintel/WhaleWisdom/13f.info,Largest PIF holding; stable position
+Public Investment Fund,0001767640,Q3 2025,Electronic Arts Inc,EA,24807932,3960000000,16.64%,Maintained,Gaming/Tech,HIGH — EA acquisition consortium lead,Fintel/13D filing (Sep 2025),9.9% stake; roll-over into $55B take-private deal
+Public Investment Fund,0001767640,Q3 2025,Lucid Group Inc,LCID,1770888684,3740000000,15.70%,Reduced ~$549M from Q2,EV/Auto,Low — domestic Saudi industry play,ArabNews/Fintel,Saudi EV investment; reduced but still core
+Public Investment Fund,0001767640,Q3 2025,Take-Two Interactive Software Inc,TTWO,11414680,2770000000,11.60%,Maintained,Gaming/Tech,HIGH — gaming sector consolidation signal,Fintel/Fintool,Gaming portfolio alongside EA
+Public Investment Fund,0001767640,Q3 2025,MultiPlan Corporation,MPLN,Unknown,Unknown,Unknown,Maintained,Healthcare IT,Low,13f.info,Small position; healthcare data company
+Public Investment Fund,0001767640,Q3 2025,6th Position (Undisclosed Small),N/A,Unknown,Unknown,Unknown,Unknown,Unknown,Low,13f.info,PIF reduced from 57 to 6 positions in Q3
+Mubadala Investment Company PJSC,0001704268,Q3 2025,GlobalFoundries Inc,GFS,450387613,16140000000,90.10%,Maintained,Semiconductors,CRITICAL — CHIPS Act + Trusted Foundry,Fintel/WhaleWisdom,81.1% ownership; Category 1A DoD Trusted Foundry; $1.59B CHIPS funding
+Mubadala Investment Company PJSC,0001704268,Q3 2025,iShares Bitcoin Trust ETF,IBIT,8726972,567000000,3.17%,Maintained,Crypto/ETF,Low,Fintel,Bitcoin exposure via ETF
+Mubadala Investment Company PJSC,0001704268,Q3 2025,Blue Owl Technology Finance Corp,OTF,29130491,403000000,2.25%,Maintained,Private Credit,Low,Fintel,Technology-focused lending
+Mubadala Investment Company PJSC,0001704268,Q3 2025,Arm Holdings PLC,ARM,1501960,213000000,1.19%,Maintained,Semiconductors,Medium — chip design layer,Fintel,SoftBank-linked semiconductor designer
+Mubadala Investment Company PJSC,0001704268,Q3 2025,Klarna Group PLC,KLAR,2991658,110000000,0.61%,NEW POSITION,Fintech,Low,Fintel/HoldingsChannel,New Q3 2025 entry; BNPL fintech
+Mubadala Investment Company PJSC,0001704268,Q3 2025,Lockheed Martin Corp,LMT,18554,9260000,0.05%,NEW POSITION,Defense,NOTABLE — defense sector entry,Fintel/HoldingsChannel,New defense position in Q3 2025
+Mubadala Investment Company PJSC,0001704268,Q3 2025,Lam Research Corp,LRCX,41003,5490000,0.03%,Maintained,Semiconductor Equipment,Medium — chip supply chain,Fintel,Semiconductor manufacturing equipment
+Mubadala Investment Company PJSC,0001704268,Q3 2025,Applied Materials Inc,AMAT,21404,4380000,0.02%,Maintained,Semiconductor Equipment,Medium — chip supply chain,Fintel,Semiconductor manufacturing equipment
+Mubadala Investment Company PJSC,0001704268,Q3 2025,NextDecade Corp,NEXT,Unknown,Unknown,Unknown,Maintained,LNG/Energy,Medium — energy infrastructure,Fintel,LNG export terminal developer
+Mubadala Investment Company PJSC,0001704268,Q3 2025,Pony AI Inc,PONY,Unknown,Unknown,Unknown,NEW POSITION,Autonomous Vehicles,Low,Fintel,Chinese autonomous driving company
+Silver Lake Group LLC,0001418226,Q3 2025,Unity Software Inc,U,34735404,1390000000,27.00%,Maintained,Gaming/Tech Engine,Medium — gaming infrastructure layer,Fintel/13f.info,Game engine; AR/VR infrastructure
+Silver Lake Group LLC,0001418226,Q3 2025,First Advantage Corp,FA,89557840,1380000000,27.00%,Maintained,HR Tech/Background Check,Low,Fintel,Background screening services
+Silver Lake Group LLC,0001418226,Q3 2025,EverCommerce Inc,EVCM,67085136,746700000,14.50%,Maintained,SaaS/SMB,Low,Fintel,Service commerce platform
+Silver Lake Group LLC,0001418226,Q3 2025,Klarna Group PLC,KLAR,14470343,530300000,10.30%,NEW POSITION,Fintech,Low — but note overlap with Mubadala,Fintel/13f.info,Both Silver Lake AND Mubadala hold Klarna
+Silver Lake Group LLC,0001418226,Q3 2025,N-able Inc,NABL,61473869,479500000,9.30%,Maintained,IT Management/MSP,Low,Fintel,IT management software
+Silver Lake Group LLC,0001418226,Q3 2025,Madison Square Garden Sports Corp,MSGS,Unknown,431000000,8.40%,Maintained,Sports/Entertainment,Low,Fintel,Sports franchise ownership
+Silver Lake Group LLC,0001418226,Q3 2025,Caris Life Sciences Inc,CAI,Unknown,Unknown,Unknown,Maintained,Healthcare/Diagnostics,Low,Fintel,Precision medicine
+Silver Lake Group LLC,0001418226,Q3 2025,GoodRx Holdings Inc,GDRX,Unknown,Unknown,Unknown,Maintained,Healthcare Tech,Low,Fintel,Prescription drug pricing
+Silver Lake Group LLC,0001418226,Q3 2025,Amplitude Inc,AMPL,Unknown,Unknown,Unknown,Maintained,Analytics/SaaS,Low,Fintel,Digital analytics platform
+Silver Lake Group LLC,0001418226,Q3 2025,Snowflake Inc,SNOW,Unknown,Unknown,Unknown,Maintained,Cloud Data,Medium — data infrastructure,Fintel,Cloud data warehousing
+Affinity Partners GP LP,0002059583,Q3 2025,QXO Inc,QXO,32671542,622719591,100.00%,Reduced from ~$703M,Building Products,NOTABLE — Kushner sole public position,WhaleWisdom/Fintel/13f.info,100% portfolio concentration; Kushner on QXO board; $11B Beacon acquisition
+Qatar Investment Authority,0001441449,Q3 2025,Global Business Travel Group Inc,GBTG,87659000,Unknown,Unknown,Maintained,Business Travel,Low,Fintel/SEC filings,16.6% ownership stake
+Qatar Investment Authority,0001441449,Q3 2025,Vistra Corp,VST,18675188,Unknown,Unknown,Reduced 18.41%,Energy/Utilities,Medium — energy infrastructure,Fintel/SEC 13G,5.5% ownership; energy play
+Qatar Investment Authority,0001441449,Q3 2025,Alignment Healthcare Inc,ALHC,13246096,Unknown,Unknown,Maintained,Healthcare,Low,Fintel/SEC 13G,6.69% ownership
+Qatar Investment Authority,0001441449,Q3 2025,Establishment Labs Holdings Inc,ESTA,2390951,Unknown,Unknown,Increased,Medical Devices,Low,Fintel/SEC 13D,8.27% ownership
+Qatar Investment Authority,0001441449,Q2 2025,Sionna Therapeutics Inc,SION,2209775,Unknown,Unknown,Maintained,Biotech,Low,Fintel/SEC 13G,5.0% ownership
+Apollo Management Holdings LP,0001449434,Q3 2025,Aspen Insurance Holdings Ltd,AHL,75418220,2768603000,34.00%,Maintained,Insurance,Low,Fintel/HoldingsChannel/GuruFocus,Dominant position
+Apollo Management Holdings LP,0001449434,Q3 2025,ADT Inc,ADT,102000366,888423000,11.00%,Maintained,Security Services,Low,Fintel,Home/business security
+Apollo Management Holdings LP,0001449434,Q3 2025,Hilton Grand Vacations Inc,HGV,18245825,762858000,9.50%,Maintained,Hospitality,Low,Fintel,Timeshare/vacation ownership
+Apollo Management Holdings LP,0001449434,Q3 2025,EchoStar Corp,SATS,3954746,301984000,3.80%,Maintained,Satellite/Telecom,Medium — satellite infrastructure,Fintel,Satellite communications (Hughes Network)
+Apollo Management Holdings LP,0001449434,Q3 2025,Rackspace Technology Inc,RXT,129609000,182749000,2.30%,Maintained,Cloud/IT,Medium — cloud infrastructure,Fintel,Cloud computing services
