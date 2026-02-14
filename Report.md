@@ -563,7 +563,7 @@ Each domain documented in this project represents a layer of manufactured indisp
 | **Governance** | Board of Peace = governance capture | Kushner, Rowan, Blair | Removal threatens "peace process" |
 | **Finance** | Apollo credit pipeline = financial capture | Apollo ($73B+ pipeline, TIER 1) | Removal threatens "credit markets" |
 | **Narrative** | 1789 Capital = media/narrative capture | Omeed Malik | Removal threatens "free press" |
-| **Territory** | Phoenix settlements = physical infrastructure capture | Affinity → Phoenix (9.9%) | Removal threatens "reconstruction" |
+| **Territory** | Phoenix settlements = physical infrastructure capture | Affinity → Phoenix Financial (9.9% stake in settlement-linked companies) | Removal threatens "reconstruction" |
 | **Information** | AI model influence = information layer capture | xAI, TikTok/Oracle | Removal threatens "innovation" |
 | **Enforcement** | Schedule P/C = enforcement capacity destruction | OPM (50K positions at-will) | Accountability mechanisms eliminated |
 

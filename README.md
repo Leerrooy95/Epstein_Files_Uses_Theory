@@ -348,7 +348,7 @@ ACCOUNTABILITY POSSIBLE             ACCOUNTABILITY IMPOSSIBLE
 | Governance | Board of Peace = governance capture | Kushner, Rowan, Blair |
 | Finance | Apollo credit pipeline = financial capture ($73B+) | Apollo (TIER 1 CRITICAL) |
 | Narrative | 1789 Capital = media/narrative capture | Omeed Malik |
-| Territory | Phoenix settlements = physical infrastructure capture | Affinity Partners → Phoenix |
+| Territory | Phoenix settlements = physical infrastructure capture | Affinity Partners → Phoenix (9.9% stake) |
 | Information | AI model influence = information layer capture | xAI, TikTok/Oracle |
 | Enforcement | Schedule P/C = enforcement capacity destruction | OPM (50K positions at-will) |
 
