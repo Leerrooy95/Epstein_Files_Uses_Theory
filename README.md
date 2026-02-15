@@ -1,4 +1,4 @@
-# The Regulated Friction Project v9.2
+# The Regulated Friction Project v9.3
 
 A data-driven analysis of temporal correlations between friction events, policy shifts, and capital flows (2015-2026).
 
@@ -15,7 +15,7 @@ A data-driven analysis of temporal correlations between friction events, policy 
 - [The Convergence Model](#the-convergence-model)
 - [The Friction-Compliance Model](#the-friction-compliance-model)
 - [Repository Structure](#repository-structure)
-- [What's New (v9.2)](#whats-new-v92---february-2026)
+- [What's New (v9.3)](#whats-new-v93---february-2026)
 - [Administrative State Consolidation](#administrative-state-consolidation)
 - [Quick Navigation by Type](#quick-navigation-by-type)
 - [For Researchers](#for-researchers)
@@ -286,7 +286,10 @@ The_Regulated_Friction_Project/
 │           ├── Arkansas_Federal_Energy_Bypass.md         # DATA Act CREU, RATE Act, ADQ/ECP, AVAIO, Act 373, TX/NH models
 │           ├── Narrative_Case_Studies/               # Narrative-policy cross-reference case studies
 │           │   └── Bondi_Hearing_Feb14_2026.md           # Feb 11 Bondi hearing: ±7 day window (17 events, 467% above baseline), EO 14375 BoP substrate
+│           ├── Entity_Reports/                      # Comprehensive entity deep-dive assessments
+│           │   └── Palantir_Technologies_Deep_Dive.md    # PFCS Forward, $10B Army, Anduril consortium, DOGE "mega API", UK £240M no-bid, Thiel-Valar, TIER 2 MODERATE
 │           ├── Changelogs/                           # Version changelogs
+│           │   ├── v9.3_Integration_Notes.md             # v9.3 Palantir integration, verification, and cleanup notes
 │           │   └── v9.2_Integration_Notes.md             # v9.2 integration, verification, and cleanup notes
 │           ├── Statistical_Tests/                     # 9 runnable Python robustness scripts
 │           ├── Findings/                              # Active analysis — provenance, backfill guide
@@ -321,27 +324,28 @@ The_Regulated_Friction_Project/
 
 ---
 
-## What's New (v9.2 - February 2026)
+## What's New (v9.3 - February 2026)
 
-### Bondi Hearing Case Study & EO 14375 Integration
+### Palantir Technologies Deep Dive & Defense Tech Consolidation
 
-New narrative-policy cross-reference case study (Feb 14, 2026) documenting the Feb 11 Bondi hearing as a friction event, with the highest single-day compliance density observed in the 2026 dataset. Integration of EO 14375, the direct legal substrate for the Board of Peace.
+New comprehensive entity report (Feb 14, 2026) integrating Palantir Technologies into the repository's analytical frameworks. Palantir assessed as TIER 2 MODERATE with defined upgrade conditions. DISA PFCS Forward authorization (Feb 12, 2026) falls within the Feb 8-19 convergence window.
 
 **Key findings:**
 
-- **Feb 11, 2026 single-day density:** 7 compliance events on one day — 5 executive orders (EOs 14382–14385 + Coal Power Fleet EO), USDA "Agricultural Lawfare" framework, and QXO-Kodiak $2.25B acquisition — all simultaneous with the Bondi hearing's 5+ hours of Epstein-focused media capture. This is the highest single-day compliance density documented in the 2026 dataset.
-- **±7 day temporal density:** 17 compliance events in the Feb 4–18 window vs ~3–4 baseline expectation (+467% above baseline). Pattern classification: **PATTERN MATCH** with the repository's documented r = 0.6196 friction-compliance clustering.
-- **EO 14375 (HIGH PRIORITY):** Signed Jan 16, published Jan 22, 2026 — designates the Board of Peace as a public international organization under the International Organizations Immunities Act (22 U.S.C. 288). Grants legal immunities, exemption from lawsuits, and property/asset protection. This is the **direct legal substrate** for the Board of Peace. Legal scholars at Just Security question presidential authority to extend IOIA status without Congressional approval.
-- **New testable prediction:** EO 14375 will face legal challenge regarding Congressional authorization (per Just Security analysis).
-- **Apollo credit pipeline update:** Second $3.4B xAI/Nvidia chip-leasing deal nearing close (Feb 2026), bringing total Apollo-xAI credit exposure to ~$6.9B.
+- **PFCS Forward authorization (Feb 12, 2026):** DISA authorized "authorize once, use many" inheritable security authorization covering IL5/IL6 (SECRET level) edge deployments. This reduces deployment friction Pentagon-wide — a **Prong 1 STRONG match** (regulatory moat creation). Falls within the Feb 8-19 convergence window, 1 day after the Bondi hearing.
+- **DOGE-Palantir relationship (VERIFIED):** Palantir building "mega API" at IRS for DOGE data centralization. Treasury awarded "unified API layer" contract (Sep 2025). Federal contracts nearly doubled: $541.2M (2024) → $970.5M (2025).
+- **Defense tech consolidation:** Palantir-Anduril consortium (Dec 6, 2024) formally challenges legacy defense contractors. Expanding to include SpaceX, OpenAI, Scale AI. Both Thiel-backed; both Tolkien-named. Oracle-Palantir strategic partnership (Apr 2024). US Army $10B enterprise agreement (Aug 2025).
+- **UK integration:** £670M+ total UK contracts. £240M MoD contract awarded WITHOUT competitive tender (Dec 2025). 5 ex-MoD officials hired by Palantir in 2025. Mandelson/Global Counsel lobbying connection → Blair → BoP (2-hop).
+- **Thiel-Epstein-Valar connection (VERIFIED via DOJ files):** Epstein invested $40M in Valar Ventures (2015-2016), now worth ~$170M. **NO direct Palantir equity link to Epstein.**
+- **Three-prong assessment:** Prong 1 STRONG (PFCS Forward + UK no-bid), Prong 2 PARTIAL (share structure + classification opacity), Prong 3 PARTIAL (ICE enforcement infrastructure, DOGE data centralization).
 
-**Date correction:** Bondi hearing was Feb 11, 2026 (not Feb 14 as initially noted). Coverage dominated Feb 11–14.
+**Epistemological standard:** PFCS Forward authorization is documented; intent is not claimed. DOGE-Palantir relationship verified via multiple sources. IDF partnership verified; connection to specific targeting systems is correlation, not confirmed causation.
 
-See `Project_Trident/Copilot_Opus_4.6_Analysis/Narrative_Case_Studies/Bondi_Hearing_Feb14_2026.md` for full case study.
+See `Project_Trident/Copilot_Opus_4.6_Analysis/Entity_Reports/Palantir_Technologies_Deep_Dive.md` for full entity report.
 
-### Previous: v9.1 Highlights
+### Previous: v9.2 Highlights
 
-**Manufactured Indispensability Thesis & Three-Prong Architecture** — New analytical framework documenting how individuals positioned within critical systems create the perception that they *are* the systems, making accountability appear synonymous with collapse. Six capture domains: governance (Board of Peace), finance (Apollo $73B+), narrative (1789 Capital), territory (Phoenix settlements), information (xAI/TikTok), enforcement (Schedule P/C). Three-prong architecture completed: regulatory exemptions + structural complexity + enforcement capacity gaps. Enforcement hollowing verified across SEC/CFPB/CFTC/CFIUS/HUD. PineBridge Form D anomaly documented.
+**Bondi Hearing Case Study & EO 14375 Integration** — Feb 11 Bondi hearing: 7 compliance events on a single day (highest in 2026 dataset), ±7 day window 17 events (+467% above baseline), PATTERN MATCH classification. EO 14375 integration (Board of Peace designated as public international organization under IOIA). Apollo credit pipeline updated to $76B+. All key dates verified.
 
 ---
 
@@ -417,6 +421,7 @@ See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` for 
 - **Apollo Credit Pipeline & QXO Consolidation**: `Project_Trident/Copilot_Opus_4.6_Analysis/13F_Analysis/13F_Supplementary_Analysis_Feb14_2026.md`
 - **Enforcement Architecture & ISF Command (Feb 2026)**: `Project_Trident/Copilot_Opus_4.6_Analysis/Final_Research_Sweep_Feb12.md`
 - **Bondi Hearing Narrative Case Study (Feb 14, 2026)**: `Project_Trident/Copilot_Opus_4.6_Analysis/Narrative_Case_Studies/Bondi_Hearing_Feb14_2026.md`
+- **Palantir Technologies Entity Report (Feb 14, 2026)**: `Project_Trident/Copilot_Opus_4.6_Analysis/Entity_Reports/Palantir_Technologies_Deep_Dive.md`
 - **Omeed Malik "Semiotic Bridge"**: `12_The_Media_Firewall/Omeed_Malik_Forensic_Node_Analysis.md`
 - **Board of Peace Security Architecture**: `05_Geopolitical_Vectors/Board_of_Peace_Security_Architecture.md`
 - **Super Bowl LX Media Firewall Case Study**: `12_The_Media_Firewall/Super_Bowl_LX_Media_Firewall_Case_Study.md`
@@ -449,7 +454,8 @@ See `Project_Trident/Copilot_Opus_4.6_Analysis/Administrative_State_Audit/` for 
 5. `Project_Trident/Copilot_Opus_4.6_Analysis/Forensic_Vetting_Board_of_Peace.md` — Board of Peace leadership forensic vetting
 6. `12_The_Media_Firewall/Omeed_Malik_Forensic_Node_Analysis.md` — "Semiotic Bridge" forensic node analysis
 7. `Project_Trident/Claude_Code_Analysis/Privatized_Integration_Networks_Q1_2026_Synthesis.md` — Q1 2026 applied findings
-8. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level pattern
+8. `Project_Trident/Copilot_Opus_4.6_Analysis/Entity_Reports/Palantir_Technologies_Deep_Dive.md` — Palantir entity report (PFCS Forward, defense tech consolidation, DOGE integration, TIER 2 MODERATE)
+9. `13_State_and_County_Analysis/arkansas_infrastructure_forensic_audit.md` — State-level pattern
 
 ### Verify the Statistics
 ```bash
@@ -504,6 +510,7 @@ python granger_causality_test.py             # Predictive direction test
 - Why was the Board of Peace granted IOIA immunities (EO 14375) without Congressional authorization or treaty basis — and what are the legal implications of extending sovereign immunity to a body chaired by a sitting president?
 - Why did PIF concentrate from 57 US equity positions to just 6 in a single quarter — and where did the exited capital go?
 - Why does the most strategically significant financial architecture (Affinity → Phoenix, 1789 Capital → Anduril, MGX → TikTok) operate entirely below the SEC 13F visibility threshold?
+- Why does DISA's "authorize once, use many" framework for Palantir — which reduces deployment friction Pentagon-wide — receive authorization during the same convergence window (Feb 8-19) as the Bondi hearing, Board of Peace summit, and 13F filing deadline?
 - If the world reorganized after Enron (2001) and the 2008 financial crisis without systemic collapse, why does the current narrative frame the removal of specific individuals from critical positions as civilizational catastrophe — and who benefits from that framing?
 
 ### Testable Predictions
@@ -603,4 +610,4 @@ See `VERIFICATION_REPORT_Jan2026.md` and `Project_Trident/Copilot_Opus_4.6_Analy
 
 **GitHub**: [@Leerrooy95](https://github.com/Leerrooy95)
 
-**Last updated**: February 14, 2026 (v9.2) — Integrated Bondi hearing case study (Feb 11 single-day density: 7 compliance events, highest in 2026 dataset; ±7 day window 17 events, +467% above baseline). EO 14375 integration (Board of Peace designated as public international organization under IOIA, Jan 16/22 2026 — direct legal substrate for BoP immunities). Apollo credit pipeline updated ($3.4B second xAI deal nearing close). All key dates verified via web search (BoP summit Feb 19 ✅, Schedule P/C Mar 9 ✅, 13F Feb 17 ✅, NTEU Feb 27 ✅, Khanna Mar 1 ✅). New testable prediction: EO 14375 legal challenge. Summary expanded from nine to ten connected patterns.
+**Last updated**: February 14, 2026 (v9.3) — Integrated Palantir Technologies entity report (PFCS Forward IL5/IL6 edge authorization Feb 12, $10B Army contract, Anduril consortium, DOGE "mega API", UK £240M no-bid, Thiel-Valar $40M verified, TIER 2 MODERATE). Three-prong assessment: Prong 1 STRONG, Prong 2 PARTIAL, Prong 3 PARTIAL. All key dates re-verified (BoP summit Feb 19 ✅, Schedule P/C Mar 9 ✅, NTEU Feb 27 ✅, Khanna Mar 1 ✅). Entity tracking updated. Summary expanded from ten to eleven connected patterns.
