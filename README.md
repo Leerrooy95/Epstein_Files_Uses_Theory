@@ -287,7 +287,7 @@ The_Regulated_Friction_Project/
 │           ├── Narrative_Case_Studies/               # Narrative-policy cross-reference case studies
 │           │   └── Bondi_Hearing_Feb14_2026.md           # Feb 11 Bondi hearing: ±7 day window (17 events, 467% above baseline), EO 14375 BoP substrate
 │           ├── Entity_Reports/                      # Comprehensive entity deep-dive assessments
-│           │   └── Palantir_Technologies_Deep_Dive.md    # PFCS Forward, $10B Army, Anduril consortium, DOGE "mega API", UK £240M no-bid, Thiel-Valar, TIER 2 MODERATE
+│           │   └── Palantir_Technologies_Deep_Dive.md    # Defense tech consolidation, DOGE integration, TIER 2 MODERATE
 │           ├── Changelogs/                           # Version changelogs
 │           │   ├── v9.3_Integration_Notes.md             # v9.3 Palantir integration, verification, and cleanup notes
 │           │   └── v9.2_Integration_Notes.md             # v9.2 integration, verification, and cleanup notes

@@ -574,7 +574,7 @@ Each domain documented in this project represents a layer of manufactured indisp
 | **Narrative** | 1789 Capital = media/narrative capture | Omeed Malik | Removal threatens "free press" |
 | **Territory** | Phoenix settlements = physical infrastructure capture | Affinity → Phoenix Financial (9.9% stake in settlement-linked companies) | Removal threatens "reconstruction" |
 | **Information** | AI model influence = information layer capture | xAI, TikTok/Oracle | Removal threatens "innovation" |
-| **Data/Intelligence** | Government data platform = intelligence layer capture | Palantir ("authorize once, use many", TIER 2) | Removal threatens "national security" |
+| **Data/Intelligence** | Government data platform = data infrastructure capture | Palantir ("authorize once, use many", TIER 2) | Removal threatens "national security" |
 | **Enforcement** | Schedule P/C = enforcement capacity destruction | OPM (50K positions at-will) | Accountability mechanisms eliminated |
 
 The pattern isn't "we secretly control things." It's "we *visibly* occupy positions that everyone agrees are essential, and we've ensured that no one is left to question whether *we specifically* are essential to those positions."
@@ -672,7 +672,7 @@ DISA authorized Palantir's PFCS Forward on February 12, 2026, extending IL5/IL6 
 | Classification | IL5/IL6 (SECRET level) | ✅ VERIFIED |
 | Model | "Authorize once, use many" — inheritable PA package | ✅ VERIFIED |
 | Coverage | All Palantir platforms: Apollo, Gotham, Foundry, AIP, Rubix | ✅ VERIFIED |
-| Prong 1 assessment | **STRONG MATCH** — regulatory moat creation | Analytical assessment |
+| Prong 1 assessment | **STRONG MATCH** — regulatory moat creation | ⚠️ Analytical interpretation (not a factual claim) |
 
 **Convergence window note:** PFCS Forward authorization (Feb 12) falls within the Feb 8-19 convergence window, 1 day after the Bondi hearing (Feb 11) and 7 days before the Board of Peace summit (Feb 19). This temporal clustering is documented; coordination is not claimed.
 
@@ -712,7 +712,7 @@ The Palantir-Anduril consortium (Dec 6, 2024) formally challenges legacy defense
 |---------|--------|-------------|
 | Total UK contracts | £670M+ (NHS, MoD, AWE nuclear, police) | ✅ VERIFIED |
 | MoD no-bid | £240M contract awarded WITHOUT competitive tender (Dec 2025) | ✅ VERIFIED (Hansard, Bloomberg) |
-| Revolving door | 5 ex-MoD officials hired by Palantir in 2025 | ⚠️ Reported; specific names not independently verified |
+| Revolving door | 5 ex-MoD officials hired by Palantir in 2025 (per parliamentary reporting) | ⚠️ Reported in UK Parliament; specific names not independently verified |
 | Mandelson link | Global Counsel lobbying → Blair → BoP (2-hop chain) | ✅ VERIFIED (structural connection, not coordination) |
 
 ### Thiel-Epstein-Valar Connection
